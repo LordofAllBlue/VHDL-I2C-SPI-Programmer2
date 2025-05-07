@@ -1,0 +1,9 @@
+Bytes written: 8
+Bytes in queue: 1
+Received: 44 
+Bytes written: 9
+Bytes in queue: 1
+Received: 46 
+Bytes written: 6
+Bytes in queue: 5
+Received: 45 54 65 73 74 
