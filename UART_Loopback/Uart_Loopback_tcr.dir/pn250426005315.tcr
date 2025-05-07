@@ -1,0 +1,7 @@
+#Start recording tcl command: 4/25/2025 11:25:39
+#Project Location: C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback; Project name: Uart_Loopback
+prj_project open "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Uart_Loopback.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src exclude "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/readPage.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 4/26/2025 00:53:15

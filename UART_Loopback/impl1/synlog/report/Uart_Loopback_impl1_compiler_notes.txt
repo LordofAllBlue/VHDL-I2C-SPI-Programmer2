@@ -1,0 +1,36 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":11:7:11:10|Top entity is set to Main.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":11:7:11:10|Synthesizing work.main.rtl.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":6:7:6:9|Synthesizing work.i2c.i2c.
+@N: CD231 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":28:13:28:14|Using onehot encoding for type statem. For example, enumeration off is mapped to "100000000".
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":10:7:10:15|Synthesizing work.writepage.writepage.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":31:13:31:14|Using sequential encoding for type tcstate.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":67:2:67:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":91:2:91:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":117:2:117:8|Removing redundant assignment.
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":149:1:149:14|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":10:7:10:15|Synthesizing work.write8bit.write8bit.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":24:13:24:14|Using sequential encoding for type tcstate.
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":80:1:80:14|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":5:7:5:13|Synthesizing work.uart_rx.rtl.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":26:21:26:22|Using sequential encoding for type uartrxstatevdef.
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":93:3:93:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":5:7:5:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":23:21:23:22|Using onehot encoding for type uarttxstatevdef. For example, enumeration idle is mapped to "10000".
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":103:3:103:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":6:7:6:13|Synthesizing work.int_osc.int_osc_arch.
+@N: CD630 :"D:\programs\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Register bit ClkCount(4) is always 0.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Trying to extract state machine for register StateV.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Register bit ClkCount(4) is always 0.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Trying to extract state machine for register StateV.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":37:0:37:1|Trying to extract state machine for register CState.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":46:0:46:1|Trying to extract state machine for register CState.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":62:2:62:3|Trying to extract state machine for register state.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(0) is always 0.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(1) is always 0.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(2) is always 0.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Trying to extract state machine for register State.
+@N|Running in 64-bit mode
+

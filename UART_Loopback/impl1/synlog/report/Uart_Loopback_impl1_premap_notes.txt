@@ -1,0 +1,66 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: FX493 |Applying initial value "00000000" on instance SData[7:0].
+@N: FX493 |Applying initial value "1" on instance TXisDone.
+@N: FX493 |Applying initial value "0" on instance RXDataReady.
+@N: FX493 |Applying initial value "00000000" on instance SData[7:0].
+@N: FX493 |Applying initial value "0" on instance hold.
+@N: FX493 |Applying initial value "1" on instance bit8SCL.
+@N: FX493 |Applying initial value "1" on instance cs.
+@N: FX493 |Applying initial value "0" on instance Done.
+@N: FX493 |Applying initial value "1" on instance bit8SDA.
+@N: FX493 |Applying initial value "0" on instance Done.
+@N: FX493 |Applying initial value "0" on instance RWlatch.
+@N: FX493 |Applying initial value "1" on instance toSCL.
+@N: FX493 |Applying initial value "00000000" on instance current8bits[7:0].
+@N: FX493 |Applying initial value "1" on instance toSDA.
+@N: FX493 |Applying initial value "1" on instance Rdy.
+@N: FX493 |Applying initial value "1" on instance cs.
+@N: FX493 |Applying initial value "0" on instance MISO_DR.
+@N: FX493 |Applying initial value "0" on instance RWlatch.
+@N: FX493 |Applying initial value "00000000" on instance DataOut[7:0].
+@N: FX493 |Applying initial value "0" on instance dataready.
+@N: FX493 |Applying initial value "1" on instance SDAen.
+@N: FX493 |Applying initial value "1" on instance SCLen.
+@N: FX493 |Applying initial value "0" on instance golatch.
+@N: FX493 |Applying initial value "0" on instance Send_i2c.
+@N: FX493 |Applying initial value "1" on instance iCSw.
+@N: FX493 |Applying initial value "0" on instance i2cRW.
+@N: FX493 |Applying initial value "01010101" on instance SDA_data[7:0].
+@N: FX493 |Applying initial value "01010101" on instance i2c_DataIn[7:0].
+@N: FX493 |Applying initial value "0" on instance RXAck.
+@N: FX493 |Applying initial value "0" on instance SPI_R1W0.
+@N: FX493 |Applying initial value "0" on instance SendTX.
+@N: FX493 |Applying initial value "01000010" on instance DataToSend[7:0].
+@N: FX493 |Applying initial value "01010101" on instance SDA_datap[7:0].
+@N: FX493 |Applying initial value "1" on instance iCSp.
+@N: FX493 |Applying initial value "0" on instance GO_i2c.
+@N: FX493 |Applying initial value "00000000000000000001100100000100000000000000010000000011" on instance settings[55:0].
+@N: FX493 |Applying initial value "0" on instance statedelay.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":38:1:38:2|Removing sequential instance TXActive (in view: work.UART_TX(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\writepage.vhd":46:0:46:1|Removing sequential instance Done (in view: work.writePage(writepage)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "1" on instance StateV[4].
+@N: FX493 |Applying initial value "0" on instance StateV[3].
+@N: FX493 |Applying initial value "0" on instance StateV[2].
+@N: FX493 |Applying initial value "0" on instance StateV[1].
+@N: FX493 |Applying initial value "0" on instance StateV[0].
+@N: MO225 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_rx.vhd":40:1:40:2|There are no possible illegal states for state machine StateV[0:3] (in view: work.UART_RX(rtl)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\writepage.vhd":46:0:46:1|There are no possible illegal states for state machine CState[0:3] (in view: work.writePage(writepage)); safe FSM implementation is not required.
+@N: FX493 |Applying initial value "1" on instance state[7].
+@N: FX493 |Applying initial value "0" on instance state[6].
+@N: FX493 |Applying initial value "0" on instance state[5].
+@N: FX493 |Applying initial value "0" on instance state[4].
+@N: FX493 |Applying initial value "0" on instance state[3].
+@N: FX493 |Applying initial value "0" on instance state[2].
+@N: FX493 |Applying initial value "0" on instance state[1].
+@N: FX493 |Applying initial value "0" on instance state[0].
+@N: FX493 |Applying initial value "1" on instance State[6].
+@N: FX493 |Applying initial value "0" on instance State[5].
+@N: FX493 |Applying initial value "0" on instance State[4].
+@N: FX493 |Applying initial value "0" on instance State[3].
+@N: FX493 |Applying initial value "0" on instance State[2].
+@N: FX493 |Applying initial value "0" on instance State[1].
+@N: FX493 |Applying initial value "0" on instance State[0].
+@N: FX1184 |Applying syn_allowed_resources blockrams=7 on top level netlist Main 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

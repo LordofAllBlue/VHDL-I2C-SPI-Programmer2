@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback"  

@@ -1,0 +1,114 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+library machxo2;
+use machxo2.all;
+
+entity Main is
+  port (	TX 		: out  std_logic;
+			RX 		: in  std_logic;
+			nReset	: in std_logic
+	);
+end entity;
+
+architecture RTL of Main is
+
+component Int_Osc is
+  port (	StdBy	: in  std_logic;
+			Clk   	: out std_logic
+	);
+end component;
+
+component UART_TX is
+	port (	TXData		: in  std_logic_vector(7 downto 0);
+			Clk			: in  std_logic;
+			SendTX		: in  std_logic;
+			TXDone		: out std_logic;			
+			TXOut		: out std_logic;
+			TXActive	: out std_logic
+	);
+end component;
+
+component UART_RX is
+	port (	Clk			: in  	std_logic;			
+			RXIn		: in 	std_logic;
+			Ack			: in 	std_logic;
+			RXData		: out  	std_logic_vector(7 downto 0);
+			RXDataReady	: out 	std_logic;
+			RXActive	: out 	std_logic
+    );
+	
+end component;
+
+signal Clk : std_logic;
+signal SendTX : std_logic := '0';
+signal DataToSend : std_logic_vector(7 downto 0):="01000010";
+signal DataFromRx : std_logic_vector(7 downto 0):="01000010";
+signal TXisActive : std_logic:='0';
+signal TXisDone : std_logic:='0';
+signal RXAck : std_logic:='0';
+signal RXDR : std_logic:='0';
+signal RXA : std_logic:='0';
+signal iTX : std_logic:='0';
+Signal count	:	integer range 0 to 1000000 :=0;
+signal State : std_logic_vector(1 downto 0):="00";
+
+begin
+
+U1 : Int_Osc
+    port map (	StdBy		=> '0',
+				Clk   		=> Clk
+				);
+U2 : UART_TX
+    port map (	Clk 		=> Clk,
+				SendTX 		=> SendTX,
+				TXData 		=> DataToSend,
+				TXOut 		=> TX,
+				TXActive 	=> TXisActive,
+				TXDone 		=> TXisDone);
+				
+U3 : UART_RX
+    port map (	Clk 		=> Clk,
+				RXIn 		=> RX,
+				Ack 		=> RXAck,
+				RXData 		=> DataFromRx,
+				RXDataReady	=> RXDR,
+				RXActive 	=> RXA);
+				
+
+ 
+process(Clk) is
+begin
+	if rising_edge(clk) then
+		
+
+			
+				SendTX <= '0';
+				RXAck <= '0';
+				DataToSend <= DataFromRx;
+				
+				if RXDR = '1' AND TXisActive = '0' AND RXAck = '0'  then
+				
+					RXAck <= '1';
+					SendTX <= '1';
+					
+				end if;
+--	case State is
+
+--			when "00" =>			
+				
+--			when "01" =>
+			
+--			when "10" =>
+			
+--			when others =>
+			
+--				State <= "00";
+		
+--	end case;
+	
+	end if;
+
+
+end process;
+
+end architecture;

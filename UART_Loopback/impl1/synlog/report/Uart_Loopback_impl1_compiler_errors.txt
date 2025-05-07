@@ -1,0 +1,2 @@
+@E: CL123 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":46:1:46:2|Logic for StateV_13(1 downto 0) does not match a standard flip-flop
+

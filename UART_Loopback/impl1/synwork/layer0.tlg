@@ -1,0 +1,114 @@
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":11:7:11:10|Synthesizing work.main.rtl.
+@W: CD638 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":116:7:116:9|Signal itx is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":6:7:6:9|Synthesizing work.i2c.i2c.
+@N: CD231 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":28:13:28:14|Using onehot encoding for type statem. For example, enumeration off is mapped to "100000000".
+Post processing for work.i2c.i2c
+Running optimization stage 1 on I2C .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":10:7:10:15|Synthesizing work.writepage.writepage.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":31:13:31:14|Using sequential encoding for type tcstate.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":67:2:67:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":91:2:91:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":117:2:117:8|Removing redundant assignment.
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":149:1:149:14|OTHERS clause is not synthesized.
+Post processing for work.writepage.writepage
+Running optimization stage 1 on writePage .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":10:7:10:15|Synthesizing work.write8bit.write8bit.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":24:13:24:14|Using sequential encoding for type tcstate.
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":80:1:80:14|OTHERS clause is not synthesized.
+Post processing for work.write8bit.write8bit
+Running optimization stage 1 on write8bit .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":5:7:5:13|Synthesizing work.uart_rx.rtl.
+@N: CD233 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":26:21:26:22|Using sequential encoding for type uartrxstatevdef.
+@W: CD610 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0. 
+@W: CD610 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0. 
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":93:3:93:16|OTHERS clause is not synthesized.
+Post processing for work.uart_rx.rtl
+Running optimization stage 1 on UART_RX .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":5:7:5:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":23:21:23:22|Using onehot encoding for type uarttxstatevdef. For example, enumeration idle is mapped to "10000".
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":103:3:103:16|OTHERS clause is not synthesized.
+Post processing for work.uart_tx.rtl
+Running optimization stage 1 on UART_TX .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":6:7:6:13|Synthesizing work.int_osc.int_osc_arch.
+@W: CD326 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":29:2:29:9|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"D:\programs\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.int_osc.int_osc_arch
+Running optimization stage 1 on Int_Osc .......
+Post processing for work.main.rtl
+Running optimization stage 1 on Main .......
+Running optimization stage 2 on Int_Osc .......
+Running optimization stage 2 on UART_TX .......
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Register bit ClkCount(4) is always 0.
+@W: CL260 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Trying to extract state machine for register StateV.
+Extracted state machine for register StateV
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Initial value is not supported on state machine StateV
+Running optimization stage 2 on UART_RX .......
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Register bit ClkCount(4) is always 0.
+@W: CL260 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Trying to extract state machine for register StateV.
+Extracted state machine for register StateV
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Initial value is not supported on state machine StateV
+Running optimization stage 2 on write8bit .......
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":37:0:37:1|Trying to extract state machine for register CState.
+Extracted state machine for register CState
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":37:0:37:1|Initial value is not supported on state machine CState
+Running optimization stage 2 on writePage .......
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":46:0:46:1|Trying to extract state machine for register CState.
+Extracted state machine for register CState
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":46:0:46:1|Initial value is not supported on state machine CState
+Running optimization stage 2 on I2C .......
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":62:2:62:3|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   000000001
+   000000010
+   000000100
+   000001000
+   000010000
+   001000000
+   010000000
+   100000000
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":62:2:62:3|Initial value is not supported on state machine state
+Running optimization stage 2 on Main .......
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(0) is always 0.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(1) is always 0.
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Register bit settingsindex(2) is always 0.
+@W: CL279 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Pruning register bits 2 to 0 of settingsindex(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Trying to extract state machine for register State.
+Extracted state machine for register State
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Initial value is not supported on state machine State
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\layer0.rt.csv
+

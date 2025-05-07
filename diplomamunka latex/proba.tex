@@ -1,0 +1,554 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\renewcommand{\baselinestretch}{1.5} 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[USenglish,magyar]{babel}
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{fancybox}
+\usepackage{anysize}
+\usepackage{ae}
+\usepackage{aecompl}
+\usepackage{mathcomp}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{subcaption}
+\usepackage{wasysym}
+\usepackage{array}
+\usepackage{nccmath}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage[bottom]{footmisc}
+\usepackage{setspace}
+\usepackage{textgreek}
+\usepackage{listings}
+
+%\hypersetup{colorlinks=true,
+%linkcolor=blue,
+%urlcolor=cyan}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\marginsize{3cm}{2.5cm}{2.5cm}{2.5cm}
+
+
+\makeatletter
+\newcommand{\figcaption}{\def\@captype{figure}\caption}
+\newcommand{\tabcaption}{\def\@captype{table}\caption}
+\makeatother
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\newcommand{\nev}{Szabó Ferenc}
+\newcommand{\neptun}{JODV94}
+\newcommand{\cim}{FPGA-s EEPROM programozó eszköz tervezése}
+
+
+\begin{document}
+%\frontmatterf
+\thispagestyle{empty}
+
+\begin{center}
+		\textsc{\Large{Miskolci Egyetem}}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{misk_egy.png}
+	\end{figure}
+	
+	\textsc{\Large{Gépészmérnöki és Informatikai Kar}}\\	
+	\vspace{5mm}	
+	\textsc{\Large{Automatizálási és Infokommunikációs Intézet}}\\
+	
+	\vspace{14mm}	
+	\textsc{\Large{\textbf{\cim}}}\\
+	
+	\vspace{10mm}
+	\textsc{Készítette:}\\
+	\textbf{\nev}\\
+	\vspace{20mm}
+	
+	%\textsc{Tervezésvezető:}\\
+	%\textbf{Tervezésvezető neve}\\
+	%beosztása\\
+	\vspace{5mm}
+	\textsc{Konzulens:}\\
+	\textbf{Konzulens neve}\\
+	beosztása\\
+	%\vspace{5mm}
+	%\textsc{Konzulens:}\\
+	%\textbf{Konzulens neve2}\\
+	%beosztása
+	
+	\vspace{35mm} Miskolc, 2025.	
+	
+\end{center}
+\thispagestyle{empty}
+\clearpage
+
+\begin{center}
+	\textsc{\Large{Eredetiségi Nyilatkozat}}
+\end{center}
+{\setstretch{1.5}
+Alulírott \textbf{\nev}; Neptun kód: \textit{\neptun} a Miskolci Egyetem Gépészmérnöki és Informatikai Karának végzős, \textit{gépészmérnök} szakos hallgatója ezennel büntetőjogi és fegyelmi felelősségem tudatában nyilatkozom és aláírásommal igazolom, hogy
+\begin{center}
+	\cim
+\end{center}
+című szakdolgozatom/diplomatervem saját, önálló munkám; az abban hivatkozott szakirodalom felhasználása a forráskezelés szabályai szerint történt.
+
+Tudomásul veszem, hogy szakdolgozat esetén plágiumnak számít:
+\begin{itemize}
+	\item 	szószerinti idézet közlése idézőjel és hivatkozás megjelölése nélkül;
+	\item	tartalmi idézet hivatkozás megjelölése nélkül;
+	\item	más publikált gondolatainak saját gondolatként való feltüntetése.	 
+\end{itemize}
+Alulírott kijelentem, hogy a plágium fogalmát megismertem, és tudomásul veszem, hogy
+plágium esetén szakdolgozatom visszautasításra kerül.\\
+Miskolc, \today
+
+
+{\raggedleft\vspace{1cm}(\textit{\nev})
+	
+}
+}
+
+
+\thispagestyle{empty}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\iffalse
+\chapter{Jelölésjegyzék, indexek}
+\textit{\textbf{Latin betűvel jelöltek:}}
+\begin{table}[H]
+	\centering \renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{p{2cm}p{6cm}p{4cm}}
+		a&Állandó&-\\
+		A& Állandó&-\\
+		A&Felület&m$^2$\\
+	\end{tabular}
+\end{table}
+\textit{\textbf{Görög betűvel jelöltek:}}
+\begin{table}[H]
+	\centering \renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{p{2cm}p{6cm}p{4cm}}
+		$\alpha$&Hőátadási tényező&$\text{W}/\text{m}^2\text{K}$\\
+		$\varepsilon$&Porozitás&-\\
+		
+	\end{tabular}
+\end{table}
+\fi
+
+\chapter{Idegen nyelvű összefoglaló}
+Here comes the summary...
+
+\mainmatter
+\chapter{Bevezetés}
+\subsection{Téma választás Háttér}
+Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
+
+Az FPGA-k széles körben alkalmazottak. Az FPGA-k egyik legnagyobb előnye, hogy lehetővé teszik a mérnökök számára saját, célzottan megtervezett logikai műveletek végrehajtását, rendkívül nagy sebességgel. Nem feltétlenül azért gyorsabbak, mert több GHz-es órajellel rendelkeznek, mint egy mai hagyományos CPU, hanem mert az áramkörök működése nagyon specifikusan, az adott feladathoz igazítva valósítható meg. Egy FPGA-ban akár több százezer ugyanolyan logikai blokkot lehet tervezni és megvalósítani. Emiatt kiválóak lehetnek a párhuzamos számításban. Így minden terület, ahol ez fontos lehet, használva vannak, legalább a fejlesztési szakaszban. 
+
+Például valós idejű rendszerekben vagy bonyolult jelfeldolgozási feladatokban. A mesterséges intelligenciáknál is fontos az ultragyors párhuzamos adat átvitel vagy feldolgozás. Például I/O feladatoknál. De az FPGA-kat jellemzően AI gyorsítók vagy AI processzorok ként is alkalmazzák. Mesterséges intelligencia betanítási feladatokban az FPGA-alapú gyorsítók gyorsabb teljesítményt tudnak nyújtani, mint a hagyományos GPU-k. Hasonló előnyök miatt az FPGA technológia kiemelt szerepet kapott a kép- és videófeldolgozás területén is. Számos fogyasztói elektronikai eszközben, például virtuális valóság szemüvegekben FPGA-k végzik a beérkező videójelek feldolgozását és a kijelzőkre történő leképezését. 
+
+Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Gyakran vannak használva a tervezők által új dizájnok validálására, debuggolására, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
+
+Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájául az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. A projektemben a NYÁK tervezése is kiemelt szerepet kapott. Úgy gondolom, hogy a NYÁK-tervezés mindig is keresett szaktudás marad a villamosmérnöki szakmában, hiszen bármilyen modern beágyazott rendszer létrehozása elképzelhetetlen megfelelő áramköri integráció nélkül. 
+
+A jövőben szeretnék beágyazott rendszerek fejlesztésével foglalkozni, hol a hardveres és szoftveres ismeretek egyaránt fontosok. A NYÁK-tervezés tudása ebben alapvető kompetenciának számít.
+
+A szakdolgozat témája, miről szól(?), mi a célkitűzés(?), a szakdolgozat felépítése (?) mi az egyes fejezetek rövid tartlama (?)
+\subsection{A Project bemutatása}
+Projectembe egy összetett, de egyedül megvalósítható beágyazott rendszert akartam megvalósítani. Es használni, illetve próbára szerettem volna tenni a VHDL-ben való tervezési tudásomat. Szerettem volna egy számomra új programozási nyelvel is megismerkedni, és végül a C++-t választottam.
+
+Ezek miatt egy EEPROM programozó megvalósítását választottam. A project saját ötlet volt, és úgy gondolom megfelelő szakmai kihívás volt.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.263]{terv1.png}
+	\caption{Projekt terv blokkvázlata}
+	\label{Projekt terv}
+\end{figure}
+Ez a block diagramm volt a project kiinduló ötlete. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
+\chapter{Tartalmi rész}
+
+\section{Technicai Hátter}
+\subsection{Mi a FPGA?}
+
+A FPGA egy rövidítés, teljes nevükön ezeket a chipeket, Field-programmable gate array-ként, magyarul a felhasználás helyén programozható logikai kapumátrixokként ismerjük. Az FPGA-ra HDL nyelveken lehet tervezni digitális áramköröket, amik megvalósulnak fizikailag a chip belsejében. 
+
+Az FPGA-k tartalmaznak logikai cellákat, különböző tartalmakkal: flip-flop-ok, LUT-ok, illetve logikai kapuk stb. Ezeket a cellákat lehet programozás során tetszőlegesen összeköttet-ni, így alakulnak ki a tervezett digitális áramkörök. Az FPGA-kon „futó kódot”, azaz a designt, firmwarenek szoktuk nevezni. A firmware szónak más az eredete, mégpedig a csak olvasható memóriába írt program, de az FPGA-k használata körül is elterjedt. A szó maga jól leírja, hogy a FPGA programozható, de közben egy tényleges digitális áramkör valósul meg.
+
+Az FPGA-k megtalálhatók fogyasztói termékekben is, de nagy szerepet játszanak, sok fejlesztési környezetben is, főleg ASIC fejlesztésnél. Termékekben azért lehet hasznos egy FPGA, mert specifikus feladatokat nagyon jól tud elvégezni, és ha a gyártó cég akar változtatni a chip működésén, akkor van rá lehetőség egy firmware frissítéssel. Jó példa az FPGA-k használatára a fogyasztói virtuális valóság készülék. A készülékbe küldött videó adatot fel kell dolgozni, és helyesen rátérképezni a készülék kijelzőire. Mindezt minél gyorsabban, hogy a felhasználó minél kevesebb jelkésést érezzen a fejmozgatás és a kép változása között. Ilyen feladatokra tökéletes az FPGA, hiszen ugyanazt a matematikai műveleteket kell elvégezni, ugyanolyan formátumú adatra, több milliószor egymás után. Egy hagyományos CPU ugyan-ebben a feladatban, rosszabbul szerepelne, még ha hasonlóan gyors az órajele is. A CPU-k arra vannak tervezve, hogy minél több használati esetet fedjenek le, és sok feladat elvégzésére könnyen lehessen őket programozni. Az ilyen feladatoknál éppen emiatt, nem a legoptimálisabban végzik el a számitásokat, mivel nem erre lettek tervezve. Egy példán keresztül bemutatva: ha egy ember kap egy utasítássort kenyérsütéshez, akkor végre tudja hajtani az utasításokat, és képes egy kenyeret sütni, de lassabban, mint egy kenyérsütéshez tervezett automata gép. Ugyanennek az embernek írhatunk utasításokat egy villanykörte becsavarására is, de a kenyérsütő gép soha nem lesz képes villanykörtét becsavarni. Ehhez egy másik gépet kellene tervezni. A hasonlatban az ember egy CPU, az utasítássor a hagyományos kód és a tervezett automata gép egy FPGA-n megvalósított design.
+
+A legtöbb fejlett FPGA manapság SRAM-alapú. Ezek az eszközök konfigurálható logikai blokkokat (CLB-k), és programozható I/O blokkokat tartalmaznak, a jelek chipbe történő be- és kivezetéséhez, valamint programozható útválasztó mátrixot, a CLB-k összekapcsolásához. Ahogy az elnevezés is sugallja, ezeknek az eszközöknek a konfigurációját, a belső SRAM tárolja a chipen. Mivel a programozható összeköttetések nem ideálisak (ellenállásuk és kapacitásuk van), az egyes útvonalak hossza, nagy hatással van az elkészült design elérhető teljesítményére. Az összekapcsolások okozta késések jelentősek, ezért előfordulhat, hogy nehéz megjósolni a sebességet a tényleges útválasztás befejezése előtt. Ahogy az eszközök kihasználtsága megközelíti a 100\%-ot, az útválasztás jelentősen nehezebbé válik. A netlist generáló folyamat, kritikus fontosságú az elkészült design kívánt teljesítményének eléréséhez. Ebben a fejlettebb szintetizátorok nagyban segíthetnek. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.38]{logickblockfromx02.png}
+	\caption{A MAchXO2 FPGA családból egy CLB}
+	\label{CLB}
+\end{figure}
+
+A fenti diagram egy egyszerű konfigurálható logikai blokkot / logikai elemet mutat be. Ez a CLB, a MachXO2 FPGA termékcsalád adatlapjában található, ehhez a termékcsaládhoz tartozik az az FPGA is, amivel én dolgoztam. A modern és komolyabb FPGA-k bonyolultabb megvalósításokat tartalmaznak további erőforrásokkal, például blokk RAM-okkal, shift regisz-terekkel, összeadókkal stb. A kis LUT-ok (általában 4-6 bemenet) a kombinációs logika meg-valósítását szolgáljak. A logikai blokkok általában tartalmaznak LUT-okat és néhány flip-flop-ot. A CLB-n belüli kapcsolatok meglehetősen rövidek, így a késleltetésük általában jelentéktelen. A CLB-ket általában az FPGA-n belül szigetekként helyezik el, amelyeket az összekap-csolási mátrix vesz körül, ahol a szomszédos CLB-k, általában rövid és gyors kapcsolatot tar-talmaznak közöttük. Ezen kapcsolatok alkalmazásával bonyolultabb funkciók is megvalósítha-tók, a szomszédos blokkokból történő erőforrások „kölcsönvételével”. Ez azonban, csak meg-felelő elhelyezés mellett történhet meg. Például egy összeadó bitjeit, sorrendben egymás mellé kell helyezni. Ez a szintetizátor felelőssége, de általában a tervezőnek ismernie kell a cél FPGA belső architektúráját, az erőforrások legjobb kihasználása érdekében. Manapság eléggé elter-jedtek a beépített oszcillátorok, tápegységek, melyek a rendszerszintű tervezést segítik, és he-lyet spórolnak. Nem szabad figyelmen kívül hagyni azt a tényt, hogy a megfelelő tápegység megtervezése meglehetősen összetett feladat a modern FPGA-k számára, ahol sok jel, nagy frekvencián működik, és több tápsínre van szükség, nagy áramerősséggel. Az indítási blokkok segíthetnek a terv minden részének megfelelő inicializálásában, rendszerindítás után, vagy alaphelyzetbe állítás esetén. 
+
+Az FPGA-kat jelfeldolgozásra is használják, ahol a dedikált szorzók / digitális jelfeldolgozási blokkok hatékonyabbak, mint a CLB-alapú blokkok. Ezek a dedikált blokkok sokkal kevesebb helyet foglalnak el az IC belsőjében, és magasabb frekvencián, kisebb teljesítménnyel tudnak működni. A belső memória flip-flop-okból való szintetizálása, pazarló folyamat. A modern FPGA-k beépített memóriablokkokat tartalmaznak, amelyekre általában szükség van, mivel a legtöbb tervnek valamilyen FIFO-ra, vagy bufferre van szüksége az átmeneti adatok tárolására. A legtöbb FPGA legalább kétportos memóriát tartalmaz, ahol az olvasási és írási műveletek egyszerre történhetnek, két dedikált porton. Az órajelgenerátorok, manapság egy-aránt elterjedt erőforrások.
+
+\subsection{Mi a VHDL?}
+
+A VHDL az egyik legelterjedtebb HDL, a VERILOG mellet. A HDL, azaz hardware description language, magyar neve, hardware leíró nyelv. A VHDL egyben egy standard, és egy programozói nyelv. Programozói nyelv, mert segítségével absztrakt módon lehet leírni egy digitális áramkör működését, amit majd szintetizálás után, meg lehet valósítani egy FPGA segítségével. Egyben egy standard is, amit az IEEE tart fent. Minden 5 év után frissül, hogy lépést tartson az ipari szükségekkel. A VHDL nehézsége, mint minden más leíró nyelvnek is, nem csak az, hogy meg kell tanulni a programozó nyelvet, hanem az is, hogy tudni kell, hogy a különböző szerszámok, amiket használunk a fejlesztés során, hogyan értelmezik majd a kódot. Amikor egy design működik szimulátorban, nincs rá garancia, hogy szintetizálás után is működni fog. Komolyabb designok tervezése ezeket a lépéseket szokta követni:
+\begin{enumerate}[label=(\alph*)]
+	\item Az elvárt digitális működés leírása HDL nyelven, egyben, majd a szimulációhoz szükséges „testbench” megírása.
+	\item A design szimulálása szimulátorral, debug-olás.
+	\item A design szintetizálása a tényleges a FPGA-ra. 
+\end{enumerate}
+A testbench szerepe az, hogy szimuláció közben, a design bemeneteit szimulálja, illetve kimeneteire válaszoljon, ha kell. Például egy I2C mester tervezése után, a testbench viselkedhet úgy, mint egy szolga. A VHDL tartalmaz szintetizálhatatlan részt is, nagyrészt azért, hogy testbench írásakor egyszerűbben és gyorsabban lehessen haladni. VHDL-nek azt a részét, ami szintetizálható, RTL-nek (register transfer level) hívjuk.
+
+A szintetizálás az utolsó és legkritikusabb lépés, mielőtt egy működő design-t megvalósítunk. 
+\begin{enumerate}
+	\item A szintetizátor először generál egy kapu szintű netlist-et. Utána a generált netlist-et rátérképezi a specifikus logikai cellákra az FPGA-ban, flip-flop-okra, look-up table-okra és logikai kapukra stb. 
+	\item Ezután készül egy netlist, ami a specifikus FPGA modellre tartozik, a szintetizátor eldönti az összes szükséges cella legjobb elrendezését, összecsatolását. 
+	\item Végül következik az időzítés analízis. Komolyabb designoknál fontos a helyes működéshez, hogy adott értékeknél ne legyen nagyobb a „slack”. Ezen azt értjük, hogy egy logikai jel később ér a netlist-ben megadott helyére, mint kellene, és emiatt hibás a design. Ilyesmi akkor történik, ha például egy jel túl sok logikai kapun megy át anélkül, hogy az órajelhez újra időzítve lenne. Ilyenkor a megoldás az, hogy a logikai kapuk közepénél, újra szinkronizáljuk a jelet egy flipfloppal.
+	\item Ezután a szintetizátor előállít egy bit fájlt, amit rá lehet programozni az FPGA SRAM-jébe.  
+\end{enumerate}
+A VHDL entitás, egy darab hardware-nek lehet mondani, aminek definiált kimenetei is bemenetei vannak. Egy tervezett entitás lehet komplex, egyszerű, lehet szimpla ÉS kapu vagy akár SPI mester is. Egy entitáson belül lehet több, már megtervezett entitás is összekapcsolva. 
+
+Egy entitásnak két része van, amit VHDL-ben meg kell tervezni: 
+\begin{enumerate}
+	\item Az entitás definíció, ahol meg kell adni az entitás nevét, bemeneteit és kimeneteit
+	\item A szerkezet definíció, ahol az entitás működését kell leírni. 	  
+\end{enumerate}
+
+\subsection{Kommunikációs protokollok}
+Ahhoz, hogy adatot tudjunk átadni egy feladótól egy fogadónak, fontos, hogy ugyanazt a „nyelvet” beszéljék. Ha két ember különböző nyelven beszél egymással, akkor nem fogják egymást érteni. Ehhez hasonlóan, ha egy feladó IC, az adatot egy bizonyos protokoll szerint kódolja, de a fogadó nem ismeri a protokollt, akkor nem történik meg az adatátvitel. Tehát egy protokoll szabályai leírjak az adat kódolását/dekódolását, és a csatornát is, amin folyik a kommunikáció. 
+\subsubsection{Analízis elrendezés}  
+\subsubsection{UART}
+Az általam készített programozó sok kommunikációs protokollt használ, köztük az UART-ot. A számítógéppel való kommunikálás UART-on keresztül történik, a FTDI232 UART-USB átalakító segítségével.
+
+Az UART egy rövidítés teljes neve: Universal asynchronous receiver transmitter. Egy aszinkron, soros protokoll, ami azt jelenti, hogy nincs órajel vonal, hanem az időzítést a küldő és fogadó külön-külön követi, és az adatot bitenként kell küldeni/fogadni. Ezért fontos, hogy mindkét fél ugyanazzal az időzítéssel dolgozzon. Ezt az időzítést szimbólum per szekundumban mérjük, és Baud-nak hívjuk. Ha a kommunikáció időzítése 9600 Baud, akkor a fogadó tudja, hogy egy szimbólum 1/9600 másodpercig lesz megtartva a vonalon, és helyesen tudja mintavételezni az adatkeretben levő adatot. De a Baud ráta nem egyenlő a maximum adatsebességgel, tehát 9600 Baud az nem 9.6 kb/sec. Ez az adatkeret, és egy pár kötelező időzítés miatt van. Az adatkeret azért szükséges, hogy a fogadó tudja mikor kezdődik egy adat, és hol van a vége. Az adatkeret tartalmazhat egy paritás bitet is. Az adatkeret tulajdonságai is egyezni kell az adó és fogadó között.
+
+Tehát a fontos tulajdonságok:
+\begin{itemize}
+	\item Baud ráta
+	\item Adatbitek száma 
+	\item Paritás bit használata.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.38]{UARTfromAnalyzer.PNG}
+	\caption{UART adatkeret}
+	\label{UARTkep}
+\end{figure}
+A képen látható egy adatkeret, amit az FPGA küld az FTDI232-nak. A Baud ráta ebben az esetben 921600 Baud, azaz egy szimbólum ideje: 1/ 921600 Baud = 1.09 μs. Ezt az analizátor program segítségével meg is jelöltem a képen.
+
+A tétlen állapotot megbontja az indító bit.
+
+Az indító bit után látható az adat bájt LSB bit sorrenddel, ez azt jelenti, hogy az első bit értéke $2^0$ a második $2^1$, stb. 
+
+Ezután látható a stop bit, a stop bit 1 db szimbólum ideéjig magas szinten tartja a vonalat. Ha van paritás bit akkor az a stop bit előtt van volna, én viszont nem használok hiba detektálást.
+
+Ezután a vonal visszatér a tétlen állapotba (logikai magas).
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.55]{uartblock.png}
+	\caption{UART blokkvázlat}
+	\label{UARTblockk}
+\end{figure}
+Az UART protokollban a vonalakat RX-nek és TX-nek hívjuk. A küldő és a fogató rendelkezik saját RX és TX lábbal. A TX láb a küldő- és a RX láb a fogadó láb. Nem kötelező az összes vonalakat használni, ezért a kommunikáció lehet szimplex, vagy fél/teljes duplex. Szimplex módban, csak az U1 Tx lába csatlakozna, az U2 RX lábához, és csak küldeni lenne képes az adatot. A fél/teljes duplex konfigurációban, hasonlóan lenne kapcsolva a képhez, és attól függően, hogy az U1/U2 képes-e egyszerre küldeni és olvasni adatot, a kommunikáció fél, illetve teljes duplex lenne. Az én nyákomon a kommunikáció teljes duplex.
+\subsubsection{SPI}
+Az SPI kommunikációs protokoll, egy rendkívül elterjedt és rugalmas protokoll, teljes neve serial peripheral interface. Az UART-al ellentétben szinkronizált protokoll, és teljes duplex.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.6]{SPIblockk.PNG}
+	\caption{SPI blokkvázlat}
+	\label{SPI blokkvázlat}
+\end{figure}
+SPI protokollban több, mint két IC tudja használni ugyanazokat a vonalakat, de egyszerre csak kettő lehet aktív, ezért van mester és szolga. A mester szerepe az, hogy kiválasszon egy szolgát, és kezdje a kommunikációt. A szolga csak akkor képes kommunikálni, ha ki van éppen választva. A kiválasztást a CS „chip select” vonalokon keresztül végzi el a mester. Minden szolgának külön CS vonal kell, de a többi vonalat meg tudják osztani. Emiatt minden szolgának elég 4 láb (referencia pontot kivéve), még a mesternek kell 3db, plus minden szolgaként egy láb (ismét referencia pontot kivéve). 
+
+
+Mivel az SPI szinkron protokoll a szimbólum sebességet itt nem az előre beállítót Baud ráta határozza meg, hanem a mester előállít egy órajelet a SCLK vonalon, amit figyelnek a szolgák a kommunikálás alatt. A szimbólumsebesség tehát csak a SCLK frekvenciájától függ. 
+
+
+A MOSI vonal egy rövidítés. Teljes neve magyarra fordítva „mester ki szolga be”, ez a vonal hordozza a mestertől küldött soros adatot, a szolga oldalán a lábat SDI-nak (soros adat be) hívjuk. A MISO vonal mester be szolga ki és a szolga oldalon SDO-nak (soros adat ki) hívjuk. Az adatkeretet bemutatásához használom ismét a prgramozómat, mégpedig egy kommunikációt egy spi EEPROM és az FPGA között.
+%%need the thing
+\section{NYÁK tervezés}
+\subsection{A NYÁK tevező program bemutatása}
+A KiCad egy ingyenes, nyílt forráskódú szoftvercsomag. Elsősorban kapcsolásai rajzok és nyomtatott áramkörök tervezésére szolgál. Egy KiCad projecten belül lehet tervezni nyákokat, kapcsolási rajzokat, lábnyomokat, és szimbólumokat is.
+
+A KiCad sok hasznos segédprogramot is tartalmaz, amelyek segítenek az kapcsolási rajzok és a nyomtatott áramkörök tervezésében. 
+
+Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó lábnyomok hozzárendelését, valamint a nyomtatott áramkörök fizikai elrendezésének megtervezését. A PCB tervezés során több réteg kezelésére is lehetőség van, akár 32 rétegű áramkörök tervezése is lehetséges. 
+
+A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső NYAK-rol. 
+
+A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések vagy a nem megfelelő távolságok automatikus felismerésére. 
+
+A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
+Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
+\subsection{A KiCad ban végzett munka bemutatása} 
+\subsubsection{Kapcsolási rajz}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.32]{kapcsolasi rajz.PNG}
+	\caption{A programozó kapcsolási rajza}
+	\label{teljes kapcsolási rajz}
+\end{figure}
+A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók meg jumper-ek vannak a NYÁK-on. Mégis igyekeztem sok időt fordítani a tervezésre.
+
+A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem.  A jumper-ek segítségével az ellenélésok 3V3 vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak szolgálni. Így sok féle EEPROM module-okat tud támogatni az áramkőr. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor a GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.29]{jumperek.PNG}
+	\caption{Ellenállás Jumper-ek}
+	\label{Ellenállás Jumper-ek}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{jumpertable.PNG}
+	\caption{Ellenállósokon lévő feszültség összefüggése}
+	\label{Ellenállósokon lévő feszültség összefüggése}
+\end{figure}
+A áramkörnek 4 lehetséges tápja van
+\begin{itemize}
+	\item A TinyFPGA 5V VBUS PIN-je. A pin közvetlen össze van kötve a module mikró USB 5V tápjával. Tehát amikor a TinyFPGA module csatlakoztatva van a mikró USB-n keresztül a VBUS pin kimenet ként szolgálhat. A TinyFPGA module a betápját is a VBUS látja el. Szóval, ha a TinyFPGA nincs csatlakoztatva az USB-hez akkor a VBUS pin bemenetként is működhet.
+	\item A TinyFPGA 3V3 PIN. Ez a kimenet a TinyFPGA module power managment IC-je generálja a VBUS 5V feszültégéből.
+	\item Az FTDI232 VCC kimenete. Ami alítható 3V3 és 5V között a FTDI232 module-ön egy jumper-el.
+	\item Az EXT PWR csatlakoztatón, amit biztonság kedvéért raktam hozzá az áramkörhöz, ha szükséges lenne a jövőben egy külső táp..
+\end{itemize}
+A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-od bemenet szolgálhasson táp ként a NYÁK-nak meg a hozzá csatolt memória module-oknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell, hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{JP13.PNG}
+	\caption{VCC és VBUS közösítő jumper}
+	\label{VCC és VBUS közösítő jumper}
+\end{figure}
+A NYÁK-on ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória module-oknak, illetve merés pontoknak is alkalmasak.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{gnd5v3v3.PNG}
+	\caption{Fontos feszültségek és a GND kivezetése}
+	\label{Fontos feszültségek és a GND kivezetése}
+\end{figure}
+\subsubsection{NYÁK tervezés}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{nyak.PNG}
+	\caption{A programozó NYÁK-ja}
+	\label{A programozó NYÁK-ja}
+\end{figure}
+Ez a végleges NYÁK terv, ez az a design, aminek gyártását megrendeltem. Egy két réteges egyszerű nyák. De egy ilyen egyszerűbb NYÁK tervezése közben fontos betartani az alapszabályokat.
+
+Tervezés előtt érdemes beállítani azokat a limiteket, amiket a NYÁK gyártó cég képes gyártani. Ha tudjuk, hogy melyik céget akarjuk használni, akkor a weboldalukon megtalálhatjuk az értékeket. A limiteket a Board Setup funkcióval lehet megadni. Ha jól meg vannak adva az értékek akkor a KiCad nem enged olyan nyákot tervezni, amit nem tud a NYÁK gyártó cég legyártani. Az én esetemben:
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.55]{bosrd limits.PNG}
+	\caption{KiCad limit beállítások}
+	\label{KiCad limit beállítások}
+\end{figure}
+\subsubsection{A NYÁK alsó rétege}
+A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megszakítással, hogy minimalizálva legzenek az áram visszaútjai, ez ezáltal az arám hurkok területe is.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{also reteg.PNG}
+	\caption{A NYÁK alsó rétege}
+	\label{A NYÁK alsó rétege}
+\end{figure}
+\subsubsection{Az SPI csatlakozó}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.33]{spi kimenet.PNG}
+	\caption{SPI kimenet}
+	\label{SPI kimenet}
+\end{figure}
+Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon használom. De a túl tervezés ebben az esetben nem árt. A chip select, MISO, MOSI, és CLK vonalak mind ugyan olyan hosszúak. Ezt „length matching” nek hívjuk. Akkor fontos, ha akkora az adatátviteli alap frekvencia, hogy két vonal hossz különbségéből származó kettő közötti fázistolás gondot okoz a mintavételezésnél. A vonalak egymástól GND-vel le vannak árnyékolva, ez segíti, hogy a vonalak elektromágneses zaja kevésbé befolyásolják egymást.
+\subsubsection{Az I2C csatlakozó}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{i2ckimenet.PNG}
+	\caption{I2C kimenet}
+	\label{I2C kimenet}
+\end{figure}
+Itt is inkább túl terveztem a kimenetet, mint alul. Itt is a SCL IS SDA vonal „length match”-elve van. Illetve az árnyékolást még a csatlakozókra is kiterjed. Így egészen a FPGA pin-ekhez az árnyékolást végig lehet vinni ha a SCL és SCL-hez tartozó lábak közötti lábat logikai ’0’-ra alítom.
+\subsubsection{Plugin-ek}
+Én két plug-in-t használtam. Az egyik a rounded tracks plug-in. Ami igazából csak esztétikai változásokat kreál a nyákon.
+A plugin-t nagyon egyszerű használni. A következő kép a UI-ja.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.75]{rounded ui.PNG}
+	\caption{A rounded tracks plugin UI-ja}
+	\label{A rounded tracks plugin UI-ja}
+\end{figure}
+A UI egyszerű. Netlista ként ki lehet választani, hogy kerekítse a plugin a netlistához tartozó trace-eket vagy nem. Ki lehet választani célzott rádiuszt, illetve,  hogy hányszor fusson a programm. A Run gombbal kell elindítani.
+
+Ezek pedig arról képek hogy hogyan néz ki egy trace a plugin használata előtt és utána
+Előtte:
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.35]{beforrounded.PNG}
+	\caption{Egy trace a plugin használata előtt}
+	\label{Egy trace a plugin használata előtt}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.35]{afterrounded.PNG}
+	\caption{Egy trace a plugin használata után}
+	\label{Egy trace a plugin használata után}
+\end{figure}
+Fontos hogy a plugin használata előtt nézzük át a tarce-einket. A plugin nem működik jól, ha túl sok elemre bontott csúnyán tervezett trace-et akarunk kerekíteni.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.25]{rosszpelda.PNG}
+	\caption{Példa egy csúnyán tervezett trace-re}
+	\label{Példa egy csúnyán tervezett trace-re}
+\end{figure}
+A másik plug-in pedig a Teardrop vias plug in. Ez is egy egyszerű plug-in ami részben Esztétikailag szépíti a nyák tervet, de fontos, hogy az éles sarkokat minimalizálja is. Hiszen az éles sarkok savcsapdákat okozhatnak, ahol a maratáshoz használt savak egy része megmarad, és az éles sarkoknál tovább korrodálja a rezet. A következő kép a UI-ja.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.75]{rounded vias ui.PNG}
+	\caption{Teardrop vias UI} 
+	\label{Teardrop vias UI}
+\end{figure}
+Ez pedig arról kép hogy hogyan néz ki egy via a plugin használata előtt és utána.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.4]{viabefore.PNG}
+	\caption{Teardrop plugin használata előtt}
+	\label{Teardrop plugin használata előtt} 
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.4]{viaafter.PNG}
+	\caption{Teardrop plugin használata után}
+	\label{Teardrop plugin használata után} 
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{lstlisting}
+	process
+	begin
+	  CLK <= '1'; wait for 10 NS;
+	  CLK <= '0'; wait for 10 NS;
+	end process;
+	\end{lstlisting}
+
+
+
+
+
+
+\iffalse
+\chapter{Irodalomkutatás}
+Milyen megoldások léteznek a szakdolgozatban kitűzött feladatra? Irodalmi hivatkozások. például: \cite{b1}, \cite{htm}.
+
+
+Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg.
+
+\begin{table}[H]
+	\centering \renewcommand{\arraystretch}{1.2}
+	\caption{Az első táblázat}
+	\begin{tabular}{|c|c|c|} \hline
+		Fejléc&Fejléc&Fejléc\\ \hline
+		sor1&sor1&sor1\\ \hline
+		sor2&sor2&sor2\\ \hline	
+	\end{tabular}
+	\label{tabla1}
+\end{table}
+
+Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1, trim=1mm 1mm 1mm 1mm, clip]{kep1}
+	\caption{Keverős autókláv}
+	\label{kep1356}
+\end{figure}
+\fi
+
+
+
+\section{First section}
+
+\section{Second section}
+
+\chapter{Probléma tárgyalása}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pulvinar nisi. Phasellus hendrerit, diam  Pellentesque vel sem in erat vulputate faucibus molestie ut lorem.
+
+\section{A Section}
+
+Quisque tristique urna in lorem laoreet at laoreet quam congue. Donec dolor turpis, blandit non imperdiet aliquet, sapien rhoncus non adipiscing nibh consequat. Aliquam metus urna, faucibus eu vulputate non, luctus eu justo.
+
+\subsection{A Subsection}
+\subsubsection{A Subsection}
+
+Donec urna leo, vulputate vitae porta eu, vehicula blandit libero. Phasellus eget massa et leo condimentum mollis. quam nec vehicula. Sed vulputate neque eget odio fringilla ac sodales urna feugiat.
+
+\section{Another Section}
+
+Phasellus nisi quam, volutpat non ullamcorper eget, congue fringilla leo. Cras et erat et nibh placerat commodo id  Pellentesque vel sem in erat vulputate faucibus molestie ut lorem.
+
+\section{Alfejezet}
+Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….
+Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….
+És íme, egy képlet
+\begin{equation}
+Q=\frac{r^4\cdot \pi \cdot \Delta p}{8\cdot \eta\cdot L}
+\end{equation}
+Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….\\
+
+Ilyen egy felsorolás:
+\begin{itemize}
+	\item első sor
+	\item második sor
+\end{itemize}
+Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….\\
+
+És íme, még egy képlet
+\begin{equation}\label{egyenlet1}
+Q=\frac{r^4\cdot \pi \cdot \Delta p}{8\cdot \eta\cdot L}
+\end{equation}
+
+A \ref{egyenlet1}. összefüggés az \cite{irodalom1} szerzőtől származik.
+\backmatter
+\chapter{Összefoglalás}
+\appendix
+
+\chapter{A Melléklet}
+
+
+\renewcommand{\refname}{Irodalomjegyzék}
+\begin{thebibliography}{9}
+    \bibitem{b1} T. Qin, P. Li, and S. Shen, "VINS-Mono: A robust and versatile monocular visual-inertial state estimator", IEEE Trans. Robot., vol. 34, no. 4, 2018. pp. 1004–1020.
+    \bibitem {htm} Varsányi Judit: "Szakdolgozat készítési útmutató Sze JGK GTI, 2006. tavaszi félév", pp. 21; http://mazsola.iit.uni-miskolc.hu/~vajo/allamvizsga/mire-kell-ugyelni-a-szakdolgozat-osszaallitasakor.ppt; utoljára egtekintett: 2025.04.01., pp. 
+	\bibitem{irodalom1} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
+	\bibitem{irodalom2} Szerző C Másik D, \textit{Cím lehetőleg így}, Kiadó, Dátum
+	\bibitem{irodalom3} Szerző E Másik F, \textit{Cím lehetőleg így}, Kiadó, Dátum
+	\bibitem{irodalom4} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
+	\bibitem{irodalom5} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
+\end{thebibliography}
+
+
+
+
+
+\end{document}

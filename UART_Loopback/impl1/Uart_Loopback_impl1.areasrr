@@ -1,0 +1,127 @@
+----------------------------------------------------------------------
+Report for cell Main.rtl
+
+Register bits: 270 of 1280 (21%)
+PIC Latch:       0
+I/O cells:       9
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        1       100.0
+                              CCU2D       72       100.0
+                            FD1P3AX       88       100.0
+                            FD1P3AY       15       100.0
+                            FD1P3IX       25       100.0
+                            FD1S3AX       83       100.0
+                            FD1S3AY       21       100.0
+                            FD1S3IX       34       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                           IFS1P3DX        3       100.0
+                            L6MUX21        4       100.0
+                                 OB        4       100.0
+                                OBZ        1       100.0
+                           OFS1P3JX        1       100.0
+                           ORCALUT4      430       100.0
+                               OSCH        1       100.0
+                              PFUMX        8       100.0
+                                PUR        1       100.0
+                                VHI        6       100.0
+                                VLO        7       100.0
+SUB MODULES 
+                                I2C        1       100.0
+                            Int_Osc        1       100.0
+                            UART_RX        1       100.0
+                            UART_TX        1       100.0
+                          write8bit        1       100.0
+                          writePage        1       100.0
+                            
+                         TOTAL           815           
+----------------------------------------------------------------------
+Report for cell I2C.netlist
+     Instance path:  U6
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       32        44.4
+                            FD1P3AX        9        10.2
+                            FD1P3IX       17        68.0
+                            FD1S3AX        8         9.6
+                            FD1S3AY        3        14.3
+                            FD1S3IX        7        20.6
+                            L6MUX21        1        25.0
+                           ORCALUT4      137        31.9
+                              PFUMX        2        25.0
+                                VHI        1        16.7
+                                VLO        1        14.3
+                            
+                         TOTAL           218           
+----------------------------------------------------------------------
+Report for cell writePage.netlist
+     Instance path:  U5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       36        50.0
+                            FD1P3AX       41        46.6
+                            FD1P3AY        1         6.7
+                            FD1S3AX        4         4.8
+                            FD1S3AY        3        14.3
+                            FD1S3IX        3         8.8
+                            L6MUX21        1        25.0
+                           ORCALUT4      175        40.7
+                              PFUMX        2        25.0
+                                VHI        1        16.7
+                                VLO        1        14.3
+                            
+                         TOTAL           268           
+----------------------------------------------------------------------
+Report for cell write8bit.netlist
+     Instance path:  U4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        7         8.4
+                            FD1S3AY        3        14.3
+                            L6MUX21        1        25.0
+                           ORCALUT4       21         4.9
+                              PFUMX        2        25.0
+                                VHI        1        16.7
+                                VLO        1        14.3
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell UART_RX.netlist
+     Instance path:  U3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX        7         8.0
+                            FD1P3IX        8        32.0
+                            FD1S3AX        3         3.6
+                            FD1S3IX        8        23.5
+                           ORCALUT4       45        10.5
+                                VHI        1        16.7
+                                VLO        1        14.3
+                            
+                         TOTAL            73           
+----------------------------------------------------------------------
+Report for cell UART_TX.netlist
+     Instance path:  U2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX        8         9.1
+                            FD1S3AX        4         4.8
+                            FD1S3AY        2         9.5
+                            FD1S3IX        7        20.6
+                            L6MUX21        1        25.0
+                           ORCALUT4       52        12.1
+                              PFUMX        2        25.0
+                                VHI        1        16.7
+                                VLO        1        14.3
+                            
+                         TOTAL            78           
+----------------------------------------------------------------------
+Report for cell Int_Osc.netlist
+     Instance path:  U1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               OSCH        1       100.0
+                                VLO        1        14.3
+                            
+                         TOTAL             2           

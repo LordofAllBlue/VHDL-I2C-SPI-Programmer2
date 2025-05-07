@@ -1,0 +1,14 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: FX493 |Applying initial value "0" on instance BitIndex[0].
+@N: FX493 |Applying initial value "0" on instance BitIndex[1].
+@N: FX493 |Applying initial value "0" on instance BitIndex[2].
+@N: MF179 :|Found 26 by 26 bit equality operator ('==') un15_ics (in view: work.writePage(writepage))
+@N: MF179 :|Found 18 by 18 bit equality operator ('==') un51_count (in view: work.I2C(i2c))
+@N: MF179 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\i2c.vhd":150:11:150:31|Found 17 by 17 bit equality operator ('==') un35_count (in view: work.I2C(i2c))
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

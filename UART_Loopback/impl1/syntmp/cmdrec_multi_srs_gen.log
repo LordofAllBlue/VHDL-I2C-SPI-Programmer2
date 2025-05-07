@@ -1,0 +1,7 @@
+D:\programs\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  Main  -multisrs  "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_comp.srs"  -osyn  "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_mult.srs"  -log  "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synlog\Uart_Loopback_impl1_multi_srs_gen.srr" 
+relcom:D:\programs\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top Main -multisrs "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_comp.srs" -osyn "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_mult.srs" -log "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synlog\Uart_Loopback_impl1_multi_srs_gen.srr"
+rc:0 success:1 runtime:1
+file:..\synwork\Uart_Loopback_impl1_comp.srs|io:i|time:1746520821|size:27136|exec:0|csum:C4F0B4A3980B9A2E10D3F1E1770D4A1F
+file:..\synwork\Uart_Loopback_impl1_mult.srs|io:o|time:1746520823|size:10490|exec:0|csum:
+file:..\synlog\Uart_Loopback_impl1_multi_srs_gen.srr|io:o|time:1746520823|size:1181|exec:0|csum:
+file:D:\programs\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603963122|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

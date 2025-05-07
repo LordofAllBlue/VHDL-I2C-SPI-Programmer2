@@ -1,0 +1,7 @@
+#Start recording tcl command: 10/30/2024 17:07:22
+#Project Location: C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback; Project name: Simple_programmer
+prj_project new -name "Simple_programmer" -impl "impl1" -dev LCMXO2-1200HC-6SG32C -synthesis "synplify" -lpf "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf"
+prj_project save
+pwc_command exit
+prj_project close
+#Stop recording: 10/30/2024 17:09:42

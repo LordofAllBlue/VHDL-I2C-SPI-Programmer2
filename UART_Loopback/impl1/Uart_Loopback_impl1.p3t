@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Uart_Loopback_impl1.log"
+-o "Uart_Loopback_impl1.csv"
+-pr "Uart_Loopback_impl1.prf"

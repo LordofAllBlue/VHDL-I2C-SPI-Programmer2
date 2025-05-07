@@ -1,0 +1,227 @@
+# Tue May  6 10:40:23 2025
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1_scck.rpt 
+See clock summary report "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: FX493 |Applying initial value "00000000" on instance SData[7:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "1" on instance TXisDone.
+@N: FX493 |Applying initial value "0" on instance RXDataReady.
+@N: FX493 |Applying initial value "00000000" on instance SData[7:0].
+@N: FX493 |Applying initial value "0" on instance hold.
+@N: FX493 |Applying initial value "1" on instance bit8SCL.
+@N: FX493 |Applying initial value "1" on instance cs.
+@N: FX493 |Applying initial value "0" on instance Done.
+@N: FX493 |Applying initial value "1" on instance bit8SDA.
+@N: FX493 |Applying initial value "0" on instance Done.
+@N: FX493 |Applying initial value "0" on instance RWlatch.
+@N: FX493 |Applying initial value "1" on instance toSCL.
+@N: FX493 |Applying initial value "00000000" on instance current8bits[7:0].
+@N: FX493 |Applying initial value "1" on instance toSDA.
+@N: FX493 |Applying initial value "1" on instance Rdy.
+@N: FX493 |Applying initial value "1" on instance cs.
+@N: FX493 |Applying initial value "0" on instance MISO_DR.
+@N: FX493 |Applying initial value "0" on instance RWlatch.
+@N: FX493 |Applying initial value "00000000" on instance DataOut[7:0].
+@N: FX493 |Applying initial value "0" on instance dataready.
+@N: FX493 |Applying initial value "1" on instance SDAen.
+@N: FX493 |Applying initial value "1" on instance SCLen.
+@N: FX493 |Applying initial value "0" on instance golatch.
+@N: FX493 |Applying initial value "0" on instance Send_i2c.
+@N: FX493 |Applying initial value "1" on instance iCSw.
+@N: FX493 |Applying initial value "0" on instance i2cRW.
+@N: FX493 |Applying initial value "01010101" on instance SDA_data[7:0].
+@N: FX493 |Applying initial value "01010101" on instance i2c_DataIn[7:0].
+@N: FX493 |Applying initial value "0" on instance RXAck.
+@N: FX493 |Applying initial value "0" on instance SPI_R1W0.
+@N: FX493 |Applying initial value "0" on instance SendTX.
+@N: FX493 |Applying initial value "01000010" on instance DataToSend[7:0].
+@N: FX493 |Applying initial value "01010101" on instance SDA_datap[7:0].
+@N: FX493 |Applying initial value "1" on instance iCSp.
+@N: FX493 |Applying initial value "0" on instance GO_i2c.
+@N: FX493 |Applying initial value "00000000000000000001100100000100000000000000010000000011" on instance settings[55:0].
+@N: FX493 |Applying initial value "0" on instance statedelay.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":38:1:38:2|Removing sequential instance TXActive (in view: work.UART_TX(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\writepage.vhd":46:0:46:1|Removing sequential instance Done (in view: work.writePage(writepage)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+Encoding state machine StateV[0:4] (in view: work.UART_TX(rtl))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+@N: FX493 |Applying initial value "1" on instance StateV[4].
+@N: FX493 |Applying initial value "0" on instance StateV[3].
+@N: FX493 |Applying initial value "0" on instance StateV[2].
+@N: FX493 |Applying initial value "0" on instance StateV[1].
+@N: FX493 |Applying initial value "0" on instance StateV[0].
+Encoding state machine StateV[0:3] (in view: work.UART_RX(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_rx.vhd":40:1:40:2|There are no possible illegal states for state machine StateV[0:3] (in view: work.UART_RX(rtl)); safe FSM implementation is not required.
+Encoding state machine CState[0:2] (in view: work.write8bit(write8bit))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine CState[0:3] (in view: work.writePage(writepage))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\writepage.vhd":46:0:46:1|There are no possible illegal states for state machine CState[0:3] (in view: work.writePage(writepage)); safe FSM implementation is not required.
+Encoding state machine state[0:7] (in view: work.I2C(i2c))
+original code -> new code
+   000000001 -> 00000001
+   000000010 -> 00000010
+   000000100 -> 00000100
+   000001000 -> 00001000
+   000010000 -> 00010000
+   001000000 -> 00100000
+   010000000 -> 01000000
+   100000000 -> 10000000
+@N: FX493 |Applying initial value "1" on instance state[7].
+@N: FX493 |Applying initial value "0" on instance state[6].
+@N: FX493 |Applying initial value "0" on instance state[5].
+@N: FX493 |Applying initial value "0" on instance state[4].
+@N: FX493 |Applying initial value "0" on instance state[3].
+@N: FX493 |Applying initial value "0" on instance state[2].
+@N: FX493 |Applying initial value "0" on instance state[1].
+@N: FX493 |Applying initial value "0" on instance state[0].
+Encoding state machine State[0:6] (in view: work.Main(rtl))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+@N: FX493 |Applying initial value "1" on instance State[6].
+@N: FX493 |Applying initial value "0" on instance State[5].
+@N: FX493 |Applying initial value "0" on instance State[4].
+@N: FX493 |Applying initial value "0" on instance State[3].
+@N: FX493 |Applying initial value "0" on instance State[2].
+@N: FX493 |Applying initial value "0" on instance State[1].
+@N: FX493 |Applying initial value "0" on instance State[0].
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=7 on top level netlist Main 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
+
+
+
+Clock Summary
+******************
+
+          Start                          Requested     Requested     Clock        Clock                   Clock
+Level     Clock                          Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------------------
+0 -       Int_Osc|Clk_inferred_clock     9.2 MHz       109.051       inferred     Inferred_clkgroup_0     270  
+===============================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                               Clock     Source                    Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                          Load      Pin                       Seq Example              Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock     270       U1.OSCInst0.OSC(OSCH)     settingsindex[5:3].C     -                 -            
+===========================================================================================================================
+
+@W: MT529 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":38:1:38:2|Found inferred clock Int_Osc|Clk_inferred_clock which controls 270 sequential elements including U2.StateV[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 270 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       U1.OSCInst0.OSC     OSCH                   270        State[0]       
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 177MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 93MB peak: 177MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May  6 10:40:24 2025
+
+###########################################################]

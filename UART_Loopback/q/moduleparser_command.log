@@ -1,0 +1,1 @@
+D:/programs/lscc/diamond/3.12/bin/nt64/moduleparser.exe -PROJ q -pf D:/programs/lscc/diamond/3.12/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pf D:/programs/lscc/diamond/3.12/cae_library/synthesis/verilog/machxo2.v -pkg D:/programs/lscc/diamond/3.12/cae_library/vhdl_packages/vdbs -lst C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/q/source_files.lst

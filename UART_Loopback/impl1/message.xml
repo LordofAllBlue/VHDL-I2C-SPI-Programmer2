@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(4): Semantic error in &quot;LOCATE COMP &quot;Led0&quot; SITE &quot;4&quot; ;&quot;: </Dynamic>
+            <Dynamic>Led0</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(5): Semantic error in &quot;LOCATE COMP &quot;TXidk&quot; SITE &quot;17&quot; ;&quot;: </Dynamic>
+            <Dynamic>TXidk</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(6): Semantic error in &quot;LOCATE COMP &quot;RXidk&quot; SITE &quot;20&quot; ;&quot;: </Dynamic>
+            <Dynamic>RXidk</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(7): Semantic error in &quot;LOCATE COMP &quot;FG&quot; SITE &quot;21&quot; ;&quot;: </Dynamic>
+            <Dynamic>FG</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(10): Semantic error in &quot;LOCATE COMP &quot;DIR&quot; SITE &quot;26&quot; ;&quot;: </Dynamic>
+            <Dynamic>DIR</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(11): Semantic error in &quot;LOCATE COMP &quot;BRAKE&quot; SITE &quot;27&quot; ;&quot;: </Dynamic>
+            <Dynamic>BRAKE</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(12): Semantic error in &quot;LOCATE COMP &quot;nFAULT&quot; SITE &quot;28&quot; ;&quot;: </Dynamic>
+            <Dynamic>nFAULT</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(13): Semantic error in &quot;LOCATE COMP &quot;Pin13&quot; SITE &quot;8&quot; ;&quot;: </Dynamic>
+            <Dynamic>Pin13</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(18): Semantic error in &quot;LOCATE COMP &quot;DataRdy&quot; SITE &quot;13&quot; ;&quot;: </Dynamic>
+            <Dynamic>DataRdy</Dynamic>
+            <Navigation>C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>U1/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>U1/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd&quot;:116:7:116:9|Signal itx is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>116</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Signal itx is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD610 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd&quot;:67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0.</Dynamic>
+            <Navigation>CD610</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Index value 0 to 8 could be out of prefix range 7 downto 0. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD610 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd&quot;:67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0.</Dynamic>
+            <Navigation>CD610</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Index value 0 to 8 could be out of prefix range 7 downto 0. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD326 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd&quot;:29:2:29:9|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.</Dynamic>
+            <Navigation>CD326</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd&quot;:38:1:38:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd&quot;:38:1:38:2|Initial value is not supported on state machine StateV</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Initial value is not supported on state machine StateV</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd&quot;:40:1:40:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd&quot;:40:1:40:2|Initial value is not supported on state machine StateV</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Initial value is not supported on state machine StateV</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd&quot;:37:0:37:1|Initial value is not supported on state machine CState</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>Initial value is not supported on state machine CState</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd&quot;:46:0:46:1|Initial value is not supported on state machine CState</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>Initial value is not supported on state machine CState</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd&quot;:62:2:62:3|Initial value is not supported on state machine state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Initial value is not supported on state machine state</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd&quot;:276:1:276:2|Pruning register bits 2 to 0 of settingsindex(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd</Navigation>
+            <Navigation>276</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>276</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Pruning register bits 2 to 0 of settingsindex(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd&quot;:276:1:276:2|Initial value is not supported on state machine State</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd</Navigation>
+            <Navigation>276</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>276</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Initial value is not supported on state machine State</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd&quot;:38:1:38:2|Found inferred clock Int_Osc|Clk_inferred_clock which controls 270 sequential elements including U2.StateV[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>Found inferred clock Int_Osc|Clk_inferred_clock which controls 270 sequential elements including U2.StateV[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock Int_Osc|Clk_inferred_clock with period 109.05ns. Please declare a user-defined clock on net U1.Clk.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Int_Osc|Clk_inferred_clock with period 109.05ns. Please declare a user-defined clock on net U1.Clk.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

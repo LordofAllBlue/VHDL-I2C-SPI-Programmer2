@@ -1,0 +1,61 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\impl1\\synwork\\Uart_Loopback_impl1_comp.srs|-top|Main|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603963122
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604334380
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603963390
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542238332
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\UART_TX.vhd":1746457852
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\Int_Osc.vhd":1745058635
+#CUR:"D:\\programs\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo2.vhd":1603963254
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\UART_RX.vhd":1746457885
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\write8bit.vhd":1746458068
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\writePage.vhd":1746520815
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\I2C.vhd":1746517302
+#CUR:"C:\\Users\\Szabo Ferenc\\Documents\\FPGA Projects\\UART_Loopback\\Main.vhd":1746481526
+0			"D:\programs\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd" vhdl
+2			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd" vhdl
+3			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd" vhdl
+4			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd" vhdl
+5			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd" vhdl
+6			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd" vhdl
+7			"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 6 5 4 3 1 2
+#Dependency Lists(Users Of)
+0 -1
+1 7
+2 7
+3 7
+4 7
+5 7
+6 7
+7 -1
+#Design Unit to File Association
+module work main 7
+arch work main rtl 7
+module work i2c 6
+arch work i2c i2c 6
+module work writepage 5
+arch work writepage writepage 5
+module work write8bit 4
+arch work write8bit write8bit 4
+module work uart_rx 3
+arch work uart_rx rtl 3
+module work int_osc 2
+arch work int_osc int_osc_arch 2
+module work uart_tx 1
+arch work uart_tx rtl 1

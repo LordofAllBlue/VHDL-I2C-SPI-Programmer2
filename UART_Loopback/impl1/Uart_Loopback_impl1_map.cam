@@ -1,0 +1,112 @@
+[ START MERGED ]
+[ END MERGED ]
+[ START CLIPPED ]
+U1/GND
+U5/GND
+U6/GND
+VCC
+un1_count_1_s_5_0_S1
+un1_count_1_s_5_0_COUT
+U1/OSCInst0_SEDSTDBY
+U5/un1_byteindex_cry_0_0_S1
+U5/un1_byteindex_cry_0_0_S0
+U5/N_8
+U5/un1_byteindex_cry_24_0_S1
+U5/un1_byteindex_cry_24_0_COUT
+U5/un9_ics_4_cry_0_0_S1
+U5/un9_ics_4_cry_0_0_S0
+U5/N_9
+U5/un9_ics_4_cry_24_0_S1
+U5/un9_ics_4_cry_24_0_COUT
+U5/N_383_i
+U5/un15_ics_0_I_1_0_S0
+U5/N_10
+U5/un15_ics_0_I_9_0_S1
+U5/un15_ics_0_I_9_0_S0
+U5/un15_ics_0_I_21_0_S1
+U5/un15_ics_0_I_21_0_S0
+U5/un15_ics_0_I_33_0_S1
+U5/un15_ics_0_I_33_0_S0
+U5/un15_ics_0_I_45_0_S1
+U5/un15_ics_0_I_45_0_S0
+U5/un15_ics_0_I_57_0_S1
+U5/un15_ics_0_I_57_0_S0
+U5/un15_ics_0_I_69_0_S1
+U5/un15_ics_0_I_69_0_S0
+U5/un15_ics_0_I_75_0_S1
+U5/un15_ics_0_I_75_0_COUT
+U6/un4_bytecount_cry_0_0_S1
+U6/un4_bytecount_cry_0_0_S0
+U6/N_3
+U6/un4_bytecount_cry_16_0_S1
+U6/un4_bytecount_cry_16_0_COUT
+U6/un43_count_cry_0_0_S1
+U6/un43_count_cry_0_0_S0
+U6/N_4
+U6/un43_count_cry_1_0_S1
+U6/un43_count_cry_1_0_S0
+U6/un43_count_cry_3_0_S1
+U6/un43_count_cry_3_0_S0
+U6/un43_count_cry_5_0_S1
+U6/un43_count_cry_5_0_S0
+U6/un43_count_cry_7_0_S1
+U6/un43_count_cry_7_0_S0
+U6/un43_count_cry_9_0_S1
+U6/un43_count_cry_9_0_S0
+U6/un43_count_cry_11_0_S1
+U6/un43_count_cry_11_0_S0
+U6/un43_count_cry_13_0_S1
+U6/un43_count_cry_13_0_S0
+U6/un43_count_cry_15_0_S1
+U6/un43_count_cry_15_0_S0
+U6/un43_count_cry_16_0_S1
+U6/un43_count_cry_16_0_COUT
+U6/N_487_i
+U6/un35_count_0_I_1_0_S0
+U6/N_5
+U6/un35_count_0_I_21_0_S1
+U6/un35_count_0_I_21_0_S0
+U6/un35_count_0_I_45_0_S1
+U6/un35_count_0_I_45_0_S0
+U6/un35_count_0_I_15_0_S1
+U6/un35_count_0_I_15_0_S0
+U6/un35_count_0_I_33_0_S1
+U6/un35_count_0_I_33_0_S0
+U6/un35_count_0_I_51_0_S1
+U6/un35_count_0_I_51_0_COUT
+U6/N_518_i
+U6/un51_count_0_I_1_0_S0
+U6/N_6
+U6/un51_count_0_I_9_0_S1
+U6/un51_count_0_I_9_0_S0
+U6/un51_count_0_I_21_0_S1
+U6/un51_count_0_I_21_0_S0
+U6/un51_count_0_I_33_0_S1
+U6/un51_count_0_I_33_0_S0
+U6/un51_count_0_I_45_0_S1
+U6/un51_count_0_I_45_0_S0
+U6/un51_count_0_I_51_0_S1
+U6/un51_count_0_I_51_0_COUT
+un1_count_1_cry_0_0_S0
+N_1
+[ END CLIPPED ]
+[ START OSC ]
+Clk 9.17
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue May 06 10:40:32 2025
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "i2cSDA" SITE "23" ;
+LOCATE COMP "i2cSCL" SITE "25" ;
+LOCATE COMP "TX" SITE "14" ;
+LOCATE COMP "RX" SITE "16" ;
+LOCATE COMP "nReset" SITE "5" ;
+LOCATE COMP "SDO" SITE "9" ;
+LOCATE COMP "SDA" SITE "10" ;
+LOCATE COMP "SCL" SITE "11" ;
+LOCATE COMP "CS" SITE "12" ;
+FREQUENCY NET "Clk" 9.170000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

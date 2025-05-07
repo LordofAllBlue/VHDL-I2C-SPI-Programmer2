@@ -1,0 +1,86 @@
+
+fsm_encoding {9381381} onehot
+
+fsm_state_encoding {9381381} idle {00001}
+
+fsm_state_encoding {9381381} startbit {00010}
+
+fsm_state_encoding {9381381} databits {00100}
+
+fsm_state_encoding {9381381} stopbit {01000}
+
+fsm_state_encoding {9381381} frameend {10000}
+
+fsm_registers {9381381} {StateV[0]}  {StateV[1]}  {StateV[2]}  {StateV[3]}  {StateV[4]} 
+
+fsm_encoding {12401402} sequential
+
+fsm_state_encoding {12401402} idle {00}
+
+fsm_state_encoding {12401402} startbit {01}
+
+fsm_state_encoding {12401402} databits {10}
+
+fsm_state_encoding {12401402} stopbit {11}
+
+fsm_registers {12401402} {StateV[1]}  {StateV[0]} 
+
+fsm_encoding {13370373} sequential
+
+fsm_state_encoding {13370373} idle {00}
+
+fsm_state_encoding {13370373} write8 {01}
+
+fsm_state_encoding {13370373} stop {10}
+
+fsm_registers {13370373} {CState[1]}  {CState[0]} 
+
+fsm_encoding {14460464} sequential
+
+fsm_state_encoding {14460464} idle {00}
+
+fsm_state_encoding {14460464} write8 {01}
+
+fsm_state_encoding {14460464} read8 {10}
+
+fsm_state_encoding {14460464} stop {11}
+
+fsm_registers {14460464} {CState[1]}  {CState[0]} 
+
+fsm_encoding {15622625} onehot
+
+fsm_state_encoding {15622625} off {00000001}
+
+fsm_state_encoding {15622625} start {00000010}
+
+fsm_state_encoding {15622625} pfhw {00000100}
+
+fsm_state_encoding {15622625} wack {00001000}
+
+fsm_state_encoding {15622625} rack {00010000}
+
+fsm_state_encoding {15622625} stop {00100000}
+
+fsm_state_encoding {15622625} readb {01000000}
+
+fsm_state_encoding {15622625} restart {10000000}
+
+fsm_registers {15622625} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]}  {state[7]} 
+
+fsm_encoding {1627612766} onehot
+
+fsm_state_encoding {1627612766} 000 {0000001}
+
+fsm_state_encoding {1627612766} 001 {0000010}
+
+fsm_state_encoding {1627612766} 010 {0000100}
+
+fsm_state_encoding {1627612766} 011 {0001000}
+
+fsm_state_encoding {1627612766} 100 {0010000}
+
+fsm_state_encoding {1627612766} 101 {0100000}
+
+fsm_state_encoding {1627612766} 110 {1000000}
+
+fsm_registers {1627612766} {State[0]}  {State[1]}  {State[2]}  {State[3]}  {State[4]}  {State[5]}  {State[6]} 

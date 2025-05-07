@@ -1,0 +1,333 @@
+# Tue May  6 10:40:24 2025
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance BitIndex[0].
+@N: FX493 |Applying initial value "0" on instance BitIndex[1].
+@N: FX493 |Applying initial value "0" on instance BitIndex[2].
+@N: MF179 :|Found 26 by 26 bit equality operator ('==') un15_ics (in view: work.writePage(writepage))
+@N: MF179 :|Found 18 by 18 bit equality operator ('==') un51_count (in view: work.I2C(i2c))
+@N: MF179 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\i2c.vhd":150:11:150:31|Found 17 by 17 bit equality operator ('==') un35_count (in view: work.I2C(i2c))
+
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 186MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 187MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 187MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 186MB peak: 187MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 186MB peak: 187MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 186MB peak: 187MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 199MB peak: 199MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:04s		    97.60ns		 435 /       270
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 199MB peak: 200MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 200MB peak: 200MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 159MB peak: 200MB)
+
+Writing Analyst data base C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 197MB peak: 200MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 201MB peak: 201MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 198MB peak: 202MB)
+
+@W: MT420 |Found inferred clock Int_Osc|Clk_inferred_clock with period 109.05ns. Please declare a user-defined clock on net U1.Clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue May  6 10:40:30 2025
+#
+
+
+Top view:               Main
+Requested Frequency:    9.2 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 96.828
+
+                               Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                 Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock     9.2 MHz       81.8 MHz      109.051       12.224        96.828     inferred     Inferred_clkgroup_0
+==================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock  Int_Osc|Clk_inferred_clock  |  109.051     96.828  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Int_Osc|Clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                            Arrival           
+Instance            Reference                      Type        Pin     Net              Time        Slack 
+                    Clock                                                                                 
+----------------------------------------------------------------------------------------------------------
+U6.Bytecount[0]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[0]     1.180       96.828
+U5.ByteIndex[0]     Int_Osc|Clk_inferred_clock     FD1P3AX     Q       un9_ics_4        1.148       97.029
+U6.Bytecount[1]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[1]     1.108       97.042
+U6.Bytecount[2]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[2]     1.108       97.042
+U6.Bytecount[3]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[3]     1.108       97.185
+U6.Bytecount[4]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[4]     1.108       97.185
+U5.ByteIndex[1]     Int_Osc|Clk_inferred_clock     FD1P3AX     Q       ByteIndex[1]     1.044       97.276
+U5.ByteIndex[2]     Int_Osc|Clk_inferred_clock     FD1P3AX     Q       ByteIndex[2]     1.044       97.276
+U6.Bytecount[5]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[5]     1.108       97.328
+U6.Bytecount[6]     Int_Osc|Clk_inferred_clock     FD1P3IX     Q       Bytecount[6]     1.108       97.328
+==========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                             Required           
+Instance            Reference                      Type        Pin     Net               Time         Slack 
+                    Clock                                                                                   
+------------------------------------------------------------------------------------------------------------
+U6.state[5]         Int_Osc|Clk_inferred_clock     FD1S3AX     D       N_171_i           109.140      96.828
+U5.MISO_DR          Int_Osc|Clk_inferred_clock     FD1S3AX     D       N_670_i           109.140      97.029
+U5.CState[1]        Int_Osc|Clk_inferred_clock     FD1S3AX     D       CState_nss[1]     109.140      98.046
+U5.CState[0]        Int_Osc|Clk_inferred_clock     FD1S3AX     D       CState_nss[0]     109.140      98.118
+U5.Rdy              Int_Osc|Clk_inferred_clock     FD1S3AY     D       N_594_i           109.140      98.118
+U6.SCLen            Int_Osc|Clk_inferred_clock     FD1S3AY     D       SCLen_s_0         109.140      98.789
+U6.state[0]         Int_Osc|Clk_inferred_clock     FD1S3AX     D       state_nss[7]      109.140      98.789
+U5.ByteIndex[0]     Int_Osc|Clk_inferred_clock     FD1P3AX     D       N_642_i           109.140      99.135
+U5.ByteIndex[1]     Int_Osc|Clk_inferred_clock     FD1P3AX     D       N_103_i           109.140      99.135
+U5.ByteIndex[2]     Int_Osc|Clk_inferred_clock     FD1P3AX     D       N_410_i           109.140      99.135
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      109.051
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         109.140
+
+    - Propagation time:                      12.312
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     96.828
+
+    Number of logic level(s):                16
+    Starting point:                          U6.Bytecount[0] / Q
+    Ending point:                            U6.state[5] / D
+    The start point is clocked by            Int_Osc|Clk_inferred_clock [rising] (rise=0.000 fall=54.526 period=109.051) on pin CK
+    The end   point is clocked by            Int_Osc|Clk_inferred_clock [rising] (rise=0.000 fall=54.526 period=109.051) on pin CK
+
+Instance / Net                             Pin      Pin               Arrival      No. of    
+Name                          Type         Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------
+U6.Bytecount[0]               FD1P3IX      Q        Out     1.180     1.180 r      -         
+Bytecount[0]                  Net          -        -       -         -            5         
+U6.un4_bytecount_cry_0_0      CCU2D        A1       In      0.000     1.180 r      -         
+U6.un4_bytecount_cry_0_0      CCU2D        COUT     Out     1.544     2.724 r      -         
+un4_bytecount_cry_0           Net          -        -       -         -            1         
+U6.un4_bytecount_cry_1_0      CCU2D        CIN      In      0.000     2.724 r      -         
+U6.un4_bytecount_cry_1_0      CCU2D        COUT     Out     0.143     2.867 r      -         
+un4_bytecount_cry_2           Net          -        -       -         -            1         
+U6.un4_bytecount_cry_3_0      CCU2D        CIN      In      0.000     2.867 r      -         
+U6.un4_bytecount_cry_3_0      CCU2D        COUT     Out     0.143     3.010 r      -         
+un4_bytecount_cry_4           Net          -        -       -         -            1         
+U6.un4_bytecount_cry_5_0      CCU2D        CIN      In      0.000     3.010 r      -         
+U6.un4_bytecount_cry_5_0      CCU2D        COUT     Out     0.143     3.153 r      -         
+un4_bytecount_cry_6           Net          -        -       -         -            1         
+U6.un4_bytecount_cry_7_0      CCU2D        CIN      In      0.000     3.153 r      -         
+U6.un4_bytecount_cry_7_0      CCU2D        COUT     Out     0.143     3.296 r      -         
+un4_bytecount_cry_8           Net          -        -       -         -            1         
+U6.un4_bytecount_cry_9_0      CCU2D        CIN      In      0.000     3.296 r      -         
+U6.un4_bytecount_cry_9_0      CCU2D        COUT     Out     0.143     3.438 r      -         
+un4_bytecount_cry_10          Net          -        -       -         -            1         
+U6.un4_bytecount_cry_11_0     CCU2D        CIN      In      0.000     3.438 r      -         
+U6.un4_bytecount_cry_11_0     CCU2D        COUT     Out     0.143     3.581 r      -         
+un4_bytecount_cry_12          Net          -        -       -         -            1         
+U6.un4_bytecount_cry_13_0     CCU2D        CIN      In      0.000     3.581 r      -         
+U6.un4_bytecount_cry_13_0     CCU2D        COUT     Out     0.143     3.724 r      -         
+un4_bytecount_cry_14          Net          -        -       -         -            1         
+U6.un4_bytecount_cry_15_0     CCU2D        CIN      In      0.000     3.724 r      -         
+U6.un4_bytecount_cry_15_0     CCU2D        COUT     Out     0.143     3.867 r      -         
+un4_bytecount_cry_16_cry      Net          -        -       -         -            1         
+U6.un4_bytecount_cry_16_0     CCU2D        CIN      In      0.000     3.867 r      -         
+U6.un4_bytecount_cry_16_0     CCU2D        S0       Out     1.549     5.416 r      -         
+un4_bytecount_cry_16          Net          -        -       -         -            1         
+U6.un51_count_0_I_45_0        CCU2D        B1       In      0.000     5.416 r      -         
+U6.un51_count_0_I_45_0        CCU2D        COUT     Out     1.544     6.960 r      -         
+un51_count_0_I_51_cry         Net          -        -       -         -            1         
+U6.un51_count_0_I_51_0        CCU2D        CIN      In      0.000     6.960 r      -         
+U6.un51_count_0_I_51_0        CCU2D        S0       Out     1.685     8.645 r      -         
+un51_count_0_data_tmp[8]      Net          -        -       -         -            3         
+U6.state_srsts_i_a2_1[5]      ORCALUT4     C        In      0.000     8.645 r      -         
+U6.state_srsts_i_a2_1[5]      ORCALUT4     Z        Out     1.017     9.662 f      -         
+N_1529                        Net          -        -       -         -            1         
+U6.state_srsts_i_o2_0[5]      ORCALUT4     B        In      0.000     9.662 f      -         
+U6.state_srsts_i_o2_0[5]      ORCALUT4     Z        Out     1.017     10.679 f     -         
+N_975                         Net          -        -       -         -            1         
+U6.state_RNO_0[5]             ORCALUT4     B        In      0.000     10.679 f     -         
+U6.state_RNO_0[5]             ORCALUT4     Z        Out     1.017     11.696 r     -         
+N_171_i_1                     Net          -        -       -         -            1         
+U6.state_RNO[5]               ORCALUT4     C        In      0.000     11.696 r     -         
+U6.state_RNO[5]               ORCALUT4     Z        Out     0.617     12.312 r     -         
+N_171_i                       Net          -        -       -         -            1         
+U6.state[5]                   FD1S3AX      D        In      0.000     12.312 r     -         
+=============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 199MB peak: 202MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 199MB peak: 202MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_1200hc-6
+
+Register bits: 270 of 1280 (21%)
+PIC Latch:       0
+I/O cells:       9
+
+
+Details:
+BB:             1
+CCU2D:          72
+FD1P3AX:        88
+FD1P3AY:        15
+FD1P3IX:        25
+FD1S3AX:        83
+FD1S3AY:        21
+FD1S3IX:        34
+GSR:            1
+IB:             3
+IFS1P3DX:       3
+L6MUX21:        4
+OB:             4
+OBZ:            1
+OFS1P3JX:       1
+ORCALUT4:       430
+OSCH:           1
+PFUMX:          8
+PUR:            1
+VHI:            6
+VLO:            7
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 68MB peak: 202MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Tue May  6 10:40:31 2025
+
+###########################################################]

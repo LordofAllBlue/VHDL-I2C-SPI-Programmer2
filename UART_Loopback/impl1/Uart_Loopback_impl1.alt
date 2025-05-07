@@ -1,0 +1,17 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue May 06 10:40:43 2025 *
+NOTE DESIGN NAME: Main *
+NOTE DEVICE NAME: LCMXO2-1200HC-6QFN32 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS i2cSDA : 23 : inout *
+NOTE PINS i2cSCL : 25 : out *
+NOTE PINS TX : 14 : out *
+NOTE PINS RX : 16 : in *
+NOTE PINS nReset : 5 : in *
+NOTE PINS SDO : 9 : in *
+NOTE PINS SDA : 10 : out *
+NOTE PINS SCL : 11 : out *
+NOTE PINS CS : 12 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

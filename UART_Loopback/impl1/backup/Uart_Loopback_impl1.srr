@@ -1,0 +1,608 @@
+#Build: Synplify Pro (R) Q-2020.03L-SP1, Build 182R, Oct 29 2020
+#install: D:\programs\lscc\diamond\3.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-EPQSCSR
+
+# Wed Oct 23 18:20:57 2024
+
+#Implementation: impl1
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":6:7:6:10|Top entity is set to Main.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":6:7:6:10|Synthesizing work.main.main.
+@W: CD638 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":33:7:33:16|Signal datatosend is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":5:7:5:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":22:17:22:18|Using onehot encoding for type t_sm_main. For example, enumeration s_idle is mapped to "10000".
+@N: CD604 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":121:8:121:21|OTHERS clause is not synthesized.
+Post processing for work.uart_tx.rtl
+Running optimization stage 1 on UART_TX .......
+@N: CD630 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":6:7:6:13|Synthesizing work.int_osc.int_osc_arch.
+@W: CD326 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":29:2:29:9|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"D:\programs\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.int_osc.int_osc_arch
+Running optimization stage 1 on Int_Osc .......
+Post processing for work.main.main
+Running optimization stage 1 on Main .......
+@W: CL240 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":8:3:8:4|Signal RX is floating; a simulation mismatch is possible.
+@W: CL169 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":32:29:32:31|Pruning unused register count_4(13 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":56:1:56:2|Pruning unused register State_7(1 downto 0). Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on Int_Osc .......
+Running optimization stage 2 on UART_TX .......
+@W: CL138 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":37:4:37:5|Removing register 'TXActive' because it is only assigned 0 or its original value.
+@N: CL201 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":37:4:37:5|Trying to extract state machine for register r_SM_Main.
+Extracted state machine for register r_SM_Main
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":37:4:37:5|Initial value is not supported on state machine r_SM_Main
+Running optimization stage 2 on Main .......
+@N: CL189 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":56:1:56:2|Register bit SendTX is always 0.
+@N: CL159 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":9:3:9:8|Input nReset is unused.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 93MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Oct 23 18:20:58 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Oct 23 18:20:58 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 30MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Oct 23 18:20:58 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Oct 23 18:21:00 2024
+
+###########################################################]
+Premap Report
+
+# Wed Oct 23 18:21:00 2024
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1_scck.rpt 
+See clock summary report "C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: FX493 |Applying initial value "00000000" on instance r_TX_Data[7:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance TXisDone.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Removing sequential instance r_TX_Data[0] (in view: work.UART_TX(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Removing sequential instance r_TX_Data[2] (in view: work.UART_TX(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Removing sequential instance r_TX_Data[4] (in view: work.UART_TX(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Removing sequential instance r_TX_Data[6] (in view: work.UART_TX(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Removing sequential instance TXisDone (in view: work.UART_TX(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine r_SM_Main[0:4] (in view: work.UART_TX(rtl))
+original code -> new code
+   00001 -> 000
+   00010 -> 001
+   00100 -> 010
+   01000 -> 011
+   10000 -> 100
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=7 on top level netlist Main 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+
+
+
+Clock Summary
+******************
+
+          Start                          Requested     Requested     Clock        Clock                   Clock
+Level     Clock                          Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------------------
+0 -       Int_Osc|Clk_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     29   
+===============================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                               Clock     Source                    Clock Pin       Non-clock Pin     Non-clock Pin
+Clock                          Load      Pin                       Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock     29        U1.OSCInst0.OSC(OSCH)     U2.TXOut.C      -                 -            
+==================================================================================================================
+
+@W: MT529 :"c:\users\szabo ferenc\documents\fpga projects\uart_loopback\uart_tx.vhd":37:4:37:5|Found inferred clock Int_Osc|Clk_inferred_clock which controls 29 sequential elements including U2.r_SM_Main[2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 29 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       U1.OSCInst0.OSC     OSCH                   29         U2.r_SM_Main[2]
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 89MB peak: 175MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Oct 23 18:21:01 2024
+
+###########################################################]
+Map & Optimize Report
+
+# Wed Oct 23 18:21:02 2024
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: D:\programs\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-EPQSCSR
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 173MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 173MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   472.55ns		  34 /        29
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 175MB)
+
+Writing Analyst data base C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\synwork\Uart_Loopback_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\impl1\Uart_Loopback_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 180MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+
+@W: MT420 |Found inferred clock Int_Osc|Clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on net U1.Clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Oct 23 18:21:04 2024
+#
+
+
+Top view:               Main
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 471.170
+
+                               Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                 Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock     2.1 MHz       104.2 MHz     480.769       9.600         471.170     inferred     Inferred_clkgroup_0
+===================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------
+Int_Osc|Clk_inferred_clock  Int_Osc|Clk_inferred_clock  |  480.769     471.170  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Int_Osc|Clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                                              Arrival            
+Instance              Reference                      Type        Pin     Net                Time        Slack  
+                      Clock                                                                                    
+---------------------------------------------------------------------------------------------------------------
+U2.r_Clk_Count[0]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[0]     1.044       471.170
+U2.r_Clk_Count[1]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[1]     1.044       471.170
+U2.r_Clk_Count[2]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[2]     1.044       471.170
+U2.r_Clk_Count[3]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[3]     1.044       471.170
+U2.r_Clk_Count[4]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[4]     1.044       472.186
+U2.r_Clk_Count[5]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[5]     1.044       472.186
+U2.r_Clk_Count[6]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[6]     1.044       472.186
+U2.r_Clk_Count[7]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[7]     1.044       473.203
+U2.r_Clk_Count[8]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[8]     1.044       473.203
+U2.r_Clk_Count[9]     Int_Osc|Clk_inferred_clock     FD1S3IX     Q       r_Clk_Count[9]     1.044       473.203
+===============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                                Required            
+Instance              Reference                      Type        Pin     Net                  Time         Slack  
+                      Clock                                                                                       
+------------------------------------------------------------------------------------------------------------------
+U2.r_Clk_Count[9]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[9]     480.858      471.170
+U2.r_Clk_Count[7]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[7]     480.858      471.312
+U2.r_Clk_Count[8]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[8]     480.858      471.312
+U2.r_Clk_Count[5]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[5]     480.858      471.455
+U2.r_Clk_Count[6]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[6]     480.858      471.455
+U2.r_Clk_Count[3]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[3]     480.858      471.598
+U2.r_Clk_Count[4]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[4]     480.858      471.598
+U2.r_Clk_Count[1]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[1]     480.858      471.741
+U2.r_Clk_Count[2]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[2]     480.858      471.741
+U2.r_Clk_Count[0]     Int_Osc|Clk_inferred_clock     FD1S3IX     D       r_Clk_Count_4[0]     480.858      473.624
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.858
+
+    - Propagation time:                      9.688
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     471.170
+
+    Number of logic level(s):                11
+    Starting point:                          U2.r_Clk_Count[0] / Q
+    Ending point:                            U2.r_Clk_Count[9] / D
+    The start point is clocked by            Int_Osc|Clk_inferred_clock [rising] (rise=0.000 fall=240.385 period=480.769) on pin CK
+    The end   point is clocked by            Int_Osc|Clk_inferred_clock [rising] (rise=0.000 fall=240.385 period=480.769) on pin CK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+U2.r_Clk_Count[0]                       FD1S3IX      Q        Out     1.044     1.044 r     -         
+r_Clk_Count[0]                          Net          -        -       -         -           2         
+U2.p_UART_TX\.un2_r_clk_countlto6_1     ORCALUT4     A        In      0.000     1.044 r     -         
+U2.p_UART_TX\.un2_r_clk_countlto6_1     ORCALUT4     Z        Out     1.017     2.061 f     -         
+un2_r_clk_countlto6_1                   Net          -        -       -         -           1         
+U2.p_UART_TX\.un2_r_clk_countlto6       ORCALUT4     A        In      0.000     2.061 f     -         
+U2.p_UART_TX\.un2_r_clk_countlto6       ORCALUT4     Z        Out     1.017     3.077 f     -         
+un2_r_clk_countlt7                      Net          -        -       -         -           1         
+U2.p_UART_TX\.un2_r_clk_countlto9       ORCALUT4     A        In      0.000     3.077 f     -         
+U2.p_UART_TX\.un2_r_clk_countlto9       ORCALUT4     Z        Out     1.313     4.390 f     -         
+un2_r_clk_count                         Net          -        -       -         -           16        
+U2.r_Clk_Count_0_sqmuxa                 ORCALUT4     A        In      0.000     4.390 f     -         
+U2.r_Clk_Count_0_sqmuxa                 ORCALUT4     Z        Out     1.017     5.407 f     -         
+r_Clk_Count_0_sqmuxa                    Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_cry_0_0              CCU2D        B0       In      0.000     5.407 f     -         
+U2.un1_r_Clk_Count_cry_0_0              CCU2D        COUT     Out     1.544     6.952 r     -         
+un1_r_Clk_Count_cry_0                   Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_cry_1_0              CCU2D        CIN      In      0.000     6.952 r     -         
+U2.un1_r_Clk_Count_cry_1_0              CCU2D        COUT     Out     0.143     7.094 r     -         
+un1_r_Clk_Count_cry_2                   Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_cry_3_0              CCU2D        CIN      In      0.000     7.094 r     -         
+U2.un1_r_Clk_Count_cry_3_0              CCU2D        COUT     Out     0.143     7.237 r     -         
+un1_r_Clk_Count_cry_4                   Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_cry_5_0              CCU2D        CIN      In      0.000     7.237 r     -         
+U2.un1_r_Clk_Count_cry_5_0              CCU2D        COUT     Out     0.143     7.380 r     -         
+un1_r_Clk_Count_cry_6                   Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_cry_7_0              CCU2D        CIN      In      0.000     7.380 r     -         
+U2.un1_r_Clk_Count_cry_7_0              CCU2D        COUT     Out     0.143     7.523 r     -         
+un1_r_Clk_Count_cry_8                   Net          -        -       -         -           1         
+U2.un1_r_Clk_Count_s_9_0                CCU2D        CIN      In      0.000     7.523 r     -         
+U2.un1_r_Clk_Count_s_9_0                CCU2D        S0       Out     1.549     9.072 r     -         
+un1_r_Clk_Count_s_9_0_S0                Net          -        -       -         -           1         
+U2.p_UART_TX\.r_Clk_Count_4[9]          ORCALUT4     A        In      0.000     9.072 r     -         
+U2.p_UART_TX\.r_Clk_Count_4[9]          ORCALUT4     Z        Out     0.617     9.688 r     -         
+r_Clk_Count_4[9]                        Net          -        -       -         -           1         
+U2.r_Clk_Count[9]                       FD1S3IX      D        In      0.000     9.688 r     -         
+======================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_1200hc-6
+
+Register bits: 29 of 1280 (2%)
+PIC Latch:       0
+I/O cells:       2
+
+
+Details:
+CCU2D:          13
+FD1P3AX:        6
+FD1P3IX:        7
+FD1S3AX:        2
+FD1S3IX:        13
+GSR:            1
+OB:             2
+OFS1P3JX:       1
+ORCALUT4:       33
+OSCH:           1
+PFUMX:          1
+PUR:            1
+VHI:            2
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 64MB peak: 180MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Wed Oct 23 18:21:04 2024
+
+###########################################################]

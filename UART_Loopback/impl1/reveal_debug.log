@@ -1,0 +1,14 @@
+Logfile for Reveal Analyzer
+Version: Diamond 3.12.0.240.2
+Platform: Windows8 64bit
+Filename: C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/impl1/reveal_debug.log
+First created: Sun 20. Apr 17:09:03 2025
+[17:09:19] Detect USB port
+[17:09:19] Connecting cableserver to detect cable port....
+[17:09:26] @Connect
+[17:09:27] @QueryCable
+[17:09:27] @Read
+[17:09:27] cable[0]=FTUSB-0,USB2
+[17:09:27] cable[1]=FTUSB-1,USB2
+[17:09:27] @Disconnect
+Last closed: Sun 20. Apr 17:09:33 2025

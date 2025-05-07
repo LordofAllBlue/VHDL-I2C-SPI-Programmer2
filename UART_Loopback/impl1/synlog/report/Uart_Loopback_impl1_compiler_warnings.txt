@@ -1,0 +1,14 @@
+@W: CD638 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":116:7:116:9|Signal itx is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD610 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0. 
+@W: CD610 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":67:6:67:20|Index value 0 to 8 could be out of prefix range 7 downto 0. 
+@W: CD326 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Int_Osc.vhd":29:2:29:9|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CL260 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_TX.vhd":38:1:38:2|Initial value is not supported on state machine StateV
+@W: CL260 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Pruning register bit 4 of ClkCount(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\UART_RX.vhd":40:1:40:2|Initial value is not supported on state machine StateV
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\write8bit.vhd":37:0:37:1|Initial value is not supported on state machine CState
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\writePage.vhd":46:0:46:1|Initial value is not supported on state machine CState
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\I2C.vhd":62:2:62:3|Initial value is not supported on state machine state
+@W: CL279 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Pruning register bits 2 to 0 of settingsindex(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL249 :"C:\Users\Szabo Ferenc\Documents\FPGA Projects\UART_Loopback\Main.vhd":276:1:276:2|Initial value is not supported on state machine State
+

@@ -1,0 +1,4 @@
+#Start recording tcl command: 10/25/2024 19:48:57
+#Project Location: C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback; Project name: Uart_Loopback
+prj_project open "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Uart_Loopback.ldf"
+#Stop recording: 10/25/2024 21:16:22

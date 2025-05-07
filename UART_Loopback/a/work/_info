@@ -1,0 +1,312 @@
+m255
+K4
+z2
+!s11e vcom 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/a
+Ei2c
+Z1 w1746517302
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/I2C.vhd
+Z5 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/I2C.vhd
+l0
+L6 1
+VWkddU7BgHm4Jzz5SEP7Dm0
+!s100 `2YF4aFU`iMnSjNi``IdP0
+Z6 OT;C;2020.3;71
+32
+Z7 !s110 1746517741
+!i10b 1
+Z8 !s108 1746517741.000000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/I2C.vhd|
+Z10 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/I2C.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1 CvgOpt 0
+Ai2c
+R2
+R3
+DEx4 work 3 i2c 0 22 WkddU7BgHm4Jzz5SEP7Dm0
+!i122 0
+l38
+L23 302
+VlR6<HlR5P7XY`0DH[<3@50
+!s100 NcLPfc]Y[jB9_VS2UVH8>3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eint_osc
+Z13 w1745058635
+R2
+R3
+!i122 5
+R0
+Z14 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd
+Z15 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd
+l0
+L6 1
+V[5mahOKba`bf4;UeW7Q>d1
+!s100 P155OQJJl<j5bO01>E;Ae1
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd|
+Z17 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd|
+!i113 1
+R11
+R12
+Aint_osc_arch
+R2
+R3
+DEx4 work 7 int_osc 0 22 [5mahOKba`bf4;UeW7Q>d1
+!i122 5
+l27
+L12 25
+VP>P_@U?o3zN_4G4:F^Pzc1
+!s100 BmcW9=JAlhMCHD`F>P0Oa1
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emain
+Z18 w1746481526
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 6
+R0
+Z20 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd
+Z21 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd
+l0
+L11 1
+V7M[EiDO>Ka6j93nL@dIkX2
+!s100 Q3l?6KjKflP1Y=Zm=BWJV0
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd|
+!s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd|
+!i113 1
+R11
+R12
+Artl
+R19
+R2
+R3
+DEx4 work 4 main 0 22 7M[EiDO>Ka6j93nL@dIkX2
+!i122 6
+l169
+L24 475
+Vj=Dh1V;06UklgBc5`_Ni12
+!s100 lE_aF^eBoM^bm0hiL<?9K3
+R6
+32
+R7
+!i10b 1
+R8
+R22
+Z23 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd|
+!i113 1
+R11
+R12
+Euart_rx
+Z24 w1746457885
+R19
+R2
+R3
+!i122 3
+R0
+Z25 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_RX.vhd
+Z26 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_RX.vhd
+l0
+L5 1
+VQ1noGm9?8R_hSg_;DXZKJ1
+!s100 z1_23_nkc0PPWCT1ed>fA0
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_RX.vhd|
+Z28 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_RX.vhd|
+!i113 1
+R11
+R12
+Artl
+R19
+R2
+R3
+DEx4 work 7 uart_rx 0 22 Q1noGm9?8R_hSg_;DXZKJ1
+!i122 3
+l33
+L24 85
+VKM><a08WO30800SK_EMMC1
+!s100 L1i0CaQ^L;7kc>49AZS_U1
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Euart_tx
+Z29 w1746457852
+R19
+R2
+R3
+!i122 4
+R0
+Z30 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd
+Z31 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd
+l0
+L5 1
+V]5gA<A:@8=SOgCT7Y3G>U2
+!s100 f]dX2XgMAW[NNILcOiGnO0
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd|
+Z33 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd|
+!i113 1
+R11
+R12
+Artl
+R19
+R2
+R3
+DEx4 work 7 uart_tx 0 22 ]5gA<A:@8=SOgCT7Y3G>U2
+!i122 4
+l31
+L21 96
+VBBMKmVCzFN_HhW2mNWc851
+!s100 WzLXW6:CfHOUG4zKDYFf@1
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Ewrite8bit
+Z34 w1746458068
+Z35 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 2
+R0
+Z37 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/write8bit.vhd
+Z38 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/write8bit.vhd
+l0
+Z39 L10 1
+VKl?dA>zk`8[GXG6Fz:Ok]1
+!s100 zB3HKGOPdOJhC^czAI70Y1
+R6
+32
+R7
+!i10b 1
+R8
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/write8bit.vhd|
+Z41 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/write8bit.vhd|
+!i113 1
+R11
+R12
+Awrite8bit
+R35
+R36
+R2
+R3
+DEx4 work 9 write8bit 0 22 Kl?dA>zk`8[GXG6Fz:Ok]1
+!i122 2
+l29
+L22 70
+V]Bh>NWJXn0I@iBMALHM9?1
+!s100 gQ`knlQHHI2`A`nXi0=n[3
+R6
+32
+R7
+!i10b 1
+R8
+R40
+R41
+!i113 1
+R11
+R12
+Ewritepage
+Z42 w1746479264
+R35
+R36
+R2
+R3
+!i122 1
+R0
+Z43 8C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/writePage.vhd
+Z44 FC:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/writePage.vhd
+l0
+R39
+Va]HD^;Ce0SoLE<Q8N;l0G2
+!s100 hbmc<6W84hU63j0B^bcW_2
+R6
+32
+R7
+!i10b 1
+R8
+Z45 !s90 -reportprogress|300|-work|work|C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/writePage.vhd|
+Z46 !s107 C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/writePage.vhd|
+!i113 1
+R11
+R12
+Awritepage
+R35
+R36
+R2
+R3
+DEx4 work 9 writepage 0 22 a]HD^;Ce0SoLE<Q8N;l0G2
+!i122 1
+l39
+L29 124
+V5ebgWhCnNT_7o=`nFSk1m3
+!s100 HE[XbDRMj`fL_9g?EdBHI2
+R6
+32
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12

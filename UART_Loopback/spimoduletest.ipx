@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="spimoduletest" module="EFB" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2025 04 18 11:17:04.184" version="1.2" type="Module" synthesis="synplify" source_format="VHDL">
+  <Package>
+		<File name="spimoduletest.lpc" type="lpc" modified="2025 04 18 11:16:48.257"/>
+		<File name="spimoduletest.vhd" type="top_level_vhdl" modified="2025 04 18 11:16:48.306"/>
+		<File name="spimoduletest_tmpl.vhd" type="template_vhdl" modified="2025 04 18 11:16:48.306"/>
+  </Package>
+</DiamondModule>

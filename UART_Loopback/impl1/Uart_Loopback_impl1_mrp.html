@@ -1,0 +1,427 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'Main'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-1200HC -t QFN32 -s 6 -oc Commercial
+     Uart_Loopback_impl1.ngd -o Uart_Loopback_impl1_map.ncd -pr
+     Uart_Loopback_impl1.prf -mp Uart_Loopback_impl1.mrp -lpf C:/Users/Szabo
+     Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/Uart_Loopback_impl1_synplify.lpf -lpf
+     C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf -c 0 -gui -msgset
+     C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-1200HCQFN32
+Target Performance:   6
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  05/06/25  10:40:32
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    270 out of  1346 (20%)
+      PFU registers:          266 out of  1280 (21%)
+      PIO registers:            4 out of    66 (6%)
+   Number of SLICEs:       288 out of   640 (45%)
+      SLICEs as Logic/ROM:    288 out of   640 (45%)
+      SLICEs as RAM:            0 out of   480 (0%)
+      SLICEs as Carry:         72 out of   640 (11%)
+   Number of LUT4s:        575 out of  1280 (45%)
+      Number used as logic LUTs:        431
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      144
+      Number used as shift registers:     0
+   Number of PIO sites used: 9 + 4(JTAG) out of 22 (59%)
+   Number of block RAMs:  0 out of 7 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+
+     Net Clk: 165 loads, 165 rising, 0 falling (Driver: U1/OSCInst0 )
+   Number of Clock Enables:  34
+     Net SData_0_sqmuxa_0_a2_0_a2_RNIKGJS: 1 loads, 0 LSLICEs
+     Net SendTX_7: 4 loads, 4 LSLICEs
+     Net U6/DataOut_RNO[4]: 1 loads, 1 LSLICEs
+     Net U6/DataOut_RNO[0]: 1 loads, 1 LSLICEs
+     Net RXAck_10_1: 4 loads, 4 LSLICEs
+     Net i2c_off: 1 loads, 1 LSLICEs
+     Net U6/un1_state_23_i: 1 loads, 1 LSLICEs
+     Net U6/DataOutce[1]: 1 loads, 1 LSLICEs
+     Net U6/DataOutce[2]: 1 loads, 1 LSLICEs
+     Net U6/DataOutce[3]: 1 loads, 1 LSLICEs
+     Net U6/DataOutce[5]: 1 loads, 1 LSLICEs
+     Net U6/DataOutce[6]: 1 loads, 1 LSLICEs
+     Net U6/N_154: 9 loads, 9 LSLICEs
+     Net N_201: 1 loads, 1 LSLICEs
+     Net DataOutce[7]: 1 loads, 0 LSLICEs
+     Net N_751: 1 loads, 1 LSLICEs
+     Net N_750: 3 loads, 3 LSLICEs
+     Net i2c_DataIn_0_sqmuxa_1: 4 loads, 4 LSLICEs
+     Net U5/read8bits_RNO[2]: 1 loads, 1 LSLICEs
+     Net U5/read8bits_RNO[4]: 1 loads, 1 LSLICEs
+     Net read8bits_1_sqmuxa_0_a3_0_o2_RNI5389: 1 loads, 0 LSLICEs
+     Net U5/N_91_i: 4 loads, 4 LSLICEs
+     Net U5/read8bits_RNO[0]: 1 loads, 1 LSLICEs
+     Net N_190_i: 4 loads, 4 LSLICEs
+     Net U5/N_880_i: 3 loads, 3 LSLICEs
+     Net U5/N_752_i_i: 1 loads, 1 LSLICEs
+     Net U5/CState_d[3]: 1 loads, 1 LSLICEs
+     Net U5/N_85_i: 13 loads, 13 LSLICEs
+     Net U3/N_55_i_0: 4 loads, 4 LSLICEs
+     Net U3/SData_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net U3/SData_RNO[6]: 1 loads, 1 LSLICEs
+     Net U3/SData_RNO[3]: 1 loads, 1 LSLICEs
+     Net U3/SData_RNO[2]: 1 loads, 1 LSLICEs
+     Net U2/N_829_i: 4 loads, 4 LSLICEs
+   Number of LSRs:  10
+     Net State[6]: 3 loads, 3 LSLICEs
+     Net U2.StateV[4]: 2 loads, 2 LSLICEs
+     Net N_653: 1 loads, 0 LSLICEs
+     Net i2c_off: 14 loads, 14 LSLICEs
+     Net N_828_i: 2 loads, 2 LSLICEs
+     Net U5/CState_d[3]: 2 loads, 2 LSLICEs
+     Net U3/StateV_RNI4TPU[0]: 4 loads, 4 LSLICEs
+     Net U3/N_810_i: 2 loads, 2 LSLICEs
+     Net U3/StateV_d[3]: 2 loads, 2 LSLICEs
+     Net U2/N_1249: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net nReset_c: 84 loads
+     Net U5/un15_ics_0_data_tmp[12]: 29 loads
+     Net i2c_atStop: 28 loads
+     Net State[4]: 27 loads
+     Net U6/state[6]: 26 loads
+     Net i2c_off: 24 loads
+     Net State[1]: 22 loads
+
+     Net DataFromRx[1]: 18 loads
+     Net DataFromRx[2]: 18 loads
+     Net State[2]: 18 loads
+
+
+
+
+   Number of warnings:  9
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(4): Semantic error in
+     "LOCATE COMP "Led0" SITE "4" ;": COMP "Led0" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(5): Semantic error in
+     "LOCATE COMP "TXidk" SITE "17" ;": COMP "TXidk" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(6): Semantic error in
+     "LOCATE COMP "RXidk" SITE "20" ;": COMP "RXidk" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(7): Semantic error in
+     "LOCATE COMP "FG" SITE "21" ;": COMP "FG" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(10): Semantic error
+     in "LOCATE COMP "DIR" SITE "26" ;": COMP "DIR" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(11): Semantic error
+     in "LOCATE COMP "BRAKE" SITE "27" ;": COMP "BRAKE" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(12): Semantic error
+     in "LOCATE COMP "nFAULT" SITE "28" ;": COMP "nFAULT" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(13): Semantic error
+     in "LOCATE COMP "Pin13" SITE "8" ;": COMP "Pin13" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: C:/Users/Szabo Ferenc/Documents/FPGA
+     Projects/UART_Loopback/impl1/source/Uart_Loopback.lpf(18): Semantic error
+     in "LOCATE COMP "DataRdy" SITE "13" ;": COMP "DataRdy" cannot be found in
+     design. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| i2cSDA              | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| i2cSCL              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| TX                  | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| RX                  | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| nReset              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SDO                 | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| SDA                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SCL                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CS                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block U2/GND undriven or does not drive anything - clipped.
+Block U2/VCC undriven or does not drive anything - clipped.
+Block U3/VCC undriven or does not drive anything - clipped.
+Block U3/GND undriven or does not drive anything - clipped.
+Block U4/VCC undriven or does not drive anything - clipped.
+Block U4/GND undriven or does not drive anything - clipped.
+Signal U1/GND undriven or does not drive anything - clipped.
+Signal U5/GND undriven or does not drive anything - clipped.
+Signal U6/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal un1_count_1_s_5_0_S1 undriven or does not drive anything - clipped.
+Signal un1_count_1_s_5_0_COUT undriven or does not drive anything - clipped.
+Signal U1/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+Signal U5/un1_byteindex_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal U5/un1_byteindex_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal U5/N_8 undriven or does not drive anything - clipped.
+Signal U5/un1_byteindex_cry_24_0_S1 undriven or does not drive anything -
+     clipped.
+Signal U5/un1_byteindex_cry_24_0_COUT undriven or does not drive anything -
+     clipped.
+Signal U5/un9_ics_4_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un9_ics_4_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal U5/N_9 undriven or does not drive anything - clipped.
+Signal U5/un9_ics_4_cry_24_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un9_ics_4_cry_24_0_COUT undriven or does not drive anything - clipped.
+     
+Signal U5/N_383_i undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_1_0_S0 undriven or does not drive anything - clipped.
+
+Signal U5/N_10 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_9_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_9_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_21_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_21_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_33_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_33_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_45_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_45_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_57_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_57_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_69_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_69_0_S0 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_75_0_S1 undriven or does not drive anything - clipped.
+Signal U5/un15_ics_0_I_75_0_COUT undriven or does not drive anything - clipped.
+Signal U6/un4_bytecount_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal U6/un4_bytecount_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal U6/N_3 undriven or does not drive anything - clipped.
+Signal U6/un4_bytecount_cry_16_0_S1 undriven or does not drive anything -
+     clipped.
+Signal U6/un4_bytecount_cry_16_0_COUT undriven or does not drive anything -
+     clipped.
+Signal U6/un43_count_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal U6/N_4 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_11_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_11_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_13_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_13_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_15_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_15_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_16_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un43_count_cry_16_0_COUT undriven or does not drive anything -
+     clipped.
+Signal U6/N_487_i undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_1_0_S0 undriven or does not drive anything - clipped.
+Signal U6/N_5 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_21_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_21_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_45_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_45_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_15_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_15_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_33_0_S1 undriven or does not drive anything - clipped.
+
+Signal U6/un35_count_0_I_33_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_51_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un35_count_0_I_51_0_COUT undriven or does not drive anything -
+     clipped.
+Signal U6/N_518_i undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_1_0_S0 undriven or does not drive anything - clipped.
+Signal U6/N_6 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_9_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_9_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_21_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_21_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_33_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_33_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_45_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_45_0_S0 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_51_0_S1 undriven or does not drive anything - clipped.
+Signal U6/un51_count_0_I_51_0_COUT undriven or does not drive anything -
+     clipped.
+Signal un1_count_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block U1/GND was optimized away.
+Block U5/GND was optimized away.
+Block U6/GND was optimized away.
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                U1/OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     Clk
+  OSC Nominal Frequency (MHz):                      9.17
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: U1/OSCInst0
+         Type: OSCH
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 43 MB
+        
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

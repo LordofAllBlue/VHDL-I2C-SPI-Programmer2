@@ -1,0 +1,8 @@
+i U1.Clk_i
+m 0 0
+u 189 270
+p {t:U1.OSCInst0.OSC}{t:U1.Clk_inferred_clock.I[0]}{t:U1.Clk_inferred_clock.OUT[0]}{p:U1.Clk}{t:U1.Clk}{t:State[0].C}
+e ckid0_0 {t:State[0].C} dffr
+c ckid0_0 {t:U1.OSCInst0.OSC} OSCH Unsupported/too complex instance on clock path
+l 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

@@ -1,0 +1,19 @@
+if {![file exists "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UARTL/UARTL.mpf"]} { 
+	project new "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UARTL" UARTL
+	project addfile "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd"
+	project addfile "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd"
+	project addfile "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UART_TX.vhd"
+	vcom -work work "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Int_Osc.vhd"
+	vcom -work work "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/Main.vhd"
+} else {
+	project open "C:/Users/Szabo Ferenc/Documents/FPGA Projects/UART_Loopback/UARTL/UARTL"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  Main
+view wave
+add wave /*
+run 1000ns
