@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,oneside]{book}
+\documentclass[a4paper,12pt,oneside]{book}
 \renewcommand{\baselinestretch}{1.5} 
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -28,6 +28,7 @@
 \usepackage{setspace}
 \usepackage{textgreek}
 \usepackage{listings}
+\usepackage{fancyhdr}
 
 %\hypersetup{colorlinks=true,
 %linkcolor=blue,
@@ -48,8 +49,22 @@
 \newcommand{\neptun}{JODV94}
 \newcommand{\cim}{FPGA-s EEPROM programozó eszköz tervezése}
 
+\fancypagestyle{plain}{
+    \fancyhf{} % Clear header and footer for plain style
+    \fancyhead[L]{\cim} % Left-aligned header text
+    \fancyhead[R]{\neptun} % Right-aligned header text
+    \fancyfoot[C]{\thepage} % Centered page number in the footer
+}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\cim} % Left-aligned header text
+\fancyhead[R]{\neptun} % Right-aligned header text
+\fancyfoot[C]{\thepage} % Centered page number in the footer
+
 
 \begin{document}
+
 %\frontmatterf
 \thispagestyle{empty}
 
@@ -90,7 +105,7 @@
 \end{center}
 \thispagestyle{empty}
 \clearpage
-
+\thispagestyle{empty}
 \begin{center}
 	\textsc{\Large{Eredetiségi Nyilatkozat}}
 \end{center}
@@ -117,9 +132,9 @@ Miskolc, \today
 }
 }
 
+\mainmatter
 
-\thispagestyle{empty}
-
+\clearpage
 \tableofcontents
 \listoffigures
 \listoftables
@@ -148,7 +163,7 @@ Miskolc, \today
 \chapter{Idegen nyelvű összefoglaló}
 Here comes the summary...
 
-\mainmatter
+
 \chapter{Bevezetés}
 \subsection{Téma választás Háttér}
 Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
@@ -170,7 +185,7 @@ Projectembe egy összetett, de egyedül megvalósítható beágyazott rendszert 
 Ezek miatt egy EEPROM programozó megvalósítását választottam. A project saját ötlet volt, és úgy gondolom megfelelő szakmai kihívás volt.
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.263]{terv1.png}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.245]{terv1.png}
 	\caption{Projekt terv blokkvázlata}
 	\label{Projekt terv}
 \end{figure}
@@ -240,7 +255,7 @@ Tehát a fontos tulajdonságok:
 \end{itemize}
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.38]{UARTfromAnalyzer.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.35]{UARTfromAnalyzer.PNG}
 	\caption{UART adatkeret}
 	\label{UARTkep}
 \end{figure}
@@ -294,7 +309,7 @@ Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatá
 \subsubsection{Kapcsolási rajz}
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.32]{kapcsolasi rajz.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.30]{kapcsolasi rajz.PNG}
 	\caption{A programozó kapcsolási rajza}
 	\label{teljes kapcsolási rajz}
 \end{figure}
@@ -439,17 +454,24 @@ Ez pedig arról kép hogy hogyan néz ki egy via a plugin használata előtt és
 
 
 
-
-
-
+\begin{verbatim}
+	U1 : Int_Osc
+	port map (
+	  StdBy => '0',  -- Az oszcillátor mindig aktív
+	  Clk   => Clk   -- Az órajelet a Clk jelre továbbítja
+	);
+\end{verbatim}
 
 
 \begin{lstlisting}
-	process
-	begin
-	  CLK <= '1'; wait for 10 NS;
-	  CLK <= '0'; wait for 10 NS;
-	end process;
+With DataFromRX select
+StateHolder <= 	"001" when "01000001",-- (ascii A) SPI configure	x41 
+		"010" when "01000010",-- (ascii B) SPI read
+		"011" when "01000011",-- (ascii C) SPI write
+		"100" when "01000100",-- (ascii D) Get settings
+		"101" when "01000101",-- (ascii E) I2C read
+		"110" when "01000110",-- (ascii F) I2C write
+		"000" when others;    -- ()base state
 	\end{lstlisting}
 
 
@@ -492,24 +514,23 @@ Jön a bevezetés szöveg. Jön a bevezetés szöveg. Jön a bevezetés szöveg.
 \section{Second section}
 
 \chapter{Probléma tárgyalása}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pulvinar nisi. Phasellus hendrerit, diam  Pellentesque vel sem in erat vulputate faucibus molestie ut lorem.
+Lorem ipsum dolor sit amet,
 
 \section{A Section}
 
-Quisque tristique urna in lorem laoreet at laoreet quam congue. Donec dolor turpis, blandit non imperdiet aliquet, sapien rhoncus non adipiscing nibh consequat. Aliquam metus urna, faucibus eu vulputate non, luctus eu justo.
+Quisque tristique.
 
 \subsection{A Subsection}
 \subsubsection{A Subsection}
 
-Donec urna leo, vulputate vitae porta eu, vehicula blandit libero. Phasellus eget massa et leo condimentum mollis. quam nec vehicula. Sed vulputate neque eget odio fringilla ac sodales urna feugiat.
+Donec urna leo, 
 
 \section{Another Section}
 
-Phasellus nisi quam, volutpat non ullamcorper eget, congue fringilla leo. Cras et erat et nibh placerat commodo id  Pellentesque vel sem in erat vulputate faucibus molestie ut lorem.
+Phasellus nisi quam, 
 
 \section{Alfejezet}
-Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….
-Kezdődik a tényleges szöveg. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak…. Kezdődik a tényleges szöveg, jön a mondanivaló, kifejtése a dolgoknak….
+Kezdődik a tényleges szöveg..
 És íme, egy képlet
 \begin{equation}
 Q=\frac{r^4\cdot \pi \cdot \Delta p}{8\cdot \eta\cdot L}
@@ -538,13 +559,10 @@ A \ref{egyenlet1}. összefüggés az \cite{irodalom1} szerzőtől származik.
 
 \renewcommand{\refname}{Irodalomjegyzék}
 \begin{thebibliography}{9}
-    \bibitem{b1} T. Qin, P. Li, and S. Shen, "VINS-Mono: A robust and versatile monocular visual-inertial state estimator", IEEE Trans. Robot., vol. 34, no. 4, 2018. pp. 1004–1020.
-    \bibitem {htm} Varsányi Judit: "Szakdolgozat készítési útmutató Sze JGK GTI, 2006. tavaszi félév", pp. 21; http://mazsola.iit.uni-miskolc.hu/~vajo/allamvizsga/mire-kell-ugyelni-a-szakdolgozat-osszaallitasakor.ppt; utoljára egtekintett: 2025.04.01., pp. 
-	\bibitem{irodalom1} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
-	\bibitem{irodalom2} Szerző C Másik D, \textit{Cím lehetőleg így}, Kiadó, Dátum
-	\bibitem{irodalom3} Szerző E Másik F, \textit{Cím lehetőleg így}, Kiadó, Dátum
-	\bibitem{irodalom4} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
-	\bibitem{irodalom5} Szerző A Másik B, \textit{Cím lehetőleg így}, Kiadó, Dátum
+    \bibitem{b1} pelda
+    \bibitem {htm} pelda
+	\bibitem{irodalom1}pelda \textit{Cím lehetőleg így}, Kiadó, Dátum
+
 \end{thebibliography}
 
 

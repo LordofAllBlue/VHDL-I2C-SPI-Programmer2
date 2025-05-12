@@ -1,31 +1,31 @@
 \select@language {magyar} \contentsline {chapter}{\numberline {1}Idegen nyelvű összefoglaló}{6}{}%
-\select@language {magyar} \contentsline {chapter}{\numberline {2}Bevezetés}{1}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.1}Téma választás Háttér}{1}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.2}A Project bemutatása}{2}{}%
-\select@language {magyar} \contentsline {chapter}{\numberline {3}Tartalmi rész}{4}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.1}Technicai Hátter}{4}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.1.1}Mi a FPGA?}{4}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.1.2}Mi a VHDL?}{7}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.1.3}Kommunikációs protokollok}{9}{}%
-\select@language {magyar} \contentsline {subsubsection}{Analízis elrendezés}{9}{}%
-\select@language {magyar} \contentsline {subsubsection}{UART}{9}{}%
-\select@language {magyar} \contentsline {subsubsection}{SPI}{11}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.2}NYÁK tervezés}{13}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}A NYÁK tevező program bemutatása}{13}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}A KiCad ban végzett munka bemutatása}{14}{}%
-\select@language {magyar} \contentsline {subsubsection}{Kapcsolási rajz}{14}{}%
-\select@language {magyar} \contentsline {subsubsection}{NYÁK tervezés}{17}{}%
-\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{18}{}%
-\select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{19}{}%
-\select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{20}{}%
-\select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{21}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.3}First section}{24}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.4}Second section}{24}{}%
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Probléma tárgyalása}{25}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.1}A Section}{25}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}A Subsection}{25}{}%
-\select@language {magyar} \contentsline {subsubsection}{A Subsection}{25}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.2}Another Section}{25}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.3}Alfejezet}{26}{}%
-\select@language {magyar} \contentsline {chapter}{Összefoglalás}{27}{}%
-\select@language {magyar} \contentsline {chapter}{A Melléklet}{28}{}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Bevezetés}{7}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.0.1}Téma választás Háttér}{7}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.0.2}A Project bemutatása}{8}{}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Tartalmi rész}{10}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Technicai Hátter}{10}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.1}Mi a FPGA?}{10}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.2}Mi a VHDL?}{13}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.3}Kommunikációs protokollok}{15}{}%
+\select@language {magyar} \contentsline {subsubsection}{Analízis elrendezés}{15}{}%
+\select@language {magyar} \contentsline {subsubsection}{UART}{15}{}%
+\select@language {magyar} \contentsline {subsubsection}{SPI}{17}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}NYÁK tervezés}{19}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}A NYÁK tevező program bemutatása}{19}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}A KiCad ban végzett munka bemutatása}{20}{}%
+\select@language {magyar} \contentsline {subsubsection}{Kapcsolási rajz}{20}{}%
+\select@language {magyar} \contentsline {subsubsection}{NYÁK tervezés}{23}{}%
+\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{24}{}%
+\select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{25}{}%
+\select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{26}{}%
+\select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{27}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}First section}{30}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.4}Second section}{30}{}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Probléma tárgyalása}{31}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.1}A Section}{31}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}A Subsection}{31}{}%
+\select@language {magyar} \contentsline {subsubsection}{A Subsection}{31}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Another Section}{31}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.3}Alfejezet}{31}{}%
+\select@language {magyar} \contentsline {chapter}{Összefoglalás}{33}{}%
+\select@language {magyar} \contentsline {chapter}{A Melléklet}{34}{}%

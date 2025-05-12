@@ -1,30 +1,30 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  3 MAY 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  12 MAY 2025 11:55
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Szabo Ferenc/Pictures/diplomamunka/proba.tex"
-(c:/Users/Szabo Ferenc/Pictures/diplomamunka/proba.tex
+**"c:/Users/Fszabo3/Documents/Uni/VHDL-I2C-SPI-Programmer2/diplomamunka latex/proba.tex"
+(c:/Users/Fszabo3/Documents/Uni/VHDL-I2C-SPI-Programmer2/diplomamunka latex/proba.tex
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+L3 programming layer <2025-04-14>
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
-File: bk11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count197
-\c@chapter=\count198
-\c@section=\count199
-\c@subsection=\count266
-\c@subsubsection=\count267
-\c@paragraph=\count268
-\c@subparagraph=\count269
-\c@figure=\count270
-\c@table=\count271
+\c@part=\count272
+\c@chapter=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen146
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
@@ -32,33 +32,33 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen147
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen148
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count272
+\inf@bad=\count281
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count273
-\leftroot@=\count274
+\uproot@=\count282
+\leftroot@=\count283
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count275
-\DOTSCASE@=\count276
+\classnum@=\count284
+\DOTSCASE@=\count285
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -71,20 +71,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count277
+\macc@depth=\count286
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count278
+\c@MaxMatrixCols=\count287
 \dotsspace@=\muskip17
-\c@parentequation=\count279
-\dspbrk@lvl=\count280
+\c@parentequation=\count288
+\dspbrk@lvl=\count289
 \tag@help=\toks19
-\row@=\count281
-\column@=\count282
-\maxfields@=\count283
+\row@=\count290
+\column@=\count291
+\maxfields@=\count292
 \andhelp@=\toks20
 \eqnshift@=\dimen150
 \alignsep@=\dimen151
@@ -98,27 +98,27 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count284
-\calc@Bcount=\count285
+\calc@Acount=\count293
+\calc@Bcount=\count294
 \calc@Adimen=\dimen156
 \calc@Bdimen=\dimen157
 \calc@Askip=\skip54
 \calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count286
+\calc@Ccount=\count295
 \calc@Cskip=\skip56
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count287
+\g_MT_multlinerow_int=\count296
 \l_MT_multwidth_dim=\dimen158
 \origjot=\skip57
 \l_MT_shortvdotswithinadjustabove_dim=\dimen159
@@ -129,12 +129,12 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen164
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen165
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -145,69 +145,71 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip59
 \thm@headsep=\skip60
 \dth@everypar=\toks29
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen166
 \Gin@req@width=\dimen167
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/04/14 v25.7 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count288
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/04/29 v25.8 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count297
 \U@D=\dimen168
 \l@unhyphenated=\language79
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count289
+\bbl@dirlevel=\count298
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\USenglish.ldf
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\USenglish.ldf
 Language: USenglish 2017/06/06 v3.3r English support from the babel system
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-usenglish.tex
+Package babel Info: Importing font and identification data for USenglish
+(babel)             from babel-en-US.ini. Reported on input line 11.
+)
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-hungarian\magyar.ldf
-Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
-Package babel Info: Making ` an active character on input line 2819.
-\c@footnote@add=\count290
-\c@footnote@ch=\count291
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/hu\babel-magyar.tex
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-hungarian\magyar.ldf
+Language: magyar 2025/05/02 v1.5d Hungarian support for babel
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/hu\babel-magyar.tex
 Package babel Info: Importing font and identification data for magyar
 (babel)             from babel-hu.ini. Reported on input line 11.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-usenglish.tex
-Package babel Info: Importing font and identification data for USenglish
-(babel)             from babel-en-US.ini. Reported on input line 11.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\t1enc.sty
+)
+Package babel Info: Making ` an active character on input line 2778.
+\c@footnote@add=\count299
+\c@footnote@ch=\count300
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\t1enc.sty
 Package: t1enc 1994/06/01 Standard LaTeX package
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -220,7 +222,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
 
 document style option `anysize' loaded
@@ -230,15 +232,15 @@ Version 1.0, Aug 13, 1994
 \@Rightmargin=\dimen171
 \@Topmargin=\dimen172
 \@Bottommargin=\dimen173
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/ae\ae.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ae\ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/ae\aecompl.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ae\aecompl.sty
 Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathcomp\mathcomp.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathcomp\mathcomp.sty
 Package: mathcomp 2001/01/07 v0.1f (TBo)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 \symTC=\mathgroup7
@@ -246,20 +248,20 @@ LaTeX Font Info:    Overwriting symbol font `TC' in version `bold'
 (Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 25.
 LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
 LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count292
+\c@float@type=\count301
 \float@exts=\toks36
 \float@box=\box58
 \@float@everytoks=\toks37
 \@floatcapt=\box59
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen174
 \captionmargin=\dimen175
@@ -272,21 +274,21 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 Package caption Info: Standard document class detected.
 Package caption Info: hungarian babel package is loaded.
 )
-\c@caption@flags=\count293
-\c@continuedfloat=\count294
+\c@caption@flags=\count302
+\c@continuedfloat=\count303
 Package caption Info: hungarian babel package is loaded.
 Package caption Info: float package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count295
+\c@subfigure=\count304
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count296
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+\c@subtable=\count305
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen182
 \ar@mcellbox=\box60
@@ -295,26 +297,26 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \extratabsurround=\skip61
 \backup@length=\skip62
 \ar@cellbox=\box61
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
 Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
 \NCC@fracrulewidth=\dimen184
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip63
-\multirow@cntb=\count297
+\multirow@cntb=\count306
 \multirow@dima=\skip64
 \bigstrutjot=\dimen185
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip65
 \enit@outerparindent=\dimen186
 \enit@toks=\toks39
 \enit@inbox=\box62
-\enit@count@id=\count298
-\enitdp@description=\count299
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
-Package: footmisc 2025/03/10 v7.0a a miscellany of footnote facilities
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc-2022-02-14.sty
+\enit@count@id=\count307
+\enitdp@description=\count308
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc-2022-02-14.sty
 Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
 \FN@temptoken=\toks40
 \footnotemargin=\dimen187
@@ -325,16 +327,16 @@ Package footmisc Info: Declaring symbol style wiley on input line 716.
 Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
 Package footmisc Info: Declaring symbol style lamport* on input line 747.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 768.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
 File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
 File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
@@ -685,127 +687,147 @@ File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+10145 (decimal 65861)
    defining Unicode char U+10146 (decimal 65862)
    defining Unicode char U+10147 (decimal 65863)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 ))
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/*}. on input line 69.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count300
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count309
 \lst@gtempboxa=\box63
 \lst@token=\toks41
-\lst@length=\count301
+\lst@length=\count310
 \lst@currlwidth=\dimen189
-\lst@column=\count302
-\lst@pos=\count303
+\lst@column=\count311
+\lst@pos=\count312
 \lst@lostspace=\dimen190
 \lst@width=\dimen191
-\lst@newlines=\count304
-\lst@lineno=\count305
+\lst@newlines=\count313
+\lst@lineno=\count314
 \lst@maxwidth=\dimen192
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count306
-\lst@skipnumbers=\count307
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
 \lst@framebox=\box64
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip66
+\f@nch@offset@elh=\skip67
+\f@nch@offset@erh=\skip68
+\f@nch@offset@olh=\skip69
+\f@nch@offset@orh=\skip70
+\f@nch@offset@elf=\skip71
+\f@nch@offset@erf=\skip72
+\f@nch@offset@olf=\skip73
+\f@nch@offset@orf=\skip74
+\f@nch@height=\skip75
+\f@nch@footalignment=\skip76
+\f@nch@widthL=\skip77
+\f@nch@widthC=\skip78
+\f@nch@widthR=\skip79
+\@temptokenb=\toks42
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box65
 \fn@width=\dimen193
 )
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 52.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 66.
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count308
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count317
 ) (proba.aux)
 \openout1 = `proba.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 52.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 52.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 66.
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 52.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 66.
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
+\scratchcounter=\count318
 \scratchdimen=\dimen194
 \scratchbox=\box66
-\nofMPsegments=\count310
-\nofMParguments=\count311
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count312
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count321
 \MPscratchDim=\dimen195
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
-\everyMPtoPDFconversion=\toks43
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks44
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package gensymb Info: Math companion symbols found on input line 52.
-LaTeX Info: Redefining \degree on input line 52.
-LaTeX Info: Redefining \celsius on input line 52.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 52.
-LaTeX Info: Redefining \ohm on input line 52.
-Package gensymb Info: Using \textohm for \ohm on input line 52.
-Package gensymb Info: Using \textmu for \micro on input line 52.
+Package gensymb Info: Math companion symbols found on input line 66.
+LaTeX Info: Redefining \degree on input line 66.
+LaTeX Info: Redefining \celsius on input line 66.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 66.
+LaTeX Info: Redefining \ohm on input line 66.
+Package gensymb Info: Using \textohm for \ohm on input line 66.
+Package gensymb Info: Using \textmu for \micro on input line 66.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count315
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+\c@lstlisting=\count324
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 LaTeX Info: Redefining \cal on input line 583.
 LaTeX Info: Redefining \mit on input line 584.
 )
 Package babel Info: 'magyar' activates 'magyar' shorthands.
-(babel)             Reported  on input line 52.
+(babel)             Reported  on input line 66.
 <misk_egy.png, id=1, 230.8625pt x 219.82124pt>
 File: misk_egy.png Graphic file (type png)
 <use misk_egy.png>
-Package pdftex.def Info: misk_egy.png  used on input line 61.
+Package pdftex.def Info: misk_egy.png  used on input line 76.
 (pdftex.def)             Requested size: 115.43095pt x 109.91034pt.
 
 
 LaTeX Font Warning: Font shape `T1/aer/b/sc' undefined
-(Font)              using `T1/aer/b/n' instead on input line 69.
+(Font)              using `T1/aer/b/n' instead on input line 84.
 
 
 
 [1
 
 
-{C:/Users/Szabo Ferenc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./misk_egy.png>]
-LaTeX Font Info:    Trying to load font information for TS1+aer on input line 106.
-LaTeX Font Info:    No file TS1aer.fd. on input line 106.
+{C:/Users/Fszabo3/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./misk_egy.png>]
+Overfull \hbox (0.57372pt too wide) in paragraph at lines 117--118
+\T1/aer/m/n/12 cím¶ szak-dol-go-za-tom/-dip-lo-ma-ter-vem sa-ját, ön-ál-ló mun-kám; az ab-ban hi-vat-ko-zott szak-
+ []
 
+LaTeX Font Info:    Trying to load font information for TS1+aer on input line 121.
+LaTeX Font Info:    No file TS1aer.fd. on input line 121.
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 106.
+(Font)              for symbol `textbullet' on input line 121.
 
 
 
@@ -813,41 +835,82 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 
 ] (proba.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1
+
+
+
+])
 \tf@toc=\write4
 \openout4 = `proba.toc'.
 
 
 
-[3
 
-] (proba.lof)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2] (proba.lof)
 \tf@lof=\write5
 \openout5 = `proba.lof'.
 
 
 
-[4
 
-] (proba.lot)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4] (proba.lot)
 \tf@lot=\write6
 \openout6 = `proba.lot'.
 
 
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5
 
@@ -855,243 +918,493 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 1. fejezet.
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [6
 
 ]
 2. fejezet.
 
 
-[1
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7
 
 ]
-<terv1.png, id=31, 1751.04187pt x 694.84593pt>
+<terv1.png, id=37, 1751.04187pt x 694.84593pt>
 File: terv1.png Graphic file (type png)
 <use terv1.png>
-Package pdftex.def Info: terv1.png  used on input line 173.
-(pdftex.def)             Requested size: 459.02715pt x 181.24777pt.
-
-Overfull \hbox (18.00941pt too wide) in paragraph at lines 173--174
- [][] 
- []
+Package pdftex.def Info: terv1.png  used on input line 188.
+(pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
 
 
 
-[2]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3 <./terv1.png>]
+[8]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9 <./terv1.png>]
 3. fejezet.
 
 
-[4
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10
 
 ]
-<logickblockfromx02.png, id=43, 1124.70187pt x 904.1278pt>
+<logickblockfromx02.png, id=49, 1124.70187pt x 904.1278pt>
 File: logickblockfromx02.png Graphic file (type png)
 <use logickblockfromx02.png>
-Package pdftex.def Info: logickblockfromx02.png  used on input line 193.
+Package pdftex.def Info: logickblockfromx02.png  used on input line 208.
 (pdftex.def)             Requested size: 425.22874pt x 341.40973pt.
 
 
-[5]
 
-[6 <./logickblockfromx02.png>]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[11]
 
-[8]
-<UARTfromAnalyzer.PNG, id=58, 1221.06187pt x 638.385pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12 <./logickblockfromx02.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+<UARTfromAnalyzer.PNG, id=67, 1221.06187pt x 638.385pt>
 File: UARTfromAnalyzer.PNG Graphic file (type png)
 <use UARTfromAnalyzer.PNG>
-Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 243.
-(pdftex.def)             Requested size: 461.84593pt x 240.4264pt.
-
-Overfull \hbox (20.8282pt too wide) in paragraph at lines 243--244
- [][] 
- []
-
-
-
-[9]
+Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 258.
+(pdftex.def)             Requested size: 425.38635pt x 221.4464pt.
 LaTeX Info: Symbol \textmu not provided by
             font family aer in TS1 encoding.
-            Default family used instead on input line 247.
-<uartblock.png, id=62, 783.92876pt x 282.05376pt>
+            Default family used instead on input line 262.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16 <./UARTfromAnalyzer.PNG>]
+<uartblock.png, id=73, 783.92876pt x 282.05376pt>
 File: uartblock.png Graphic file (type png)
 <use uartblock.png>
-Package pdftex.def Info: uartblock.png  used on input line 258.
+Package pdftex.def Info: uartblock.png  used on input line 273.
 (pdftex.def)             Requested size: 428.03238pt x 152.00026pt.
-
-
-[10 <./UARTfromAnalyzer.PNG>]
-<SPIblockk.PNG, id=68, 733.23938pt x 578.91281pt>
+<SPIblockk.PNG, id=74, 733.23938pt x 578.91281pt>
 File: SPIblockk.PNG Graphic file (type png)
 <use SPIblockk.PNG>
-Package pdftex.def Info: SPIblockk.PNG  used on input line 267.
+Package pdftex.def Info: SPIblockk.PNG  used on input line 282.
 (pdftex.def)             Requested size: 436.5327pt x 343.93605pt.
 
 
-[11 <./uartblock.png>]
 
-[12 <./SPIblockk.PNG>]
-<kapcsolasi rajz.PNG, id=77, 1415.2875pt x 832.61063pt>
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17 <./uartblock.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18 <./SPIblockk.PNG>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+<kapcsolasi rajz.PNG, id=87, 1415.2875pt x 832.61063pt>
 File: kapcsolasi rajz.PNG Graphic file (type png)
 <use kapcsolasi rajz.PNG>
-Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 297.
-(pdftex.def)             Requested size: 451.08026pt x 264.61984pt.
-
-Overfull \hbox (10.06253pt too wide) in paragraph at lines 297--298
- [][] 
- []
-
-
-
-[13]
-<jumperek.PNG, id=82, 1499.6025pt x 629.35126pt>
+Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 312.
+(pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
+<jumperek.PNG, id=88, 1499.6025pt x 629.35126pt>
 File: jumperek.PNG Graphic file (type png)
 <use jumperek.PNG>
-Package pdftex.def Info: jumperek.PNG  used on input line 306.
+Package pdftex.def Info: jumperek.PNG  used on input line 321.
 (pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
-<jumpertable.PNG, id=83, 777.65532pt x 293.59688pt>
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20 <./kapcsolasi rajz.PNG>]
+<jumpertable.PNG, id=93, 777.65532pt x 293.59688pt>
 File: jumpertable.PNG Graphic file (type png)
 <use jumpertable.PNG>
-Package pdftex.def Info: jumpertable.PNG  used on input line 312.
+Package pdftex.def Info: jumpertable.PNG  used on input line 327.
 (pdftex.def)             Requested size: 347.38097pt x 129.55667pt.
 
 
-[14 <./kapcsolasi rajz.PNG>]
 
-[15 <./jumperek.PNG> <./jumpertable.PNG>]
-<JP13.PNG, id=93, 531.48563pt x 194.22563pt>
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21 <./jumperek.PNG> <./jumpertable.PNG>]
+<JP13.PNG, id=99, 531.48563pt x 194.22563pt>
 File: JP13.PNG Graphic file (type png)
 <use JP13.PNG>
-Package pdftex.def Info: JP13.PNG  used on input line 326.
+Package pdftex.def Info: JP13.PNG  used on input line 341.
 (pdftex.def)             Requested size: 236.60562pt x 84.84001pt.
-<gnd5v3v3.PNG, id=94, 912.40875pt x 490.08093pt>
+<gnd5v3v3.PNG, id=100, 912.40875pt x 490.08093pt>
 File: gnd5v3v3.PNG Graphic file (type png)
 <use gnd5v3v3.PNG>
-Package pdftex.def Info: gnd5v3v3.PNG  used on input line 333.
+Package pdftex.def Info: gnd5v3v3.PNG  used on input line 348.
 (pdftex.def)             Requested size: 408.01945pt x 217.97368pt.
-<nyak.PNG, id=95, 506.6428pt x 708.39656pt>
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22 <./JP13.PNG>]
+<nyak.PNG, id=105, 506.6428pt x 708.39656pt>
 File: nyak.PNG Graphic file (type png)
 <use nyak.PNG>
-Package pdftex.def Info: nyak.PNG  used on input line 340.
+Package pdftex.def Info: nyak.PNG  used on input line 355.
 (pdftex.def)             Requested size: 225.42645pt x 316.21481pt.
 
 
-[16 <./JP13.PNG> <./gnd5v3v3.PNG>]
-<bosrd limits.PNG, id=101, 703.87968pt x 431.36156pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23 <./gnd5v3v3.PNG> <./nyak.PNG>]
+<bosrd limits.PNG, id=112, 703.87968pt x 431.36156pt>
 File: bosrd limits.PNG Graphic file (type png)
 <use bosrd limits.PNG>
-Package pdftex.def Info: bosrd limits.PNG  used on input line 349.
+Package pdftex.def Info: bosrd limits.PNG  used on input line 364.
 (pdftex.def)             Requested size: 384.00525pt x 234.11981pt.
-
-
-[17 <./nyak.PNG>]
-<also reteg.PNG, id=106, 465.23813pt x 642.14906pt>
+<also reteg.PNG, id=113, 465.23813pt x 642.14906pt>
 File: also reteg.PNG Graphic file (type png)
 <use also reteg.PNG>
-Package pdftex.def Info: also reteg.PNG  used on input line 357.
+Package pdftex.def Info: also reteg.PNG  used on input line 372.
 (pdftex.def)             Requested size: 206.79453pt x 286.4037pt.
 
 
-[18 <./bosrd limits.PNG>]
-<spi kimenet.PNG, id=111, 1282.7925pt x 736.25063pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24 <./bosrd limits.PNG>]
+<spi kimenet.PNG, id=118, 1282.7925pt x 736.25063pt>
 File: spi kimenet.PNG Graphic file (type png)
 <use spi kimenet.PNG>
-Package pdftex.def Info: spi kimenet.PNG  used on input line 364.
+Package pdftex.def Info: spi kimenet.PNG  used on input line 379.
 (pdftex.def)             Requested size: 421.44496pt x 241.08559pt.
 
 
-[19 <./also reteg.PNG> <./spi kimenet.PNG>]
-<i2ckimenet.PNG, id=118, 890.5772pt x 682.80093pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25 <./also reteg.PNG> <./spi kimenet.PNG>]
+<i2ckimenet.PNG, id=124, 890.5772pt x 682.80093pt>
 File: i2ckimenet.PNG Graphic file (type png)
 <use i2ckimenet.PNG>
-Package pdftex.def Info: i2ckimenet.PNG  used on input line 372.
+Package pdftex.def Info: i2ckimenet.PNG  used on input line 387.
 (pdftex.def)             Requested size: 398.19534pt x 304.69688pt.
-<rounded ui.PNG, id=119, 370.38374pt x 136.25906pt>
+<rounded ui.PNG, id=125, 370.38374pt x 136.25906pt>
 File: rounded ui.PNG Graphic file (type png)
 <use rounded ui.PNG>
-Package pdftex.def Info: rounded ui.PNG  used on input line 382.
+Package pdftex.def Info: rounded ui.PNG  used on input line 397.
 (pdftex.def)             Requested size: 273.51926pt x 97.92618pt.
 
 
-[20 <./i2ckimenet.PNG>]
-<beforrounded.PNG, id=124, 575.14874pt x 751.30687pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26 <./i2ckimenet.PNG>]
+<beforrounded.PNG, id=130, 575.14874pt x 751.30687pt>
 File: beforrounded.PNG Graphic file (type png)
 <use beforrounded.PNG>
-Package pdftex.def Info: beforrounded.PNG  used on input line 392.
+Package pdftex.def Info: beforrounded.PNG  used on input line 407.
 (pdftex.def)             Requested size: 199.31337pt x 260.96964pt.
-<afterrounded.PNG, id=125, 638.385pt x 836.3747pt>
+<afterrounded.PNG, id=131, 638.385pt x 836.3747pt>
 File: afterrounded.PNG Graphic file (type png)
 <use afterrounded.PNG>
-Package pdftex.def Info: afterrounded.PNG  used on input line 398.
+Package pdftex.def Info: afterrounded.PNG  used on input line 413.
 (pdftex.def)             Requested size: 221.4464pt x 290.74384pt.
 
 
-[21 <./rounded ui.PNG> <./beforrounded.PNG>]
-<rosszpelda.PNG, id=131, 1366.35469pt x 753.5653pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27 <./rounded ui.PNG> <./beforrounded.PNG>]
+<rosszpelda.PNG, id=137, 1366.35469pt x 753.5653pt>
 File: rosszpelda.PNG Graphic file (type png)
 <use rosszpelda.PNG>
-Package pdftex.def Info: rosszpelda.PNG  used on input line 405.
+Package pdftex.def Info: rosszpelda.PNG  used on input line 420.
 (pdftex.def)             Requested size: 340.16522pt x 186.96825pt.
-<rounded vias ui.PNG, id=132, 336.50719pt x 280.79906pt>
+<rounded vias ui.PNG, id=138, 336.50719pt x 280.79906pt>
 File: rounded vias ui.PNG Graphic file (type png)
 <use rounded vias ui.PNG>
-Package pdftex.def Info: rounded vias ui.PNG  used on input line 412.
+Package pdftex.def Info: rounded vias ui.PNG  used on input line 427.
 (pdftex.def)             Requested size: 248.11191pt x 206.33092pt.
 
 
-[22 <./afterrounded.PNG> <./rosszpelda.PNG>]
-<viabefore.PNG, id=138, 895.84688pt x 487.06969pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28 <./afterrounded.PNG> <./rosszpelda.PNG>]
+<viabefore.PNG, id=144, 895.84688pt x 487.06969pt>
 File: viabefore.PNG Graphic file (type png)
 <use viabefore.PNG>
-Package pdftex.def Info: viabefore.PNG  used on input line 419.
+Package pdftex.def Info: viabefore.PNG  used on input line 434.
 (pdftex.def)             Requested size: 356.05624pt x 192.54826pt.
-<viaafter.PNG, id=139, 972.63374pt x 477.28313pt>
+<viaafter.PNG, id=145, 972.63374pt x 477.28313pt>
 File: viaafter.PNG Graphic file (type png)
 <use viaafter.PNG>
-Package pdftex.def Info: viaafter.PNG  used on input line 425.
+Package pdftex.def Info: viaafter.PNG  used on input line 440.
 (pdftex.def)             Requested size: 386.77045pt x 188.6337pt.
 
 
-[23 <./rounded vias ui.PNG> <./viabefore.PNG>]
 
-[24 <./viaafter.PNG>]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29 <./rounded vias ui.PNG> <./viabefore.PNG>]
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 457.
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 468.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 468.
+
+Overfull \hbox (87.64322pt too wide) in paragraph at lines 468--469
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 469.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 469.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 470.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 470.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 471.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 471.
+
+Overfull \hbox (3.05748pt too wide) in paragraph at lines 471--472
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 472.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 472.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 473.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 473.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 474.
+LaTeX Info: Symbol \textminus not provided by
+            font family aer in TS1 encoding.
+            Default family used instead on input line 474.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30 <./viaafter.PNG>]
 4. fejezet.
 
-
-[25
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 516--518
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
 
  []
 
 
 
-[26]
 
-[27
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33
 
 
 ]
 
-[28
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34
 
 ]
 
-[29
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35
 
 ] (proba.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
+L3 programming layer <2025-04-14>
  ***********
 
 
@@ -1099,17 +1412,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11902 strings out of 469958
- 199874 string characters out of 5466390
- 566629 words of memory out of 5000000
- 38465 multiletter control sequences out of 15000+600000
- 664008 words of font info for 111 fonts, out of 8000000 for 9000
+ 12271 strings out of 469940
+ 205890 string characters out of 5468441
+ 583204 words of memory out of 5000000
+ 38844 multiletter control sequences out of 15000+600000
+ 661269 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,8n,77p,2002b,984s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on proba.pdf (35 pages, 1241352 bytes).
+ 67i,12n,77p,2033b,1020s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Fszabo3\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on proba.pdf (37 pages, 1252602 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

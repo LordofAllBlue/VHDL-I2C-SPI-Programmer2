@@ -1,174 +1,176 @@
-PWD c:\Users\Szabo Ferenc\Pictures\diplomamunka
-INPUT C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Szabo Ferenc\Pictures\diplomamunka\proba.tex
+PWD c:\Users\Fszabo3\Documents\Uni\VHDL-I2C-SPI-Programmer2\diplomamunka latex
+INPUT C:\Users\Fszabo3\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Fszabo3\Documents\Uni\VHDL-I2C-SPI-Programmer2\diplomamunka latex\proba.tex
 OUTPUT proba.log
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\bk11.clo
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\bk11.clo
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\bk11.clo
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\latexsym.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\latexsym.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-hu.ini
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-en-US.ini
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\t1enc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\t1enc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\fancybox\fancybox.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\fancybox\fancybox.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\anysize\anysize.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\anysize\anysize.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\ae.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\ae.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\aecompl.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\aecompl.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathcomp\mathcomp.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mathcomp\mathcomp.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\wasysym.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\wasysym.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccmath.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccmath.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\textgreek\textgreek.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\textgreek\textgreek.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\bk12.clo
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\bk12.clo
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\bk12.clo
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\latexsym.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\latexsym.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\USenglish.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-usenglish.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-en-US.ini
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\babel-hungarian\magyar.ldf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-magyar.tex
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\hu\babel-hu.ini
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\t1enc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\t1enc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\fancybox\fancybox.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\fancybox\fancybox.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\anysize\anysize.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\anysize\anysize.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\ae.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\ae.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\aecompl.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\aecompl.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathcomp\mathcomp.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mathcomp\mathcomp.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\wasysym.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\wasysym.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccmath.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccmath.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc-2022-02-14.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\textgreek\textgreek.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\textgreek\textgreek.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\lgrenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-inputenc\lgrenc.dfu
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\greek-fontenc\greek-fontenc.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aer.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\proba.aux
 INPUT .\proba.aux
 INPUT proba.aux
 OUTPUT proba.aux
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aecsc10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aecsc10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\cbfonts-fd\lgrcmr.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aecsc10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aecsc10.tfm
 INPUT .\misk_egy.png
 INPUT .\misk_egy.png
 INPUT .\misk_egy.png
@@ -177,83 +179,85 @@ OUTPUT proba.pdf
 INPUT .\misk_egy.png
 INPUT .\misk_egy.png
 INPUT .\misk_egy.png
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aecsc10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmu10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aecsc10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmu10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aer10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeti10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeti10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer17.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aecsc10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmu10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aecsc10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmu10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aer12.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeti12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeti12.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer17.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
 INPUT .\proba.toc
 INPUT .\proba.toc
 INPUT proba.toc
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy8.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\wasysym\uwasy.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy8.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\wasy\wasy6.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 OUTPUT proba.toc
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 INPUT .\proba.lof
 INPUT .\proba.lof
 INPUT proba.lof
@@ -262,20 +266,13 @@ INPUT .\proba.lot
 INPUT .\proba.lot
 INPUT proba.lot
 OUTPUT proba.lot
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer17.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer12.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aeb10.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 INPUT .\terv1.png
 INPUT .\terv1.png
 INPUT .\terv1.png
@@ -283,7 +280,7 @@ INPUT .\terv1.png
 INPUT .\terv1.png
 INPUT .\terv1.png
 INPUT .\terv1.png
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aer17.tfm
 INPUT .\logickblockfromx02.png
 INPUT .\logickblockfromx02.png
 INPUT .\logickblockfromx02.png
@@ -431,20 +428,29 @@ INPUT .\viaafter.PNG
 INPUT .\viaafter.PNG
 INPUT .\viaafter.PNG
 INPUT .\viaafter.PNG
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aett12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aett12.vf
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT proba.aux
-INPUT C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
-INPUT C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Fszabo3\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
