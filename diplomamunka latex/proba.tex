@@ -29,10 +29,13 @@
 \usepackage{textgreek}
 \usepackage{listings}
 \usepackage{fancyhdr}
+\usepackage{blindtext}
+\usepackage{hyperref}
 
-%\hypersetup{colorlinks=true,
-%linkcolor=blue,
-%urlcolor=cyan}
+
+\hypersetup{colorlinks=true,
+linkcolor=blue,
+urlcolor=cyan}
 
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
@@ -476,8 +479,21 @@ Az architektúra a következőképpen működik:
 Az Int\_Osc modul a rendszer órajelének biztosítására szolgál. Az óra jelet a rendszer összes része használja a szinkron működéshez.
 
 \subsubsection{Az órajel sebeségének válastása}
-!!!!insert later with calculaton from home computer
+A FPGA belő órajel sebességét  adott értékekből lehet választani. Az FPGA termékcsalád adatlapja szerint ezek a sebességek közül lehet:
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.344]{clkrates.PNG}
+	\caption{Elérhető CLK-frekvenciák az FPGA adatlapja alapján \cite{fpgaadatlap}}
+	\label{Elérhető CLK-frekvenciák az FPGA adatlapja alapján } 
+\end{figure}
+Az óra jelet úgy kell választani, hogy elég gyors legyen, hogy a design megoldja a feladatot amire tervezve lett. Gyorsabbra nem érdemes, mert az felesleges slack problémákhoz vezethet. 
 
+A programozóban az órajelnek legalább 4-szer gyorsabbnak kell lennije, mint a célzott I2C órajel sebessége, mert az I2C órajelenként 4 műveletet végzik a I2C entitás. És 2 szer gyorsabbnak, mint a célzott SPI órajel, mert az SPI órajelenként 2 műveletet végzik a SPI entitás.
+Az én célzott I2C órajelsebességem 500kHz és 1MHz között van, mert a legtöbb modern EEPROM képes 1MHz órajelsebességre, és ki szeretném használni ezt a sebességet. Az SPI célsebesség pedig 5MHz körül van, hasonló okok miatt.
+
+A programozóm UART-ot is használ,  amint előbb volt tárgyalva, egy aszinkron kommunikációs protokoll. Ez azt jelenti, hogy a belső óra jelet úgy kell választani, hogy jól leosztható legyen a megcélzott baud rátához. Tegyük fel, hogy  a célzott baud ráta 23040. Ha a  belső órajel 2.46MHz akkor az órajelosztó számlálónak 11-ig kell számolnia, mivel \(230400$baud$ / 2.46$MHz $ = 10.68\). Egy órajel számláló csak egész számokkal tud számolni. így minden egyes periódus alatt fél óra jelet késne a belső UART számlálá a tényleges 230400 baud-hoz. Úgy kellet választanom az óra jelet, hogy minimális kerekítéssel  le lehessen osztania és ez a késés minimális legyen. A célzott AURT sebesség 576000 baud.
+
+Ezek miatt választottam a 9.17MHz-t belső órajelnek. Így a UART osztó hiba 0.08 órajel per baud periódus. A I2C maximum sebessége 2.29MHz. Az SPI Max sebessége 4.59MHz.
 
 \subsection{A write8bit entitás}
 A write8bit e8 bites adat írására szolgál az SPI vonalokon. Az entitás bemeneti és kimeneti portjai a következők:
@@ -671,9 +687,9 @@ A \ref{egyenlet1}. összefüggés az \cite{irodalom1} szerzőtől származik.
 
 \renewcommand{\refname}{Irodalomjegyzék}
 \begin{thebibliography}{9}
-    \bibitem{b1} pelda
-    \bibitem {htm} pelda
-	\bibitem{irodalom1}pelda \textit{Cím lehetőleg így}, Kiadó, Dátum
+    \bibitem{fpgaadatlap} \href{https://www.ti.com/lit/ds/symlink/mcf8316a.pdf?ts=1668505632851\&ref\_url=https\%253A\%252F\%252Fwww.ti.com\%252Fproduct\%252FMCF8316A}{A MachXO2 FPGA család adatlapja }
+
+	
 
 \end{thebibliography}
 
