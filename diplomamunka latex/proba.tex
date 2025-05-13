@@ -38,7 +38,7 @@
 
 \marginsize{3cm}{2.5cm}{2.5cm}{2.5cm}
 
-
+\setlength{\headheight}{14.5pt}
 \makeatletter
 \newcommand{\figcaption}{\def\@captype{figure}\caption}
 \newcommand{\tabcaption}{\def\@captype{table}\caption}
@@ -443,25 +443,137 @@ Ez pedig arról kép hogy hogyan néz ki egy via a plugin használata előtt és
 \end{figure}
 
 
+\section{A Programozó entitásai}
+A következőkben bemutatom az al-entitásokat, amiket használtam a programozóban. Mindet én terveztem és írtam meg, kivéve az Int\_Osc entitást, amit az FPGA-m gyártója által adott módon írtam meg.
+\subsection{A Int\_Osc entitás}
+Az Int\_Osc egy belső oszcillátor modult valósít meg, amely egy órajelet generál a rendszer számára. Ez a modul a MachXO2 FPGA belső oszcillátorát használja, amely egy konfigurálható frekvenciájú órajelet biztosít. 
 
 
+Az Int\_Osc entitás két portot tartalmaz:
+\begin{itemize}
+	\item StdBy (in std\_logic): Ez a bemeneti jel az oszcillátor készenléti (standby) állapotát vezérli. Ha a jel aktív, az oszcillátor leáll, és nem generál órajelet. Ha inaktív, az oszcillátor működik és órajelet generál.
+	\item Clk (out std\_logic): Ez a kimeneti jel az oszcillátor által generált órajelet biztosítja a rendszer többi részének.
+\end{itemize}
+
+Az architektúra az FPGA belső oszcillátorát (OSCH komponens) használja. Az OSCH komponens a következőket tartalmazza:
+
+\begin{itemize}
+	\item NOM\_FREQ (generikus paraméter): Az oszcillátor névleges frekvenciáját határozza meg. Az alapértelmezett érték itt "9.17", ami 9,17 MHz-es órajelet jelent.
+	\item STDBY (bemenet): Az oszcillátor készenléti állapotát vezérli.
+	\item OSC (kimenet): Az oszcillátor által generált órajel.
+	\item SEDSTDBY (kimenet): Egy diagnosztikai jel, amely az oszcillátor készenléti állapotát jelzi (ebben az implementációban nem használják).
+\end{itemize}
+
+Az architektúra a következőképpen működik:
+
+\begin{enumerate}
+	\item Az OSCH komponens egy példányát (OSCInst0) hozza létre.
+	\item A NOM\_FREQ generikus paraméter értéke "9.17", amely meghatározza az oszcillátor frekvenciáját. Ez választhatóan módosítható a tervező által.
+	\item A STDBY bemenet az Int\_Osc entitás StdBy portjához van kötve.
+	\item Az OSC kimenet az Int\_Osc entitás Clk portjához van kötve.
+\end{enumerate}
+
+Az Int\_Osc modul a rendszer órajelének biztosítására szolgál. Az óra jelet a rendszer összes része használja a szinkron működéshez.
+
+\subsubsection{Az órajel sebeségének válastása}
+!!!!insert later with calculaton from home computer
 
 
+\subsection{A write8bit entitás}
+A write8bit e8 bites adat írására szolgál az SPI vonalokon. Az entitás bemeneti és kimeneti portjai a következők:
 
+Portok:
+\begin{itemize}
+	\item iCS: Bemeneti vezérlőjel, amely az írási folyamat indítását jelzi ('0' értékkel aktiválódik).
+	\item cs: Kimeneti vezérlőjel, amely az írási folyamat állapotát jelzi ('1' az alapértelmezett érték).
+	\item Clk: Órajel bemenet, amely az állapotgép működését vezérli.
+	\item Done: Kimeneti jel, amely az írási folyamat befejezését jelzi ('1' az alapértelmezett érték).
+	\item bit8SCL: Órajel kimenet a soros kommunikációhoz ('1' az alapértelmezett érték).
+	\item nReset: Reset bemenet, amely az állapotgépet alaphelyzetbe állítja ('0' értékkel aktiválódik).
+	\item bit8SDA: Adat kimenet a soros kommunikációhoz ('1' az alapértelmezett érték).
+	\item SDA\_data: 8 bites adat bemenet, amelyet a modul sorosan továbbít.
+\end{itemize}
+A write8bit entitás egy állapotgépet tartalmaz, amely három állapotból áll:
+\begin{enumerate}
+	\item Idle: Alapértelmezett állapot, ahol az órajel (bit8SCL) és az adatvonal (bit8SDA) magas szinten van, és a Done jel aktív ('1'). Ha az iCS bemenet alacsony szintre kerül ('0'), az állapotgép a write8 állapotba lép.
+	\item write8: Az adat írásának állapota. Az adatot a SDA\_data bemenetről bitenként továbbítja a bit8SDA kimenetre. Az írási folyamatot a BitIndex számláló vezérli, amely 0-tól 7-ig számol. Ha az összes bitet elküldte, az állapotgép a stop állapotba lép.
+	\item stop: Az írási folyamat lezárása. A cs jel visszaáll magas szintre ('1'), és az állapotgép visszatér az Idle állapotba.
+\end{enumerate}
+Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja. A Main entitásban ez az entitás felelős az egyszerű csupán 8bites egyirányú (MOSI) SPI kommunikációkért. 
+\subsection{UART\_TX entitás}
+A UART\_TX az UART protokoll szerinti adatküldést valósítja meg. Ez a modul soros adatátvitelre szolgál, ahol a bemeneti adatokat bitenként továbbítja egy kimeneti vonalon
 
+Portok:
+\begin{itemize}
+	\item TXData: 8 bites bemeneti adat, amelyet a modul sorosan továbbít.
+	\item Clk: Órajel bemenet, amely az állapotgép működését vezérli.
+	\item SendTX: Bemeneti vezérlőjel, amely az adatküldés indítását jelzi ('1' értékkel aktiválódik).
+	\item TXDone: Kimeneti jel, amely az adatküldés befejezését jelzi ('1' az alapértelmezett érték).
+	\item nReset: Reset bemenet, amely az állapotgépet alaphelyzetbe állítja ('0' értékkel aktiválódik).
+	\item TXOut: Kimeneti adatvonal, amelyen a soros adatátvitel történik.
+	\item TXActive: Kimeneti jel, amely az adatküldés aktív állapotát jelzi ('1', ha a modul éppen adatot küld).
+\end{itemize}
+Generikus paraméter:
+\begin{itemize}
+	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátviteli sebességét (baud rate).
+\end{itemize}
+A UART\_TX entitás egy állapotgépet tartalmaz, amely az UART adatküldési folyamatát valósítja meg. Az állapotgép az alábbi állapotokból áll:
+\begin{enumerate}
+	\item Idle: Alapértelmezett állapot, ahol a modul várakozik a SendTX jel aktiválására. Az órajel számláló (ClkCount) nullázódik, és a kimeneti vonal (TXOut) magas szinten van ('1').
+	\item StartBit: Az adatküldés kezdő bitje ('0') kerül a kimeneti vonalra. Az órajel számláló növekszik, és ha eléri a ClkRatio értéket, az állapotgép a DataBits állapotba lép.
+	\item DataBits: Az adatbitek soros továbbítása történik. A TXData bemenet bitjeit a BitIndex számláló segítségével küldi ki a modul. Ha az összes bit elküldésre került, az állapotgép a StopBit állapotba lép.
+	\item StopBit: Az adatküldés záró bitje ('1') kerül a kimeneti vonalra. Az órajel számláló növekszik, és ha eléri a ClkRatio értéket, az állapotgép a FrameEnd állapotba lép.
+	\item FrameEnd: Az adatküldés befejeződik, a TXActive jel inaktívvá válik ('0'), és a TXDone jel aktívvá válik ('1'). Az állapotgép visszatér az Idle állapotba.
+\end{enumerate}
+Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja.
 
+\subsection{A UART\_RX entitás}
+A UART\_RX entitás a protokoll szerinti adatfogadást valósítja meg. Ez a modul soros adatokat fogad egy bemeneti vonalon, és azokat párhuzamos formátumba alakítja.
+\begin{itemize}
+	\item Clk: Órajel bemenet, amely az állapotgép működését vezérli.
+	\item RXIn: Soros adat bemenet, amelyen keresztül az UART adatokat fogadja.
+	\item Ack: Bemeneti vezérlőjel, amely az adatfogadás befejezésének visszaigazolására szolgál.
+	\item RXData: 8 bites kimeneti adat, amely a fogadott adatot tartalmazza.
+	\item RXDataReady: Kimeneti jel, amely az adatfogadás befejezését jelzi ('1' értékkel aktiválódik).
+	\item nReset: Reset bemenet, amely az állapotgépet alaphelyzetbe állítja ('0' értékkel aktiválódik).
+	\item RXActive: Kimeneti jel, amely az adatfogadás aktív állapotát jelzi.
+\end{itemize}
+Generikus paraméterek:
+\begin{itemize}
+	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátviteli sebességét (baud rate).
+	\item CRHalf: Az órajel osztásának felezett értéke, amely a bitközép detektálására szolgál.
+\end{itemize}
+A UART\_RX entitás egy állapotgépet tartalmaz, amely az UART adatfogadási folyamatát valósítja meg. Az állapotgép az alábbi állapotokból áll:
+\begin{enumerate}
+	\item Idle: Alapértelmezett állapot, ahol a modul várakozik az adatfogadás kezdetére. Ha a RXIn jel alacsony szintre kerül ('0'), az állapotgép a StartBit állapotba lép.
+	\item StartBit: Az adatfogadás kezdő bitjének ('0') detektálása történik. Az órajel számláló (ClkCount) növekszik, és ha eléri a ClkRatio értéket, az állapotgép a DataBits állapotba lép.
+	\item DataBits: Az adatbitek fogadása történik. A RXIn bemenet bitjeit a SData regiszterbe menti a modul, a BitIndex számláló segítségével. Ha az összes bitet fogadta, az állapotgép a StopBit állapotba lép.
+	\item StopBit: Az adatfogadás záró bitjének ('1') detektálása történik. A RXDataReady jel aktívvá válik ('1'), jelezve, hogy az adat fogadása befejeződött. Ha az Ack jel aktív ('1'), az állapotgép visszatér az Idle állapotba.
+\end{enumerate}
+Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja.
+\subsection{A writePage entitás}
+A writePage entitás a komplexebb SPI kommunikációkat kezeli. A neve writepage maradt, mert eredetileg a tervem az volt, hogy két entitást csinálok. Egy entitást, ami az SPI írásért felelős, egy pedig ami az olvasásért felelős. De végül egyszerűbb volt egy entitásban megvalósítani mind két funkciót.
+Ez az entitás azért is komplexebb mert, eltérően a write8bi-től képes a kommunikációs protokoll kerete hosszán alítani.
 
-
-
-
-\begin{verbatim}
-	U1 : Int_Osc
-	port map (
-	  StdBy => '0',  -- Az oszcillátor mindig aktív
-	  Clk   => Clk   -- Az órajelet a Clk jelre továbbítja
-	);
-\end{verbatim}
-
+Portok:
+\begin{itemize}
+	\item iCS: Bemeneti vezérlőjel, amely az adatátviteli folyamat indítását jelzi ('0' értékkel aktiválódik).
+	\item RW: Bemeneti jel, amely az írási ('0') vagy olvasási ('1') műveletet határozza meg.
+	\item Rdy: Kimeneti jel, amely az adatátviteli folyamat készenlétét jelzi ('1' az alapértelmezett érték).
+	\item cs: Kimeneti vezérlőjel, amely az adatátvitel állapotát jelzi ('1' az alapértelmezett érték).
+	\item from\_SDO: Bemeneti adatvonal, amelyen keresztül az olvasott adat érkezik.
+	\item Done: Kimeneti jel, amely az adatátviteli folyamat befejezését jelzi ('1' az alapértelmezett érték).
+	\item toSCL: Órajel kimenet a soros kommunikációhoz ('1' az alapértelmezett érték).
+	\item nReset: Reset bemenet, amely az állapotgépet alaphelyzetbe állítja ('0' értékkel aktiválódik).
+	\item toSDA: Adat kimenet a soros kommunikációhoz ('1' az alapértelmezett érték).
+	\item MISO\_DR: Kimeneti jel, amely az olvasási művelet befejezését jelzi.
+	\item next8bits: 8 bites bemeneti adat, amelyet a modul írni fog.
+	\item read8bits: 8 bites kimeneti adat, amely az olvasott adatot tartalmazza.
+	\item RW\_length: Az SPI művelet teljes hosszát meghatározó bemeneti paraméter (bájtokban).
+	\item RH\_length: Az olvasási művelet címző keret hosszát meghatározó bemeneti paraméter (bájtokban).
+\end{itemize}
+Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja.
+Az állapotgép négy fő állapotot tartalmaz:
 
 \begin{lstlisting}
 With DataFromRX select

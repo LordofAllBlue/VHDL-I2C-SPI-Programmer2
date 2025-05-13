@@ -19,13 +19,20 @@
 \select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{25}{}%
 \select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{26}{}%
 \select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{27}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.3}First section}{30}{}%
-\select@language {magyar} \contentsline {section}{\numberline {3.4}Second section}{30}{}%
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Probléma tárgyalása}{31}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.1}A Section}{31}{}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}A Subsection}{31}{}%
-\select@language {magyar} \contentsline {subsubsection}{A Subsection}{31}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.2}Another Section}{31}{}%
-\select@language {magyar} \contentsline {section}{\numberline {4.3}Alfejezet}{31}{}%
-\select@language {magyar} \contentsline {chapter}{Összefoglalás}{33}{}%
-\select@language {magyar} \contentsline {chapter}{A Melléklet}{34}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}A Programozó entitásai}{30}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.1}A Int\_Osc entitás}{30}{}%
+\select@language {magyar} \contentsline {subsubsection}{Az órajel sebeségének válastása}{31}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.2}A write8bit entitás}{31}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.3}UART\_TX entitás}{33}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.4}A UART\_RX entitás}{34}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.5}A writePage entitás}{36}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.4}First section}{37}{}%
+\select@language {magyar} \contentsline {section}{\numberline {3.5}Second section}{37}{}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Probléma tárgyalása}{38}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.1}A Section}{38}{}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}A Subsection}{38}{}%
+\select@language {magyar} \contentsline {subsubsection}{A Subsection}{38}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Another Section}{38}{}%
+\select@language {magyar} \contentsline {section}{\numberline {4.3}Alfejezet}{38}{}%
+\select@language {magyar} \contentsline {chapter}{Összefoglalás}{40}{}%
+\select@language {magyar} \contentsline {chapter}{A Melléklet}{41}{}%
