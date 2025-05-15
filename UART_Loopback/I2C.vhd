@@ -121,7 +121,7 @@ process(Clk) is
 							count <= count+1;
 						end if;
 
-			when wack => 
+			when wack => --write acknowledge
 						
 						SDAen <= '1';	
 
@@ -218,7 +218,7 @@ process(Clk) is
 							count <= count+1;
 						end if;
 
-			when rack => 
+			when rack => --read acknowledge
 						
 						if Bytecount = RW_length then
 							SDAen <= '1';
@@ -271,7 +271,8 @@ process(Clk) is
 						if part = "00" then SCLen <= '1'; end if;
 						if part = "10" then SCLen <= '0'; end if;
 						
-			when stop =>	
+			when stop =>
+	
 					dataready <= '0';
 					
 --					if RWlatch = '1' then

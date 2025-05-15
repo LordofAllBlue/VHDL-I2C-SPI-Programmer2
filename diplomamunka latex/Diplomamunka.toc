@@ -1,0 +1,39 @@
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Idegen nyelvű összefoglaló}{6}{chapter.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Bevezetés}{7}{chapter.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Téma választás Háttér}{7}{section.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {2.2}A Project terv bemutatása}{8}{section.2.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Tartalmi rész}{10}{chapter.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Analízis képek magyarázata és az analízis elrendezés}{10}{section.3.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Technicai Hátter}{14}{section.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}Mi a FPGA?}{14}{subsection.3.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Mi a VHDL?}{17}{subsection.3.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.3}Kommunikációs protokollok}{19}{subsection.3.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{UART}{19}{section*.10}%
+\select@language {magyar} \contentsline {subsubsection}{SPI}{21}{section*.13}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.4}I2C}{23}{subsection.3.2.4}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}NYÁK tervezés}{23}{section.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.1}A NYÁK tevező program bemutatása}{23}{subsection.3.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.2}A KiCad ban végzett munka bemutatása}{24}{subsection.3.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{Kapcsolási rajz}{24}{section*.15}%
+\select@language {magyar} \contentsline {subsubsection}{NYÁK tervezés}{27}{section*.21}%
+\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{28}{section*.24}%
+\select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{29}{section*.26}%
+\select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{30}{section*.28}%
+\select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{31}{section*.30}%
+\select@language {magyar} \contentsline {section}{\numberline {3.4}A Kész NYÁK}{35}{section.3.4}%
+\select@language {magyar} \contentsline {section}{\numberline {3.5}A Programozó al-entitásai}{36}{section.3.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.1}A Int\_Osc entitás}{36}{subsection.3.5.1}%
+\select@language {magyar} \contentsline {subsubsection}{Az órajel sebeségének válastása}{37}{section*.40}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.2}A write8bit entitás}{39}{subsection.3.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.3}UART\_TX entitás}{40}{subsection.3.5.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.4}A UART\_RX entitás}{41}{subsection.3.5.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.5}A writePage entitás}{43}{subsection.3.5.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.6}A I2C entitás}{46}{subsection.3.5.6}%
+\select@language {magyar} \contentsline {section}{\numberline {3.6}A fő (MAIN) entitás}{50}{section.3.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.6.1}A main entity állapotgépe}{50}{subsection.3.6.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.7}C++ ban megírt utasítás küldő program}{52}{section.3.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.1}A Terminal app program}{52}{subsection.3.7.1}%
+\select@language {magyar} \contentsline {subsubsection}{A program működése}{52}{section*.42}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.2}A File app program}{53}{subsection.3.7.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.3}A programaozó beállítása a belső memeória segítségével}{53}{subsection.3.7.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.4}Utasítások és utasítás sor példa és magyarázat.}{54}{subsection.3.7.4}%
