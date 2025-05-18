@@ -327,13 +327,6 @@ INPUT .\DiplomamunkaJODV94.lot
 INPUT DiplomamunkaJODV94.lot
 OUTPUT DiplomamunkaJODV94.lot
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT .\terv1.png
-INPUT .\terv1.png
-INPUT .\terv1.png
-INPUT .\terv1.png
-INPUT .\terv1.png
-INPUT .\terv1.png
-INPUT .\terv1.png
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\logickblockfromx02.png
@@ -372,6 +365,13 @@ INPUT .\SPIblockk.PNG
 INPUT .\SPIblockk.PNG
 INPUT .\SPIblockk.PNG
 INPUT .\SPIblockk.PNG
+INPUT .\terv1.png
+INPUT .\terv1.png
+INPUT .\terv1.png
+INPUT .\terv1.png
+INPUT .\terv1.png
+INPUT .\terv1.png
+INPUT .\terv1.png
 INPUT .\kapcsolasi rajz.PNG
 INPUT .\kapcsolasi rajz.PNG
 INPUT .\kapcsolasi rajz.PNG

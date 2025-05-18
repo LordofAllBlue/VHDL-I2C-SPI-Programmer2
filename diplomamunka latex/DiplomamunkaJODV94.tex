@@ -183,17 +183,7 @@ Tanulmányaim során különösen megfogott ez a terület, ezért választottam 
 A jövőben szeretnék beágyazott rendszerek fejlesztésével foglalkozni, hol a hardveres és szoftveres ismeretek egyaránt fontosok. A NYÁK-tervezés tudása ebben alapvető kompetenciának számít.
 
 \chapter{Feladat leírása, célok, követelmények}
-\section{A Project terv bemutatása}
-Projectembe egy összetett, de egyedül megvalósítható beágyazott rendszert akartam megvalósítani. Es használni, illetve próbára szerettem volna tenni a VHDL-ben való tervezési tudásomat. Szerettem volna egy számomra új programozási nyelvel is megismerkedni, és végül a C++-t választottam.
 
-Ezek miatt egy EEPROM programozó megvalósítását választottam. A project saját ötlet volt, és úgy gondolom megfelelő szakmai kihívás volt.
-\begin{figure}[H]
-	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.245]{terv1.png}
-	\caption{Projekt terv blokkvázlata}
-	\label{Projekt terv}
-\end{figure}
-Ez a block diagramm volt a project kiinduló ötlete. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
 
 
 \chapter{Irodalmi háttér, FPGA-k, a VHDL, kommunikációs protokollok}
@@ -243,6 +233,20 @@ Egy entitásnak két része van, amit VHDL-ben meg kell tervezni:
 	\item Az entitás definíció, ahol meg kell adni az entitás nevét, bemeneteit és kimeneteit
 	\item A szerkezet definíció, ahol az entitás működését kell leírni. 	  
 \end{enumerate}
+
+\section{A NYÁK tevező program rövid bemutatása}
+A KiCad egy ingyenes, nyílt forráskódú szoftvercsomag. Elsősorban kapcsolásai rajzok és nyomtatott áramkörök tervezésére szolgál. Egy KiCad projecten belül lehet tervezni nyákokat, kapcsolási rajzokat, lábnyomokat, és szimbólumokat is.
+
+A KiCad sok hasznos segédprogramot is tartalmaz, amelyek segítenek az kapcsolási rajzok és a nyomtatott áramkörök tervezésében. 
+
+Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó lábnyomok hozzárendelését, valamint a nyomtatott áramkörök fizikai elrendezésének megtervezését. A PCB tervezés során több réteg kezelésére is lehetőség van, akár 32 rétegű áramkörök tervezése is lehetséges. 
+
+A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső NYAK-rol. 
+
+A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések vagy a nem megfelelő távolságok automatikus felismerésére. 
+
+A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
+Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
 
 \section{Kommunikációs protokollok}
 Ahhoz, hogy adatot tudjunk átadni egy feladótól egy fogadónak, fontos, hogy ugyanazt a „nyelvet” beszéljék. Ha két ember különböző nyelven beszél egymással, akkor nem fogják egymást érteni. Ehhez hasonlóan, ha egy feladó IC, az adatot egy bizonyos protokoll szerint kódolja, de a fogadó nem ismeri a protokollt, akkor nem történik meg az adatátvitel. Tehát egy protokoll szabályai leírjak az adat kódolását/dekódolását, és a csatornát is, amin folyik a kommunikáció. 
@@ -311,22 +315,23 @@ Mivel az SPI szinkron protokoll a szimbólum sebességet itt nem az előre beál
 A MOSI vonal egy rövidítés. Teljes neve magyarra fordítva „mester ki szolga be”, ez a vonal hordozza a mestertől küldött soros adatot, a szolga oldalán a lábat SDI-nak (soros adat be) hívjuk. A MISO vonal mester be szolga ki és a szolga oldalon SDO-nak (soros adat ki) hívjuk. Az adatkeretet bemutatásához használom ismét a prgramozómat, mégpedig egy kommunikációt egy spi FLASH és az FPGA között.
 %%need the thing
 \subsection{I2C}
-\chapter{NYÁK tervezés}
-\section{A NYÁK tevező program rövid bemutatása}
-A KiCad egy ingyenes, nyílt forráskódú szoftvercsomag. Elsősorban kapcsolásai rajzok és nyomtatott áramkörök tervezésére szolgál. Egy KiCad projecten belül lehet tervezni nyákokat, kapcsolási rajzokat, lábnyomokat, és szimbólumokat is.
+\chapter{Tervezés}
+\section{A Project terv bemutatása}
+Projectembe egy összetett, de egyedül megvalósítható beágyazott rendszert akartam megvalósítani. Es használni, illetve próbára szerettem volna tenni a VHDL-ben való tervezési tudásomat. Szerettem volna egy számomra új programozási nyelvel is megismerkedni, és végül a C++-t választottam.
 
-A KiCad sok hasznos segédprogramot is tartalmaz, amelyek segítenek az kapcsolási rajzok és a nyomtatott áramkörök tervezésében. 
+Ezek miatt egy EEPROM programozó megvalósítását választottam. A project saját ötlet volt, és úgy gondolom megfelelő szakmai kihívás volt.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.245]{terv1.png}
+	\caption{Projekt terv blokkvázlata}
+	\label{Projekt terv}
+\end{figure}
+Ez a block diagramm volt a project kiinduló ötlete. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
 
-Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó lábnyomok hozzárendelését, valamint a nyomtatott áramkörök fizikai elrendezésének megtervezését. A PCB tervezés során több réteg kezelésére is lehetőség van, akár 32 rétegű áramkörök tervezése is lehetséges. 
+\chapter{Megvalósítás}
 
-A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső NYAK-rol. 
+\section{Kapcsolási rajz tervezése}
 
-A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések vagy a nem megfelelő távolságok automatikus felismerésére. 
-
-A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
-Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
-\section{A KiCad ban nyát tervezés} 
-\subsection{Kapcsolási rajz tervezése}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.30]{kapcsolasi rajz.PNG}

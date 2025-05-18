@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  18 MAY 2025 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  18 MAY 2025 22:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1064,7 +1064,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...A Int\_Osc entitás}{36}{subsection.5.4.1}
+l.25 ...rogramozó al-entitásai}{37}{section.6.3}
                                                   % [1
 
 
@@ -1114,65 +1114,60 @@ l.143 \listoffigures
 
 [8]
 3. fejezet.
-<terv1.png, id=300, 1751.04187pt x 694.84593pt>
-File: terv1.png Graphic file (type png)
-<use terv1.png>
-Package pdftex.def Info: terv1.png  used on input line 192.
-(pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
 
 
 [9
 
- <./terv1.png>]
-
-[10]
+]
 4. fejezet.
 
 
-[11
+[10
 
 ]
 
-[12]
-<logickblockfromx02.png, id=320, 1124.70187pt x 904.1278pt>
+[11]
+<logickblockfromx02.png, id=313, 1124.70187pt x 904.1278pt>
 File: logickblockfromx02.png Graphic file (type png)
 <use logickblockfromx02.png>
-Package pdftex.def Info: logickblockfromx02.png  used on input line 213.
+Package pdftex.def Info: logickblockfromx02.png  used on input line 203.
 (pdftex.def)             Requested size: 425.22874pt x 341.40973pt.
 
 
-[13 <./logickblockfromx02.png>]
+[12 <./logickblockfromx02.png>]
+
+[13]
 
 [14]
 
 [15]
-<i2c small read.PNG, id=342, 1452.92813pt x 782.17218pt>
+<i2c small read.PNG, id=343, 1452.92813pt x 782.17218pt>
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 257.
+Package pdftex.def Info: i2c small read.PNG  used on input line 261.
 (pdftex.def)             Requested size: 434.17465pt x 232.9463pt.
 
 
 [16]
 
 [17 <./i2c small read.PNG>]
-<UARTfromAnalyzer.PNG, id=356, 1221.06187pt x 638.385pt>
+<UARTfromAnalyzer.PNG, id=354, 1221.06187pt x 638.385pt>
 File: UARTfromAnalyzer.PNG Graphic file (type png)
 <use UARTfromAnalyzer.PNG>
-Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 277.
+Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 281.
 (pdftex.def)             Requested size: 425.38635pt x 221.4464pt.
-<uartblock.png, id=357, 783.92876pt x 282.05376pt>
+<uartblock.png, id=355, 783.92876pt x 282.05376pt>
 File: uartblock.png Graphic file (type png)
 <use uartblock.png>
-Package pdftex.def Info: uartblock.png  used on input line 292.
+Package pdftex.def Info: uartblock.png  used on input line 296.
 (pdftex.def)             Requested size: 428.03238pt x 152.00026pt.
 
 
 [18{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./UARTfromAnalyzer.PNG>]
-<SPIblockk.PNG, id=365, 733.23938pt x 578.91281pt>
+<SPIblockk.PNG, id=363, 733.23938pt x 578.91281pt>
 File: SPIblockk.PNG Graphic file (type png)
 <use SPIblockk.PNG>
-Package pdftex.def Info: SPIblockk.PNG  used on input line 301.
+Package pdftex.def Info: SPIblockk.PNG  used on input line 305.
 (pdftex.def)             Requested size: 363.77356pt x 286.61046pt.
 
 
@@ -1182,158 +1177,166 @@ Package pdftex.def Info: SPIblockk.PNG  used on input line 301.
 
 [21]
 5. fejezet.
+<terv1.png, id=378, 1751.04187pt x 694.84593pt>
+File: terv1.png Graphic file (type png)
+<use terv1.png>
+Package pdftex.def Info: terv1.png  used on input line 325.
+(pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
 
 
 [22
 
-]
-<kapcsolasi rajz.PNG, id=384, 1415.2875pt x 832.61063pt>
+ <./terv1.png>]
+
+[23]
+6. fejezet.
+<kapcsolasi rajz.PNG, id=389, 1415.2875pt x 832.61063pt>
 File: kapcsolasi rajz.PNG Graphic file (type png)
 <use kapcsolasi rajz.PNG>
-Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 332.
+Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 337.
 (pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
-<jumperek.PNG, id=385, 1499.6025pt x 629.35126pt>
+<jumperek.PNG, id=390, 1499.6025pt x 629.35126pt>
 File: jumperek.PNG Graphic file (type png)
 <use jumperek.PNG>
-Package pdftex.def Info: jumperek.PNG  used on input line 341.
+Package pdftex.def Info: jumperek.PNG  used on input line 346.
 (pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
 
 
-[23 <./kapcsolasi rajz.PNG>]
-<jumpertable.PNG, id=392, 777.65532pt x 293.59688pt>
+[24
+
+ <./kapcsolasi rajz.PNG>]
+<jumpertable.PNG, id=396, 777.65532pt x 293.59688pt>
 File: jumpertable.PNG Graphic file (type png)
 <use jumpertable.PNG>
-Package pdftex.def Info: jumpertable.PNG  used on input line 347.
+Package pdftex.def Info: jumpertable.PNG  used on input line 352.
 (pdftex.def)             Requested size: 347.38097pt x 129.55667pt.
 
 
-[24 <./jumperek.PNG> <./jumpertable.PNG>]
-<JP13.PNG, id=399, 531.48563pt x 194.22563pt>
+[25 <./jumperek.PNG> <./jumpertable.PNG>]
+<JP13.PNG, id=403, 531.48563pt x 194.22563pt>
 File: JP13.PNG Graphic file (type png)
 <use JP13.PNG>
-Package pdftex.def Info: JP13.PNG  used on input line 361.
+Package pdftex.def Info: JP13.PNG  used on input line 366.
 (pdftex.def)             Requested size: 236.60562pt x 84.84001pt.
-<gnd5v3v3.PNG, id=400, 912.40875pt x 490.08093pt>
+<gnd5v3v3.PNG, id=404, 912.40875pt x 490.08093pt>
 File: gnd5v3v3.PNG Graphic file (type png)
 <use gnd5v3v3.PNG>
-Package pdftex.def Info: gnd5v3v3.PNG  used on input line 368.
+Package pdftex.def Info: gnd5v3v3.PNG  used on input line 373.
 (pdftex.def)             Requested size: 408.01945pt x 217.97368pt.
 
 
-[25 <./JP13.PNG>]
-<nyak.PNG, id=406, 506.6428pt x 708.39656pt>
+[26 <./JP13.PNG>]
+<nyak.PNG, id=410, 506.6428pt x 708.39656pt>
 File: nyak.PNG Graphic file (type png)
 <use nyak.PNG>
-Package pdftex.def Info: nyak.PNG  used on input line 375.
+Package pdftex.def Info: nyak.PNG  used on input line 380.
 (pdftex.def)             Requested size: 225.42645pt x 316.21481pt.
 
 
-[26 <./gnd5v3v3.PNG>]
-<bosrd limits.PNG, id=412, 703.87968pt x 431.36156pt>
+[27 <./gnd5v3v3.PNG>]
+<bosrd limits.PNG, id=416, 703.87968pt x 431.36156pt>
 File: bosrd limits.PNG Graphic file (type png)
 <use bosrd limits.PNG>
-Package pdftex.def Info: bosrd limits.PNG  used on input line 384.
+Package pdftex.def Info: bosrd limits.PNG  used on input line 389.
 (pdftex.def)             Requested size: 384.00525pt x 234.11981pt.
 
 
-[27 <./nyak.PNG>]
-<also reteg.PNG, id=418, 465.23813pt x 642.14906pt>
+[28 <./nyak.PNG>]
+<also reteg.PNG, id=422, 465.23813pt x 642.14906pt>
 File: also reteg.PNG Graphic file (type png)
 <use also reteg.PNG>
-Package pdftex.def Info: also reteg.PNG  used on input line 392.
+Package pdftex.def Info: also reteg.PNG  used on input line 397.
 (pdftex.def)             Requested size: 206.79453pt x 286.4037pt.
 
 
-[28 <./bosrd limits.PNG>]
-<spi kimenet.PNG, id=425, 1282.7925pt x 736.25063pt>
+[29 <./bosrd limits.PNG>]
+<spi kimenet.PNG, id=430, 1282.7925pt x 736.25063pt>
 File: spi kimenet.PNG Graphic file (type png)
 <use spi kimenet.PNG>
-Package pdftex.def Info: spi kimenet.PNG  used on input line 399.
+Package pdftex.def Info: spi kimenet.PNG  used on input line 404.
 (pdftex.def)             Requested size: 421.44496pt x 241.08559pt.
 
 
-[29 <./also reteg.PNG> <./spi kimenet.PNG>]
-<i2ckimenet.PNG, id=434, 890.5772pt x 682.80093pt>
+[30 <./also reteg.PNG> <./spi kimenet.PNG>]
+<i2ckimenet.PNG, id=438, 890.5772pt x 682.80093pt>
 File: i2ckimenet.PNG Graphic file (type png)
 <use i2ckimenet.PNG>
-Package pdftex.def Info: i2ckimenet.PNG  used on input line 407.
+Package pdftex.def Info: i2ckimenet.PNG  used on input line 412.
 (pdftex.def)             Requested size: 398.19534pt x 304.69688pt.
-<rounded ui.PNG, id=435, 370.38374pt x 136.25906pt>
+<rounded ui.PNG, id=439, 370.38374pt x 136.25906pt>
 File: rounded ui.PNG Graphic file (type png)
 <use rounded ui.PNG>
-Package pdftex.def Info: rounded ui.PNG  used on input line 417.
+Package pdftex.def Info: rounded ui.PNG  used on input line 422.
 (pdftex.def)             Requested size: 273.51926pt x 97.92618pt.
 
 
-[30 <./i2ckimenet.PNG>]
-<beforrounded.PNG, id=442, 575.14874pt x 751.30687pt>
+[31 <./i2ckimenet.PNG>]
+<beforrounded.PNG, id=446, 575.14874pt x 751.30687pt>
 File: beforrounded.PNG Graphic file (type png)
 <use beforrounded.PNG>
-Package pdftex.def Info: beforrounded.PNG  used on input line 427.
+Package pdftex.def Info: beforrounded.PNG  used on input line 432.
 (pdftex.def)             Requested size: 199.31337pt x 260.96964pt.
-<afterrounded.PNG, id=443, 638.385pt x 836.3747pt>
+<afterrounded.PNG, id=447, 638.385pt x 836.3747pt>
 File: afterrounded.PNG Graphic file (type png)
 <use afterrounded.PNG>
-Package pdftex.def Info: afterrounded.PNG  used on input line 433.
+Package pdftex.def Info: afterrounded.PNG  used on input line 438.
 (pdftex.def)             Requested size: 221.4464pt x 290.74384pt.
 
 
-[31 <./rounded ui.PNG> <./beforrounded.PNG>]
-<rosszpelda.PNG, id=451, 1366.35469pt x 753.5653pt>
+[32 <./rounded ui.PNG> <./beforrounded.PNG>]
+<rosszpelda.PNG, id=455, 1366.35469pt x 753.5653pt>
 File: rosszpelda.PNG Graphic file (type png)
 <use rosszpelda.PNG>
-Package pdftex.def Info: rosszpelda.PNG  used on input line 440.
+Package pdftex.def Info: rosszpelda.PNG  used on input line 445.
 (pdftex.def)             Requested size: 340.16522pt x 186.96825pt.
-<rounded vias ui.PNG, id=452, 336.50719pt x 280.79906pt>
+<rounded vias ui.PNG, id=456, 336.50719pt x 280.79906pt>
 File: rounded vias ui.PNG Graphic file (type png)
 <use rounded vias ui.PNG>
-Package pdftex.def Info: rounded vias ui.PNG  used on input line 447.
+Package pdftex.def Info: rounded vias ui.PNG  used on input line 452.
 (pdftex.def)             Requested size: 248.11191pt x 206.33092pt.
 
 
-[32 <./afterrounded.PNG> <./rosszpelda.PNG>]
-<viabefore.PNG, id=459, 895.84688pt x 487.06969pt>
+[33 <./afterrounded.PNG> <./rosszpelda.PNG>]
+<viabefore.PNG, id=463, 895.84688pt x 487.06969pt>
 File: viabefore.PNG Graphic file (type png)
 <use viabefore.PNG>
-Package pdftex.def Info: viabefore.PNG  used on input line 454.
+Package pdftex.def Info: viabefore.PNG  used on input line 459.
 (pdftex.def)             Requested size: 356.05624pt x 192.54826pt.
-<viaafter.PNG, id=460, 972.63374pt x 477.28313pt>
+<viaafter.PNG, id=464, 972.63374pt x 477.28313pt>
 File: viaafter.PNG Graphic file (type png)
 <use viaafter.PNG>
-Package pdftex.def Info: viaafter.PNG  used on input line 460.
+Package pdftex.def Info: viaafter.PNG  used on input line 465.
 (pdftex.def)             Requested size: 386.77045pt x 188.6337pt.
 
 
-[33 <./rounded vias ui.PNG> <./viabefore.PNG>]
-<PCB.png, id=467, 2276.505pt x 3035.34pt>
+[34 <./rounded vias ui.PNG> <./viabefore.PNG>]
+<PCB.png, id=471, 2276.505pt x 3035.34pt>
 File: PCB.png Graphic file (type png)
 <use PCB.png>
-Package pdftex.def Info: PCB.png  used on input line 467.
+Package pdftex.def Info: PCB.png  used on input line 472.
 (pdftex.def)             Requested size: 283.85112pt x 378.70526pt.
-<PCBassembled.png, id=468, 1827.07594pt x 1871.49188pt>
+<PCBassembled.png, id=472, 1827.07594pt x 1871.49188pt>
 File: PCBassembled.png Graphic file (type png)
 <use PCBassembled.png>
-Package pdftex.def Info: PCBassembled.png  used on input line 473.
+Package pdftex.def Info: PCBassembled.png  used on input line 478.
 (pdftex.def)             Requested size: 227.67262pt x 233.2246pt.
 
 
-[34 <./viaafter.PNG>]
+[35 <./viaafter.PNG>]
 
-[35 <./PCB.png>]
+[36 <./PCB.png>]
 
-[36 <./PCBassembled.png>]
-<clkrates.PNG, id=483, 1274.51157pt x 330.48468pt>
+[37 <./PCBassembled.png>]
+<clkrates.PNG, id=487, 1274.51157pt x 330.48468pt>
 File: clkrates.PNG Graphic file (type png)
 <use clkrates.PNG>
-Package pdftex.def Info: clkrates.PNG  used on input line 514.
+Package pdftex.def Info: clkrates.PNG  used on input line 519.
 (pdftex.def)             Requested size: 436.46594pt x 111.72702pt.
 
 
-[37]
+[38]
 
-[38{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./clkrates.PNG>]
-
-[39]
+[39{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./clkrates.PNG>]
 
 [40]
 
@@ -1364,28 +1367,30 @@ Package pdftex.def Info: clkrates.PNG  used on input line 514.
 [53]
 
 [54]
-6. fejezet.
-<setupblock.PNG, id=595, 1323.44438pt x 1872.24469pt>
+
+[55]
+7. fejezet.
+<setupblock.PNG, id=599, 1323.44438pt x 1872.24469pt>
 File: setupblock.PNG Graphic file (type png)
 <use setupblock.PNG>
-Package pdftex.def Info: setupblock.PNG  used on input line 939.
+Package pdftex.def Info: setupblock.PNG  used on input line 944.
 (pdftex.def)             Requested size: 210.84492pt x 298.65477pt.
-<setupreal.PNG, id=596, 2089.8075pt x 2786.41pt>
+<setupreal.PNG, id=600, 2089.8075pt x 2786.41pt>
 File: setupreal.PNG Graphic file (type png)
 <use setupreal.PNG>
-Package pdftex.def Info: setupreal.PNG  used on input line 945.
+Package pdftex.def Info: setupreal.PNG  used on input line 950.
 (pdftex.def)             Requested size: 260.51399pt x 347.5891pt.
 
 
-[55
+[56
 
 ]
 
-[56 <./setupblock.PNG>]
+[57 <./setupblock.PNG>]
 
-[57 <./setupreal.PNG>]
+[58 <./setupreal.PNG>]
 
-[58
+[59
 
 ] (DiplomamunkaJODV94.aux)
  ***********
@@ -1393,20 +1398,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
 Package rerunfilecheck Info: File `DiplomamunkaJODV94.out' has not changed.
-(rerunfilecheck)             Checksum: A50DDE1767C89C38E10019D8EF64DB0A;6593.
+(rerunfilecheck)             Checksum: 59B6A895013EDD7F58C4FB7E8DAE4812;6470.
  ) 
 Here is how much of TeX's memory you used:
- 20389 strings out of 469958
- 344753 string characters out of 5466390
- 722039 words of memory out of 5000000
+ 20390 strings out of 469958
+ 344746 string characters out of 5466390
+ 722040 words of memory out of 5000000
  46663 multiletter control sequences out of 15000+600000
  676383 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,2048b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on DiplomamunkaJODV94.pdf (60 pages, 43959917 bytes).
+Output written on DiplomamunkaJODV94.pdf (61 pages, 43960664 bytes).
 PDF statistics:
- 691 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 173 named destinations out of 1000 (max. 500000)
  442 words of extra memory for PDF output out of 10000 (max. 10000000)
 
