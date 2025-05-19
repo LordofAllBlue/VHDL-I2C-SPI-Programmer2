@@ -1,43 +1,44 @@
 \select@language {magyar} \contentsline {chapter}{\numberline {1}Idegen nyelvű összefoglaló}{6}{chapter.1}%
 \select@language {magyar} \contentsline {chapter}{\numberline {2}Bevezetés}{7}{chapter.2}%
-\select@language {magyar} \contentsline {section}{\numberline {2.1}Téma választás Háttér}{7}{section.2.1}%
 \select@language {magyar} \contentsline {chapter}{\numberline {3}Feladat leírása, célok, követelmények}{9}{chapter.3}%
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Irodalmi háttér, FPGA-k, a VHDL, kommunikációs protokollok}{10}{chapter.4}%
-\select@language {magyar} \contentsline {section}{\numberline {4.1}FPGA-k, és a VHDL}{10}{section.4.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}Mi a FPGA?}{10}{subsection.4.1.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.1.2}Mi a VHDL?}{13}{subsection.4.1.2}%
-\select@language {magyar} \contentsline {section}{\numberline {4.2}A NYÁK tevező program rövid bemutatása}{15}{section.4.2}%
-\select@language {magyar} \contentsline {section}{\numberline {4.3}Kommunikációs protokollok}{16}{section.4.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}Analízis képek magyarázata}{16}{subsection.4.3.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}UART}{17}{subsection.4.3.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.3}SPI}{19}{subsection.4.3.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.4}I2C}{21}{subsection.4.3.4}%
-\select@language {magyar} \contentsline {chapter}{\numberline {5}Tervezés}{22}{chapter.5}%
-\select@language {magyar} \contentsline {section}{\numberline {5.1}A Project terv bemutatása}{22}{section.5.1}%
-\select@language {magyar} \contentsline {chapter}{\numberline {6}Megvalósítás}{24}{chapter.6}%
-\select@language {magyar} \contentsline {section}{\numberline {6.1}Kapcsolási rajz tervezése}{24}{section.6.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.1.1}NYÁK tervezése}{28}{subsection.6.1.1}%
-\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{29}{section*.18}%
-\select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{30}{section*.20}%
-\select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{31}{section*.22}%
-\select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{32}{section*.24}%
-\select@language {magyar} \contentsline {section}{\numberline {6.2}A Kész NYÁK}{36}{section.6.2}%
-\select@language {magyar} \contentsline {section}{\numberline {6.3}A Programozó al-entitásai}{37}{section.6.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.1}A Int\_Osc entitás}{37}{subsection.6.3.1}%
-\select@language {magyar} \contentsline {subsubsection}{Az órajel sebeségének válastása}{38}{section*.34}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.2}A write8bit entitás}{40}{subsection.6.3.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.3}UART\_TX entitás}{41}{subsection.6.3.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.4}A UART\_RX entitás}{42}{subsection.6.3.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.5}A writePage entitás}{44}{subsection.6.3.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.3.6}A I2C entitás}{47}{subsection.6.3.6}%
-\select@language {magyar} \contentsline {section}{\numberline {6.4}A fő (MAIN) entitás}{51}{section.6.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.4.1}A main entity állapotgépe}{51}{subsection.6.4.1}%
-\select@language {magyar} \contentsline {section}{\numberline {6.5}C++ ban megírt utasítás küldő program}{53}{section.6.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.1}A Terminal app program}{53}{subsection.6.5.1}%
-\select@language {magyar} \contentsline {subsubsection}{A program működése}{53}{section*.36}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.2}A File app program}{54}{subsection.6.5.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.3}A programaozó beállítása a belső memeória segítségével}{54}{subsection.6.5.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.4}Utasítások és utasítás sor példa és magyarázat.}{55}{subsection.6.5.4}%
-\select@language {magyar} \contentsline {chapter}{\numberline {7}Tesztelés}{56}{chapter.7}%
-\select@language {magyar} \contentsline {section}{\numberline {7.1}Tesztelési és analízis elrendezés}{56}{section.7.1}%
-\select@language {magyar} \contentsline {section}{\numberline {7.2}Tesztelés}{58}{section.7.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Irodalmi háttér, FPGA-k, a VHDL, kommunikációs protokollok}{11}{chapter.4}%
+\select@language {magyar} \contentsline {section}{\numberline {4.1}FPGA-k, és a VHDL}{11}{section.4.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}Mi a FPGA?}{11}{subsection.4.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.2}Mi a VHDL?}{14}{subsection.4.1.2}%
+\select@language {magyar} \contentsline {section}{\numberline {4.2}A NYÁK tevező program rövid bemutatása}{16}{section.4.2}%
+\select@language {magyar} \contentsline {section}{\numberline {4.3}Kommunikációs protokollok}{17}{section.4.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}Analízis képek magyarázata}{17}{subsection.4.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}UART}{18}{subsection.4.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.3}SPI}{20}{subsection.4.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.4}I2C}{22}{subsection.4.3.4}%
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Tervezés}{23}{chapter.5}%
+\select@language {magyar} \contentsline {section}{\numberline {5.1}A Project terv bemutatása}{23}{section.5.1}%
+\select@language {magyar} \contentsline {section}{\numberline {5.2}VHDL design terv}{24}{section.5.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {6}Megvalósítás}{25}{chapter.6}%
+\select@language {magyar} \contentsline {section}{\numberline {6.1}Kapcsolási rajz tervezése}{25}{section.6.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.1.1}NYÁK tervezése}{29}{subsection.6.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{30}{section*.18}%
+\select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{31}{section*.20}%
+\select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{32}{section*.22}%
+\select@language {magyar} \contentsline {subsubsection}{Plugin-ek}{33}{section*.24}%
+\select@language {magyar} \contentsline {section}{\numberline {6.2}A Kész NYÁK}{37}{section.6.2}%
+\select@language {magyar} \contentsline {section}{\numberline {6.3}A Programozó al-entitásai}{38}{section.6.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.1}A Int\_Osc entitás}{38}{subsection.6.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{Az órajel sebeségének válastása}{39}{section*.34}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.2}A write8bit entitás}{41}{subsection.6.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.3}UART\_TX entitás}{42}{subsection.6.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.4}A UART\_RX entitás}{43}{subsection.6.3.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.5}A writePage entitás}{45}{subsection.6.3.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.6}A I2C entitás}{48}{subsection.6.3.6}%
+\select@language {magyar} \contentsline {section}{\numberline {6.4}A fő (MAIN) entitás}{52}{section.6.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.4.1}A main entity állapotgépe}{52}{subsection.6.4.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.5}C++ ban megírt utasítás küldő program}{54}{section.6.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.1}A Terminal app program}{54}{subsection.6.5.1}%
+\select@language {magyar} \contentsline {subsubsection}{A program működése}{54}{section*.36}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.2}A File app program}{55}{subsection.6.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.3}A programaozó beállítása a belső memeória segítségével}{55}{subsection.6.5.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.4}Utasítások és utasítás sor példa és magyarázat.}{56}{subsection.6.5.4}%
+\select@language {magyar} \contentsline {chapter}{\numberline {7}Tesztelés}{57}{chapter.7}%
+\select@language {magyar} \contentsline {section}{\numberline {7.1}Tesztelési és analízis elrendezés}{57}{section.7.1}%
+\select@language {magyar} \contentsline {section}{\numberline {7.2}Tesztelés}{59}{section.7.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {8}Melléklet}{60}{chapter.8}%

@@ -169,27 +169,56 @@ Here comes the summary...
 
 
 \chapter{Bevezetés}
-\section{Téma választás Háttér}
+%\section{Téma választás Háttér}
 Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
 
-Az FPGA-k széles körben alkalmazottak. Az FPGA-k egyik legnagyobb előnye, hogy lehetővé teszik a mérnökök számára saját, célzottan megtervezett logikai műveletek végrehajtását, rendkívül nagy sebességgel. Nem feltétlenül azért gyorsabbak, mert több GHz-es órajellel rendelkeznek, mint egy mai hagyományos CPU, hanem mert az áramkörök működése nagyon specifikusan, az adott feladathoz igazítva valósítható meg. Egy FPGA-ban akár több százezer ugyanolyan logikai blokkot lehet tervezni és megvalósítani. Emiatt kiválóak lehetnek a párhuzamos számításban. Így minden terület, ahol ez fontos lehet, használva vannak, legalább a fejlesztési szakaszban. 
+Az FPGA-k széles körben alkalmazottak. Egy FPGA-ban akár több százezer azonos logikai blokkot is lehet tervezni és megvalósítani. Emiatt kiválóak lehetnek a párhuzamos számításban. Így minden terület, ahol ez fontos lehet, használva vannak, legalább a fejlesztési szakaszban. 
 
 Például valós idejű rendszerekben vagy bonyolult jelfeldolgozási feladatokban. A mesterséges intelligenciáknál is fontos az ultragyors párhuzamos adat átvitel vagy feldolgozás. Például I/O feladatoknál. De az FPGA-kat jellemzően AI gyorsítók vagy AI processzorok ként is alkalmazzák. Mesterséges intelligencia betanítási feladatokban az FPGA-alapú gyorsítók gyorsabb teljesítményt tudnak nyújtani, mint a hagyományos GPU-k. Hasonló előnyök miatt az FPGA technológia kiemelt szerepet kapott a kép- és videófeldolgozás területén is. Számos fogyasztói elektronikai eszközben, például virtuális valóság szemüvegekben FPGA-k végzik a beérkező videójelek feldolgozását és a kijelzőkre történő leképezését. 
 
 Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Gyakran vannak használva a tervezők által új dizájnok validálására, debuggolására, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
 
-Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájául az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. A projektemben a NYÁK tervezése is kiemelt szerepet kapott. Úgy gondolom, hogy a NYÁK-tervezés mindig is keresett szaktudás marad a villamosmérnöki szakmában, hiszen bármilyen modern beágyazott rendszer létrehozása elképzelhetetlen megfelelő áramköri integráció nélkül. 
-
-A jövőben szeretnék beágyazott rendszerek fejlesztésével foglalkozni, hol a hardveres és szoftveres ismeretek egyaránt fontosok. A NYÁK-tervezés tudása ebben alapvető kompetenciának számít.
+Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájául az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. 
 
 \chapter{Feladat leírása, célok, követelmények}
 
+Elsősorban szerettem volna egy összetett, de egyedül is megvalósítható beágyazott rendszert tervezni, amely során lehetőségem nyílik elmélyülni az FPGA-k és a VHDL hardverleíró nyelv használatában. A célom az volt, hogy egy olyan eszközt hozzak létre, amely képes különböző típusú EEPROM, és más memóriák programozására két kommunikáció protokollt alkalmazásával, és amely rugalmasan alkalmazható különféle feladatokra, esetleg más IC-k felkonfigurálására.
+
+Fontos szempont volt, hogy a projekt során ne csak a hardveres, hanem a szoftveres oldal is hangsúlyt kapjon, ezért döntöttem úgy, hogy a kommunikációs és vezérlő szoftvert C++ nyelven írom meg. Ezzel egyrészt bővíthettem a programozási ismereteimet, másrészt egy jól használható, parancssoros interfészt tudtam biztosítani a programozóhoz.
+
+A projekt során kiemelt cél volt a NYÁK (nyomtatott áramkör) tervezésének gyakorlása is, hiszen ez a villamosmérnöki szakmában alapvető kompetenciának számít, és minden modern beágyazott rendszer alapja a megfelelő áramköri integráció.
+
+Tehát a konkrét kitőzőtt célok/követelmények:
+\begin{itemize}
+    \item Egy Windows-ra írt program, ami képes egy felhasználótól parancsokat értelmezni és azok alapján parancsokat küldeni egy COM port-on.
+    \item Egy VHDL-ban megírt hardware, ami FPGA-n valósul meg, és képes a COM port-ról érkező, UART-ba alakított parancsokat értelmezni.
+    \item Az FPGA-s hardware része legyen egy SPI és I2C mester.
+    \item Az FPGA-s hardware legyen képes parancsok alapján SPI és I2C üzeneteket írni és olvasni.
+    \item Az FPGA-s hardware legyen képes beállító parancsokat fogadni, amelyekkel a SPI és I2C keret különböző részeinek hosszúságát a felhasználó állíthatja.
+    \item Az FPGA-s hardware-nek legyen reset logikája.
+    \item Az FPGA-s hardware legyen képes a SPI és I2C vonalakon érkező adatokat UART kommunikációkkal visszaküldeni a felhasználónak.
+    \item A Windows-os program legyen képes a kapott adatokat rögzíteni (logolni).
+    \item A programozó működése teszteléssel legyen bemutatva ténylegez memória egységekkel
+    \item A programozó rendszernek legyen egy NYÁK-ja.
+\end{itemize}
 
 
 \chapter{Irodalmi háttér, FPGA-k, a VHDL, kommunikációs protokollok}
 \section{FPGA-k, és a VHDL}
 \subsection{Mi a FPGA?}
 
+Az FPGA, magyarul helyben programozható logikai kapumátrix, olyan integrált áramkör, amelyet a felhasználó a gyártás után konfigurálhat. A digitális áramkörök tervezése HDL nyelveken történik, és a megvalósítás fizikailag a chip-ben belül történik.
+
+Az FPGA-k logikai cellákból épülnek fel, amelyek flip-flopokat, LUT-okat és logikai kapukat tartalmaznak. Ezek a cellák tetszőlegesen összekapcsolhatók, így hozhatók létre a kívánt áramkörök. A konfigurációt, amely az FPGA-ban megvalósított hardware működését meghatározza, gyakran firmware-nek nevezzük, bár a kifejezés eredetileg más jelentéssel bírt. Itt arra utal, hogy a "programozás" révén egy valós, hardveres működésű áramkör jön létre. Más megnevezés is elterjedt, például design, vagy gateware. A dolgozatban én legfőbbképpen a design szót használom ha a HDL-ben írt "kódról" beszélek, és a hardware kifejezést ha már a konfigurált FPGA-ról beszélek. 
+
+Az FPGA-k elterjedtek mind fogyasztói és ipari termékekben, mind fejlesztési környezetekben, mint például az ASIC termék tervek validálásához. Előnyük, hogy specifikus feladatokat hatékonyan képesek végrehajtani, és működésük firmware-frissítéssel módosítható. Például egy VR-eszközben az FPGA gyorsan és pontosan dolgozza fel a videójelet, minimalizálva a késleltetést a fejmozgás és a képfrissítés között. Az ilyen ismétlődő, párhuzamos műveletekben az FPGA hatékonyabb, mint egy általános célú CPU, amelyet sokféle feladatra terveztek, de nem optimalizáltak ezekre a számításokra.
+
+Egy szemléletes hasonlat: míg egy ember képes kenyérsütési utasításokat követni, egy erre tervezett gép gyorsabban és hatékonyabban végzi el ugyanazt a feladatot. Ugyanakkor a gép nem alkalmas más típusú feladatokra írt utasításokat értelmezni, például villanykörte becsavarására. Erre az új feladathoz egy új gép tervezése szükséges. A hasonlatban a személy a CPU, az utasítássor a hagyományos kód, míg a gépek az FPGA-n megvalósított designok.
+
+A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: Egy CPLD, egy külső memória chipből, konfigurált egy FPGA-t a termék indításakor
+
+A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunka. A hatékony netlist-generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, föleg amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, az jel útválasztás jelentősen nehezebbé válik.
+\iffalse
 A FPGA egy rövidítés, teljes nevükön ezeket a chipeket, Field-programmable gate array-ként, magyarul a felhasználás helyén programozható logikai kapumátrixokként ismerjük. Az FPGA-ra HDL nyelveken lehet tervezni digitális áramköröket, amik megvalósulnak fizikailag a chip belsejében. 
 
 Az FPGA-k tartalmaznak logikai cellákat, különböző tartalmakkal: flip-flop-ok, LUT-ok, illetve logikai kapuk stb. Ezeket a cellákat lehet programozás során tetszőlegesen összeköttet-ni, így alakulnak ki a tervezett digitális áramkörök. Az FPGA-kon „futó kódot”, azaz a designt, firmwarenek szoktuk nevezni. A firmware szónak más az eredete, mégpedig a csak olvasható memóriába írt program, de az FPGA-k használata körül is elterjedt. A szó maga jól leírja, hogy a FPGA programozható, de közben egy tényleges digitális áramkör valósul meg.
@@ -197,6 +226,7 @@ Az FPGA-k tartalmaznak logikai cellákat, különböző tartalmakkal: flip-flop-
 Az FPGA-k megtalálhatók fogyasztói termékekben is, de nagy szerepet játszanak, sok fejlesztési környezetben is, főleg ASIC fejlesztésnél. Termékekben azért lehet hasznos egy FPGA, mert specifikus feladatokat nagyon jól tud elvégezni, és ha a gyártó cég akar változtatni a chip működésén, akkor van rá lehetőség egy firmware frissítéssel. Jó példa az FPGA-k használatára a fogyasztói virtuális valóság készülék. A készülékbe küldött videó adatot fel kell dolgozni, és helyesen rátérképezni a készülék kijelzőire. Mindezt minél gyorsabban, hogy a felhasználó minél kevesebb jelkésést érezzen a fejmozgatás és a kép változása között. Ilyen feladatokra tökéletes az FPGA, hiszen ugyanazt a matematikai műveleteket kell elvégezni, ugyanolyan formátumú adatra, több milliószor egymás után. Egy hagyományos CPU ugyan-ebben a feladatban, rosszabbul szerepelne, még ha hasonlóan gyors az órajele is. A CPU-k arra vannak tervezve, hogy minél több használati esetet fedjenek le, és sok feladat elvégzésére könnyen lehessen őket programozni. Az ilyen feladatoknál éppen emiatt, nem a legoptimálisabban végzik el a számitásokat, mivel nem erre lettek tervezve. Egy példán keresztül bemutatva: ha egy ember kap egy utasítássort kenyérsütéshez, akkor végre tudja hajtani az utasításokat, és képes egy kenyeret sütni, de lassabban, mint egy kenyérsütéshez tervezett automata gép. Ugyanennek az embernek írhatunk utasításokat egy villanykörte becsavarására is, de a kenyérsütő gép soha nem lesz képes villanykörtét becsavarni. Ehhez egy másik gépet kellene tervezni. A hasonlatban az ember egy CPU, az utasítássor a hagyományos kód és a tervezett automata gép egy FPGA-n megvalósított design.
 
 A legtöbb fejlett FPGA manapság SRAM-alapú. Ezek az eszközök konfigurálható logikai blokkokat (CLB-k), és programozható I/O blokkokat tartalmaznak, a jelek chipbe történő be- és kivezetéséhez, valamint programozható útválasztó mátrixot, a CLB-k összekapcsolásához. Ahogy az elnevezés is sugallja, ezeknek az eszközöknek a konfigurációját, a belső SRAM tárolja a chipen. Mivel a programozható összeköttetések nem ideálisak (ellenállásuk és kapacitásuk van), az egyes útvonalak hossza, nagy hatással van az elkészült design elérhető teljesítményére. Az összekapcsolások okozta késések jelentősek, ezért előfordulhat, hogy nehéz megjósolni a sebességet a tényleges útválasztás befejezése előtt. Ahogy az eszközök kihasználtsága megközelíti a 100\%-ot, az útválasztás jelentősen nehezebbé válik. A netlist generáló folyamat, kritikus fontosságú az elkészült design kívánt teljesítményének eléréséhez. Ebben a fejlettebb szintetizátorok nagyban segíthetnek. 
+\fi
 
 \begin{figure}[H]
 	\centering
@@ -317,17 +347,15 @@ A MOSI vonal egy rövidítés. Teljes neve magyarra fordítva „mester ki szolg
 \subsection{I2C}
 \chapter{Tervezés}
 \section{A Project terv bemutatása}
-Projectembe egy összetett, de egyedül megvalósítható beágyazott rendszert akartam megvalósítani. Es használni, illetve próbára szerettem volna tenni a VHDL-ben való tervezési tudásomat. Szerettem volna egy számomra új programozási nyelvel is megismerkedni, és végül a C++-t választottam.
 
-Ezek miatt egy EEPROM programozó megvalósítását választottam. A project saját ötlet volt, és úgy gondolom megfelelő szakmai kihívás volt.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.245]{terv1.png}
 	\caption{Projekt terv blokkvázlata}
 	\label{Projekt terv}
 \end{figure}
-Ez a block diagramm volt a project kiinduló ötlete. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
-
+Ez a block diagramm volt a project kiinduló terve. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
+\section{VHDL design terv}
 \chapter{Megvalósítás}
 
 \section{Kapcsolási rajz tervezése}
@@ -1045,9 +1073,9 @@ A \ref{egyenlet1}. összefüggés az \cite{fpgaadatlap} szerzőtől származik.
 \backmatter
 \chapter{Összefoglalás}
 \appendix
-
-\chapter{A Melléklet}
 \fi
+\chapter{Melléklet}
+
 
 \renewcommand{\refname}{Irodalomjegyzék}
 \begin{thebibliography}{9}
