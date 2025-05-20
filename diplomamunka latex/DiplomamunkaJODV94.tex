@@ -217,7 +217,7 @@ Egy szemléletes hasonlat: míg egy ember képes kenyérsütési utasításokat 
 
 A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: Egy CPLD, egy külső memória chipből, konfigurált egy FPGA-t a termék indításakor
 
-A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunka. A hatékony netlist-generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, föleg amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, az jel útválasztás jelentősen nehezebbé válik.
+A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunka. A hatékony netlist-generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, föleg amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, az jel útválasztás jelentősen nehezebbé válik.%done
 \iffalse
 A FPGA egy rövidítés, teljes nevükön ezeket a chipeket, Field-programmable gate array-ként, magyarul a felhasználás helyén programozható logikai kapumátrixokként ismerjük. Az FPGA-ra HDL nyelveken lehet tervezni digitális áramköröket, amik megvalósulnak fizikailag a chip belsejében. 
 
@@ -226,7 +226,7 @@ Az FPGA-k tartalmaznak logikai cellákat, különböző tartalmakkal: flip-flop-
 Az FPGA-k megtalálhatók fogyasztói termékekben is, de nagy szerepet játszanak, sok fejlesztési környezetben is, főleg ASIC fejlesztésnél. Termékekben azért lehet hasznos egy FPGA, mert specifikus feladatokat nagyon jól tud elvégezni, és ha a gyártó cég akar változtatni a chip működésén, akkor van rá lehetőség egy firmware frissítéssel. Jó példa az FPGA-k használatára a fogyasztói virtuális valóság készülék. A készülékbe küldött videó adatot fel kell dolgozni, és helyesen rátérképezni a készülék kijelzőire. Mindezt minél gyorsabban, hogy a felhasználó minél kevesebb jelkésést érezzen a fejmozgatás és a kép változása között. Ilyen feladatokra tökéletes az FPGA, hiszen ugyanazt a matematikai műveleteket kell elvégezni, ugyanolyan formátumú adatra, több milliószor egymás után. Egy hagyományos CPU ugyan-ebben a feladatban, rosszabbul szerepelne, még ha hasonlóan gyors az órajele is. A CPU-k arra vannak tervezve, hogy minél több használati esetet fedjenek le, és sok feladat elvégzésére könnyen lehessen őket programozni. Az ilyen feladatoknál éppen emiatt, nem a legoptimálisabban végzik el a számitásokat, mivel nem erre lettek tervezve. Egy példán keresztül bemutatva: ha egy ember kap egy utasítássort kenyérsütéshez, akkor végre tudja hajtani az utasításokat, és képes egy kenyeret sütni, de lassabban, mint egy kenyérsütéshez tervezett automata gép. Ugyanennek az embernek írhatunk utasításokat egy villanykörte becsavarására is, de a kenyérsütő gép soha nem lesz képes villanykörtét becsavarni. Ehhez egy másik gépet kellene tervezni. A hasonlatban az ember egy CPU, az utasítássor a hagyományos kód és a tervezett automata gép egy FPGA-n megvalósított design.
 
 A legtöbb fejlett FPGA manapság SRAM-alapú. Ezek az eszközök konfigurálható logikai blokkokat (CLB-k), és programozható I/O blokkokat tartalmaznak, a jelek chipbe történő be- és kivezetéséhez, valamint programozható útválasztó mátrixot, a CLB-k összekapcsolásához. Ahogy az elnevezés is sugallja, ezeknek az eszközöknek a konfigurációját, a belső SRAM tárolja a chipen. Mivel a programozható összeköttetések nem ideálisak (ellenállásuk és kapacitásuk van), az egyes útvonalak hossza, nagy hatással van az elkészült design elérhető teljesítményére. Az összekapcsolások okozta késések jelentősek, ezért előfordulhat, hogy nehéz megjósolni a sebességet a tényleges útválasztás befejezése előtt. Ahogy az eszközök kihasználtsága megközelíti a 100\%-ot, az útválasztás jelentősen nehezebbé válik. A netlist generáló folyamat, kritikus fontosságú az elkészült design kívánt teljesítményének eléréséhez. Ebben a fejlettebb szintetizátorok nagyban segíthetnek. 
-\fi
+
 
 \begin{figure}[H]
 	\centering
@@ -238,25 +238,32 @@ A legtöbb fejlett FPGA manapság SRAM-alapú. Ezek az eszközök konfigurálhat
 A fenti diagram egy egyszerű konfigurálható logikai blokkot / logikai elemet mutat be. Ez a CLB, a MachXO2 FPGA termékcsalád adatlapjában található, ehhez a termékcsaládhoz tartozik az az FPGA is, amivel én dolgoztam. A modern és komolyabb FPGA-k bonyolultabb megvalósításokat tartalmaznak további erőforrásokkal, például blokk RAM-okkal, shift regiszterekkel, összeadókkal stb. A kis LUT-ok (általában 4-6 bemenet) a kombinációs logika megvalósítását szolgáljak. A logikai blokkok általában tartalmaznak LUT-okat és néhány flip-flop-ot. A CLB-n belüli kapcsolatok meglehetősen rövidek, így a késleltetésük általában jelentéktelen. A CLB-ket általában az FPGA-n belül szigetekként helyezik el, amelyeket az összekap-csolási mátrix vesz körül, ahol a szomszédos CLB-k, általában rövid és gyors kapcsolatot tartalmaznak közöttük. Ezen kapcsolatok alkalmazásával bonyolultabb funkciók is megvalósíthatók, a szomszédos blokkokból történő erőforrások „kölcsönvételével”. Ez azonban, csak megfelelő elhelyezés mellett történhet meg. Például egy összeadó bitjeit, sorrendben egymás mellé kell helyezni. Ez a szintetizátor felelőssége, de általában a tervezőnek ismernie kell a cél FPGA belső architektúráját, az erőforrások legjobb kihasználása érdekében. Manapság eléggé elterjedtek a beépített oszcillátorok, tápegységek, melyek a rendszerszintű tervezést segítik, és helyet spórolnak. Nem szabad figyelmen kívül hagyni azt a tényt, hogy a megfelelő tápegység megtervezése meglehetősen összetett feladat a modern FPGA-k számára, ahol sok jel, nagy frekvencián működik, és több tápsínre van szükség, nagy áramerősséggel. Az indítási blokkok segíthetnek a terv minden részének megfelelő inicializálásában, rendszerindítás után, vagy alaphelyzetbe állítás esetén. 
 
 Az FPGA-kat jelfeldolgozásra is használják, ahol a dedikált szorzók / digitális jelfeldolgozási blokkok hatékonyabbak, mint a CLB-alapú blokkok. Ezek a dedikált blokkok sokkal kevesebb helyet foglalnak el az IC belsőjében, és magasabb frekvencián, kisebb teljesítménnyel tudnak működni. A belső memória flip-flop-okból való szintetizálása, pazarló folyamat. A modern FPGA-k beépített memóriablokkokat tartalmaznak, amelyekre általában szükség van, mivel a legtöbb tervnek valamilyen FIFO-ra, vagy bufferre van szüksége az átmeneti adatok tárolására. A legtöbb FPGA legalább kétportos memóriát tartalmaz, ahol az olvasási és írási műveletek egyszerre történhetnek, két dedikált porton. Az órajelgenerátorok, manapság egy-aránt elterjedt erőforrások.
-
+\fi
 \subsection{Mi a VHDL?}
 
-A VHDL az egyik legelterjedtebb HDL, a VERILOG mellet. A HDL, azaz hardware description language, magyar neve, hardware leíró nyelv. A VHDL egyben egy standard, és egy programozói nyelv. Programozói nyelv, mert segítségével absztrakt módon lehet leírni egy digitális áramkör működését, amit majd szintetizálás után, meg lehet valósítani egy FPGA segítségével. Egyben egy standard is, amit az IEEE tart fent. Minden 5 év után frissül, hogy lépést tartson az ipari szükségekkel. A VHDL nehézsége, mint minden más leíró nyelvnek is, nem csak az, hogy meg kell tanulni a programozó nyelvet, hanem az is, hogy tudni kell, hogy a különböző szerszámok, amiket használunk a fejlesztés során, hogyan értelmezik majd a kódot. Amikor egy design működik szimulátorban, nincs rá garancia, hogy szintetizálás után is működni fog. Komolyabb designok tervezése ezeket a lépéseket szokta követni:
-\begin{enumerate}[label=(\alph*)]
-	\item Az elvárt digitális működés leírása HDL nyelven, egyben, majd a szimulációhoz szükséges „testbench” megírása.
-	\item A design szimulálása szimulátorral, debugolás.
-	\item A design szintetizálása a tényleges a FPGA-ra. 
-\end{enumerate}
-A testbench szerepe az, hogy szimuláció közben, a design bemeneteit szimulálja, illetve kimeneteire válaszoljon, ha kell. Például egy I2C mester tervezése után, a testbench viselkedhet úgy, mint egy szolga. A VHDL tartalmaz szintetizálhatatlan részt is, nagyrészt azért, hogy testbench írásakor egyszerűbben és gyorsabban lehessen haladni. VHDL-nek azt a részét, ami szintetizálható, RTL-nek (register transfer level) hívjuk.
+A VHDL napjaink egyik legszélesebb körben alkalmazott hardverleíró nyelve (HDL), amely a Verilog mellett ipari szabványnak számít. A VHDL különlegessége, hogy nem csupán egy "programozási" nyelv, hanem egyben egy, az IEEE által karbantartott és frissített szabvány is, amely folyamatosan igazodik az ipari igényekhez.
 
-A szintetizálás az utolsó és legkritikusabb lépés, mielőtt egy működő design-t megvalósítunk. 
-\begin{enumerate}
-	\item A szintetizátor először generál egy kapu szintű netlist-et. Utána a generált netlist-et rátérképezi a specifikus logikai cellákra az FPGA-ban, flip-flop-okra, look-up table-okra és logikai kapukra stb. 
-	\item Ezután készül egy netlist, ami a specifikus FPGA modellre tartozik, a szintetizátor eldönti az összes szükséges cella legjobb elrendezését, összecsatolását. 
-	\item Végül következik az időzítés analízis. Komolyabb designoknál fontos a helyes működéshez, hogy adott értékeknél ne legyen nagyobb a „slack”. Ezen azt értjük, hogy egy logikai jel később ér a netlist-ben megadott helyére, mint kellene, és emiatt hibás a design. Ilyesmi akkor történik, ha például egy jel túl sok logikai kapun megy át anélkül, hogy az órajelhez újra időzítve lenne. Ilyenkor a megoldás az, hogy a logikai kapuk közepénél, újra szinkronizáljuk a jelet egy flipfloppal.
-	\item Ezután a szintetizátor előállít egy bit fájlt, amit rá lehet programozni az FPGA SRAM-jébe.  
+A HDL-ek lehetővé teszi digitális áramkörök működésének absztrakt, magas szintű leírását, amelyből szintetizálás útján valós, FPGA-n megvalósítható hardver születhet. A nyelv használatának egyik fő kihívása, hogy nem elegendő csupán a szintaxist és a nyelvi elemeket elsajátítani; elengedhetetlen annak ismerete is, hogy a különböző fejlesztői eszközök és szintetizátorok miként értelmezik a leírt kódot. Gyakori tapasztalat, hogy egy szimulációban helyesen működő terv nem feltétlenül viselkedik ugyanúgy a szintetizált, fizikai környezetben.
+
+HDL-ben digitális rendszerek tervezéséhez a munkafolyamat:
+\begin{enumerate}[label=(\alph*)]
+	\item Maga a design megtervezése és leírása a HDL nyelvben  
+	\item A testbench megírása, ami a szimulációhoz szükséges.
+	\item Szimulátor program használata szimulációhoz, hibakeresés.
+	\item A cél harware-re design szintetizálása, hibakeresés. 
 \end{enumerate}
-A VHDL entitás, egy darab hardwarenek lehet mondani, aminek definiált kimenetei is bemenetei vannak. Egy tervezett entitás lehet komplex, egyszerű, lehet szimpla ÉS kapu vagy akár SPI mester is. Egy entitáson belül lehet több, már megtervezett entitás is összekapcsolva. 
+A testbench alapvető feladata a szimuláció során a rendszer bemeneteinek előállítása, valamint a kimenetekre adott reakciók pontos leképezése. Például egy I2C mester implementációjának esetében a testbench egy alárendelt egységként működhet, ezzel segítve a rendszer funkcionalitásának ellenőrzését. A VHDL nyelv tartalmaz olyan, szintetizálhatatlan nyelvet is, melyek célja, hogy a tesztkörnyezet létrehozása során egyszerűbbé és gyorsabbá tegyék a fejlesztést. Ezzel szemben a nyelv azon részeit, amelyek szintetizálhatók, RTL-nek (Register Transfer Level) nevezzük, és ezek képezik a végleges hardverimplementációt.%done
+
+Az FPGA design megírását és szimulálását követő, és rendkívül kritikus fázis a szintetizálás, melynek célja a tervezett rendszer struktúrájának előállítása és optimalizálása a cél harware-ben. Ennek során a következő lépések történnek:
+\begin{enumerate} 
+	\item A szintetizátor elsőként a designból egy kapu alapú netlistet generál. 
+	\item Ezt a netlist-et az adott FPGA-ban meglévő illeszkedő elemekre—mint például flip-flopok, look-up táblák és egyéb logikai kapuk—rátérképezzük. 
+	\item Optimalizált, modell-specifikus netlista képzése: A rendszer ezen lépésben meghatározza a szükséges cellák optimális elrendezését és összekapcsolását, így egy az adott FPGA modellre szabott netlist jön létre. 
+	\item Időzítési analízis: A design megbízhatóságához elengedhetetlen annak ellenőrzése, hogy a logikai jelek ne érkezzenek késve, vagyis a „slack” értékek ne lépjenek túl bizonyos határértékeket. Ha egy jel túl sok logikai kapun halad át anélkül, hogy az órajelhez való újbóli szinkronizálás megtörténne, az hibás működéshez vezet. Ilyen esetekben a megoldás a jel flip-floppal történő újbóli szinkronizálása. 
+	\item Bitfájl generálása: Végül a szintetizátor egy bitfájlt állít elő, amely programozhatóvá teszi az FPGA SRAM-jébe a későbbi működtetés érdekében. \end{enumerate}
+A VHDL entitás egy hardveralkotás moduláris egysége, melynek előre definiált bemeneti és kimeneti interfészei vannak. Egy entitás egyszerű lehet, például egy alapvető logikai ÉS kapu formájában, de akár összetett rendszer, például egy SPI mester is megvalósítható vele. Ezen felül egy entitáson belül több, korábban megtervezett al-unit is integrálható, így a komplex rendszerek moduláris felépítését is lehetővé teszi.
+A továbbiakban érdekes lehet megismerni, hogyan befolyásolja az időzítési analízis a teljes rendszer megbízhatóságát, illetve milyen technikák alkalmazhatók a logikai jelek optimális szinkronizálására egy nagyobb design esetében.
+
 
 Egy entitásnak két része van, amit VHDL-ben meg kell tervezni: 
 \begin{enumerate}
@@ -298,41 +305,38 @@ A rögzítésekhez a mérési elrendezés breadboard-on történt, mert a NYÁK-
 \subsection{UART}
 Az általam készített programozó sok kommunikációs protokollt használ, köztük az UART-ot. A számítógéppel való kommunikálás UART-on keresztül történik, a FTDI232 UART-USB átalakító segítségével.
 
-Az UART egy rövidítés teljes neve: Universal asynchronous receiver transmitter. Egy aszinkron, soros protokoll, ami azt jelenti, hogy nincs órajel vonal, hanem az időzítést a küldő és fogadó külön-külön követi, és az adatot bitenként kell küldeni/fogadni. Ezért fontos, hogy mindkét fél ugyanazzal az időzítéssel dolgozzon. Ezt az időzítést szimbólum per szekundumban mérjük, és Baud-nak hívjuk. Ha a kommunikáció időzítése 9600 Baud, akkor a fogadó tudja, hogy egy szimbólum 1/9600 másodpercig lesz megtartva a vonalon, és helyesen tudja mintavételezni az adatkeretben levő adatot. De a Baud ráta nem egyenlő a maximum adatsebességgel, tehát 9600 Baud az nem 9.6 kb/sec. Ez az adatkeret, és egy pár kötelező időzítés miatt van. Az adatkeret azért szükséges, hogy a fogadó tudja mikor kezdődik egy adat, és hol van a vége. Az adatkeret tartalmazhat egy paritás bitet is. Az adatkeret tulajdonságai is egyezni kell az adó és fogadó között.
 
-Tehát a fontos tulajdonságok:
-\begin{itemize}
-	\item Baud ráta
-	\item Adatbitek száma 
-	\item Paritás bit használata.
-\end{itemize}
+
+Az UART (Universal Asynchronous Receiver Transmitter) egy kommunikációs protokoll, amely aszinkron, full duplex és soros. Az, hogy soros azt jelenti, hogy az adatátvitelt bitenként történik, nem párhuzamos vonalokon. Az, hogy aszinkron azt jelenti, hogy nem létezik külön órajel-vonal; az időzítést a küldő és a fogadó egymástól függetlenül szabályozza. És az, hogy full duplex azt jelenti, hogy két irányú adatátvitel valósul meg egyidejűleg.
+Az adatokat „keretek” alakjában továbbítja, ahol egy tipikus adatkeret tartalmaz egy kezdő (start) bitet, adatbiteket, opcionális paritásbitet a hibakezeléshez, majd egy stop bitet. A start és stop bitek segítik a fogadó eszközt abban, hogy pontosan meghatározza az adatcsomagok kezdetét és végét, és ezáltal megbízható adatátvitelt biztosítanak.
+
+A baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított baud ráta alapján van a fogadó vonal minta vételezésé, és az küldő vonalon a jel váltás, időzítve.
+
+Az UART egyszerűsége és hatékonysága miatt elterjedt megoldás a mikrovezérlők, számítógépek és egyéb beágyazott rendszerek közötti kommunikációban.
+%done
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.8]{uartblock.png}
+	\caption{UART blokkvázlat}
+	\label{UARTblockk}
+\end{figure}
+A fenti blokkvázlaton egy UART elrendezés van rajzolva. A TX jelőlés az "Transmit" (küldés) jelölésé, míg az RX a "Receive" (fogadás) jelölésé. Nem szükséges minden vonalat használni, lehet szimplex, fél-duplex vagy teljes duplex a kommunikáció. Szimplex lenne, ha az csak a U1 Tx és U2 RX lába között lenne kapcsolat, ebben az esetben az csak adatátvitel egyirányú lenne, tehát csak küldésre van lenne lehetőség. Fél- vagy teljes duplex konfiguráció esetén az áramkör a mellékelt ábrának megfelelően kell, hogy legyen elrendezve. Ha az U1 és U2 képes egyidejűleg adatot küldeni és fogadni, a kommunikáció teljes duplexként működik, ha nem akkor fel duplex. A programozón teljes duplex a kommunikáció.%done
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.35]{UARTfromAnalyzer.PNG}
 	\caption{UART adatkeret}
 	\label{UARTkep}
 \end{figure}
-A képen látható egy adatkeret, amit az FPGA küld az FTDI232-nak. A Baud ráta ebben az esetben 921600 Baud, azaz egy szimbólum ideje: 1/ 921600 Baud = 1.09 μs. Ezt az analizátor program segítségével meg is jelöltem a képen.
+A fenti képen látható egy adatkeret szerepel. Ezt az adatkeretet az FPGA küldte a programozónak. A Baud ráta ebben az esetben 921600 Baud, egy szimbólum ideje: 1/ 921600 Baud = 1.09 μs. Ezt az analizátor program segítségével látható a képen.
 
-A tétlen állapotot megbontja az indító bit.
+Látható a start bit, ezután következik a 8 adatbit, amik a programozó által küldött parancsot tartalmazzák. És végül a stop bit, ami logikai magas szinten van. Ez után a vonal visszatér a tétlen állapotba.%done
 
-Az indító bit után látható az adat bájt LSB bit sorrenddel, ez azt jelenti, hogy az első bit értéke $2^0$ a második $2^1$, stb. 
-
-Ezután látható a stop bit, a stop bit 1 db szimbólum ideéjig magas szinten tartja a vonalat. Ha van paritás bit akkor az a stop bit előtt van volna, én viszont nem használok hiba detektálást.
-
-Ezután a vonal visszatér a tétlen állapotba (logikai magas).
-\begin{figure}[H]
-	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.55]{uartblock.png}
-	\caption{UART blokkvázlat}
-	\label{UARTblockk}
-\end{figure}
-Az UART protokollban a vonalakat RX-nek és TX-nek hívjuk. A küldő és a fogató rendelkezik saját RX és TX lábbal. A TX láb a küldő- és a RX láb a fogadó láb. Nem kötelező az összes vonalakat használni, ezért a kommunikáció lehet szimplex, vagy fél/teljes duplex. Szimplex módban, csak az U1 Tx lába csatlakozna, az U2 RX lábához, és csak küldeni lenne képes az adatot. A fél/teljes duplex konfigurációban, hasonlóan lenne kapcsolva a képhez, és attól függően, hogy az U1/U2 képes-e egyszerre küldeni és olvasni adatot, a kommunikáció fél, illetve teljes duplex lenne. Az én nyákomon a kommunikáció teljes duplex.
 \subsection{SPI}
-Az SPI kommunikációs protokoll, egy rendkívül elterjedt és rugalmas protokoll, teljes neve serial peripheral interface. Az UART-al ellentétben szinkronizált protokoll, és teljes duplex.
+Az SPI (Serial Peripheral Interface) egy széles körben használt és rugalmas kommunikációs protokoll. Full duplex, és az UART-tal ellentétben szinkron módon működik.%done
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.5]{SPIblockk.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{SPIblockk.PNG}
 	\caption{SPI blokkvázlat}
 	\label{SPI blokkvázlat}
 \end{figure}
