@@ -49,9 +49,9 @@ urlcolor=blue}
 \makeatother
 \usepackage{footnote}
 \makesavenoteenv{tabular}
-\newcommand{\nev}{Szabó Ferenc}
+\newcommand{\nev}{Szabó Ferenc Lőrinc}
 \newcommand{\neptun}{JODV94}
-\newcommand{\cim}{FPGA-s EEPROM programozó eszköz tervezése}
+\newcommand{\cim}{Konfigurálható EEPROM programozó tervezése FPGA-ra}
 
 \fancypagestyle{plain}{
     \fancyhf{} % Clear header and footer for plain style
@@ -65,6 +65,8 @@ urlcolor=blue}
 \fancyhead[L]{\cim} % Left-aligned header text
 \fancyhead[R]{\neptun} % Right-aligned header text
 \fancyfoot[C]{\thepage} % Centered page number in the footer
+
+
 
 
 \begin{document}
@@ -97,8 +99,8 @@ urlcolor=blue}
 	%beosztása\\
 	\vspace{5mm}
 	\textsc{Konzulens:}\\
-	\textbf{Konzulens neve}\\
-	beosztása\\
+	\textbf{Bartók Roland}\\
+	Automatizálási és Infokommunikációs Intézet Tanársegéd\\
 	%\vspace{5mm}
 	%\textsc{Konzulens:}\\
 	%\textbf{Konzulens neve2}\\
@@ -259,7 +261,7 @@ Az FPGA design megírását és szimulálását követő, és rendkívül kritik
 	\item A szintetizátor elsőként a designból egy kapu alapú netlistet generál. 
 	\item Ezt a netlist-et az adott FPGA-ban meglévő illeszkedő elemekre—mint például flip-flopok, look-up táblák és egyéb logikai kapuk—rátérképezzük. 
 	\item Optimalizált, modell-specifikus netlista képzése: A rendszer ezen lépésben meghatározza a szükséges cellák optimális elrendezését és összekapcsolását, így egy az adott FPGA modellre szabott netlist jön létre. 
-	\item Időzítési analízis: A design megbízhatóságához elengedhetetlen annak ellenőrzése, hogy a logikai jelek ne érkezzenek késve, vagyis a „slack” értékek ne lépjenek túl bizonyos határértékeket. Ha egy jel túl sok logikai kapun halad át anélkül, hogy az órajelhez való újbóli szinkronizálás megtörténne, az hibás működéshez vezet. Ilyen esetekben a megoldás a jel flip-floppal történő újbóli szinkronizálása. 
+	\item Időzítési analízis: A design megbízhatóságához elengedhetetlen annak ellenőrzése, hogy a logikai jelek ne érkezzenek késve, vagyis a "slack” értékek ne lépjenek túl bizonyos határértékeket. Ha egy jel túl sok logikai kapun halad át anélkül, hogy az órajelhez való újbóli szinkronizálás megtörténne, az hibás működéshez vezet. Ilyen esetekben a megoldás a jel flip-floppal történő újbóli szinkronizálása. 
 	\item Bitfájl generálása: Végül a szintetizátor egy bitfájlt állít elő, amely programozhatóvá teszi az FPGA SRAM-jébe a későbbi működtetés érdekében. \end{enumerate}
 A VHDL entitás egy hardveralkotás moduláris egysége, melynek előre definiált bemeneti és kimeneti interfészei vannak. Egy entitás egyszerű lehet, például egy alapvető logikai ÉS kapu formájában, de akár összetett rendszer, például egy SPI mester is megvalósítható vele. Ezen felül egy entitáson belül több, korábban megtervezett al-unit is integrálható, így a komplex rendszerek moduláris felépítését is lehetővé teszi.
 A továbbiakban érdekes lehet megismerni, hogyan befolyásolja az időzítési analízis a teljes rendszer megbízhatóságát, illetve milyen technikák alkalmazhatók a logikai jelek optimális szinkronizálására egy nagyobb design esetében.
@@ -285,12 +287,14 @@ A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző
 A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
 Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
 
-\section{Kommunikációs protokollok}
-Ahhoz, hogy adatot tudjunk átadni egy feladótól egy fogadónak, fontos, hogy ugyanazt a „nyelvet” beszéljék. Ha két ember különböző nyelven beszél egymással, akkor nem fogják egymást érteni. Ehhez hasonlóan, ha egy feladó IC, az adatot egy bizonyos protokoll szerint kódolja, de a fogadó nem ismeri a protokollt, akkor nem történik meg az adatátvitel. Tehát egy protokoll szabályai leírjak az adat kódolását/dekódolását, és a csatornát is, amin folyik a kommunikáció. 
+\section{Kommunikációs protokollok} %done
+A kommunikációs protokoll egy szabályrendszer, amely meghatározza, hogyan cserélnek információt az eszközök egy adott kommunikációs csatornán keresztül. Ezek a szabályok tartalmazzák az adatcsomagok szerkezetét, az átvitel sorrendjét, a hibakezelést, valamint a szinkronizációs és vezérlőjeleket is. Az adatátvitelhez elengedhetetlen, hogy a feladó és a fogadó ugyanazt a kommunikációs protokollt használja. Ha a feladó egy adott protokoll szerint kódolja az adatot, de a fogadó nem ismeri ezt a szabványt, az információ nem értelmezhető. A protokoll meghatározza az adat kódolásának és dekódolásának szabályait, valamint a kommunikációs fizikai csatornáját is.
 
-\subsection{Analízis képek magyarázata}
+A digitális rendszerekben számos különböző kommunikációs protokoll létezik, a programozóm az UART-ot, SPI-t és I2C-t használja. A következőkben röviden bemutatom ezeket a protokollokat, kiemelve működésük alapelveit és a projekt szempontjából releváns tulajdonságaikat.
 
-A Diplomamunkában sok képet használok, analizátorral rögzítettem. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését, meg hogy a rögzítéseken látszódjon a kommunikáció válasza. Ezekről van több szó a "tesztelési és analízis elrendezés" szekcióban. 
+\subsection{Analízis képek magyarázata} %done
+
+A Diplomamunkában sok képet használok, amit analizátorral rögzítettem. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését, meg hogy a rögzítéseken látszódjon a kommunikáció válasza. Ezekről van több szó a "tesztelési és analízis elrendezés" szekcióban. 
 
 A készített rögzítések Logic nevezetű applikációval vannak vizualizálva és így fognak kinézni:
 \begin{figure}[H]
@@ -300,15 +304,14 @@ A készített rögzítések Logic nevezetű applikációval vannak vizualizálva
 	\label{Vizalizált analizátor rögzítés példa}
 \end{figure}
 
-A rögzítésekhez a mérési elrendezés breadboard-on történt, mert a NYÁK-on nem tudom egyszerre csatlakoztatni a memória module-okat meg az analizátort.
 
-\subsection{UART}
+\subsection{UART}%done
 Az általam készített programozó sok kommunikációs protokollt használ, köztük az UART-ot. A számítógéppel való kommunikálás UART-on keresztül történik, a FTDI232 UART-USB átalakító segítségével.
 
 
 
 Az UART (Universal Asynchronous Receiver Transmitter) egy kommunikációs protokoll, amely aszinkron, full duplex és soros. Az, hogy soros azt jelenti, hogy az adatátvitelt bitenként történik, nem párhuzamos vonalokon. Az, hogy aszinkron azt jelenti, hogy nem létezik külön órajel-vonal; az időzítést a küldő és a fogadó egymástól függetlenül szabályozza. És az, hogy full duplex azt jelenti, hogy két irányú adatátvitel valósul meg egyidejűleg.
-Az adatokat „keretek” alakjában továbbítja, ahol egy tipikus adatkeret tartalmaz egy kezdő (start) bitet, adatbiteket, opcionális paritásbitet a hibakezeléshez, majd egy stop bitet. A start és stop bitek segítik a fogadó eszközt abban, hogy pontosan meghatározza az adatcsomagok kezdetét és végét, és ezáltal megbízható adatátvitelt biztosítanak.
+Az adatokat "keretek” alakjában továbbítja, ahol egy tipikus adatkeret tartalmaz egy kezdő (start) bitet, adatbiteket, opcionális paritásbitet a hibakezeléshez, majd egy stop bitet. A start és stop bitek segítik a fogadó eszközt abban, hogy pontosan meghatározza az adatcsomagok kezdetét és végét, és ezáltal megbízható adatátvitelt biztosítanak.
 
 A baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított baud ráta alapján van a fogadó vonal minta vételezésé, és az küldő vonalon a jel váltás, időzítve.
 
@@ -333,24 +336,24 @@ A fenti képen látható egy adatkeret szerepel. Ezt az adatkeretet az FPGA kül
 Látható a start bit, ezután következik a 8 adatbit, amik a programozó által küldött parancsot tartalmazzák. És végül a stop bit, ami logikai magas szinten van. Ez után a vonal visszatér a tétlen állapotba.%done
 
 \subsection{SPI}
-Az SPI (Serial Peripheral Interface) egy széles körben használt és rugalmas kommunikációs protokoll. Full duplex, és az UART-tal ellentétben szinkron módon működik.%done
+Az SPI (Serial Peripheral Interface) egy széles körben használt és rugalmas kommunikációs protokoll. Full duplex, és szinkron módon működik, az UART-tal ellentétben.%done
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{SPIblockk.PNG}
 	\caption{SPI blokkvázlat}
 	\label{SPI blokkvázlat}
 \end{figure}
-SPI protokollban több, mint két IC tudja használni ugyanazokat a vonalakat, de egyszerre csak kettő lehet aktív, ezért van mester és szolga. A mester szerepe az, hogy kiválasszon egy szolgát, és kezdje a kommunikációt. A szolga csak akkor képes kommunikálni, ha ki van éppen választva. A kiválasztást a CS „chip select” vonalokon keresztül végzi el a mester. Minden szolgának külön CS vonal kell, de a többi vonalat meg tudják osztani. Emiatt minden szolgának elég 4 láb (referencia pontot kivéve), még a mesternek kell 3db, plus minden szolgaként egy láb (ismét referencia pontot kivéve). 
+Az SPI protokoll előnyé, hogy lehetővé teszi, hogy több IC megossza ugyanazokat a kommunikációs vonalakat, de egyszerre csak egy mester és egy szolga lehet aktív. Minden szolgához külön CS vonal szükséges, míg az egyéb vonalak (MISO, MOSI, SCLK) közösek lehetnek. A mester választja ki az adott szolgát az adott szolga chip select vonalán keresztül, és indítja a kommunikációt. A szolga kizárólag kiválasztott állapotban képes adatátvitelre. Ennek megfelelően egy szolgának négy, a mesternek három lábra, plusz egy további lábra per darab szolga, van szüksége.%done
 
 
-Mivel az SPI szinkron protokoll a szimbólum sebességet itt nem az előre beállítót Baud ráta határozza meg, hanem a mester előállít egy órajelet a SCLK vonalon, amit figyelnek a szolgák a kommunikálás alatt. A szimbólumsebesség tehát csak a SCLK frekvenciájától függ. 
+Az SPI szinkron protokoll. Ezért kell az SCLK, vagyis az órajel vonal.  Ez azt jelent, hogy nincs előre beállítót adatátviteli sebesség. A mester előállít egy órajelet a SCLK vonalon, a szolgák pedig az órajel éleit figyelve mintavételeznek és küldenek adatot. Így az adatátviteli sebesség a órajel frekvenciájától függ. Emiatt az órajelnek nem kell a kommunikáció alatt ugyan azon a frekvencián maradni. Ezt ki is használom a programozómban. Az órajel ki van ”nyujtva” és megállítva amikor a programozó várja a következő adatot a felhasználótól az UART vonalon.%done 
 
 
-A MOSI vonal egy rövidítés. Teljes neve magyarra fordítva „mester ki szolga be”, ez a vonal hordozza a mestertől küldött soros adatot, a szolga oldalán a lábat SDI-nak (soros adat be) hívjuk. A MISO vonal mester be szolga ki és a szolga oldalon SDO-nak (soros adat ki) hívjuk. Az adatkeretet bemutatásához használom ismét a prgramozómat, mégpedig egy kommunikációt egy spi FLASH és az FPGA között.
+A MISO magyarul "mester be szolga ki”, a MOSI pedig "mester ki szolga be”. SPI-t használó IC-k lábai lehetnek jelölve SDI-ként (soros adat be) meg SDO-ként (soros adat ki). %done
 %%need the thing
 \subsection{I2C}
 \chapter{Tervezés}
-\section{A Project terv bemutatása}
+\section{A terv bemutatása}
 
 \begin{figure}[H]
 	\centering
@@ -358,7 +361,7 @@ A MOSI vonal egy rövidítés. Teljes neve magyarra fordítva „mester ki szolg
 	\caption{Projekt terv blokkvázlata}
 	\label{Projekt terv}
 \end{figure}
-Ez a block diagramm volt a project kiinduló terve. A felhasználó a c++-ban írt program fútatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA module számára. Az FPGA module-ön megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
+Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban írt program futtatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA modul számára. Az FPGA modulon megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
 \section{VHDL design terv}
 \chapter{Megvalósítás}
 
@@ -437,7 +440,7 @@ A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megsza
 	\caption{SPI kimenet}
 	\label{SPI kimenet}
 \end{figure}
-Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon használom. De a túl tervezés ebben az esetben nem árt. A chip select, MISO, MOSI, és CLK vonalak mind ugyan olyan hosszúak. Ezt „length matching” nek hívjuk. Akkor fontos, ha akkora az adatátviteli alap frekvencia, hogy két vonal hossz különbségéből származó kettő közötti fázistolás gondot okoz a mintavételezésnél. A vonalak egymástól GND-vel le vannak árnyékolva, ez segíti, hogy a vonalak elektromágneses zaja kevésbé befolyásolják egymást.
+Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon használom. De a túl tervezés ebben az esetben nem árt. A chip select, MISO, MOSI, és CLK vonalak mind ugyan olyan hosszúak. Ezt "length matching” nek hívjuk. Akkor fontos, ha akkora az adatátviteli alap frekvencia, hogy két vonal hossz különbségéből származó kettő közötti fázistolás gondot okoz a mintavételezésnél. A vonalak egymástól GND-vel le vannak árnyékolva, ez segíti, hogy a vonalak elektromágneses zaja kevésbé befolyásolják egymást.
 \subsubsection{Az I2C csatlakozó}
 \begin{figure}[H]
 	\centering
@@ -445,7 +448,7 @@ Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon 
 	\caption{I2C kimenet}
 	\label{I2C kimenet}
 \end{figure}
-Itt is inkább túl terveztem a kimenetet, mint alul. Itt is a SCL IS SDA vonal „length match”-elve van. Illetve az árnyékolást még a csatlakozókra is kiterjed. Így egészen a FPGA pin-ekhez az árnyékolást végig lehet vinni ha a SCL és SCL-hez tartozó lábak közötti lábat logikai ’0’-ra alítom.
+Itt is inkább túl terveztem a kimenetet, mint alul. Itt is a SCL IS SDA vonal "length match”-elve van. Illetve az árnyékolást még a csatlakozókra is kiterjed. Így egészen a FPGA pin-ekhez az árnyékolást végig lehet vinni ha a SCL és SCL-hez tartozó lábak közötti lábat logikai ’0’-ra alítom.
 \subsubsection{Plugin-ek}
 Én két plug-in-t használtam. Az egyik a rounded tracks plug-in. Ami igazából csak esztétikai változásokat kreál a nyákon.
 A plugin-t nagyon egyszerű használni. A következő kép a UI-ja.
@@ -936,7 +939,7 @@ A következő 4 bajt pedig a I2C adatkeret teljes hosszát (bájtokban) mondja m
 Az utolsó 2 bájt pedig a I2C olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 3 bájt a hossz.
 Tegyük fel, hogy egy SPI olvasást, meg egy I2C olvasást akarunk végrehajtani. Mégpedig egy teljes page olvasást a W25Q64JV SPI Flash-ből, és egy 4 bájtos olvasást szeretnénk az AT24C256 EEPROM-ból. A page hossza összesen 256, egy utasítás bájtnak kell lennije, és 3 cím bájtnak \cite{FLASH}. Tehát a teljes adatkeret hossz 260 bájt lesz, és az olvasási fejléc hossza 4 bájt\cite{EEPROM}. Választott címen való olvasáshoz 4 fejlécbájt kell az EEPROM-nak. Így a beállítás belső memóriát x00010404000804 re kell alítani.
 Az utasítás, ami ezt meg teszi az ez: 4400010404000804.
-Az elő bájt a programozót a megfelelő „get setting” állapotba rakja. Az utasítas többi része, az, amit be akarunk írni a belső memóriába. Az utasítás után a programozó automatikusan visszakerül az „Idle” alapállapotba.
+Az elő bájt a programozót a megfelelő "get setting” állapotba rakja. Az utasítas többi része, az, amit be akarunk írni a belső memóriába. Az utasítás után a programozó automatikusan visszakerül az "Idle” alapállapotba.
 
 \subsection{Utasítások és utasítás sor példa és magyarázat.}
 Mint korábban említettem a programozónak összesen 7 fő állapotija van. Az alap állapot a base state. A base state-ből 6 állapotba lehet lépni. 
@@ -1083,6 +1086,7 @@ A \ref{egyenlet1}. összefüggés az \cite{fpgaadatlap} szerzőtől származik.
 
 \renewcommand{\refname}{Irodalomjegyzék}
 \begin{thebibliography}{9}
+	\bibitem{HDLtestbencs} \href{https://nandland.com/what-is-a-testbench/}{Nandland: what-is-a-testbench/}
     \bibitem{fpgaadatlap} \href{https://datasheet.octopart.com/LCMXO2-4000HC-4MG132I-Lattice-Semiconductor-datasheet-12584740.pdf}{A MachXO2 FPGA család adatlapja }
 	 \bibitem{EEPROM} \href{https://ww1.microchip.com/downloads/en/DeviceDoc/doc0670.pdf}{A AT24C256 EEPROM adatlapja }
 	\bibitem{FLASH} \href{https://ww1.microchip.com/downloads/en/DeviceDoc/doc0670.pdf}{A W25Q64FV FLASH adatlapja }

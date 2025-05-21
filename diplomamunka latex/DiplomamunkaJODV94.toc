@@ -8,11 +8,11 @@
 \select@language {magyar} \contentsline {section}{\numberline {4.2}A NYÁK tevező program rövid bemutatása}{14}{section.4.2}%
 \select@language {magyar} \contentsline {section}{\numberline {4.3}Kommunikációs protokollok}{15}{section.4.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}Analízis képek magyarázata}{16}{subsection.4.3.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}UART}{16}{subsection.4.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}UART}{17}{subsection.4.3.2}%
 \select@language {magyar} \contentsline {subsection}{\numberline {4.3.3}SPI}{18}{subsection.4.3.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {4.3.4}I2C}{20}{subsection.4.3.4}%
 \select@language {magyar} \contentsline {chapter}{\numberline {5}Tervezés}{21}{chapter.5}%
-\select@language {magyar} \contentsline {section}{\numberline {5.1}A Project terv bemutatása}{21}{section.5.1}%
+\select@language {magyar} \contentsline {section}{\numberline {5.1}A terv bemutatása}{21}{section.5.1}%
 \select@language {magyar} \contentsline {section}{\numberline {5.2}VHDL design terv}{22}{section.5.2}%
 \select@language {magyar} \contentsline {chapter}{\numberline {6}Megvalósítás}{23}{chapter.6}%
 \select@language {magyar} \contentsline {section}{\numberline {6.1}Kapcsolási rajz tervezése}{23}{section.6.1}%
