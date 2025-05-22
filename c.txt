@@ -1,5 +1,6 @@
 4400010404000804
 46A00000546573740
+wait(11ms)
 45A00000A10
 exit
 
@@ -13,12 +14,21 @@ spi page read
 4400010404000504
 42030000000
 
+spi page read small
+4400000604000504
+42030000000
+
+
 42030000000
 
 spi erase
 4106
 41C7
 wait(100000ms)
+
+SPI flash mf and device id read
+4400000402000804
+4290000
 
 
 I2C write and read Test
@@ -27,12 +37,16 @@ I2C write and read Test
 wait(11ms)
 45A00000A1
 
-
-    
-
 I2C read Test
+4400010404000804
+46A00000546573740
+45A00000A10   
 
 
+
+I2C small read 
+4400010404000504
+45A00000A10   
 
 
 

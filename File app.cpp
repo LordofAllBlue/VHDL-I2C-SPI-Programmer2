@@ -77,7 +77,7 @@ void processFile(HANDLE hSerial, const string &fileName) {
             logFile << "Error writing to serial port\n";
         } else {
             printf("Bytes written: %lu\n", dwBytes);
-            logFile << "Bytes written: " << dwBytes << "\n";
+            logFile << "Bytes written: " << dec << dwBytes << "\n";
         }
 
         Sleep(20); // Wait for loopback
