@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  22 MAY 2025 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  22 MAY 2025 22:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1193,7 +1193,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 <i2c small read.PNG, id=409, 1452.92813pt x 782.17218pt>
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 344.
+Package pdftex.def Info: i2c small read.PNG  used on input line 346.
 (pdftex.def)             Requested size: 434.17465pt x 232.9463pt.
 
 
@@ -1203,12 +1203,12 @@ Package pdftex.def Info: i2c small read.PNG  used on input line 344.
 <uartblock.png, id=422, 382.42876pt x 147.55125pt>
 File: uartblock.png Graphic file (type png)
 <use uartblock.png>
-Package pdftex.def Info: uartblock.png  used on input line 364.
+Package pdftex.def Info: uartblock.png  used on input line 366.
 (pdftex.def)             Requested size: 301.391pt x 113.48874pt.
 <UARTfromAnalyzer.PNG, id=423, 1221.06187pt x 638.385pt>
 File: UARTfromAnalyzer.PNG Graphic file (type png)
 <use UARTfromAnalyzer.PNG>
-Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 372.
+Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 374.
 (pdftex.def)             Requested size: 425.38635pt x 221.4464pt.
 
 
@@ -1216,7 +1216,7 @@ Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 372.
 <SPIblockk.PNG, id=430, 964.60374pt x 604.2575pt>
 File: SPIblockk.PNG Graphic file (type png)
 <use SPIblockk.PNG>
-Package pdftex.def Info: SPIblockk.PNG  used on input line 384.
+Package pdftex.def Info: SPIblockk.PNG  used on input line 386.
 (pdftex.def)             Requested size: 431.50699pt x 269.35266pt.
 
 
@@ -1226,12 +1226,12 @@ Package pdftex.def Info: SPIblockk.PNG  used on input line 384.
 <SPIreadID.png, id=442, 1548.53531pt x 692.5875pt>
 File: SPIreadID.png Graphic file (type png)
 <use SPIreadID.png>
-Package pdftex.def Info: SPIreadID.png  used on input line 399.
+Package pdftex.def Info: SPIreadID.png  used on input line 401.
 (pdftex.def)             Requested size: 431.9936pt x 192.32985pt.
 <i2cblokk.png, id=445, 1198.4775pt x 675.52374pt>
 File: i2cblokk.png Graphic file (type png)
 <use i2cblokk.png>
-Package pdftex.def Info: i2cblokk.png  used on input line 414.
+Package pdftex.def Info: i2cblokk.png  used on input line 416.
 (pdftex.def)             Requested size: 399.59068pt x 224.39809pt.
 
 
@@ -1239,7 +1239,7 @@ Package pdftex.def Info: i2cblokk.png  used on input line 414.
 <i2creadmini.PNG, id=454, 1075.01625pt x 362.85562pt>
 File: i2creadmini.PNG Graphic file (type png)
 <use i2creadmini.PNG>
-Package pdftex.def Info: i2creadmini.PNG  used on input line 428.
+Package pdftex.def Info: i2creadmini.PNG  used on input line 430.
 (pdftex.def)             Requested size: 438.4264pt x 146.43864pt.
 
 
@@ -1250,7 +1250,7 @@ Package pdftex.def Info: i2creadmini.PNG  used on input line 428.
 <terv1.png, id=470, 1751.04187pt x 694.84593pt>
 File: terv1.png Graphic file (type png)
 <use terv1.png>
-Package pdftex.def Info: terv1.png  used on input line 445.
+Package pdftex.def Info: terv1.png  used on input line 447.
 (pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
 
 
@@ -1261,12 +1261,12 @@ Package pdftex.def Info: terv1.png  used on input line 445.
 <kapcsolasi rajz.PNG, id=476, 1415.2875pt x 832.61063pt>
 File: kapcsolasi rajz.PNG Graphic file (type png)
 <use kapcsolasi rajz.PNG>
-Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 456.
+Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 458.
 (pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
 <jumperek.PNG, id=477, 1499.6025pt x 629.35126pt>
 File: jumperek.PNG Graphic file (type png)
 <use jumperek.PNG>
-Package pdftex.def Info: jumperek.PNG  used on input line 465.
+Package pdftex.def Info: jumperek.PNG  used on input line 467.
 (pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
 
 
@@ -1276,7 +1276,7 @@ Package pdftex.def Info: jumperek.PNG  used on input line 465.
 <jumpertable.PNG, id=483, 777.65532pt x 293.59688pt>
 File: jumpertable.PNG Graphic file (type png)
 <use jumpertable.PNG>
-Package pdftex.def Info: jumpertable.PNG  used on input line 471.
+Package pdftex.def Info: jumpertable.PNG  used on input line 473.
 (pdftex.def)             Requested size: 347.38097pt x 129.55667pt.
 
 
@@ -1284,12 +1284,12 @@ Package pdftex.def Info: jumpertable.PNG  used on input line 471.
 <JP13.PNG, id=490, 531.48563pt x 194.22563pt>
 File: JP13.PNG Graphic file (type png)
 <use JP13.PNG>
-Package pdftex.def Info: JP13.PNG  used on input line 485.
+Package pdftex.def Info: JP13.PNG  used on input line 487.
 (pdftex.def)             Requested size: 236.60562pt x 84.84001pt.
 <gnd5v3v3.PNG, id=491, 912.40875pt x 490.08093pt>
 File: gnd5v3v3.PNG Graphic file (type png)
 <use gnd5v3v3.PNG>
-Package pdftex.def Info: gnd5v3v3.PNG  used on input line 492.
+Package pdftex.def Info: gnd5v3v3.PNG  used on input line 494.
 (pdftex.def)             Requested size: 408.01945pt x 217.97368pt.
 
 
@@ -1297,7 +1297,7 @@ Package pdftex.def Info: gnd5v3v3.PNG  used on input line 492.
 <nyak.PNG, id=497, 506.6428pt x 708.39656pt>
 File: nyak.PNG Graphic file (type png)
 <use nyak.PNG>
-Package pdftex.def Info: nyak.PNG  used on input line 499.
+Package pdftex.def Info: nyak.PNG  used on input line 501.
 (pdftex.def)             Requested size: 225.42645pt x 316.21481pt.
 
 
@@ -1305,7 +1305,7 @@ Package pdftex.def Info: nyak.PNG  used on input line 499.
 <bosrd limits.PNG, id=504, 703.87968pt x 431.36156pt>
 File: bosrd limits.PNG Graphic file (type png)
 <use bosrd limits.PNG>
-Package pdftex.def Info: bosrd limits.PNG  used on input line 508.
+Package pdftex.def Info: bosrd limits.PNG  used on input line 510.
 (pdftex.def)             Requested size: 384.00525pt x 234.11981pt.
 
 
@@ -1313,7 +1313,7 @@ Package pdftex.def Info: bosrd limits.PNG  used on input line 508.
 <also reteg.PNG, id=510, 465.23813pt x 642.14906pt>
 File: also reteg.PNG Graphic file (type png)
 <use also reteg.PNG>
-Package pdftex.def Info: also reteg.PNG  used on input line 516.
+Package pdftex.def Info: also reteg.PNG  used on input line 518.
 (pdftex.def)             Requested size: 206.79453pt x 286.4037pt.
 
 
@@ -1321,7 +1321,7 @@ Package pdftex.def Info: also reteg.PNG  used on input line 516.
 <spi kimenet.PNG, id=517, 1282.7925pt x 736.25063pt>
 File: spi kimenet.PNG Graphic file (type png)
 <use spi kimenet.PNG>
-Package pdftex.def Info: spi kimenet.PNG  used on input line 523.
+Package pdftex.def Info: spi kimenet.PNG  used on input line 525.
 (pdftex.def)             Requested size: 421.44496pt x 241.08559pt.
 
 
@@ -1329,12 +1329,12 @@ Package pdftex.def Info: spi kimenet.PNG  used on input line 523.
 <i2ckimenet.PNG, id=525, 890.5772pt x 682.80093pt>
 File: i2ckimenet.PNG Graphic file (type png)
 <use i2ckimenet.PNG>
-Package pdftex.def Info: i2ckimenet.PNG  used on input line 531.
+Package pdftex.def Info: i2ckimenet.PNG  used on input line 533.
 (pdftex.def)             Requested size: 398.19534pt x 304.69688pt.
 <rounded ui.PNG, id=526, 370.38374pt x 136.25906pt>
 File: rounded ui.PNG Graphic file (type png)
 <use rounded ui.PNG>
-Package pdftex.def Info: rounded ui.PNG  used on input line 541.
+Package pdftex.def Info: rounded ui.PNG  used on input line 543.
 (pdftex.def)             Requested size: 273.51926pt x 97.92618pt.
 
 
@@ -1342,12 +1342,12 @@ Package pdftex.def Info: rounded ui.PNG  used on input line 541.
 <beforrounded.PNG, id=533, 575.14874pt x 751.30687pt>
 File: beforrounded.PNG Graphic file (type png)
 <use beforrounded.PNG>
-Package pdftex.def Info: beforrounded.PNG  used on input line 551.
+Package pdftex.def Info: beforrounded.PNG  used on input line 553.
 (pdftex.def)             Requested size: 199.31337pt x 260.96964pt.
 <afterrounded.PNG, id=534, 638.385pt x 836.3747pt>
 File: afterrounded.PNG Graphic file (type png)
 <use afterrounded.PNG>
-Package pdftex.def Info: afterrounded.PNG  used on input line 557.
+Package pdftex.def Info: afterrounded.PNG  used on input line 559.
 (pdftex.def)             Requested size: 221.4464pt x 290.74384pt.
 
 
@@ -1355,12 +1355,12 @@ Package pdftex.def Info: afterrounded.PNG  used on input line 557.
 <rosszpelda.PNG, id=542, 1366.35469pt x 753.5653pt>
 File: rosszpelda.PNG Graphic file (type png)
 <use rosszpelda.PNG>
-Package pdftex.def Info: rosszpelda.PNG  used on input line 564.
+Package pdftex.def Info: rosszpelda.PNG  used on input line 566.
 (pdftex.def)             Requested size: 340.16522pt x 186.96825pt.
 <rounded vias ui.PNG, id=543, 336.50719pt x 280.79906pt>
 File: rounded vias ui.PNG Graphic file (type png)
 <use rounded vias ui.PNG>
-Package pdftex.def Info: rounded vias ui.PNG  used on input line 571.
+Package pdftex.def Info: rounded vias ui.PNG  used on input line 573.
 (pdftex.def)             Requested size: 248.11191pt x 206.33092pt.
 
 
@@ -1368,12 +1368,12 @@ Package pdftex.def Info: rounded vias ui.PNG  used on input line 571.
 <viabefore.PNG, id=551, 895.84688pt x 487.06969pt>
 File: viabefore.PNG Graphic file (type png)
 <use viabefore.PNG>
-Package pdftex.def Info: viabefore.PNG  used on input line 578.
+Package pdftex.def Info: viabefore.PNG  used on input line 580.
 (pdftex.def)             Requested size: 356.05624pt x 192.54826pt.
 <viaafter.PNG, id=552, 972.63374pt x 477.28313pt>
 File: viaafter.PNG Graphic file (type png)
 <use viaafter.PNG>
-Package pdftex.def Info: viaafter.PNG  used on input line 584.
+Package pdftex.def Info: viaafter.PNG  used on input line 586.
 (pdftex.def)             Requested size: 386.77045pt x 188.6337pt.
 
 
@@ -1381,12 +1381,12 @@ Package pdftex.def Info: viaafter.PNG  used on input line 584.
 <PCB.png, id=559, 2276.505pt x 3035.34pt>
 File: PCB.png Graphic file (type png)
 <use PCB.png>
-Package pdftex.def Info: PCB.png  used on input line 591.
+Package pdftex.def Info: PCB.png  used on input line 593.
 (pdftex.def)             Requested size: 283.85112pt x 378.70526pt.
 <PCBassembled.png, id=560, 1827.07594pt x 1871.49188pt>
 File: PCBassembled.png Graphic file (type png)
 <use PCBassembled.png>
-Package pdftex.def Info: PCBassembled.png  used on input line 597.
+Package pdftex.def Info: PCBassembled.png  used on input line 599.
 (pdftex.def)             Requested size: 227.67262pt x 233.2246pt.
 
 
@@ -1398,7 +1398,7 @@ Package pdftex.def Info: PCBassembled.png  used on input line 597.
 <clkrates.PNG, id=574, 1274.51157pt x 330.48468pt>
 File: clkrates.PNG Graphic file (type png)
 <use clkrates.PNG>
-Package pdftex.def Info: clkrates.PNG  used on input line 638.
+Package pdftex.def Info: clkrates.PNG  used on input line 640.
 (pdftex.def)             Requested size: 436.46594pt x 111.72702pt.
 
 
@@ -1441,12 +1441,12 @@ Package pdftex.def Info: clkrates.PNG  used on input line 638.
 <setupblock.PNG, id=685, 1323.44438pt x 1872.24469pt>
 File: setupblock.PNG Graphic file (type png)
 <use setupblock.PNG>
-Package pdftex.def Info: setupblock.PNG  used on input line 1063.
+Package pdftex.def Info: setupblock.PNG  used on input line 1065.
 (pdftex.def)             Requested size: 210.84492pt x 298.65477pt.
 <setupreal.PNG, id=686, 2089.8075pt x 2786.41pt>
 File: setupreal.PNG Graphic file (type png)
 <use setupreal.PNG>
-Package pdftex.def Info: setupreal.PNG  used on input line 1069.
+Package pdftex.def Info: setupreal.PNG  used on input line 1071.
 (pdftex.def)             Requested size: 260.51399pt x 347.5891pt.
 
 
@@ -1460,44 +1460,44 @@ Package pdftex.def Info: setupreal.PNG  used on input line 1069.
 <spiconfiguretest.PNG, id=701, 1599.72656pt x 851.43094pt>
 File: spiconfiguretest.PNG Graphic file (type png)
 <use spiconfiguretest.PNG>
-Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1100.
+Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1102.
 (pdftex.def)             Requested size: 398.50804pt x 211.43459pt.
 
 
 [61 <./spiconfiguretest.PNG>]
-Overfull \hbox (5.79065pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (5.79065pt too wide) in paragraph at lines 1121--1122
 []\T1/lmr/m/n/12 43020000004163636F7264696E6720746F20616C6C206B6E6F776E206C617773206F6
  []
 
 
-Overfull \hbox (3.5142pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (3.5142pt too wide) in paragraph at lines 1121--1122
 \T1/lmr/m/n/12 756C642062652061626C6520746F20666C792E204974732077696E67732061726520746F6
  []
 
 
-Overfull \hbox (2.69621pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (2.69621pt too wide) in paragraph at lines 1121--1122
 \T1/lmr/m/n/12 F20736D616C6C20746F206765742069747320666174206C6974746C6520626F6479206F6
  []
 
 
-Overfull \hbox (5.30722pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (5.30722pt too wide) in paragraph at lines 1121--1122
 \T1/lmr/m/n/12 666207468652067726F756E642E20546865206265652C206F6620636F757273652C20666C
  []
 
 
-Overfull \hbox (5.63818pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (5.63818pt too wide) in paragraph at lines 1121--1122
 \T1/lmr/m/n/12 69657320616E797761792062656361757365206265657320646F6E277420636172652077686
  []
 
 
-Overfull \hbox (2.5278pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (2.5278pt too wide) in paragraph at lines 1121--1122
 \T1/lmr/m/n/12 1742068756D616E73207468696E6B20697320696D706F737369626C652E2059656C6C6F
  []
 
 <spi write packege full.PNG, id=710, 1580.90625pt x 953.81343pt>
 File: spi write packege full.PNG Graphic file (type png)
 <use spi write packege full.PNG>
-Package pdftex.def Info: spi write packege full.PNG  used on input line 1154.
+Package pdftex.def Info: spi write packege full.PNG  used on input line 1156.
 (pdftex.def)             Requested size: 441.0574pt x 265.47261pt.
 
 
@@ -1507,7 +1507,7 @@ Package pdftex.def Info: spi write packege full.PNG  used on input line 1154.
 <full spi page package.PNG, id=722, 1590.69281pt x 983.92593pt>
 File: full spi page package.PNG Graphic file (type png)
 <use full spi page package.PNG>
-Package pdftex.def Info: full spi page package.PNG  used on input line 1196.
+Package pdftex.def Info: full spi page package.PNG  used on input line 1198.
 (pdftex.def)             Requested size: 427.95634pt x 264.1271pt.
 
 
@@ -1517,16 +1517,16 @@ Package pdftex.def Info: full spi page package.PNG  used on input line 1196.
 <i2c small write.PNG, id=737, 1431.84938pt x 747.54282pt>
 File: i2c small write.PNG Graphic file (type png)
 <use i2c small write.PNG>
-Package pdftex.def Info: i2c small write.PNG  used on input line 1255.
+Package pdftex.def Info: i2c small write.PNG  used on input line 1257.
 (pdftex.def)             Requested size: 399.32178pt x 207.71724pt.
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 1262.
+Package pdftex.def Info: i2c small read.PNG  used on input line 1264.
 (pdftex.def)             Requested size: 405.22379pt x 217.41339pt.
 
 
 [66 <./i2c small write.PNG>]
-Overfull \hbox (1.33183pt too wide) in paragraph at lines 1271--1272
+Overfull \hbox (1.33183pt too wide) in paragraph at lines 1273--1274
 \T1/lmr/m/n/12 A Dip-lo-ma-mun-ka so-rán sok rög-zí-tést mu-tat-tam be, ahol lát-szik, hogy kü-lön-bö-z® hosszú-
  []
 
@@ -1569,7 +1569,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  524i,17n,1046p,2028b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on DiplomamunkaJODV94.pdf (74 pages, 44411751 bytes).
+Output written on DiplomamunkaJODV94.pdf (74 pages, 44411816 bytes).
 PDF statistics:
  864 PDF objects out of 1000 (max. 8388607)
  216 named destinations out of 1000 (max. 500000)

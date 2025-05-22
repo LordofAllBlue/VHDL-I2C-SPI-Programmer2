@@ -201,25 +201,25 @@ Miskolc, \today
 \end{itemize}
 \chapter{Bevezetés}
 %\section{Téma választás Háttér}
-Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
+Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor léteznek egy másik típusú integrált áramkörök, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
 
 Az FPGA-k széles körben alkalmazottak. Egy FPGA-ban akár több százezer azonos logikai blokkot is lehet tervezni és megvalósítani. Emiatt kiválóak lehetnek a párhuzamos számításban. Így minden terület, ahol ez fontos lehet, használva vannak, legalább a fejlesztési szakaszban. 
 
 Például valós idejű rendszerekben vagy bonyolult jelfeldolgozási feladatokban. A mesterséges intelligenciáknál is fontos az ultragyors párhuzamos adat átvitel vagy feldolgozás. Például I/O feladatoknál. De az FPGA-kat jellemzően AI gyorsítók vagy AI processzorok ként is alkalmazzák. Mesterséges intelligencia betanítási feladatokban az FPGA-alapú gyorsítók gyorsabb teljesítményt tudnak nyújtani, mint a hagyományos GPU-k. Hasonló előnyök miatt az FPGA technológia kiemelt szerepet kapott a kép- és videófeldolgozás területén is. Számos fogyasztói elektronikai eszközben, például virtuális valóság szemüvegekben FPGA-k végzik a beérkező videójelek feldolgozását és a kijelzőkre történő leképezését. 
 
-Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Gyakran vannak használva a tervezők által új dizájnok validálására, debuggolására, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
+Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Az FPGA-k gyakran használtak tervezők által új dizájnok validálására, debuggolására, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
 
-Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájául az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. 
+Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájának az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. 
 
 \chapter{Feladat leírása, célok, követelmények}
 
 Elsősorban szerettem volna egy összetett, de egyedül is megvalósítható beágyazott rendszert tervezni, amely során lehetőségem nyílik elmélyülni az FPGA-k és a VHDL hardverleíró nyelv használatában. A célom az volt, hogy egy olyan eszközt hozzak létre, amely képes különböző típusú EEPROM, és más memóriák programozására két kommunikáció protokollt alkalmazásával, és amely rugalmasan alkalmazható különféle feladatokra, esetleg más IC-k felkonfigurálására.
 
-Fontos szempont volt, hogy a projekt során ne csak a hardveres, hanem a szoftveres oldal is hangsúlyt kapjon, ezért döntöttem úgy, hogy a kommunikációs és vezérlő szoftvert C++ nyelven írom meg. Ezzel egyrészt bővíthettem a programozási ismereteimet, másrészt egy jól használható, parancssoros interfészt tudtam biztosítani a programozóhoz.
+Fontos szempont volt, hogy a projekt során ne csak a hardveres, hanem a szoftveres oldal is hangsúlyt kapjon, ezért döntöttem úgy, hogy a kommunikációs és vezérlő szoftvert C++ nyelven írom meg. Ezzel egyrészt bővíthettem a programozási ismereteimet, másrészt egy jól használható, parancssoros interfészt tudtam biztosítani a programozómnak.
 
 A projekt során kiemelt cél volt a NYÁK (nyomtatott áramkör) tervezésének gyakorlása is, hiszen ez a villamosmérnöki szakmában alapvető kompetenciának számít, és minden modern beágyazott rendszer alapja a megfelelő áramköri integráció.
 
-Tehát a konkrét kitőzőtt célok/követelmények:
+Tehát a konkrét kitűzött célok/követelmények:
 \begin{itemize}
     \item Egy Windows-ra írt program, ami képes egy felhasználótól parancsokat értelmezni és azok alapján parancsokat küldeni egy COM port-on.
     \item Egy VHDL-ban megírt hardware, ami FPGA-n valósul meg, és képes a COM port-ról érkező, UART-ba alakított parancsokat értelmezni.
@@ -229,7 +229,7 @@ Tehát a konkrét kitőzőtt célok/követelmények:
     \item Az FPGA-s hardware-nek legyen reset logikája.
     \item Az FPGA-s hardware legyen képes a SPI és I2C vonalakon érkező adatokat UART kommunikációkkal visszaküldeni a felhasználónak.
     \item A Windows-os program legyen képes a kapott adatokat rögzíteni (logolni).
-    \item A programozó működése teszteléssel legyen bemutatva ténylegez memóriaegységekkel
+    \item A programozó működése teszteléssel legyen bemutatva tényleges memóriaegységekkel
     \item A programozó rendszernek legyen egy NYÁK-ja.
 \end{itemize}
 
@@ -238,17 +238,17 @@ Tehát a konkrét kitőzőtt célok/követelmények:
 \section{FPGA-k, és a VHDL}
 \subsection{Mi a FPGA?}
 
-Az FPGA, magyarul helyben programozható logikai kapumátrix, olyan integrált áramkör, amelyet a felhasználó a gyártás után konfigurálhat. A digitális áramkörök tervezése HDL nyelveken történik, és a megvalósítás fizikailag a chip-ben belül történik.
+Az FPGA, magyarul: helyben programozható logikai kapumátrix, olyan integrált áramkör, amelyet a felhasználó a gyártás után konfigurálhat. A digitális áramkörök tervezése HDL nyelveken történik, és a megvalósítás fizikailag a chip-ben belül történik.
 
-Az FPGA-k logikai cellákból épülnek fel, amelyek flip-flopokat, LUT-okat és logikai kapukat tartalmaznak. Ezek a cellák tetszőlegesen összekapcsolhatók, így hozhatók létre a kívánt áramkörök. A konfigurációt, amely az FPGA-ban megvalósított hardware működését meghatározza, gyakran firmware-nek nevezzük, bár a kifejezés eredetileg más jelentéssel bírt. Itt arra utal, hogy a "programozás" révén egy valós, hardveres működésű áramkör jön létre. Más megnevezés is elterjedt, például design, vagy gateware. A dolgozatban én legfőbbképpen a design szót használom ha a HDL-ben írt "kódról" beszélek, és a hardware kifejezést ha már a konfigurált FPGA-ról beszélek. 
+Az FPGA-k logikai cellákból épülnek fel, amelyek flip-flopokat, LUT-okat és logikai kapukat tartalmaznak. Ezek a cellák tetszőlegesen összekapcsolhatók, így hozhatók létre a kívánt áramkörök. A konfigurációt, amely az FPGA-ban megvalósított hardware működését meghatározza, gyakran firmware-nek nevezzük, bár a kifejezés eredetileg más jelentéssel bírt. Itt arra utal, hogy a "programozás" révén egy valós, hardveres működésű áramkör jön létre. Más megnevezés is elterjedt, például design, vagy "gateware". A dolgozatban én legfőbbképpen a design szót használom ha a HDL-ben írt "kódról" beszélek, és a hardware kifejezést, ha már a konfigurált FPGA-ról beszélek. 
 
 Az FPGA-k elterjedtek mind fogyasztói és ipari termékekben, mind fejlesztési környezetekben, mint például az ASIC termék tervek validálásához. Előnyük, hogy specifikus feladatokat hatékonyan képesek végrehajtani, és működésük firmware-frissítéssel módosítható. Például egy VR-eszközben az FPGA gyorsan és pontosan dolgozza fel a videójelet, minimalizálva a késleltetést a fejmozgás és a képfrissítés között. Az ilyen ismétlődő, párhuzamos műveletekben az FPGA hatékonyabb, mint egy általános célú CPU, amelyet sokféle feladatra terveztek, de nem optimalizáltak ezekre a számításokra.
 
 Egy szemléletes hasonlat: míg egy ember képes kenyérsütési utasításokat követni, egy erre tervezett gép gyorsabban és hatékonyabban végzi el ugyanazt a feladatot. Ugyanakkor a gép nem alkalmas más típusú feladatokra írt utasításokat értelmezni, például villanykörte becsavarására. Erre az új feladathoz egy új gép tervezése szükséges. A hasonlatban a személy a CPU, az utasítássor a hagyományos kód, míg a gépek az FPGA-n megvalósított designok.
 
-A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: Egy CPLD, egy külső memória chipből, konfigurált egy FPGA-t a termék indításakor
+A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: egy CPLD, egy külső memória chipből konfigurált egy FPGA-t a termék indításakor
 
-A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunka. A hatékony netlist-generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, föleg amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, az jel útválasztás jelentősen nehezebbé válik.%done
+A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunk. A hatékony netlist-generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, föleg amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, a jel útválasztás jelentősen nehezebbé válik.%done
 \iffalse
 A FPGA egy rövidítés, teljes nevükön ezeket a chipeket, Field-programmable gate array-ként, magyarul a felhasználás helyén programozható logikai kapumátrixokként ismerjük. Az FPGA-ra HDL nyelveken lehet tervezni digitális áramköröket, amik megvalósulnak fizikailag a chip belsejében. 
 
@@ -270,14 +270,15 @@ A fenti diagram egy egyszerű konfigurálható logikai blokkot / logikai elemet 
 
 Az FPGA-kat jelfeldolgozásra is használják, ahol a dedikált szorzók / digitális jelfeldolgozási blokkok hatékonyabbak, mint a CLB-alapú blokkok. Ezek a dedikált blokkok sokkal kevesebb helyet foglalnak el az IC belsőjében, és magasabb frekvencián, kisebb teljesítménnyel tudnak működni. A belső memória flip-flop-okból való szintetizálása, pazarló folyamat. A modern FPGA-k beépített memóriablokkokat tartalmaznak, amelyekre általában szükség van, mivel a legtöbb tervnek valamilyen FIFO-ra, vagy bufferre van szüksége az átmeneti adatok tárolására. A legtöbb FPGA legalább kétportos memóriát tartalmaz, ahol az olvasási és írási műveletek egyszerre történhetnek, két dedikált porton. Az órajelgenerátorok, manapság egy-aránt elterjedt erőforrások.
 \fi
+
 Használt forrás:\cite{fpga}
 \subsection{Mi a VHDL?}
 
 A VHDL napjaink egyik legszélesebb körben alkalmazott hardverleíró nyelve (HDL), amely a Verilog mellett ipari szabványnak számít. A VHDL különlegessége, hogy nem csupán egy "programozási" nyelv, hanem egyben egy, az IEEE által karbantartott és frissített szabvány is, amely folyamatosan igazodik az ipari igényekhez.
 
-A VHDL nyelvben minden hardverkomponens egy entitás, amely jól definiált bemenetekkel és kimenetekkel rendelkezik. Az entitás lehet egészen egyszerű, például egy logikai kapu, de akár komplex alrendszer, mint egy teljes SPI vagy I2C kommunikációs vezérlő is. Egy-egy entitáson belül további al-entitások integrálhatók. Hierarchikus és moduláris tervezési szemléletet követel, amely alapvető a nagyobb rendszerkomplexitások kezelésében.
+A VHDL nyelvben minden hardverkomponens egy entitás, amely jól definiált bemenetekkel és kimenetekkel rendelkezik. Az entitás lehet egészen egyszerű, például egy logikai kapu, de akár komplex alrendszer, mint egy teljes SPI vagy I2C kommunikációs vezérlő is. Egy-egy entitáson belül további al-entitások integrálhatók. Ez hierarchikus és moduláris tervezési szemléletet követel, amely alapvető a nagyobb rendszerkomplexitások kezelésében.
 
-A HDL-ek lehetővé teszi digitális áramkörök működésének absztrakt, magas szintű leírását, amelyből szintetizálás útján valós, FPGA-n megvalósítható hardver születhet. A nyelv használatának egyik fő kihívása, hogy nem elegendő csupán a szintaxist és a nyelvi elemeket elsajátítani; elengedhetetlen annak ismerete is, hogy a különböző fejlesztői eszközök és szintetizátorok miként értelmezik a leírt kódot. Gyakori tapasztalat, hogy egy szimulációban helyesen működő terv nem feltétlenül viselkedik ugyanúgy a szintetizált, fizikai környezetben.
+A HDL-ek lehetővé teszik digitális áramkörök működésének absztrakt, magas szintű leírását, amelyből szintetizálás útján valós, FPGA-n megvalósítható hardver születhet. A nyelv használatának egyik fő kihívása, hogy nem elegendő csupán a szintaxist és a nyelvi elemeket elsajátítani. Elengedhetetlen annak ismerete is, hogy a különböző fejlesztői eszközök és szintetizátorok, hogyan értelmezik a leírt kódot. Gyakori tapasztalat, hogy egy szimulációban helyesen működő terv nem feltétlenül viselkedik ugyanúgy a szintetizált, fizikai környezetben.
  
 Használt forrás:\cite{vhdl}
 
@@ -289,7 +290,8 @@ HDL-ben digitális rendszerek tervezéséhez a munkafolyamat:
 	\item A cél harware-re design szintetizálása, hibakeresés. 
 \end{enumerate}
 A testbench alapvető feladata a szimuláció során a rendszer bemeneteinek előállítása, valamint a kimenetekre adott reakciók pontos leképezése. Például egy I2C mester implementációjának esetében a testbench egy alárendelt egységként működhet, ezzel segítve a rendszer funkcionalitásának ellenőrzését. A VHDL nyelv tartalmaz olyan, szintetizálhatatlan nyelvet is, melyek célja, hogy a tesztkörnyezet létrehozása során egyszerűbbé és gyorsabbá tegyék a fejlesztést. Ezzel szemben a nyelv azon részeit, amelyek szintetizálhatók, RTL-nek (Register Transfer Level) nevezzük, és ezek képezik a végleges hardverimplementációt.%done
-használt forrás:\cite{HDLtestbencs}
+
+Használt forrás:\cite{HDLtestbencs}
 
 
 \iffalse
@@ -306,10 +308,10 @@ A továbbiakban érdekes lehet megismerni, hogyan befolyásolja az időzítési 
 Szumulálás és hibakeresés után következik a szintetizálási folyamat, ahol VHDL-ben megírt leírásból fizikai hardverstruktúrát állít elő. A cél, hogy a logikai tervet az adott cél-FPGA architektúrájához optimalizálva valós, működőképes hardverelemekre fordítsuk le. A folyamat során az alábbi lépések történnek:
 
 \begin{enumerate}
-	\item A szintetizáló eszköz először egy technológiafüggetlen netlistet generál a megadott VHDL leírás alapján. Ez a netlist logikai kapuk és kapcsolatok absztrakt reprezentációja.
+	\item A szintetizáló eszköz először egy hardware független netlistet generál a megadott VHDL leírás alapján. Ez a netlist logikai kapuk és kapcsolatok absztrakt reprezentációja.
 	\item A netlistet ezt követően leképezi az adott FPGA technológia konkrét erőforrásaira, például look-up táblákra (LUT), flip-flopokra, szállító multiplexer-ekre és belső routing hálózatra.
-	\item Az eszköz egy modell-specifikus optimalizációt hajt végre, amely során figyelembe veszi az időzítési követelményeket, az erőforrás-használatot és a jelutak minimális késleltetését, így jön létre az FPGA-ra illesztett végleges netlist.
-	\item Ezt követi a timing analysis, amely az időzítési korlátok betartását vizsgálja. A "slack" értékek és a kritikus útvonalak elemzése alapján meghatározható, hogy a rendszer képes-e a megadott órajel-sebességgel megbízhatóan működni. Ha szükséges, a jeleket regiszteres úton szinkronizálják újra a stabil működés érdekében.
+	\item Az eszköz egy modell-specifikus optimalizációt hajt végre, amely során figyelembe veszi az időzítési követelményeket, az erőforrás használatot és a jelutak minimális késleltetését, így jön létre az FPGA-ra illesztett végleges netlist.
+	\item Ezt követi a timing analysis, amely az időzítési korlátok betartását vizsgálja. A "slack" értékek és a kritikus útvonalak elemzése alapján meghatározható, hogy a rendszer képes-e a megadott órajel sebességgel megbízhatóan működni. Ha szükséges, a jeleket regiszteres úton szinkronizálják újra a stabil működés érdekében.
 	\item Végül generálódik a konfigurációs állomány (bitstream), amely a programozó eszköz segítségével betölthető az FPGA memóriájába (pl. SRAM), lehetővé téve a fizikai áramkör felprogramozását és működtetését.
 \end{enumerate}
 
@@ -324,19 +326,19 @@ Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó l�
 
 A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső nyákrol. 
 
-A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések vagy a nem megfelelő távolságok automatikus felismerésére. 
+A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések, vagy a nem megfelelő távolságok automatikus felismerésére. 
 
 A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
 Amit én is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
 
 \section{Kommunikációs protokollok} %done
-A kommunikációs protokoll egy szabályrendszer, amely meghatározza, hogyan cserélnek információt az eszközök egy adott kommunikációs csatornán keresztül. Ezek a szabályok tartalmazzák az adatcsomagok szerkezetét, az átvitel sorrendjét, a hibakezelést, valamint a szinkronizációs és vezérlőjeleket is. Az adatátvitelhez elengedhetetlen, hogy a feladó és a fogadó ugyanazt a kommunikációs protokollt használja. Ha a feladó egy adott protokoll szerint kódolja az adatot, de a fogadó nem ismeri ezt a szabványt, az információ nem értelmezhető. A protokoll meghatározza az adat kódolásának és dekódolásának szabályait, valamint a kommunikációs fizikai csatornáját is.
+A kommunikációs protokoll egy szabályrendszer, amely meghatározza, hogyan cserélnek információt az eszközök egy adott kommunikációs csatornán keresztül. Ezek a szabályok tartalmazzák az adatcsomagok szerkezetét, az átvitel sorrendjét, a hibakezelést, valamint a szinkronizációs és vezérlőjeleket is. Az adatátvitelhez elengedhetetlen, hogy a feladó és a fogadó ugyanazt a kommunikációs protokollt használja. Ha a feladó egy adott protokoll szerint kódolja az adatot, de a fogadó nem ismeri ezt a szabványt, az információ nem értelmezhető. A protokoll meghatározza az adat kódolásának és dekódolásának szabályait, valamint a kommunikáció fizikai csatornáját is.
 
 A digitális rendszerekben számos különböző kommunikációs protokoll létezik, a programozóm az UART-ot, SPI-t és I2C-t használja. A következőkben röviden bemutatom ezeket a protokollokat, kiemelve működésük alapelveit és a projekt szempontjából releváns tulajdonságaikat.
 
 \subsection{Analízis képek magyarázata} %done
 
-A Diplomamunkában sok képet használok, amit analizátorral rögzítettem. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését, meg hogy a rögzítéseken látszódjon a kommunikáció válasza. Ezekről van több szó a "tesztelési és analízis elrendezés" szekcióban. 
+A diplomamunkámban sok képet használok, amit analizátorral rögzítettem. Használtam 2 memória modult is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését, illetve, hogy a rögzítéseken látszódjon a kommunikáció válasza. Ezekről van több szó a "tesztelési és analízis elrendezés" szekcióban. 
 
 A készített rögzítések Logic nevezetű applikációval vannak vizualizálva és így fognak kinézni:
 \begin{figure}[H]
@@ -350,10 +352,10 @@ A készített rögzítések Logic nevezetű applikációval vannak vizualizálva
 \subsection{UART}%done
 Az általam készített programozó sok kommunikációs protokollt használ, köztük az UART-ot. A számítógéppel való kommunikálás UART-on keresztül történik, a FTDI232 UART-USB átalakító segítségével.
 
-Az UART (Universal Asynchronous Receiver Transmitter) egy kommunikációs protokoll, amely aszinkron, full duplex és soros. Az, hogy soros azt jelenti, hogy az adatátvitelt bitenként történik, nem párhuzamos vonalokon. Az, hogy aszinkron azt jelenti, hogy nem létezik külön órajel-vonal; az időzítést a küldő és a fogadó egymástól függetlenül szabályozza. És az, hogy full duplex azt jelenti, hogy két irányú adatátvitel valósul meg egyidejűleg.
+Az UART (Universal Asynchronous Receiver Transmitter) egy kommunikációs protokoll, amely aszinkron, full duplex és soros. Az, hogy soros azt jelenti, hogy az adatátvitel bitenként történik, nem párhuzamos vonalokon. Az, hogy aszinkron azt jelenti, hogy nem létezik külön órajel vonal; az időzítést a küldő és a fogadó egymástól függetlenül szabályozza. És az, hogy full duplex azt jelenti, hogy két irányú adatátvitel valósul meg egyidejűleg.
 Az adatokat "keretek” alakjában továbbítja, ahol egy tipikus adatkeret tartalmaz egy kezdő (start) bitet, adatbiteket, opcionális paritásbitet a hibakezeléshez, majd egy stop bitet. A start és stop bitek segítik a fogadó eszközt abban, hogy pontosan meghatározza az adatcsomagok kezdetét és végét, és ezáltal megbízható adatátvitelt biztosítanak.
 
-A baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított baud ráta alapján van a fogadó vonal minta vételezésé, és az küldő vonalon a jel váltás, időzítve.
+A baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított baud ráta alapján van a fogadó vonal mintavételezésé, és az küldő vonalon a jel váltás időzítve.
 
 Az UART egyszerűsége és hatékonysága miatt elterjedt megoldás a mikrovezérlők, számítógépek és egyéb beágyazott rendszerek közötti kommunikációban.
 
@@ -459,7 +461,7 @@ Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban �
 \end{figure}
 A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók meg jumper-ek vannak a nyákon. Mégis igyekeztem sok időt fordítani a tervezésre.
 
-A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem.  A jumper-ek segítségével az ellenélésok 3V3 vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak szolgálni. Így sok féle EEPROM module-okat tud támogatni az áramkőr. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor a GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva.
+A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem.  A jumper-ek segítségével az ellenélésok 3V3 vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak szolgálni. Így sok féle EEPROM modulokat tud támogatni az áramkőr. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor a GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.29]{jumperek.PNG}
@@ -474,19 +476,19 @@ A célom az volt, hogy ez egy általánosan használható EEPROM programozó leg
 \end{figure}
 A áramkörnek 4 lehetséges tápja van
 \begin{itemize}
-	\item A TinyFPGA 5V VBUS PIN-je. A pin közvetlen össze van kötve a module mikró USB 5V tápjával. Tehát amikor a TinyFPGA module csatlakoztatva van a mikró USB-n keresztül a VBUS pin kimenet ként szolgálhat. A TinyFPGA module a betápját is a VBUS látja el. Szóval, ha a TinyFPGA nincs csatlakoztatva az USB-hez akkor a VBUS pin bemenetként is működhet.
-	\item A TinyFPGA 3V3 PIN. Ez a kimenet a TinyFPGA module power managment IC-je generálja a VBUS 5V feszültégéből.
-	\item Az FTDI232 VCC kimenete. Ami alítható 3V3 és 5V között a FTDI232 module-ön egy jumper-el.
+	\item A TinyFPGA 5V VBUS PIN-je. A pin közvetlen össze van kötve a modul mikró USB 5V tápjával. Tehát amikor a TinyFPGA modul csatlakoztatva van a mikró USB-n keresztül a VBUS pin kimenet ként szolgálhat. A TinyFPGA modul a betápját is a VBUS látja el. Szóval, ha a TinyFPGA nincs csatlakoztatva az USB-hez akkor a VBUS pin bemenetként is működhet.
+	\item A TinyFPGA 3V3 PIN. Ez a kimenet a TinyFPGA modul LDO IC-je generálja a VBUS 5V feszültégéből.
+	\item Az FTDI232 VCC kimenete. Ami alítható 3V3 és 5V között a FTDI232 modul-ön egy jumper-el.
 	\item Az EXT PWR csatlakoztatón, amit biztonság kedvéért raktam hozzá az áramkörhöz, ha szükséges lenne a jövőben egy külső táp..
 \end{itemize}
-A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-od bemenet szolgálhasson táp ként a nyáknak meg a hozzá csatolt memória module-oknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell, hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
+A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-od bemenet szolgálhasson táp ként a nyáknak meg a hozzá csatolt memória moduloknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell, hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{JP13.PNG}
 	\caption{VCC és VBUS közösítő jumper}
 	\label{VCC és VBUS közösítő jumper}
 \end{figure}
-A nyákon ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória module-oknak, illetve merés pontoknak is alkalmasak.
+A nyákon ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória moduloknak, illetve merés pontoknak is alkalmasak.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{gnd5v3v3.PNG}
@@ -1049,13 +1051,13 @@ I2C write                             & 46                         & F          
 \section{Tesztelési és analízis elrendezés}
 A projekt során egy logikai analizátort sokat használtam. A logikai analizátor egy olyan eszköz, amely lehetővé teszi a digitális jelek időbeli viselkedésének megfigyelését és elemzését. Az analizátor képes rögzíteni és megjeleníteni a digitális jelek állapotát, lehetővé téve a tervezők számára, hogy megértsék a rendszer működését és hibáit. Rendkívül hasznos volt hibakeresésre.
 
-Egy Sealeae logic 24MS/s-es logikai analizátort használtam. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését.
+Egy Sealeae logic 24MS/s-es logikai analizátort használtam. Használtam 2 memória modult is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését.
 
 A I2C EEPROM cikkszáma: AT24C256. Egy 256Kb-es EEPROM \cite{EEPROM}
 
 A SPI Flash cikkszáma W25Q64FV. Egy 64Mb-es Flash \cite{FLASH}
 
-A teszteléshez és analízihez a mérési elrendezés breadboard-on történt, mert a nyákon nem tudom egyszerre csatlakoztatni a memória module-okat meg az analizátort.
+A teszteléshez és analízihez a mérési elrendezés breadboard-on történt, mert a nyákon nem tudom egyszerre csatlakoztatni a memória modulokat meg az analizátort.
 
 Az elrendezés:
 \begin{figure}[H]
