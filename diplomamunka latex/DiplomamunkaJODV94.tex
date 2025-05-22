@@ -32,6 +32,7 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{pdfpages}
 
 \makeatletter
 \newcommand*\wrapletters[1]{\wr@pletters#1\@nil}
@@ -113,6 +114,9 @@ urlcolor=blue}
 	\vspace{35mm} Miskolc, 2025.	
 	
 \end{center}
+
+\includepdf{Nyilatkozat.pdf}
+\iffalse
 \thispagestyle{empty}
 \clearpage
 \thispagestyle{empty}
@@ -141,7 +145,7 @@ Miskolc, \today
 	
 }
 }
-
+\fi
 \mainmatter
 
 \clearpage
@@ -169,11 +173,32 @@ Miskolc, \today
 	\end{tabular}
 \end{table}
 \fi
-
-\chapter{Idegen nyelvű összefoglaló}
-Here comes the summary...
-
-
+\chapter{Röviditések és angol kifejezések}
+\begin{itemize}
+	\item FPGA: Field Programmable Gate Array: Helyben programozható logikai kapumátrix.
+	\item HDL: Hardware Description Language: Hardverleíró nyelv.
+	\item VHDL: VHSIC Hardware Description Language: A HDL egyik elterjedt szabványa.
+	\item LUT: Look Up Table: Kikereső tábla, amely logikai műveleteket valósít meg előre definiált értékek alapján az FPGA-n belül.
+	\item CLB: Configurable Logic Block: Konfigurálható logikai blokk, amely flip-flopokat és LUT-okat tartalmaz.
+	\item I/O: Input/Output: Bemeneti/kimeneti interfész, amelyen keresztül az eszköz adatokat fogad vagy továbbít.
+	\item I2C: Inter-Integrated Circuit: Kommunikációs protokoll, tükörfordítva: "IC-k közötti kapcsolat".
+	\item SPI: Serial Peripheral Interface: Kommunikációs protokoll, tükörfordítva: "Soros periféria interfész".
+	\item UART: Universal Asynchronous Receiver-Transmitter: Kommunikációs protokoll, tükörfordítva: "Univerzális aszinkron vevő-adó". 
+	\item EEPROM: Electrically Erasable Programmable Read-Only Memory: Elektronikusan törölhető és újraprogramozható nemfelejtő memória.
+	\item ASIC: Application-Specific Integrated Circuit: Kifejezetten egy adott alkalmazásra tervezett integrált áramkör.
+	\item VR: Virtual Reality: Virtuális valóság.
+	\item Flash memory: Flashmemória: gyors nemfelejtő tárolóeszköz.
+	\item CPLD: Complex Programmable Logic Device: Komplex programozható logikai eszköz.
+	\item Bitstream: Bitfolyam: Az FPGA konfigurációs adatfolyama.
+	\item Netlist: Network List: Kapcsolati lista, amely megadja az áramköri elemek közötti összeköttetéseket.
+	\item CPU: Central Processing Unit: Egy számítógép agya, tükörfordítva:"Központi feldolgozóegység".
+	\item IC: Integrated Circuit: Integrált áramkör, amely több elektronikus alkatrészt tartalmaz egyetlen chipen.
+	\item DRC: Design Rule Check: Tervezési szabályellenőrzés.
+	\item ERC: Electrical Rule Check: Elektromos szabályellenőrzés. 
+	\item GND: Ground: Földelés
+	\item CLK: Clock: Órajel.
+	%\item UI: User Interface: Felhasználói felület.
+\end{itemize}
 \chapter{Bevezetés}
 %\section{Téma választás Háttér}
 Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb Intel illetve AMD hagyományos desktop processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ezek az FPGA-k. 
@@ -204,7 +229,7 @@ Tehát a konkrét kitőzőtt célok/követelmények:
     \item Az FPGA-s hardware-nek legyen reset logikája.
     \item Az FPGA-s hardware legyen képes a SPI és I2C vonalakon érkező adatokat UART kommunikációkkal visszaküldeni a felhasználónak.
     \item A Windows-os program legyen képes a kapott adatokat rögzíteni (logolni).
-    \item A programozó működése teszteléssel legyen bemutatva ténylegez memória egységekkel
+    \item A programozó működése teszteléssel legyen bemutatva ténylegez memóriaegységekkel
     \item A programozó rendszernek legyen egy NYÁK-ja.
 \end{itemize}
 
@@ -291,18 +316,18 @@ Szumulálás és hibakeresés után következik a szintetizálási folyamat, aho
 Az időzítési analízis során alkalmazott technikák — például pipelining, órajel-illesztés vagy constraint alapú optimalizálás — különösen fontosak akkor, amikor a tervezett rendszer közelíti az adott FPGA erőforrásainak maximális kihasználtságát.
 
 \section{A NYÁK tevező program rövid bemutatása}
-A KiCad egy ingyenes, nyílt forráskódú szoftvercsomag. Elsősorban kapcsolásai rajzok és nyomtatott áramkörök tervezésére szolgál. Egy KiCad projecten belül lehet tervezni nyákokat, kapcsolási rajzokat, lábnyomokat, és szimbólumokat is.
+A KiCad egy ingyenes, nyílt forráskódú szoftvercsomag. Elsősorban kapcsolásai rajzok és nyomtatott áramkörök tervezésére szolgál. Egy KiCad projekten belül lehet tervezni nyákokat, kapcsolási rajzokat, lábnyomokat, és szimbólumokat is.
 
 A KiCad sok hasznos segédprogramot is tartalmaz, amelyek segítenek az kapcsolási rajzok és a nyomtatott áramkörök tervezésében. 
 
-Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó lábnyomok hozzárendelését, valamint a nyomtatott áramkörök fizikai elrendezésének megtervezését. A PCB tervezés során több réteg kezelésére is lehetőség van, akár 32 rétegű áramkörök tervezése is lehetséges. 
+Támogatja a kapcsolási rajzok elkészítését, az alkatrészekhez tartozó lábnyomok hozzárendelését, valamint a nyomtatott áramkörök fizikai elrendezésének megtervezését. A nyák tervezés során több réteg kezelésére is lehetőség van, akár 32 rétegű áramkörök tervezése is lehetséges. 
 
-A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső NYAK-rol. 
+A tervezett áramkörök vizuális ellenőrzését egy integrált 3D nézet segíti, amelyben a felhasználó valósághű képet kaphat a végső nyákrol. 
 
 A tervezési folyamat biztonságát a beépített elektromos szabályellenőrző (ERC) és tervezési szabályellenőrző (DRC) rendszerek garantálják, amelyek képesek a gyakori tervezési hibák, például az elmaradt összeköttetések vagy a nem megfelelő távolságok automatikus felismerésére. 
 
 A gyártási előkészítést a KiCad támogatja gyártási fájlok (például Gerber, drill fájlok) generálásával, valamint beépített anyagjegyzék/BOM készítő funkcióval is rendelkezik. Ezen felül a KiCad lehetővé teszi saját szimbólum- és lábnyomkönyvtárak létrehozását, valamint 3D modellek hozzárendelését az alkatrészekhez. 
-Amit és is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
+Amit én is kihasználtam, az, hogy a KiCad szoftver Python szkriptek támogatásával bővíthető, amely különösen hasznos mivel nyílt forráskódú a KiCad. A kiterjedt, közösségi alapú dokumentáció és a hozzáférhető tanulási források tovább növelik a program használhatóságát mind kezdő, mind haladó felhasználók számára. Ezek miatt választottam a KiCad-ot.
 
 \section{Kommunikációs protokollok} %done
 A kommunikációs protokoll egy szabályrendszer, amely meghatározza, hogyan cserélnek információt az eszközök egy adott kommunikációs csatornán keresztül. Ezek a szabályok tartalmazzák az adatcsomagok szerkezetét, az átvitel sorrendjét, a hibakezelést, valamint a szinkronizációs és vezérlőjeleket is. Az adatátvitelhez elengedhetetlen, hogy a feladó és a fogadó ugyanazt a kommunikációs protokollt használja. Ha a feladó egy adott protokoll szerint kódolja az adatot, de a fogadó nem ismeri ezt a szabványt, az információ nem értelmezhető. A protokoll meghatározza az adat kódolásának és dekódolásának szabályait, valamint a kommunikációs fizikai csatornáját is.
@@ -422,7 +447,6 @@ A SCL vonalon a mért frekvencia ~585 kHz, ami a programozó beállított belső
 	\label{Projekt terv}
 \end{figure}
 Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban írt program futtatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA modul számára. Az FPGA modulon megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip válaszait esetleges válaszait pedig visszakonvertálja UART csomagokké a FT232RL-nek, amely visszaküldi a PC-nek.
-\section{VHDL design terv}
 \chapter{Megvalósítás}
 
 \section{Kapcsolási rajz tervezése}
@@ -433,7 +457,7 @@ Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban �
 	\caption{A programozó kapcsolási rajza}
 	\label{teljes kapcsolási rajz}
 \end{figure}
-A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók meg jumper-ek vannak a NYÁK-on. Mégis igyekeztem sok időt fordítani a tervezésre.
+A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók meg jumper-ek vannak a nyákon. Mégis igyekeztem sok időt fordítani a tervezésre.
 
 A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem.  A jumper-ek segítségével az ellenélésok 3V3 vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak szolgálni. Így sok féle EEPROM module-okat tud támogatni az áramkőr. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor a GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva.
 \begin{figure}[H]
@@ -455,14 +479,14 @@ A áramkörnek 4 lehetséges tápja van
 	\item Az FTDI232 VCC kimenete. Ami alítható 3V3 és 5V között a FTDI232 module-ön egy jumper-el.
 	\item Az EXT PWR csatlakoztatón, amit biztonság kedvéért raktam hozzá az áramkörhöz, ha szükséges lenne a jövőben egy külső táp..
 \end{itemize}
-A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-od bemenet szolgálhasson táp ként a NYÁK-nak meg a hozzá csatolt memória module-oknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell, hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
+A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-od bemenet szolgálhasson táp ként a nyáknak meg a hozzá csatolt memória module-oknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell, hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{JP13.PNG}
 	\caption{VCC és VBUS közösítő jumper}
 	\label{VCC és VBUS közösítő jumper}
 \end{figure}
-A NYÁK-on ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória module-oknak, illetve merés pontoknak is alkalmasak.
+A nyákon ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória module-oknak, illetve merés pontoknak is alkalmasak.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{gnd5v3v3.PNG}
@@ -476,9 +500,9 @@ A NYÁK-on ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok 
 	\caption{A programozó NYÁK-ja}
 	\label{A programozó NYÁK-ja}
 \end{figure}
-Ez a végleges NYÁK terv, ez az a design, aminek gyártását megrendeltem. Egy két réteges egyszerű nyák. De egy ilyen egyszerűbb NYÁK tervezése közben fontos betartani az alapszabályokat.
+Ez a végleges nyák terv, ez az a design, aminek gyártását megrendeltem. Egy két réteges egyszerű nyák. De egy ilyen egyszerűbb nyák tervezése közben fontos betartani az alapszabályokat.
 
-Tervezés előtt érdemes beállítani azokat a limiteket, amiket a NYÁK gyártó cég képes gyártani. Ha tudjuk, hogy melyik céget akarjuk használni, akkor a weboldalukon megtalálhatjuk az értékeket. A limiteket a Board Setup funkcióval lehet megadni. Ha jól meg vannak adva az értékek akkor a KiCad nem enged olyan nyákot tervezni, amit nem tud a NYÁK gyártó cég legyártani. Az én esetemben:
+Tervezés előtt érdemes beállítani azokat a limiteket, amiket a nyák gyártó cég képes gyártani. Ha tudjuk, hogy melyik céget akarjuk használni, akkor a weboldalukon megtalálhatjuk az értékeket. A limiteket a Board Setup funkcióval lehet megadni. Ha jól meg vannak adva az értékek akkor a KiCad nem enged olyan nyákot tervezni, amit nem tud a nyák gyártó cég legyártani. Az én esetemben:
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.55]{bosrd limits.PNG}
@@ -490,8 +514,8 @@ A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megsza
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{also reteg.PNG}
-	\caption{A NYÁK alsó rétege}
-	\label{A NYÁK alsó rétege}
+	\caption{A nyák alsó rétege}
+	\label{A nyák alsó rétege}
 \end{figure}
 \subsubsection{Az SPI csatlakozó}
 \begin{figure}[H]
@@ -561,18 +585,18 @@ Ez pedig arról kép hogy hogyan néz ki egy via a plugin használata előtt és
 	\caption{Teardrop plugin használata után}
 	\label{Teardrop plugin használata után} 
 \end{figure}
-\section{A Kész NYÁK}
+\section{A Kész nyák}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.125]{PCB.png}
-	\caption{A Kész NYÁK}
-	\label{A kész NYÁK} 
+	\caption{A Kész nyák}
+	\label{A kész nyák} 
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.125]{PCBassembled.png}
-	\caption{A kész NYÁK összerakva és forrasztva}
-	\label{A kész NYÁK összerakva és forrasztva} 
+	\caption{A kész nyák összeszerelve és forrasztva}
+	\label{A kész nyák összeszerelve és forrasztva} 
 \end{figure}
 
 \section{A Programozó al-entitásai}
@@ -958,7 +982,7 @@ A main entitás biztosítja a programozó funkcionalitását, az összes alentit
         \item Átmenet: Az I2C írási művelet befejezése után visszatérés az alapállapotba.
     \end{itemize} 
 \end{itemize}
-\section{C++ ban megírt utasítás küldő program}
+\section{C++-ban megírt utasítás küldő program}
 \subsection{A Terminal app program}
 A program célja, hogy hexadecimális formátumban megadott adatokat küldjön a számítógéphez csatlakoztatott programozónak egy COM soros porton keresztül, majd fogadja és megjelenítse a programozótól visszakapott adatokat.
 \subsubsection{A program működése}
@@ -991,7 +1015,7 @@ A program célja, hogy hexadecimális formátumban megadott adatokat küldjön a
 \end{enumerate}
 \subsection{A File app program}
 Ez a program hasonló a Terminal app-hoz, de fájlokkal dolgozik. A felhasználó megadhat egy fájlnevet, amely utasításokat tartalmaz. A fájlban lévő utasításokat a program feldolgozza, és a válaszokat kiírja, meg lementi egy log.txt fájlba.
-\subsection{A programaozó beállítása a belső memeória segítségével}
+\subsection{A programozó beállítása a belső memória segítségével}
 A programozónak van egy 7 bájtos belső memóriája, ahol a SPI és I2C adatkeret beállításokat tárolja. Az alapértelmezett értéke x00001904000403. 
 Az elő 3 bajt, azaz alapból a x000019, A SPI adatkeret teljes hosszát (bájtokban) mondja meg, U3 adattipúsban. Így alapértelmezett esetben a SPI kommunikáció teljes hossza 25 bájt, mindent beleértve. 
 A következő 2 bájt pedig a SPI olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 4 bájt a hossz. 
@@ -1023,15 +1047,15 @@ I2C write                             & 46                         & F          
 \chapter{Tesztelés}
 
 \section{Tesztelési és analízis elrendezés}
-A projekt során egy logikai analizátort sokat használtam. A logikai analizátor egy olyan eszköz, amely lehetővé teszi a digitális jelek időbeli viselkedésének megfigyelését és elemzését. Az analizátor képes rögzíteni és megjeleníteni a digitális jelek állapotát, lehetővé téve a tervezők számára, hogy megértsék a rendszer működését és hibáit. Rendkívül hasznos volt debug-olásra.
+A projekt során egy logikai analizátort sokat használtam. A logikai analizátor egy olyan eszköz, amely lehetővé teszi a digitális jelek időbeli viselkedésének megfigyelését és elemzését. Az analizátor képes rögzíteni és megjeleníteni a digitális jelek állapotát, lehetővé téve a tervezők számára, hogy megértsék a rendszer működését és hibáit. Rendkívül hasznos volt hibakeresésre.
 
-Egy Sealeae logic 24MS/s-es logikai analizátort hasznóaltam. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését.
+Egy Sealeae logic 24MS/s-es logikai analizátort használtam. Használtam 2 memória module-t is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését.
 
 A I2C EEPROM cikkszáma: AT24C256. Egy 256Kb-es EEPROM \cite{EEPROM}
 
 A SPI Flash cikkszáma W25Q64FV. Egy 64Mb-es Flash \cite{FLASH}
 
-A teszteléshez és analízihoz a mérési elrendezés breadboard-on történt, mert a NYÁK-on nem tudom egyszerre csatlakoztatni a memória module-okat meg az analizátort.
+A teszteléshez és analízihez a mérési elrendezés breadboard-on történt, mert a nyákon nem tudom egyszerre csatlakoztatni a memória module-okat meg az analizátort.
 
 Az elrendezés:
 \begin{figure}[H]
@@ -1055,16 +1079,21 @@ Teszteléshez is write enable utasítást küldök a SPI Flash memóriának.
 Használt utasítássor az utasítás file-ban: 
 
 4106
+
 exit
-Teszt eredménye:
+
+\subsubsection{Teszt eredménye:}
 
 
 Log file tartalma:
+
 Bytes written: 2
+
 Bytes in queue: 1
+
 Received: 41
 
-Rögzítés:
+\subsubsection{Rögzítés:}
 
 \begin{figure}[H]  
 	\centering
@@ -1083,9 +1112,8 @@ Teszteléshez az SPI Flash memóriában egy teljes page-et azaz oldalt írtam. E
 
 Használt utasítássor az utasítás file-ban:
 
-	
-
 4400010404000504
+
 4106
 
 \wrapletters{43020000004163636F7264696E6720746F20616C6C206B6E6F776E206C617773206F66206176696174696F6E2C207468657265206973206E6F207761792061206265652073686F756C642062652061626C6520746F20666C792E204974732077696E67732061726520746F6F20736D616C6C20746F206765742069747320666174206C6974746C6520626F6479206F6666207468652067726F756E642E20546865206265652C206F6620636F757273652C20666C69657320616E797761792062656361757365206265657320646F6E2774206361726520776861742068756D616E73207468696E6B20697320696D706F737369626C652E2059656C6C6F772C20626C61636B0}
@@ -1095,9 +1123,9 @@ exit
 
 Az első két utasítás azért kell hogy beállítsuk a SPI kommunikáció hosszát és az Flash-nek elküldjük a write enable utasítást. Maga az adat a harmadik utasításba a bee movie filmnek a forgatókönyvének első 256 bájtja.
 
-Teszt eredménye:
+\subsubsection{Teszt eredménye:}
 
-Log file tartalma
+Log file tartalma:
 
 Bytes written: 8
 
@@ -1118,12 +1146,12 @@ Bytes in queue: 1
 Received: 43
 
 
-Rögzítés:
+\subsubsection{Rögzítés:}
 
 
 \begin{figure}[H]  
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.25]{spi write packege full.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{spi write packege full.PNG}
 	\caption{SPI write állapot tesztelése rögzítés}
 	\label{SPI write állapot tesztelése rögzítés}
 \end{figure}
@@ -1133,6 +1161,18 @@ A rögzítésen látszik, hogy az programozó valóban az összes érkező bájt
 Az SPI write állapot helyesen működik.
 
 \subsection{SPI read állapot tesztelése}
+
+Teszteléshez az SPI Flash memóriában egy teljes page-et azaz oldalt olvastam ki. Ugyan azt amit beleírtam az SPI write tesztelés közben.
+
+Használt utasítássor az utasítás file-ban:
+
+4400010404000504
+
+42030000000
+
+Itt is az első utasítás azért kell hogy beállítsuk a SPI kommunikáció hosszát. 
+
+\subsubsection{Teszt eredménye:}
 
 Log file tartalma:
 
@@ -1147,12 +1187,13 @@ Bytes written: 6
 Bytes in queue: 257
 
 Received: 41 63 63 6F 72 (...többi adat bájt...) 36 B0
-Rögzítés:
+
+\subsubsection{Rögzítés:}
 
 
 \begin{figure}[H]  
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.25]{full spi page package.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.27]{full spi page package.PNG}
 	\caption{SPI read állapot tesztelése rögzítés}
 	\label{SPI read állapot tesztelése rögzítés}
 \end{figure}
@@ -1161,28 +1202,79 @@ A rögzítésen látszik, hogy az programozó valóban az összes beírt bájtot
 
 Az SPI read állapot helyesen működik.
 
-\subsection{I2C write és read állapot tesztelése}
+\subsection{I2C write és I2C read állapot tesztelése}
+A két állapotot együtt teszteltem. Az EEPROM-ba egy memória címre beleírtam az Test angol szó  ASCII értékét, majd ugyan azt a címet olvastam ki egy utasítás sorral.
+
 Használt utasítássor az utasítás file-ban:
 
 4400010404000804
+
 46A00000546573740
+
 wait(11ms)
+
 45A00000A10
+
 exit
 
+\begin{itemize}
+	\item Az első utasítás azért kell hogy beállítsuk a I2C kommunikáció hosszát.
+	\item A második utasításban a 46 hexadecimális bájt az I2C write állapotot jelöli, az A00000 címre írunk.
+	\item A harmadik utasítás egy váró utasítás, ez az EEPROM karakterisztikája miatt kell\cite{EEPROM}.
+	\item A negyedik utasításban a 45 hexadecimális bájt az I2C read állapotot jelöli, az A00000 címről olvasunk.
+\end{itemize}
+
+\subsubsection{Teszt eredménye:}
+
 Log file tartalma:
+
 Bytes written: 8
+
 Bytes in queue: 1
+
 Received: 44 
+
 Bytes written: 9
+
 Bytes in queue: 1
+
 Received: 46 
+
 Waiting for 11 ms
+
 Bytes written: 6
+
 Bytes in queue: 5
+
 Received: 45 54 65 73 74 
 
+\subsubsection{Rögzítések:}
+
+\begin{figure}[H]  
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{i2c small write.PNG}
+	\caption{I2C write állapot tesztelése rögzítés}
+	\label{I2C write állapot tesztelése rögzítés}
+\end{figure}
+Itt látható a helyesen elküldött I2C írás.
+\begin{figure}[H]  
+	\centering
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{i2c small read.PNG}
+	\caption{I2C read állapot tesztelése rögzítés}
+	\label{I2C read állapot tesztelése rögzítés}
+\end{figure}
+Itt látható a helyes I2C olvasás. A programozó visszaolvasta és visszaküldte a helyes előbb beírt adatokat.
+
+Az I2C read és az I2C write állapot helyesen működik.
+
 \subsection{Get settings állapot tesztelése}
+A Diplomamunka során sok rögzítést mutattam be, ahol látszik, hogy különböző hosszúságú adatkereteket küldött a programozó, a programozót mindig a Get settings állapottal kellett beállítanom. 
+
+Például a \ref{SPI-al kilvasott gyártó azonosító és típusszám}-as ábra a \pageref{SPI-al kilvasott gyártó azonosító és típusszám}. oldalon és a \ref{SPI read állapot tesztelése rögzítés}-as ábra a \pageref{SPI read állapot tesztelése rögzítés}. oldalon. Itt látható két külön  hosszúságú SPI adatkeret.
+
+A \ref{I2C 1 bájtos olvasás a programozóval}-as. ábra a \pageref{I2C 1 bájtos olvasás a programozóval}. oldalon és a \ref{I2C write állapot tesztelése rögzítés}-as ábra a \pageref{I2C write állapot tesztelése rögzítés}. oldalon. Itt látható két külön hosszúságú I2C adatkeret.
+
+A Get settings állapot helyesen működik.
 
 \iffalse
 \begin{lstlisting}
@@ -1276,8 +1368,45 @@ A \ref{egyenlet1}. összefüggés az \cite{fpgaadatlap} szerzőtől származik.
 \chapter{Összefoglalás}
 \appendix
 \fi
-\chapter{Melléklet}
+\chapter{Összegzés}
+\section{Jövöbeli tervek}
+Bár az elkészült programozó már most is képes EEPROM és Flash memória egységek programozására SPI és I2C protokollokon keresztül, számos irányba lehetne tovább bővíteni a rendszer funkcionalitását.
 
+Elsőként szeretnék egy grafikus felületet készíteni a jelenlegi C++-ban írt parancssoros vezérlőalkalmazás helyett. Ez felhasználóbarátibbá tenné a programozót, és lehetőséget biztosítana a memóriák tartalmának vizuális megjelenítésére, szerkesztésére, valamint jobb fájl alapú be- és kimentésre is.
+
+Ezen kívül célom lenne újabb protokollok hozzáadása. Ez tovább növelné a programozó eszköz kompatibilitását különféle memóriatípusokkal és más perifériákkal. 
+
+Az protokollok sebesség beállítása most a design része, nem lehet az FPGA konfigurálása után változtatni. Ez is beállíthatóvá szeretném tenni.
+
+Hardveres oldalon egy a most használt TinyFPGA modul helyett egy komplexebb FPGA használatával a rendszer teljesítménye és bővíthetősége is jelentősen nőne.
+
+Végül, de nem utolsósorban, szeretnék a projektből egy nyílt forráskódú, dokumentált, közösség által is használható eszközt létrehozni. A hardvertervek, a VHDL forráskód és a szoftver nyilvánossá tétele elősegítené, hogy más fejlesztők vagy diákok is tanulhassanak a rendszerből, és akár saját igényeikhez igazítva továbbfejlesszék azt. Az egész forráskód már fent van GitHub-on.
+
+\section{Magyar összefoglaló}
+Diplomamunkám célja az volt, hogy egy olyan hardver-szoftver rendszert hozzak létre, amely képes SPI és I2C protokollon keresztül különböző memóriák programozására. A rendszer felépítése egy PC-s vezérlő alkalmazásból, egy UART kommunikáción alapuló interfészből, valamint egy FPGA-ban implementált digitális áramkörből áll. A kommunikációs és vezérlő szoftvert C++ nyelven írtam meg, amely képes parancsokat küldeni, adatokat fogadni és azokat naplózni is.
+A VHDL-ben megírt modulokat úgy terveztem, hogy azok rugalmasan konfigurálhatók legyenek, lehetőséggel a kommunikációs keretek hosszának állítására. A tervezett FPGA-s logika tartalmaz SPI és I2C mester egységeket, UART vevő- és adómodulokat, valamint egy fő állapotgépet, amely a beérkező parancsokat feldolgozza. 
+
+A hardveres megvalósítás részeként egy kétoldalas nyákot terveztem a KiCad szoftverrel. A tervezés során igyekeztem törekedni a rugalmasságra, például jumper-ek segítségével különböző feszültségű memóriachipek támogatása is megoldhatóvá vált. 
+
+A rendszer teszteléséhez valós EEPROM chipeket használtam, és logikai analizátor segítségével ellenőriztem a kommunikáció helyességét. 
+
+Összességében a projekt során sikerült elérnem a kitűzött célokat: egy működőképes, használható EEPROM programozót hoztam létre, amely gyakorlati példát szolgáltat az FPGA-k alkalmazására beágyazott rendszerek fejlesztésében. A munka során jelentős tapasztalatra tettem szert mind a digitális áramkörtervezés, mind az alacsony szintű kommunikációs protokollok kezelése terén.
+
+
+\section{English summary}
+As part of my final year project at the University of Miskolc, I set out to design and implement a configurable EEPROM programmer based on an FPGA platform. My goal was to create a standalone embedded system that not only deepened my knowledge of FPGA technology and the VHDL hardware description language but also offered practical utility in programming various EEPROM and memory chips via industry-standard communication protocols such as SPI and I2C.
+
+The project integrates both hardware and software development. On the hardware side, I designed a printed circuit board using KiCad, considering signal integrity, power distribution, and flexibility for different memory modules using configurable jumpers. On the FPGA, I implemented the design in VHDL, creating modular components that handle communication, protocol framing, data handling, and control logic. These include UART communication modules for interfacing with a PC, SPI and I2C master modules for memory programming, and internal logic for command parsing and response generation.
+
+On the software side, I developed a command-line interface in C++ for Windows that communicates with the FPGA via a COM port using UART. This interface allows users to send commands, receive responses, and log data from the programmer.
+A key challenge in the development was ensuring the precise timing and synchronization of the asynchronous UART and synchronous SPI/I2C protocols. I addressed this through careful selection of clock frequencies and the implementation of robust state machines. Additionally, I conducted extensive testing using logic analyzers and real memory modules to verify the system’s functionality and reliability.
+
+Overall, the project has provided me with valuable experience in embedded system design, digital electronics, and cross-disciplinary engineering skills, bridging software and hardware. I believe the resulting system serves as a useful tool for memory programming tasks and demonstrates the versatile power of FPGA-based solutions.
+
+\chapter{Melléklet}
+\begin{itemize}
+	\item \href{https://github.com/LordofAllBlue/VHDL-I2C-SPI-Programmer2}{A diplomunka telyes forráskódja}
+\end{itemize}
 
 \renewcommand{\refname}{Irodalomjegyzék}
 \begin{thebibliography}{9}

@@ -215,6 +215,15 @@ INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\mdwtools\footnote.sty
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
@@ -246,6 +255,12 @@ OUTPUT DiplomamunkaJODV94.pdf
 INPUT .\DiplomamunkaJODV94.out
 INPUT .\DiplomamunkaJODV94.out
 OUTPUT DiplomamunkaJODV94.out
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
@@ -258,14 +273,22 @@ INPUT .\misk_egy.png
 INPUT .\misk_egy.png
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
 INPUT C:\Users\Szabo Ferenc\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
+INPUT .\Nyilatkozat.pdf
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\DiplomamunkaJODV94.toc
@@ -326,6 +349,11 @@ INPUT .\DiplomamunkaJODV94.lot
 INPUT .\DiplomamunkaJODV94.lot
 INPUT DiplomamunkaJODV94.lot
 OUTPUT DiplomamunkaJODV94.lot
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
+INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
@@ -562,6 +590,17 @@ INPUT .\full spi page package.PNG
 INPUT .\full spi page package.PNG
 INPUT .\full spi page package.PNG
 INPUT .\full spi page package.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small write.PNG
+INPUT .\i2c small read.PNG
+INPUT .\i2c small read.PNG
+INPUT .\i2c small read.PNG
+INPUT .\i2c small read.PNG
 INPUT DiplomamunkaJODV94.aux
 INPUT .\DiplomamunkaJODV94.out
 INPUT .\DiplomamunkaJODV94.out
@@ -573,5 +612,3 @@ INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
-INPUT C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb

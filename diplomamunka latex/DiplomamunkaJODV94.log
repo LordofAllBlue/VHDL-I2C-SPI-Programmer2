@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  22 MAY 2025 08:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  22 MAY 2025 17:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -920,111 +920,161 @@ Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks43
 \minrowclearance=\skip81
 \rownum=\count338
+) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
+ (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen197
+\ESO@tempdimb=\dimen198
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+\AM@pagewidth=\dimen199
+\AM@pageheight=\dimen256
+\AM@fboxrule=\dimen257
+ (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/03/12 v0.6f Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count339
+\AM@pagebox=\box65
+\AM@global@opts=\toks44
+\AM@pagecnt=\count340
+\AM@toc@title=\toks45
+\AM@lof@heading=\toks46
+\c@AM@survey=\count341
+\AM@templatesizebox=\box66
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box65
-\fn@width=\dimen197
+\fn@notes=\box67
+\fn@width=\dimen258
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 76.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 77.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count339
+\l__color_backend_stack_int=\count342
 ) (DiplomamunkaJODV94.aux)
 \openout1 = `DiplomamunkaJODV94.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 76.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 77.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 77.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen198
-\scratchbox=\box66
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen199
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count343
+\scratchdimen=\dimen259
+\scratchbox=\box68
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen260
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks48
 ) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package gensymb Info: Math companion symbols found on input line 76.
-LaTeX Info: Redefining \degree on input line 76.
-LaTeX Info: Redefining \celsius on input line 76.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 76.
-LaTeX Info: Redefining \ohm on input line 76.
-Package gensymb Info: Using \textohm for \ohm on input line 76.
-Package gensymb Info: Using \textmu for \micro on input line 76.
+Package gensymb Info: Math companion symbols found on input line 77.
+LaTeX Info: Redefining \degree on input line 77.
+LaTeX Info: Redefining \celsius on input line 77.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 77.
+LaTeX Info: Redefining \ohm on input line 77.
+Package gensymb Info: Using \textohm for \ohm on input line 77.
+Package gensymb Info: Using \textmu for \micro on input line 77.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count346
-Package hyperref Info: Link coloring ON on input line 76.
+\c@lstlisting=\count349
+Package hyperref Info: Link coloring ON on input line 77.
  (DiplomamunkaJODV94.out) (DiplomamunkaJODV94.out)
 \@outlinefile=\write4
 \openout4 = `DiplomamunkaJODV94.out'.
 
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+ (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 LaTeX Info: Redefining \cal on input line 583.
 LaTeX Info: Redefining \mit on input line 584.
 )
 Package babel Info: 'magyar' activates 'magyar' shorthands.
-(babel)             Reported  on input line 76.
-<misk_egy.png, id=175, 230.8625pt x 219.82124pt>
+(babel)             Reported  on input line 77.
+<misk_egy.png, id=187, 230.8625pt x 219.82124pt>
 File: misk_egy.png Graphic file (type png)
 <use misk_egy.png>
-Package pdftex.def Info: misk_egy.png  used on input line 86.
+Package pdftex.def Info: misk_egy.png  used on input line 87.
 (pdftex.def)             Requested size: 115.43095pt x 109.91034pt.
+<Nyilatkozat.pdf, id=188, 597.55246pt x 845.07718pt>
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf>
+Package pdftex.def Info: Nyilatkozat.pdf  used on input line 118.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<Nyilatkozat.pdf, id=190, page=1, 597.55246pt x 845.07718pt>
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf, page 1>
+Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf, page 1>
+Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
 
 [1
 
 
 {C:/Users/Szabo Ferenc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./misk_egy.png>]
-Overfull \hbox (0.50175pt too wide) in paragraph at lines 127--128
-\T1/lmr/m/n/12 cím¶ szak-dol-go-za-tom/-dip-lo-ma-ter-vem sa-ját, ön-ál-ló mun-kám; az ab-ban hi-vat-ko-zott szak-
- []
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf, page 1>
+Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf, page 1>
+Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 131.
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 
+File: Nyilatkozat.pdf Graphic file (type pdf)
+<use Nyilatkozat.pdf, page 1>
+Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2
 
-{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (DiplomamunkaJODV94.toc
+ <./Nyilatkozat.pdf>] (DiplomamunkaJODV94.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1064,7 +1114,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...rogramozÃ³ al-entitÃ¡sai}{39}{section.6.3}
+l.25 ...A Int\_Osc entitÃ¡s}{39}{subsection.6.3.1}
                                                   % [1
 
 
@@ -1079,7 +1129,7 @@ l.25 ...rogramozÃ³ al-entitÃ¡sai}{39}{section.6.3}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \listoffigures
+l.153 \listoffigures
                      [2] (DiplomamunkaJODV94.lof
 
 [3
@@ -1100,240 +1150,243 @@ l.149 \listoffigures
 
 ]
 1. fejezet.
-
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 178.
+(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 [6
 
-]
+{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+[7]
 2. fejezet.
 
 
-[7
+[8
 
 ]
 
-[8]
+[9]
 3. fejezet.
 
 
-[9
+[10
 
 ]
 
-[10]
+[11]
 4. fejezet.
 
 
-[11
+[12
 
 ]
-
-[12]
 
 [13]
 
 [14]
 
 [15]
-<i2c small read.PNG, id=383, 1452.92813pt x 782.17218pt>
+
+[16]
+<i2c small read.PNG, id=409, 1452.92813pt x 782.17218pt>
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 319.
+Package pdftex.def Info: i2c small read.PNG  used on input line 344.
 (pdftex.def)             Requested size: 434.17465pt x 232.9463pt.
 
 
-[16]
+[17]
 
-[17 <./i2c small read.PNG>]
-<uartblock.png, id=396, 382.42876pt x 147.55125pt>
+[18 <./i2c small read.PNG>]
+<uartblock.png, id=422, 382.42876pt x 147.55125pt>
 File: uartblock.png Graphic file (type png)
 <use uartblock.png>
-Package pdftex.def Info: uartblock.png  used on input line 339.
+Package pdftex.def Info: uartblock.png  used on input line 364.
 (pdftex.def)             Requested size: 301.391pt x 113.48874pt.
-<UARTfromAnalyzer.PNG, id=397, 1221.06187pt x 638.385pt>
+<UARTfromAnalyzer.PNG, id=423, 1221.06187pt x 638.385pt>
 File: UARTfromAnalyzer.PNG Graphic file (type png)
 <use UARTfromAnalyzer.PNG>
-Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 347.
+Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 372.
 (pdftex.def)             Requested size: 425.38635pt x 221.4464pt.
 
 
-[18 <./uartblock.png>]
-<SPIblockk.PNG, id=404, 964.60374pt x 604.2575pt>
+[19 <./uartblock.png>]
+<SPIblockk.PNG, id=430, 964.60374pt x 604.2575pt>
 File: SPIblockk.PNG Graphic file (type png)
 <use SPIblockk.PNG>
-Package pdftex.def Info: SPIblockk.PNG  used on input line 359.
+Package pdftex.def Info: SPIblockk.PNG  used on input line 384.
 (pdftex.def)             Requested size: 431.50699pt x 269.35266pt.
 
 
-[19 <./UARTfromAnalyzer.PNG>]
+[20 <./UARTfromAnalyzer.PNG>]
 
-[20 <./SPIblockk.PNG>]
-<SPIreadID.png, id=416, 1548.53531pt x 692.5875pt>
+[21 <./SPIblockk.PNG>]
+<SPIreadID.png, id=442, 1548.53531pt x 692.5875pt>
 File: SPIreadID.png Graphic file (type png)
 <use SPIreadID.png>
-Package pdftex.def Info: SPIreadID.png  used on input line 374.
+Package pdftex.def Info: SPIreadID.png  used on input line 399.
 (pdftex.def)             Requested size: 431.9936pt x 192.32985pt.
-<i2cblokk.png, id=419, 1198.4775pt x 675.52374pt>
+<i2cblokk.png, id=445, 1198.4775pt x 675.52374pt>
 File: i2cblokk.png Graphic file (type png)
 <use i2cblokk.png>
-Package pdftex.def Info: i2cblokk.png  used on input line 389.
+Package pdftex.def Info: i2cblokk.png  used on input line 414.
 (pdftex.def)             Requested size: 399.59068pt x 224.39809pt.
 
 
-[21 <./SPIreadID.png>]
-<i2creadmini.PNG, id=428, 1075.01625pt x 362.85562pt>
+[22 <./SPIreadID.png>]
+<i2creadmini.PNG, id=454, 1075.01625pt x 362.85562pt>
 File: i2creadmini.PNG Graphic file (type png)
 <use i2creadmini.PNG>
-Package pdftex.def Info: i2creadmini.PNG  used on input line 403.
+Package pdftex.def Info: i2creadmini.PNG  used on input line 428.
 (pdftex.def)             Requested size: 438.4264pt x 146.43864pt.
 
 
-[22 <./i2cblokk.png>]
+[23 <./i2cblokk.png>]
 
-[23 <./i2creadmini.PNG>]
+[24 <./i2creadmini.PNG>]
 5. fejezet.
-<terv1.png, id=444, 1751.04187pt x 694.84593pt>
+<terv1.png, id=470, 1751.04187pt x 694.84593pt>
 File: terv1.png Graphic file (type png)
 <use terv1.png>
-Package pdftex.def Info: terv1.png  used on input line 420.
+Package pdftex.def Info: terv1.png  used on input line 445.
 (pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
 
 
-[24
+[25
 
  <./terv1.png>]
-
-[25]
 6. fejezet.
-<kapcsolasi rajz.PNG, id=454, 1415.2875pt x 832.61063pt>
+<kapcsolasi rajz.PNG, id=476, 1415.2875pt x 832.61063pt>
 File: kapcsolasi rajz.PNG Graphic file (type png)
 <use kapcsolasi rajz.PNG>
-Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 432.
+Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 456.
 (pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
-<jumperek.PNG, id=455, 1499.6025pt x 629.35126pt>
+<jumperek.PNG, id=477, 1499.6025pt x 629.35126pt>
 File: jumperek.PNG Graphic file (type png)
 <use jumperek.PNG>
-Package pdftex.def Info: jumperek.PNG  used on input line 441.
+Package pdftex.def Info: jumperek.PNG  used on input line 465.
 (pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
 
 
 [26
 
  <./kapcsolasi rajz.PNG>]
-<jumpertable.PNG, id=461, 777.65532pt x 293.59688pt>
+<jumpertable.PNG, id=483, 777.65532pt x 293.59688pt>
 File: jumpertable.PNG Graphic file (type png)
 <use jumpertable.PNG>
-Package pdftex.def Info: jumpertable.PNG  used on input line 447.
+Package pdftex.def Info: jumpertable.PNG  used on input line 471.
 (pdftex.def)             Requested size: 347.38097pt x 129.55667pt.
 
 
 [27 <./jumperek.PNG> <./jumpertable.PNG>]
-<JP13.PNG, id=468, 531.48563pt x 194.22563pt>
+<JP13.PNG, id=490, 531.48563pt x 194.22563pt>
 File: JP13.PNG Graphic file (type png)
 <use JP13.PNG>
-Package pdftex.def Info: JP13.PNG  used on input line 461.
+Package pdftex.def Info: JP13.PNG  used on input line 485.
 (pdftex.def)             Requested size: 236.60562pt x 84.84001pt.
-<gnd5v3v3.PNG, id=469, 912.40875pt x 490.08093pt>
+<gnd5v3v3.PNG, id=491, 912.40875pt x 490.08093pt>
 File: gnd5v3v3.PNG Graphic file (type png)
 <use gnd5v3v3.PNG>
-Package pdftex.def Info: gnd5v3v3.PNG  used on input line 468.
+Package pdftex.def Info: gnd5v3v3.PNG  used on input line 492.
 (pdftex.def)             Requested size: 408.01945pt x 217.97368pt.
 
 
 [28 <./JP13.PNG>]
-<nyak.PNG, id=475, 506.6428pt x 708.39656pt>
+<nyak.PNG, id=497, 506.6428pt x 708.39656pt>
 File: nyak.PNG Graphic file (type png)
 <use nyak.PNG>
-Package pdftex.def Info: nyak.PNG  used on input line 475.
+Package pdftex.def Info: nyak.PNG  used on input line 499.
 (pdftex.def)             Requested size: 225.42645pt x 316.21481pt.
 
 
 [29 <./gnd5v3v3.PNG>]
-<bosrd limits.PNG, id=482, 703.87968pt x 431.36156pt>
+<bosrd limits.PNG, id=504, 703.87968pt x 431.36156pt>
 File: bosrd limits.PNG Graphic file (type png)
 <use bosrd limits.PNG>
-Package pdftex.def Info: bosrd limits.PNG  used on input line 484.
+Package pdftex.def Info: bosrd limits.PNG  used on input line 508.
 (pdftex.def)             Requested size: 384.00525pt x 234.11981pt.
 
 
 [30 <./nyak.PNG>]
-<also reteg.PNG, id=488, 465.23813pt x 642.14906pt>
+<also reteg.PNG, id=510, 465.23813pt x 642.14906pt>
 File: also reteg.PNG Graphic file (type png)
 <use also reteg.PNG>
-Package pdftex.def Info: also reteg.PNG  used on input line 492.
+Package pdftex.def Info: also reteg.PNG  used on input line 516.
 (pdftex.def)             Requested size: 206.79453pt x 286.4037pt.
 
 
 [31 <./bosrd limits.PNG>]
-<spi kimenet.PNG, id=495, 1282.7925pt x 736.25063pt>
+<spi kimenet.PNG, id=517, 1282.7925pt x 736.25063pt>
 File: spi kimenet.PNG Graphic file (type png)
 <use spi kimenet.PNG>
-Package pdftex.def Info: spi kimenet.PNG  used on input line 499.
+Package pdftex.def Info: spi kimenet.PNG  used on input line 523.
 (pdftex.def)             Requested size: 421.44496pt x 241.08559pt.
 
 
 [32 <./also reteg.PNG> <./spi kimenet.PNG>]
-<i2ckimenet.PNG, id=503, 890.5772pt x 682.80093pt>
+<i2ckimenet.PNG, id=525, 890.5772pt x 682.80093pt>
 File: i2ckimenet.PNG Graphic file (type png)
 <use i2ckimenet.PNG>
-Package pdftex.def Info: i2ckimenet.PNG  used on input line 507.
+Package pdftex.def Info: i2ckimenet.PNG  used on input line 531.
 (pdftex.def)             Requested size: 398.19534pt x 304.69688pt.
-<rounded ui.PNG, id=504, 370.38374pt x 136.25906pt>
+<rounded ui.PNG, id=526, 370.38374pt x 136.25906pt>
 File: rounded ui.PNG Graphic file (type png)
 <use rounded ui.PNG>
-Package pdftex.def Info: rounded ui.PNG  used on input line 517.
+Package pdftex.def Info: rounded ui.PNG  used on input line 541.
 (pdftex.def)             Requested size: 273.51926pt x 97.92618pt.
 
 
 [33 <./i2ckimenet.PNG>]
-<beforrounded.PNG, id=511, 575.14874pt x 751.30687pt>
+<beforrounded.PNG, id=533, 575.14874pt x 751.30687pt>
 File: beforrounded.PNG Graphic file (type png)
 <use beforrounded.PNG>
-Package pdftex.def Info: beforrounded.PNG  used on input line 527.
+Package pdftex.def Info: beforrounded.PNG  used on input line 551.
 (pdftex.def)             Requested size: 199.31337pt x 260.96964pt.
-<afterrounded.PNG, id=512, 638.385pt x 836.3747pt>
+<afterrounded.PNG, id=534, 638.385pt x 836.3747pt>
 File: afterrounded.PNG Graphic file (type png)
 <use afterrounded.PNG>
-Package pdftex.def Info: afterrounded.PNG  used on input line 533.
+Package pdftex.def Info: afterrounded.PNG  used on input line 557.
 (pdftex.def)             Requested size: 221.4464pt x 290.74384pt.
 
 
 [34 <./rounded ui.PNG> <./beforrounded.PNG>]
-<rosszpelda.PNG, id=520, 1366.35469pt x 753.5653pt>
+<rosszpelda.PNG, id=542, 1366.35469pt x 753.5653pt>
 File: rosszpelda.PNG Graphic file (type png)
 <use rosszpelda.PNG>
-Package pdftex.def Info: rosszpelda.PNG  used on input line 540.
+Package pdftex.def Info: rosszpelda.PNG  used on input line 564.
 (pdftex.def)             Requested size: 340.16522pt x 186.96825pt.
-<rounded vias ui.PNG, id=521, 336.50719pt x 280.79906pt>
+<rounded vias ui.PNG, id=543, 336.50719pt x 280.79906pt>
 File: rounded vias ui.PNG Graphic file (type png)
 <use rounded vias ui.PNG>
-Package pdftex.def Info: rounded vias ui.PNG  used on input line 547.
+Package pdftex.def Info: rounded vias ui.PNG  used on input line 571.
 (pdftex.def)             Requested size: 248.11191pt x 206.33092pt.
 
 
 [35 <./afterrounded.PNG> <./rosszpelda.PNG>]
-<viabefore.PNG, id=529, 895.84688pt x 487.06969pt>
+<viabefore.PNG, id=551, 895.84688pt x 487.06969pt>
 File: viabefore.PNG Graphic file (type png)
 <use viabefore.PNG>
-Package pdftex.def Info: viabefore.PNG  used on input line 554.
+Package pdftex.def Info: viabefore.PNG  used on input line 578.
 (pdftex.def)             Requested size: 356.05624pt x 192.54826pt.
-<viaafter.PNG, id=530, 972.63374pt x 477.28313pt>
+<viaafter.PNG, id=552, 972.63374pt x 477.28313pt>
 File: viaafter.PNG Graphic file (type png)
 <use viaafter.PNG>
-Package pdftex.def Info: viaafter.PNG  used on input line 560.
+Package pdftex.def Info: viaafter.PNG  used on input line 584.
 (pdftex.def)             Requested size: 386.77045pt x 188.6337pt.
 
 
 [36 <./rounded vias ui.PNG> <./viabefore.PNG>]
-<PCB.png, id=537, 2276.505pt x 3035.34pt>
+<PCB.png, id=559, 2276.505pt x 3035.34pt>
 File: PCB.png Graphic file (type png)
 <use PCB.png>
-Package pdftex.def Info: PCB.png  used on input line 567.
+Package pdftex.def Info: PCB.png  used on input line 591.
 (pdftex.def)             Requested size: 283.85112pt x 378.70526pt.
-<PCBassembled.png, id=538, 1827.07594pt x 1871.49188pt>
+<PCBassembled.png, id=560, 1827.07594pt x 1871.49188pt>
 File: PCBassembled.png Graphic file (type png)
 <use PCBassembled.png>
-Package pdftex.def Info: PCBassembled.png  used on input line 573.
+Package pdftex.def Info: PCBassembled.png  used on input line 597.
 (pdftex.def)             Requested size: 227.67262pt x 233.2246pt.
 
 
@@ -1342,10 +1395,10 @@ Package pdftex.def Info: PCBassembled.png  used on input line 573.
 [38 <./PCB.png>]
 
 [39 <./PCBassembled.png>]
-<clkrates.PNG, id=552, 1274.51157pt x 330.48468pt>
+<clkrates.PNG, id=574, 1274.51157pt x 330.48468pt>
 File: clkrates.PNG Graphic file (type png)
 <use clkrates.PNG>
-Package pdftex.def Info: clkrates.PNG  used on input line 614.
+Package pdftex.def Info: clkrates.PNG  used on input line 638.
 (pdftex.def)             Requested size: 436.46594pt x 111.72702pt.
 
 
@@ -1385,15 +1438,15 @@ Package pdftex.def Info: clkrates.PNG  used on input line 614.
 
 [57]
 7. fejezet.
-<setupblock.PNG, id=663, 1323.44438pt x 1872.24469pt>
+<setupblock.PNG, id=685, 1323.44438pt x 1872.24469pt>
 File: setupblock.PNG Graphic file (type png)
 <use setupblock.PNG>
-Package pdftex.def Info: setupblock.PNG  used on input line 1039.
+Package pdftex.def Info: setupblock.PNG  used on input line 1063.
 (pdftex.def)             Requested size: 210.84492pt x 298.65477pt.
-<setupreal.PNG, id=664, 2089.8075pt x 2786.41pt>
+<setupreal.PNG, id=686, 2089.8075pt x 2786.41pt>
 File: setupreal.PNG Graphic file (type png)
 <use setupreal.PNG>
-Package pdftex.def Info: setupreal.PNG  used on input line 1045.
+Package pdftex.def Info: setupreal.PNG  used on input line 1069.
 (pdftex.def)             Requested size: 260.51399pt x 347.5891pt.
 
 
@@ -1402,72 +1455,102 @@ Package pdftex.def Info: setupreal.PNG  used on input line 1045.
 ]
 
 [59 <./setupblock.PNG>]
-<spiconfiguretest.PNG, id=674, 1599.72656pt x 851.43094pt>
+
+[60 <./setupreal.PNG>]
+<spiconfiguretest.PNG, id=701, 1599.72656pt x 851.43094pt>
 File: spiconfiguretest.PNG Graphic file (type png)
 <use spiconfiguretest.PNG>
-Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1071.
+Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1100.
 (pdftex.def)             Requested size: 398.50804pt x 211.43459pt.
 
 
-[60 <./setupreal.PNG>]
-Overfull \hbox (5.79065pt too wide) in paragraph at lines 1091--1092
+[61 <./spiconfiguretest.PNG>]
+Overfull \hbox (5.79065pt too wide) in paragraph at lines 1119--1120
 []\T1/lmr/m/n/12 43020000004163636F7264696E6720746F20616C6C206B6E6F776E206C617773206F6
  []
 
 
-Overfull \hbox (3.5142pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (3.5142pt too wide) in paragraph at lines 1119--1120
 \T1/lmr/m/n/12 756C642062652061626C6520746F20666C792E204974732077696E67732061726520746F6
  []
 
 
-Overfull \hbox (2.69621pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (2.69621pt too wide) in paragraph at lines 1119--1120
 \T1/lmr/m/n/12 F20736D616C6C20746F206765742069747320666174206C6974746C6520626F6479206F6
  []
 
 
-Overfull \hbox (5.30722pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (5.30722pt too wide) in paragraph at lines 1119--1120
 \T1/lmr/m/n/12 666207468652067726F756E642E20546865206265652C206F6620636F757273652C20666C
  []
 
 
-Overfull \hbox (5.63818pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (5.63818pt too wide) in paragraph at lines 1119--1120
 \T1/lmr/m/n/12 69657320616E797761792062656361757365206265657320646F6E277420636172652077686
  []
 
 
-Overfull \hbox (2.5278pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (2.5278pt too wide) in paragraph at lines 1119--1120
 \T1/lmr/m/n/12 1742068756D616E73207468696E6B20697320696D706F737369626C652E2059656C6C6F
+ []
+
+<spi write packege full.PNG, id=710, 1580.90625pt x 953.81343pt>
+File: spi write packege full.PNG Graphic file (type png)
+<use spi write packege full.PNG>
+Package pdftex.def Info: spi write packege full.PNG  used on input line 1154.
+(pdftex.def)             Requested size: 441.0574pt x 265.47261pt.
+
+
+[62]
+
+[63 <./spi write packege full.PNG>]
+<full spi page package.PNG, id=722, 1590.69281pt x 983.92593pt>
+File: full spi page package.PNG Graphic file (type png)
+<use full spi page package.PNG>
+Package pdftex.def Info: full spi page package.PNG  used on input line 1196.
+(pdftex.def)             Requested size: 427.95634pt x 264.1271pt.
+
+
+[64 <./full spi page package.PNG>]
+
+[65]
+<i2c small write.PNG, id=737, 1431.84938pt x 747.54282pt>
+File: i2c small write.PNG Graphic file (type png)
+<use i2c small write.PNG>
+Package pdftex.def Info: i2c small write.PNG  used on input line 1255.
+(pdftex.def)             Requested size: 399.32178pt x 207.71724pt.
+File: i2c small read.PNG Graphic file (type png)
+<use i2c small read.PNG>
+Package pdftex.def Info: i2c small read.PNG  used on input line 1262.
+(pdftex.def)             Requested size: 405.22379pt x 217.41339pt.
+
+
+[66 <./i2c small write.PNG>]
+Overfull \hbox (1.33183pt too wide) in paragraph at lines 1271--1272
+\T1/lmr/m/n/12 A Dip-lo-ma-mun-ka so-rán sok rög-zí-tést mu-tat-tam be, ahol lát-szik, hogy kü-lön-bö-z® hosszú-
  []
 
 
 
-[61 <./spiconfiguretest.PNG>]
-<spi write packege full.PNG, id=686, 1580.90625pt x 953.81343pt>
-File: spi write packege full.PNG Graphic file (type png)
-<use spi write packege full.PNG>
-Package pdftex.def Info: spi write packege full.PNG  used on input line 1126.
-(pdftex.def)             Requested size: 393.80298pt x 237.03015pt.
-
-
-[62]
-<full spi page package.PNG, id=691, 1590.69281pt x 983.92593pt>
-File: full spi page package.PNG Graphic file (type png)
-<use full spi page package.PNG>
-Package pdftex.def Info: full spi page package.PNG  used on input line 1155.
-(pdftex.def)             Requested size: 396.24962pt x 244.55826pt.
-
-
-[63 <./spi write packege full.PNG>]
-
-[64 <./full spi page package.PNG>]
+[67]
 8. fejezet.
 
 
-[65
+[68
 
 ]
 
-[66
+[69]
+
+[70]
+9. fejezet.
+
+
+[71
+
+]
+
+[72
 
 ] (DiplomamunkaJODV94.aux)
  ***********
@@ -1475,20 +1558,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
 Package rerunfilecheck Info: File `DiplomamunkaJODV94.out' has not changed.
-(rerunfilecheck)             Checksum: 119E68991B3803C1D2C72FEF63DEEC64;7643.
+(rerunfilecheck)             Checksum: 86F6F92251AA579874E9AAE7EDE034EC;8074.
  ) 
 Here is how much of TeX's memory you used:
- 20468 strings out of 469958
- 346330 string characters out of 5466390
- 830747 words of memory out of 5000000
- 46717 multiletter control sequences out of 15000+600000
- 676383 words of font info for 79 fonts, out of 8000000 for 9000
+ 21298 strings out of 469958
+ 361436 string characters out of 5466390
+ 844577 words of memory out of 5000000
+ 47505 multiletter control sequences out of 15000+600000
+ 672121 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 524i,12n,1046p,2028b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on DiplomamunkaJODV94.pdf (68 pages, 44225113 bytes).
+ 524i,17n,1046p,2028b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
+Output written on DiplomamunkaJODV94.pdf (74 pages, 44411751 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 515 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
