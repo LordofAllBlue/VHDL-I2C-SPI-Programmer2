@@ -183,15 +183,15 @@ Miskolc, \today
 \end{itemize}
 \chapter{Bevezetés}
 %\section{Téma választás Háttér}
-Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb, hagyományos, Intel, illetve AMD processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkörök, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: az FPGA. 
+Szinte naponta hallhatunk újabb és újabb, egyre gyorsabb és hatékonyabb, hagyományos, Intel, illetve AMD processzorokról. Ugyanakkor létezik egy másik típusú integrált áramkör, amelyről kevesebb szó esik, mégis számos területen meghatározó szerepet játszik: ez az FPGA. 
 
 Az FPGA-k széles körben alkalmazottak. Egy FPGA-ban akár több százezer azonos logikai blokkot is lehet tervezni és megvalósítani. Emiatt kiválóak lehetnek a párhuzamos számításban. Így minden terület, ahol ez fontos lehet, használva vannak, legalább a fejlesztési szakaszban. 
 
 Például valós idejű rendszerekben vagy bonyolult jelfeldolgozási feladatokban. A mesterséges intelligenciáknál is fontos az ultragyors párhuzamos adat átvitel vagy feldolgozás. Például I/O feladatoknál. De az FPGA-kat jellemzően AI gyorsítók vagy AI processzorok ként is alkalmazzák. Mesterséges intelligencia betanítási feladatokban az FPGA-alapú gyorsítók gyorsabb teljesítményt tudnak nyújtani, mint a hagyományos GPU-k. Hasonló előnyök miatt az FPGA technológia kiemelt szerepet kapott a kép és videófeldolgozás területén is. Számos fogyasztói elektronikai eszközben, például virtuális valóság szemüvegekben FPGA-k végzik a beérkező videójelek feldolgozását és a kijelzőkre történő leképezését. 
 
-Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Az FPGA-k gyakran használtak tervezők által új dizájnok validálására, hibakeresésre, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
+Az automata járművek fejlesztése során is használtak, hiszen alapvető fontosságú a környezet gyors és pontos érzékelése ezeknél a rendszereknél, ami nagymértékű párhuzamos adatfeldolgozást igényel. Jelentős szerepet töltenek be a hagyományos processzorok és az ASIC-ek fejlesztései során. Az FPGA-t gyakran használják tervezők új dizájnok validálására, hibakeresésre, mielőtt megrendelik az első prototípusokat egy félvezetőgyártó vállalatól. Bonyolult digitális rendszerek működése gyorsan és költséghatékonyan tesztelhetők, ha FPGA-kon vannak szimulálva. Mindezek alapján elmondható, hogy az FPGA egy olyan technológia, amely meghatározó szerepet tölt be a különböző iparágakban, és várhatóan a jövőben még inkább. 
 
-Tanulmányaim során különösen megfogott ez a terület, ezért választottam szakdolgozatom két fő témájának az FPGA-k és a VHDL hardverleíró nyelv mélyebb megismerését. 
+Tanulmányaim során különösen megfogott ez a terület, ezért választottam diplomamunkám fő témájának az FPGA-t és a VHDL hardverleíró nyelvet. 
 
 \chapter{Feladat leírása, célok, követelmények}
 
@@ -201,7 +201,7 @@ Fontos szempont volt, hogy a projekt során ne csak a hardveres, hanem a szoftve
 
 A projekt során kiemelt cél volt a NYÁK (nyomtatott áramkör) tervezésének gyakorlása is, hiszen ez a villamosmérnöki szakmában alapvető kompetenciának számít, és minden modern beágyazott rendszer alapja a megfelelő áramköri integráció.
 
-Tehát a konkrét kitűzött célok/követelmények:
+Tehát a konkrét kitűzött célok és követelmények:
 \begin{itemize}
     \item Egy Windows-ra írt program, ami képes egy felhasználótól parancsokat értelmezni és azok alapján parancsokat küldeni egy COM port-on.
     \item Egy VHDL-ban megírt hardver, ami FPGA-n valósul meg, és képes a COM port-ról érkező, UART-ba alakított parancsokat értelmezni.
@@ -220,15 +220,15 @@ Tehát a konkrét kitűzött célok/követelmények:
 \section{FPGA-k, és a VHDL}
 \subsection{Mi a FPGA?}
 
-Az FPGA, magyarul: helyben programozható logikai kapumátrix, olyan integrált áramkör, amelyet a felhasználó a gyártás után konfigurálhat. A digitális áramkörök tervezése HDL nyelveken történik, és a megvalósítás fizikailag a chip-ben belül történik.
+Az FPGA: helyben programozható logikai kapumátrix, olyan integrált áramkör, amelyet a felhasználó a gyártás után konfigurálhat. A digitális áramkörök tervezése HDL nyelveken történik, és a megvalósítás fizikailag a chip-ben belül történik.
 
-Az FPGA-k logikai cellákból épülnek fel, amelyek flip-flop-okat, LUT-okat és logikai kapukat tartalmaznak. Ezek a cellák tetszőlegesen összekapcsolhatók, így hozhatók létre a kívánt áramkörök. A konfigurációt, amely az FPGA-ban megvalósított hardver működését meghatározza, gyakran firmware-nek nevezzük, bár a kifejezés eredetileg más jelentéssel bírt. Itt arra utal, hogy a "programozás" révén egy valós, hardveres működésű áramkör jön létre. Más megnevezés is elterjedt, például "design", vagy "gateware". A dolgozatban én legfőbbképpen a design angol szót használom, ha a HDL-ben írt "kódról" beszélek, és a hardver kifejezést, ha már a konfigurált FPGA-ról beszélek. 
+Az FPGA-k logikai cellákból épülnek fel, amelyek flip-flop-okat, LUT-okat és logikai kapukat tartalmaznak. Ezek a cellák tetszőlegesen összekapcsolhatók, így hozhatók létre a kívánt áramkörök. A konfigurációt, amely az FPGA-ban megvalósított hardver működését meghatározza, gyakran firmware-nek nevezzük, bár a kifejezés eredetileg más jelentéssel bírt. Itt arra utal, hogy a "programozás" révén egy valós, hardveres működésű áramkör jön létre. Más megnevezés is elterjedt, például "design", vagy \mbox{"gateware"}. A dolgozatban én legfőbbképpen a design angol szót használom, ha a HDL-ben írt "kódról" beszélek, és a hardver kifejezést, ha már a konfigurált FPGA-ról van szó. 
 
 Az FPGA-k elterjedtek mind fogyasztói és ipari termékekben, mind fejlesztési környezetekben, mint például az ASIC termék tervek validálásához. Előnyük, hogy specifikus feladatokat hatékonyan képesek végrehajtani, és működésük firmware frissítéssel módosítható. Például egy VR-eszközben az FPGA gyorsan és pontosan dolgozza fel a videó jelet, minimalizálva a késleltetést a fejmozgás és a képfrissítés között. Az ilyen ismétlődő, párhuzamos műveletekben az FPGA hatékonyabb, mint egy általános célú CPU, amelyet sokféle feladatra terveztek, de nem optimalizáltak ezekre a számításokra.
 
 Egy szemléletes hasonlat: míg egy ember képes kenyérsütési utasításokat követni, egy erre tervezett gép gyorsabban és hatékonyabban végzi el ugyanazt a feladatot. Ugyanakkor a gép nem alkalmas más típusú feladatokra írt utasításokat értelmezni, például villanykörte becsavarására. Erre az új feladathoz egy új gép tervezése szükséges. A hasonlatban a személy a CPU, az utasítássor a hagyományos kód, míg a gépek az FPGA-n megvalósított designok.
 
-A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: egy CPLD, egy külső memória chipből konfigurált egy FPGA-t a termék indításakor
+A modern FPGA-k többsége SRAM-alapú, és konfigurálható logikai blokkokat, programozható I/O blokkokat, valamint útválasztó mátrixot tartalmaz. A konfigurációt a chipen belüli SRAM tárolja. De vannak más megoldások is, például a munkahelyemen találkoztam egy másik gyakran használt megoldással a magas szintű FPGA-s termékek közt: egy CPLD, egy külső memória chipből konfigurált egy FPGA-t, a termék indításakor
 
 A programozható összeköttetések fizikai jellemzői (ellenállás, kapacitás) befolyásolják a teljesítményt, különösen nagy kihasználtság esetén. A végső elérhető órajel sebesség gyakran csak a "place and route" után becsülhető meg pontosan. Ezért fontos, hogy pontosan melyik szintetizálási programot használunk. A hatékony netlist generálás és fejlett szintetizáló eszközök kulcsfontosságúak az optimális működés eléréséhez, főleg, amikor a tervezett design közelíti a FPGA használtságának 100\%-át. Mivel ahogy a felhasználás közelíti ezt az értéket, a jel útválasztás jelentősen nehezebbé válik.%done
 
@@ -307,7 +307,7 @@ Az általam készített programozó sok kommunikációs protokollt használ, kö
 Az UART (Universal Asynchronous Receiver Transmitter) egy kommunikációs protokoll, amely aszinkron, teljes duplex és soros. Az, hogy soros azt jelenti, hogy az adatátvitel bitenként történik, nem párhuzamos vonalokon. Az, hogy aszinkron azt jelenti, hogy nem létezik külön órajel vonal; az időzítést a küldő és a fogadó egymástól függetlenül szabályozza. És az, hogy teljes duplex azt jelenti, hogy két irányú adatátvitel valósul meg egyidejűleg.
 Az adatokat "keretek” alakjában továbbítja, ahol egy tipikus adatkeret tartalmaz egy kezdő (start) bitet, adatbiteket, opcionális paritásbitet a hibakezeléshez, majd egy stop bitet. A start és stop bitek segítik a fogadó eszközt abban, hogy pontosan meghatározza az adatcsomagok kezdetét és végét, és ezáltal megbízható adatátvitelt biztosítanak.
 
-A Baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított Baud ráta alapján van a fogadó vonal mintavételezésé, és az küldő vonalon a jel váltás időzítve.
+A Baud ráta a kommunikációs rendszer azon paramétere, amely megadja, hogy másodpercenként hány szimbólum van a vonalon küldve, azaz hány darab jelváltás történik a vonalon. A beállított Baud ráta alapján van a fogadó vonal mintavételezésé, és a küldő vonalon a jel váltás időzítve.
 
 Az UART egyszerűsége és hatékonysága miatt elterjedt megoldás a mikrovezérlők, számítógépek és egyéb beágyazott rendszerek közötti kommunikációban.
 
@@ -327,7 +327,7 @@ A fenti blokkvázlaton egy UART elrendezés van rajzolva. A TX jelölés a "Tran
 	\caption{UART adatkeret}
 	\label{UARTkep}
 \end{figure}
-A fenti képen egy adatkeret szerepel. Ezt az adatkeretet az FPGA küldte a programozónak. A Baud ráta ebben az esetben 921600 Baud, egy szimbólum ideje: 1/ 921600 Baud = 1.09 μs. Ez az analizátor program segítségével látható a képen.
+A fenti képen egy adatkeret szerepel. Ezt az adatkeretet az FPGA küldte a programozónak. A Baud ráta ebben az esetben 921600 Baud, egy szimbólum ideje: 1/921600 Baud = 1.09 μs. Ez az analizátor program segítségével látható a képen.
 
 Látható a start bit. A start bit után következik 8 adatbit, amik a programozó által küldött parancsot tartalmazzák. És végül a stop bit után a vonal visszatér a tétlen állapotba.%done
 
@@ -339,10 +339,10 @@ Az SPI (Serial Peripheral Interface) egy széles körben használt és rugalmas 
 	\caption{SPI blokkvázlat}
 	\label{SPI blokkvázlat}
 \end{figure}
-Az SPI protokoll előnyé, hogy lehetővé teszi, hogy több IC megossza ugyanazokat a kommunikációs vonalakat, de egyszerre csak egy mester és egy szolga lehet aktív. Minden szolgához külön CS vonal szükséges, míg az egyéb vonalak (MISO, MOSI, SCLK) közösek lehetnek. A mester választja ki az adott szolgát az adott szolga chip select vonalán keresztül, és indítja a kommunikációt. A szolga kizárólag kiválasztott állapotban képes adatátvitelre. Ennek megfelelően egy szolgának négy, a mesternek három lábra, plusz egy további lábra per darab szolga, van szüksége.%done
+Az SPI protokoll előnye, hogy lehetővé teszi, hogy több IC megossza ugyanazokat a kommunikációs vonalakat, de egyszerre csak egy mester és egy szolga lehet aktív. Minden szolgához külön CS vonal szükséges, míg az egyéb vonalak (MISO, MOSI, SCLK) közösek lehetnek. A mester választja ki az adott szolgát az adott szolga chip select vonalán keresztül, és indítja a kommunikációt. A szolga kizárólag kiválasztott állapotban képes adatátvitelre. Ennek megfelelően egy szolgának négy, a mesternek három lábra, plusz egy további lábra per darab szolga, van szüksége.%done
 
 
-Az SPI szinkron protokoll. Ezért kell az SCLK, vagyis az órajel vonal. Ez azt jelenti, hogy nincs előre beállítót adatátviteli sebesség. A mester előállít egy órajelet a SCLK vonalon, a szolgák pedig az órajel éleit figyelve mintavételeznek és küldenek adatot. Így az adatátviteli sebesség az órajel frekvenciájától függ. Emiatt az órajelnek nem kell a kommunikáció alatt ugyan azon a frekvencián maradni. Ezt ki is használom a programozómban. Az órajel ki van "nyújtva" és megállítva amikor a programozó várja a következő adatot a felhasználótól az UART vonalon.%done 
+Az SPI szinkron protokoll. Ezért kell az SCLK, vagyis az órajel vonal. Ez azt jelenti, hogy nincs előre beállított adatátviteli sebesség. A mester előállít egy órajelet a SCLK vonalon, a szolgák pedig az órajel éleit figyelve mintavételeznek és küldenek adatot. Így az adatátviteli sebesség az órajel frekvenciájától függ. Ezért az órajelnek nem kell a kommunikáció alatt ugyan azon a frekvencián maradni. Ezt ki is használom a programozómban. Az órajel ki van "nyújtva" és megállítva amikor a programozó várja a következő adatot a felhasználótól az UART vonalon.%done 
 
 
 A MISO magyarul "mester be szolga ki”, a MOSI pedig "mester ki szolga be”. SPI-t használó IC-k lábai lehetnek jelölve SDI-ként (soros adat be) meg SDO-ként (soros adat ki). %done
@@ -354,14 +354,14 @@ Használt forrás: \cite{tispi}
 	\caption{SPI-al kiolvasott gyártó azonosító és típusszám}
 	\label{SPI-al kiolvasott gyártó azonosító és típusszám}
 \end{figure}
-Itt látható egy példa egy SPI kommunikációra. Ez a kommunikáció a programozóm és egy W25Q64JV Flash memória között történt. A termék gyártó azonosítóját (xEF) és típusszámát (x16) olvasom ki \cite{FLASH}.
+Itt látható egy példa egy SPI kommunikációra. Ez a kommunikáció a programozó és egy W25Q64JV Flash memória között történt. A termék gyártó azonosítóját (xEF) és típusszámát (x16) olvasom ki \cite{FLASH}.
 A CS vonal kiválasztja a Flash modult, majd kezdődik a kommunikáció. Ahhoz, hogy kiolvassuk az azonosítókat a modulnak a x90 instrukciót kell küldeni, majd 3 bájtin x00 címet \cite{FLASH}.
 Látszik az órajel nyújtás is, ami azért kell, mert a programozó várja a következő írandó bájtot az UART vonalon a PC-től. Többet írok erről a következő fejezetekbe.
 Amint az olvasás kész, és a programozó elküldte az adatot a PC-nek UART-on, a CS vonal visszalép magas szintbe és véget ér a kommunikáció. %done
 
 \subsection{I2C}
 
-Az I2C egy soros, szinkron, kétvezetékes kommunikációs protokoll, Az I2C célja, hogy egyszerű és hatékony adatcserét tegyen lehetővé rövid távolságon belül egy mester, másnéven vezérlő, és több szolga, másnéven célpont, eszköz között. Az egyszerűsége miatt széles körben alkalmazott.
+Az I2C egy soros, szinkron, kétvezetékes kommunikációs protokoll, Az I2C célja, hogy egyszerű és hatékony adatcserét tegyen lehetővé rövid távolságon belül egy mester, más néven vezérlő, és több szolga, azaz célpont, eszköz között. Az egyszerűsége miatt széles körben alkalmazott.
 
 \begin{figure}[H]
 	\centering
@@ -370,9 +370,9 @@ Az I2C egy soros, szinkron, kétvezetékes kommunikációs protokoll, Az I2C cé
 	\label{I2C elrendezés példa blokkvázlat}
 \end{figure}
 
-A fenti képen egy általam rajzolt példa elrendezés látható. A protokoll két vonalat használ: az SDA, magyarul soros adat, és az SCL, magyarul soros órajel, vezetéket. A szabvány szerint a vonalak nyitott kollektoros kialakításúak, ezért minden eszköz csak lehúzni tudja őket. Felhúzó ellenállások biztosítják az alapértelmezett magas szintet. Az I2C szinkron protokoll, vagyis az adatátvitel órajel vezérelt; az SCL vonalat mindig a mester generálja, így a tempót is ő szabja meg. 
+A fenti képen egy általam rajzolt példa elrendezés látható. A protokoll két vonalat használ: az SDA, azaz soros adat, és az SCL, magyarul soros órajel, vezetéket. A szabvány szerint a vonalak nyitott kollektoros kialakításúak, ezért minden eszköz csak lehúzni tudja őket. Felhúzó ellenállások biztosítják az alapértelmezett magas szintet. Az I2C szinkron protokoll, vagyis az adatátvitel órajel vezérelt, az SCL vonalat mindig a mester generálja, így a sebességet is ő szabja meg. 
 
-A protokoll a cím-alapú kommunikáción alapul: minden szolga eszköz rendelkezik egy egyedi címmel, és a mester ennek megfelelően kezdeményezi az adatcserét. Ezért nem kell minden szolgának egy külön CS vonal, mint az SPI-nál.
+A protokoll a címalapú kommunikáción alapul: minden szolga eszköz rendelkezik egy egyedi címmel, és a mester ennek megfelelően kezdeményezi az adatcserét. Ezért nem kell minden szolgának egy külön CS vonal, mint az SPI-nál.
 
 A programozóban az I2C protokollt úgy implementáltam, hogy az órajel nyújtás is lehetséges legyen. Ez lehetővé teszi, hogy a programozó várjon a felhasználói parancsra UART-on keresztül, mielőtt az I2C kommunikáció folytatódna.
 
@@ -383,13 +383,13 @@ Használt forrás: \cite{ti3c}
 	\caption{I2C 1 bájtos olvasás a programozóval}
 	\label{I2C 1 bájtos olvasás a programozóval}
 \end{figure}
-A fenti analizátor képen egy egybájtos I2C olvasási művelet látható, amely az EEPROM memóriamodul és a programozó közötti adatcserét rögzíti. 
+A fenti képen egy egybájtos I2C olvasási művelet látható, amely az EEPROM memóriamodul és a programozó közötti adatcserét rögzíti. 
 
 Az adatátvitel egy START jellel kezdődik: a programozó előszőr a SDA vonalat logikai ’0’-ra húzza majd a SCL vonalat is.  Utána folytatódik a kommunikáció írási művelettel: a programozó az EEPROM címét (7 bites cím + írási bit) továbbítja. A memória eszköz ACK jellel válaszol. Ezután a programozó elküldi a memóriacímet (x0000), amely a kívánt olvasási cím regisztere. Ezt is ACK követi. Ez egy ”dummy write” \cite{EEPROM}, ami azért szükséges, hogy az EEPROM betöltse az adott regiszter értékeit, hogy később ki tudja őket küldeni.
 
 A címzés után a programozó ismételt START jelet küld, egy úgynevezett "repeated START" \cite{EEPROM} jelet. Majd újra elküldi az EEPROM címét, ezúttal olvasási műveletet (read bit = 1) kérve. A szolga ACK jelzéssel visszaigazolja a fogadást, majd elküldi a kívánt adatbájtot. A programozó egy NAK jellel zárja az adatátvitelt, jelezve, hogy nem kíván további bájtokat olvasni, majd STOP jellel befejezi a kommunikációt: a SCL Vonalat logikai magasba engedi, majd a SDA vonalat is. 
 
-A SCL vonalon a mért frekvencia ~585 kHz, ami a programozó beállított belső órajeléből számított értéknek megfelel. A duty cycle 39.02\%, ez az órajelnyújtás, illetve a logikai műveletek időzítése miatt jelentkezik meg. A programozóban a I2C sebessége közelebb van az UART sebességéhez, mint az SPI sebessége, ezért nem olyan dramatikus az órajelnyújtás, mint az SPI rögzítésen látszódott. 
+A SCL vonalon a mért frekvencia ~585 kHz, ami a programozó beállított belső órajeléből számított értéknek felel meg. Az aktív ciklusidő 39.02\%, ez az órajelnyújtás, illetve a logikai műveletek időzítése miatt jelentkezik. A programozóban a I2C sebessége közelebb van az UART sebességéhez, mint az SPI sebessége, ezért nem olyan látványos az órajelnyújtás, mint az SPI rögzítésen látszódott. 
 
 \chapter{Tervezés}
 \section{A terv bemutatása}
@@ -400,7 +400,7 @@ A SCL vonalon a mért frekvencia ~585 kHz, ami a programozó beállított belső
 	\caption{Projekt terv blokkvázlata}
 	\label{Projekt terv}
 \end{figure}
-Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban írt program futtatásával tud kommunikálni a programozóval terminálon keresztül. A programtól kapott  USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA modul számára. Az FPGA modulon megvalósított VHDL-ben megírt logikai áramkör pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip esetleges válaszait pedig visszakonvertálja UART csomagokká az FT232RL-nek, amely visszaküldi a PC-nek.
+Ez a blokk diagramm volt a projekt kiinduló terve. A felhasználó a C++ -ban írt program futtatásával tud kommunikálni a programozóval terminálon keresztül. A küldödd USB kommunikációt a FT232RL váltja át UART csomagokká az FPGA modul számára. Az FPGA modulon megvalósított VHDL-ben megírt logikai áramkör, pedig a kapott parancsok alapján küld SPI és I2C parancsokat a programozandó EEPROM chipnek. Az EEPROM chip esetleges válaszait, pedig visszakonvertálja UART csomagokká az FT232RL-nek, amely visszaküldi a PC-nek.
 \chapter{Megvalósítás}
 
 \section{Kapcsolási rajz tervezése}
@@ -411,60 +411,60 @@ Ez a blokk diagramm volt a project kiinduló terve. A felhasználó a C++ -ban �
 	\caption{A programozó kapcsolási rajza}
 	\label{teljes kapcsolási rajz}
 \end{figure}
-A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók meg jumper-ek vannak a nyákon. Mégis igyekeztem sok időt fordítani a tervezésre.
+A kapcsolási rajz viszonylag egyszerű, nincs sok alkatrész. A felhúzó ellenállásokat kivéve csak csatlakozók, és jumper-ek vannak a nyákon. Mégis sok időt fordítani a tervezésre.
 
-A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem a nyákot.  A jumper-ek segítségével az ellenállások 3V3 vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak szolgálni. Így sok féle memória modult tud támogatni az áramkőr. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 3.3V van kiválasztva.
+A célom az volt, hogy ez egy általánosan használható EEPROM programozó legyen, ehhez rugalmasnak kellet megterveznem a nyákot.  A jumper-ek segítségével az ellenállások 3,3V vagy 5V felhúzó ellenállások, vagy akár lehúzó ellenállások ként is tudnak funkcionálni. Így sok féle memória modult tud támogatni az áramkör. Ha a JP2 jumper 1-es és 2-es pin-je van közösítve, akkor GND van kiválasztva. Ha a JP2 jumper 2-es és 3-es pin-je van közösítve, akkor 5V van kiválasztva. Ha a JP3 jumper 2-es és 3-es pin-je van közösítve, akkor 3,3V van kiválasztva.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.29]{jumperek.PNG}
-	\caption{Ellenállás Jumper-ek}
-	\label{Ellenállás Jumper-ek}
+	\caption{Ellenállás jumper-ek}
+	\label{Ellenállás jumper-ek}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{jumpertable.PNG}
-	\caption{Ellenállósokon lévő feszültség összefüggése}
-	\label{Ellenállósokon lévő feszültség összefüggése}
+	\caption{Ellenállások feszültségének összefüggése}
+	\label{Ellenállások feszültségének összefüggése}
 \end{figure}
 Az áramkörnek 4 lehetséges tápja van
 \begin{itemize}
-	\item A TinyFPGA 5V VBUS PIN-je. A pin közvetlen össze van kötve a modul mikró USB 5V tápjával. Tehát amikor a TinyFPGA modul csatlakoztatva van a mikró USB-n keresztül, a VBUS pin kimenet ként szolgálhat. A TinyFPGA modul a betápját is a VBUS látja el. Szóval, ha a TinyFPGA nincs csatlakoztatva az USB-hez akkor a VBUS pin bemenetként is működhet.
-	\item A TinyFPGA 3V3 PIN-je. Ezt a kimenetet a TinyFPGA modul LDO IC-je generálja a VBUS 5V feszültégéből.
-	\item Az FTDI232 VCC kimenete. Ami állítható 3V3 és 5V között a FTDI232 modulön egy jumper-el.
-	\item Az EXT PWR csatlakoztató, amit biztonság kedvéért raktam hozzá az áramkörhöz, ha szükséges lenne a jövőben egy külső táp.
+	\item A TinyFPGA 5V VBUS pin-je. A pin közvetlen össze van kötve a modul mikró USB 5V tápjával. Tehát amikor a TinyFPGA modul csatlakoztatva van a mikró USB-n keresztül, a VBUS pin kimenetként szolgálhat. A TinyFPGA modul a betápját is a VBUS látja el. Szóval, ha a TinyFPGA nincs csatlakoztatva az USB-hez, akkor a VBUS pin bemenetként is működhet.
+	\item A TinyFPGA 3V3 pin-je. Ezt a kimenetet a TinyFPGA modul LDO IC-je generálja a VBUS 5V feszültégéből.
+	\item Az FTDI232 VCC kimenete. Ami állítható 3V3 és 5V között a FTDI232 modulon egy jumper-el.
+	\item Az EXT PWR csatlakoztató. Amit a biztonság kedvéért raktam hozzá az áramkörhöz, ha szükség lenne a jövőben egy külső tápra.
 \end{itemize}
-A Jumper-ek úgy vannak megtervezve, hogy bármijeik 5V-os bemenet szolgálhasson tápként a nyáknak meg a hozzá csatolt memória moduloknak. De a tervezett legtöbbet használt konfiguráció az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell hogy legyen, hogy a TINY FPGA megkapja a 5V tápot.
+A jumper-ek úgy vannak megtervezve, hogy bármelyik 5V-os bemenet szolgálhasson tápként a nyáknak, meg a hozzá csatolt memória moduloknak. De a legtöbbet használt konfiguráció, az a FTDI232 VCC kimenetét használja az 5V módban. Ilyenkor persze a JP13 jumper két pin-je közösítve kell hogy legyen, hogy a TINY FPGA megkapja a 5V táp feszültséget.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{JP13.PNG}
 	\caption{VCC és VBUS közösítő jumper}
 	\label{VCC és VBUS közösítő jumper}
 \end{figure}
-A nyákon ki van vezetve 3-3 pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozok tápként szolgálnak a csatlakoztatott memória moduloknak, illetve merés pontoknak is alkalmasak.
+A nyákon ki van vezetve három, három pin-en a GND, 3V3, és a VBUS. Ezek a csatlakozók tápként szolgálnak a csatlakoztatott memória moduloknak, illetve merési pontoknak is alkalmasak.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.45]{gnd5v3v3.PNG}
 	\caption{Fontos feszültségek és a GND kivezetése}
 	\label{Fontos feszültségek és a GND kivezetése}
 \end{figure}
-\subsection{NYÁK tervezése}
+\subsection{Nyák tervezése}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.4]{nyak.PNG}
-	\caption{A programozó NYÁK-ja}
-	\label{A programozó NYÁK-ja}
+	\caption{A programozó Nyák-ja}
+	\label{A programozó Nyák-ja}
 \end{figure}
-Ez a végleges nyák terv, aminek gyártását megrendeltem. Egy két réteges egyszerű nyák. De egy ilyen egyszerűbb nyák tervezése közben fontos betartani az alapszabályokat.
+A fenti ábra a végleges nyák terv, aminek gyártását megrendeltem. Egy két rétegű egyszerű nyák. Egy ilyen egyszerűbb nyák tervezése közben is fontos betartani az alapszabályokat.
 
-Tervezés előtt érdemes beállítani azokat a limiteket, amiket a nyák gyártó cég képes gyártani. Ha tudjuk, hogy melyik céget akarjuk használni, akkor a weboldalukon megtalálhatjuk az értékeket. A limiteket a "Board Setup" funkcióval lehet megadni. Ha jól meg vannak adva az értékek akkor a KiCad nem enged olyan nyákot tervezni, amit nem tud a nyák gyártó cég legyártani. Az én esetemben:
+Tervezés előtt kell beállítani a gyártási limiteket. Ha tudjuk, hogy melyik céget akarjuk megrendelni a nyákot, akkor a weboldalukon megtalálhatjuk ezeket az értékeket. A limiteket a "Board Setup" funkcióval lehet megadni. Ha jól vannak megadva az értékek, akkor a KiCad nem enged olyan nyákot tervezni, amit nem tud a nyák gyártó cég legyártani. Az én esetemben:
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.5]{bosrd limits.PNG}
 	\caption{KiCad limit beállítások}
 	\label{KiCad limit beállítások}
 \end{figure}
-\subsubsection{A NYÁK alsó rétege}
-A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megszakítással, hogy minimalizálva legzenek az áram visszaútjai, és ezáltal az arámhurkok területeit is.
+\subsubsection{A nyák alsó rétege}
+A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megszakítással, hogy minimalizálva legyenek az áramok visszaútjai, és ezáltal az arámhurkok területei is.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.4]{also reteg.PNG}
@@ -478,7 +478,7 @@ A hátsó réteg itt egyszerű. Az egész egy GND réteg, minél kevesebb megsza
 	\caption{SPI kimenet}
 	\label{SPI kimenet}
 \end{figure}
-Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon használom. De a túl tervezés ebben az esetben nem árt. A chip select, MISO, MOSI, és CLK vonalak mind ugyan olyan hosszúak. Ezt "length matching”-nek hívjuk. Akkor fontos, ha akkora az adatátviteli alap frekvencia, hogy két vonal hossz különbségéből származó kettő közötti fázistolás, gondot okoz a mintavételezésnél. A vonalak egymástól GND-vel le vannak árnyékolva, ez segíti, hogy a vonalak elektromágneses zajai kevésbé befolyásolják egymást.
+Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon használom. De a túltervezés ebben az esetben nem árt. A chip select, MISO, MOSI, és CLK vonalak mind ugyan olyan hosszúak. Ezt "length matching”-nek hívjuk. Akkor fontos, ha akkora az adatátviteli alap frekvencia, hogy két vonal hossz különbségéből származó kettő közötti fázistolás, gondot okoz a mintavételezésnél. A vonalak egymástól GND-vel le vannak árnyékolva, ez segíti, hogy a vonalak elektromágneses zajai kevésbé befolyásolják egymást.
 \subsubsection{Az I2C csatlakozó}
 \begin{figure}[H]
 	\centering
@@ -486,9 +486,9 @@ Kissé túl van tervezve az SPI csatlakozó, hiszen nem óriási frekvenciákon 
 	\caption{I2C kimenet}
 	\label{I2C kimenet}
 \end{figure}
-Itt is inkább túlterveztem a kimenetet, mint alul. Itt is a SCL és SDA vonal "length match”-elve van. Illetve az árnyékolást még a csatlakozókra is kiterjed. Így egészen a FPGA lábaihoz az árnyékolást végig lehet vinni, ha a SCL és SCL-hez tartozó lábak közötti lábat logikai ’0’-ra állítom.
+Itt is inkább túlterveztem a kimenetet, mint alul. A SCL és SDA vonal "length match”-elve van. Illetve az árnyékolás még a csatlakozókra is kiterjed. Így egészen a FPGA lábaihoz leht vinni az árnyékolást, ha a SCL és SDA-hez tartozó lábak közötti pin-t logikai ’0’-ra állítom.
 \subsubsection{Bővítmények}
-Én két bővítményt használtam. Az egyik a rounded tracks bővítmény. Ami igazából csak esztétikai változásokat kreál a nyákon.
+Két bővítményt használtam. Az egyik a "rounded tracks bővítmény". Ami igazából csak esztétikai változásokat csinál a nyákon.
 A bővítményt nagyon egyszerű használni. A következő kép a UI-ja.
 \begin{figure}[H]
 	\centering
@@ -496,10 +496,10 @@ A bővítményt nagyon egyszerű használni. A következő kép a UI-ja.
 	\caption{A rounded tracks bővítmény UI-ja}
 	\label{A rounded tracks bővítmény UI-ja}
 \end{figure}
-A UI egyszerű. Netlista ként ki lehet választani, hogy kerekítse a bővítmény a netlistához tartozó trace-eket vagy nem. Ki lehet választani célzott rádiuszt, illetve, hogy hányszor fusson a programm. A "run" gombbal kell elindítani.
+A UI egyszerű. Netlistaként ki lehet választani, hogy kerekítse a bővítmény a netlistához tartozó trace-eket vagy nem. Ki lehet választani célzott rádiuszt, illetve, hogy hányszor fusson a program. A "run" gombbal kell elindítani.
 
-Ezek pedig arról képek, hogy hogyan néz ki egy trace a bővítmény használata előtt és utána
-Előtte:
+Ezek pedig arról képek, hogy hogyan néz ki egy trace a bővítmény használata előtt és utána.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.35]{beforrounded.PNG}
@@ -512,21 +512,21 @@ Előtte:
 	\caption{Egy trace a bővítmény használata után}
 	\label{Egy trace a bővítmény használata után}
 \end{figure}
-Fontos, hogy a bővítmény használata előtt nézzük át a tarce-einket. A bővítmény nem működik jól, ha túl sok elemre bontott csúnyán tervezett trace-et akarunk kerekíteni.
+Fontos, hogy a bővítmény használata előtt nézzük át a tarce-einket. A bővítmény nem működik jól, ha túl sok elemre bontott, csúnyán tervezett trace-et akarunk kerekíteni.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.25]{rosszpelda.PNG}
 	\caption{Példa egy csúnyán tervezett trace-re}
 	\label{Példa egy csúnyán tervezett trace-re}
 \end{figure}
-A másik bővítmény pedig a Teardrop vias bővítmény. Ez is egy egyszerű bővítmény, ami részben esztétikailag szépíti a nyák tervet, de fontos, hogy az éles sarkokat is minimalizálja. Hiszen az éles sarkok savcsapdákat okozhatnak, ahol a maratáshoz használt savak egy része megmarad, és az éles sarkoknál tovább korrodálja a rezet. A következő kép a UI-ja.
+A másik bővítmény pedig, a "Teardrop vias" bővítmény. Ez a bővítmény, ami részben esztétikailag is szépíti a nyák tervet, de fontos, hogy az éles sarkokat is minimalizálja. Hiszen az éles sarkok savcsapdákat okozhatnak, ahol a maratáshoz használt sav egy része megmarad, és az éles sarkoknál tovább korrodálja a rezet mint kellene. A következő kép a UI-ja.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.75]{rounded vias ui.PNG}
 	\caption{Teardrop vias UI} 
 	\label{Teardrop vias UI}
 \end{figure}
-Ez pedig arról kép, hogy hogyan néz ki egy via a bővítmény használata előtt és utána.
+Ezek pedig arrol képek, hogy hogyan néz ki egy via a bővítmény használata előtt és utána.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.4]{viabefore.PNG}
@@ -539,11 +539,11 @@ Ez pedig arról kép, hogy hogyan néz ki egy via a bővítmény használata el�
 	\caption{Teardrop bővítmény használata után}
 	\label{Teardrop bővítmény használata után} 
 \end{figure}
-\section{A Kész nyák}
+\section{Az elkészült nyák}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.1]{PCB.png}
-	\caption{A Kész nyák}
+	\caption{A kész nyák}
 	\label{A kész nyák} 
 \end{figure}
 \begin{figure}[H]
@@ -553,8 +553,8 @@ Ez pedig arról kép, hogy hogyan néz ki egy via a bővítmény használata el�
 	\label{A kész nyák összeszerelve és forrasztva} 
 \end{figure}
 
-\section{A Programozó alentitásai}
-A következőkben bemutatom az alentitásokat, amiket használtam a programozóban. Mindet én terveztem és írtam meg, kivéve az Int\_Osc entitást, amit az FPGA-m gyártója által adott módon írtam meg.
+\section{A programozó alentitásai}
+A következőkben bemutatom az alentitásokat, amiket használtam a programozóban. Ezeket én terveztem és írtam meg, kivéve az Int\_Osc entitást, amit az FPGA-m gyártója által adott módon írtam meg.
 \subsection{Az Int\_Osc entitás}
 Az Int\_Osc egy belső oszcillátor modult valósít meg, amely egy órajelet generál a rendszer számára. Ez a modul a MachXO2 FPGA belső oszcillátorát használja, amely egy konfigurálható frekvenciájú órajelet biztosít. 
 
@@ -568,43 +568,43 @@ Az Int\_Osc entitás két port-ot tartalmaz:
 Az architektúra az FPGA belső oszcillátorát (OSCH komponens) használja. Az OSCH komponens a következőket tartalmazza:
 
 \begin{itemize}
-	\item NOM\_FREQ (generikus paraméter): Az oszcillátor névleges frekvenciáját határozza meg. Az alapértelmezett érték itt "9.17", ami 9,17 MHz-es órajelet jelent.
+	\item NOM\_FREQ (generikus paraméter): Az oszcillátor névleges frekvenciáját határozza meg. Az alapértelmezett érték itt 9,17, ami 9,17 MHz-es órajelet jelent.
 	\item STDBY (bemenet): Az oszcillátor készenléti állapotát vezérli.
 	\item OSC (kimenet): Az oszcillátor által generált órajel.
-	\item SEDSTDBY (kimenet): Egy diagnosztikai jel, amely az oszcillátor készenléti állapotát jelzi (ebben az implementációban nem használják).
+	\item SEDSTDBY (kimenet): Egy diagnosztikai jel, amely az oszcillátor készenléti állapotát jelzi (ebben az implementációban nem használom).
 \end{itemize}
 
 Az architektúra a következőképpen működik:
 
 \begin{enumerate}
 	\item Az OSCH komponens egy példányát (OSCInst0) hozza létre.
-	\item A NOM\_FREQ generikus paraméter értéke "9.17", amely meghatározza az oszcillátor frekvenciáját. Ez választhatóan módosítható a tervező által.
+	\item A NOM\_FREQ generikus paraméter értéke 9.17, amely meghatározza az oszcillátor frekvenciáját. Ez választhatóan módosítható a tervező által.
 	\item A STDBY bemenet az Int\_Osc entitás StdBy port-jához van kötve.
 	\item Az OSC kimenet az Int\_Osc entitás Clk port-jához van kötve.
 \end{enumerate}
 
-Az Int\_Osc modul a rendszer órajelének biztosítására szolgál. Az óra jelet a rendszer összes része használja a szinkron működéshez.
+Az Int\_Osc modul a rendszer órajelének biztosítására szolgál. Az órajelet a rendszer összes része használja a szinkron működéshez.
 
-\subsubsection{Az órajel sebeségének választása}
-A FPGA belő órajel sebességét adott értékekből lehet választani. Az FPGA termékcsalád adatlapja szerint ezek a sebességek közül lehet:
+\subsubsection{Az órajel sebességének ki választása}
+A FPGA belső órajel sebességét adott értékekből lehet választani. Az FPGA termékcsalád adatlapja szerint ezen sebességek közül lehet választani:
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.344]{clkrates.PNG}
 	\caption{Elérhető CLK-frekvenciák az FPGA adatlapja alapján \cite{fpgaadatlap}}
 	\label{Elérhető CLK-frekvenciák az FPGA adatlapja alapján } 
 \end{figure}
-Az óra jelet úgy kell választani, hogy elég gyors legyen, hogy a design megoldja a feladatot amire tervezve lett. Gyorsabbra nem érdemes, mert az felesleges slack problémákhoz vezethet. 
+Az órajelet úgy kell választani, hogy elég gyors legyen, hogy a design megoldja a feladatot, amire tervezve lett. Gyorsabbra nem érdemes, mert az felesleges slack problémákhoz vezethet. 
 
-A programozóban az órajelnek legalább 4-szer gyorsabbnak kell lennie, mint a célzott I2C órajel sebessége, órajelenként 4 műveletet végez a I2C entitás. És 2 szer gyorsabbnak, mint a célzott SPI órajel, mert órajelenként 2 műveletet végez az SPI entitás.
+A programozóban az órajelnek legalább 4-szer gyorsabbnak kell lennie, mint a célzott I2C órajel sebessége, mart a I2C entitás órajelenként 4 műveletet végez, és 2-szer gyorsabbnak, mint a célzott SPI órajel, mert az SPI entitás órajelenként 2 műveletet végez.
 
 
-Az én célzott I2C órajelsebességem nagyobb, mint a célzott UART Baud ráta, de lassabb, mint 1MHz-nel. Ez azért van, mert a legtöbb modern EEPROM képes 1MHz órajelsebességre, és ki szeretném használni ezt a sebességet. Ez azért kell, hogy gyorsabb legyen az I2C, mint az UART, mert az I2C tud "várni" az UART adatra órajelnyújtással, de a UART nem tud "várni" a I2C-re. Ez azért van, mert az UART sebességét  kommunikáció közben nem lehet változtatni, mert az UART aszinkron. Az SPI célsebesség pedig 5MHz körül van, hasonló okok miatt.
+Az én célzott I2C órajel sebességem nagyobb, mint a célzott UART Baud ráta, de lassabb, 1MHz-nél. Ez azért van, mert a legtöbb modern EEPROM képes maximum 1MHz órajelsebességre, és ki szeretném használni ezt a sebességet. Ez azért kell, hogy gyorsabb legyen az I2C, mint az UART, mert az I2C tud várni az UART adatra órajel nyújtással, de a UART nem tud várni a I2C-re. Ez azért van, mert az UART sebességét  kommunikáció közben nem lehet változtatni, mert az UART aszinkron. Az SPI célsebesség pedig 5MHz körül van, hasonló okok miatt.
 
-A programozóm UART-ot is használ, amint előbb volt tárgyalva, egy aszinkron kommunikációs protokoll. Ez azt jelenti, hogy a belső óra jelet úgy kell választani, hogy jól leosztható legyen a megcélzott Baud rátához. 
+A programozóm UART-ot is használ, ami korábban volt tárgyalva, egy aszinkron kommunikációs protokoll. Ez azt jelenti, hogy a belső órajelet úgy kell választani, hogy jól leosztható legyen, a megcélzott Baud rátához. 
 
-Tegyük fel, hogy a célzott Baud ráta 23040. Ha a belső órajel 2.46MHz akkor az órajelosztó számlálónak 11-ig kell számolnia, mivel \(230400$Baud$ / 2.46$MHz $ = 10.68\). Egy órajel számláló csak egész számokkal tud számolni. Így minden egyes periódus alatt fél óra jelet késne a belső UART számláló a tényleges 230400 Baud-hoz képest. Úgy kellet választanom az óra jelet, hogy minimális kerekítéssel le lehessen osztania, és ez a késés minimális legyen. A célzott UART sebesség 576000 Baud.
+Tegyük fel, hogy a célzott Baud ráta 23040. Ha a belső órajel 2.46MHz akkor az órajelosztó számlálónak 11-ig kell számolnia, mivel \(230400$Baud$ / 2,46$MHz $ = 10,68\). Egy órajel számláló csak egész számokkal tud számolni. Így minden egyes periódus alatt fél órajelet késne a belső UART számláló, a tényleges 230400 Baud-hoz képest. Úgy kellet választanom az órajelet, hogy minimális kerekítéssel le lehessen osztania, és ez a késés a lehtő legkisseb legyen. A célzott UART sebesség 576000 Baud.
 
-Ezek miatt választottam a 9.17MHz-t belső órajelnek. Így a UART osztó hiba 0.08 órajel per Baud periódus. A I2C maximum sebessége 2.29MHz. Az SPI Max sebessége 4.59MHz.
+Ezek miatt választottam a 9,17MHz-t belső órajelnek. Így a UART osztó hiba 0,08 órajel per Baud periódus. A I2C maximum sebessége 2,29MHz. Az SPI Max sebessége 4,59MHz.
 
 \subsection{A write8bit entitás}
 A write8bit 8 bites adat írására szolgál az SPI vonalokon. Az entitás bemeneti és kimeneti port-jai a következők:
@@ -628,7 +628,7 @@ A write8bit entitás egy állapotgépet tartalmaz, amely három állapotból ál
 \end{enumerate}
 Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja. A Main entitásban ez az entitás felelős az egyszerű csupán 8bites egyirányú (MOSI) SPI kommunikációkért. 
 \subsection{UART\_TX entitás}
-A UART\_TX az UART protokoll szerinti adatküldést valósítja meg. Ez a modul soros adatátvitelre szolgál, ahol a bemeneti adatokat bitenként továbbítja egy kimeneti vonalon
+Az UART\_TX az UART protokoll szerinti adatküldést valósítja meg. Ez a modul soros adatátvitelre szolgál, ahol a bemeneti adatokat bitenként továbbítja egy kimeneti vonalon
 
 Port-ok:
 \begin{itemize}
@@ -642,7 +642,7 @@ Port-ok:
 \end{itemize}
 Generikus paraméter:
 \begin{itemize}
-	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátviteli sebességét (Baud rate).
+	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátvitel sebességét (Baud rate).
 \end{itemize}
 A UART\_TX entitás egy állapotgépet tartalmaz, amely az UART adatküldési folyamatát valósítja meg. Az állapotgép az alábbi állapotokból áll:
 \begin{enumerate}
@@ -655,7 +655,7 @@ A UART\_TX entitás egy állapotgépet tartalmaz, amely az UART adatküldési fo
 Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja.
 
 \subsection{A UART\_RX entitás}
-A UART\_RX entitás a protokoll szerinti adatfogadást valósítja meg. Ez a modul soros adatokat fogad egy bemeneti vonalon, és azokat párhuzamos formátumba alakítja.
+A UART\_RX entitás az UART protokoll szerinti adatfogadást valósítja meg. Ez a modul soros adatokat fogad egy bemeneti vonalon, és azokat párhuzamos formátumba alakítja.
 \begin{itemize}
 	\item Clk: Órajel bemenet, amely az állapotgép működését vezérli.
 	\item RXIn: Soros adat bemenet, amelyen keresztül az UART adatokat fogadja.
@@ -667,7 +667,7 @@ A UART\_RX entitás a protokoll szerinti adatfogadást valósítja meg. Ez a mod
 \end{itemize}
 Generikus paraméterek:
 \begin{itemize}
-	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátviteli sebességét (Baud rate).
+	\item ClkRatio: Az órajel osztására szolgáló paraméter, amely meghatározza az UART adatátvitel sebességét (Baud rate).
 	\item CRHalf: Az órajel osztásának felezett értéke, amely a bitközép detektálására szolgál.
 \end{itemize}
 A UART\_RX entitás egy állapotgépet tartalmaz, amely az UART adatfogadási folyamatát valósítja meg. Az állapotgép az alábbi állapotokból áll:
@@ -679,8 +679,8 @@ A UART\_RX entitás egy állapotgépet tartalmaz, amely az UART adatfogadási fo
 \end{enumerate}
 Az állapotgép működését az órajel (Clk) vezérli, és az nReset bemenet bármikor alaphelyzetbe állíthatja.
 \subsection{A writePage entitás}
-A writePage entitás a komplexebb SPI kommunikációkat kezeli. A neve writePage maradt, mert eredetileg a tervem az volt, hogy két entitást csinálok. Egy entitást, ami az SPI írásért felelős, egy pedig ami az olvasásért felelős. De végül egyszerűbb volt egy entitásban megvalósítani mind két funkciót.
-Ez az entitás azért is komplexebb, mert, eltérően a write8bi-től képes a kommunikációs protokoll kerete hosszán alítani.
+A writePage entitás a komplexebb SPI kommunikációkat kezeli. A neve writePage maradt, mert eredetileg a tervem az volt, hogy két entitást készítek. Egy entitást, ami az SPI írásért felelős, egy másikat ami pedig ami az olvasásért felelős. De végül egyszerűbb volt, egy entitásban megvalósítani mind két funkciót.
+Ez az entitás azért is komplexebb, mert eltérően a write8bit-től képes a kommunikációs protokoll kerete hosszán állítani.
 
 Port-ok:
 \begin{itemize}
@@ -694,7 +694,7 @@ Port-ok:
 	\item nReset: Reset bemenet, amely az állapotgépet alaphelyzetbe állítja ('0' értékkel aktiválódik).
 	\item toSDA: Adat kimenet a soros kommunikációhoz ('1' az alapértelmezett érték).
 	\item MISO\_DR: Kimeneti jel, amely az olvasási művelet befejezését jelzi.
-	\item next8bits: 8 bites bemeneti adat, amelyet a modul írni fog.
+	\item next8bits: 8 bites bemeneti adat, amelyet ez a entitás írni fog.
 	\item read8bits: 8 bites kimeneti adat, amely az olvasott adatot tartalmazza.
 	\item RW\_length: Az SPI művelet teljes hosszát meghatározó bemeneti paraméter (bájtokban).
 	\item RH\_length: Az olvasási művelet címző keret hosszát meghatározó bemeneti paraméter (bájtokban).
@@ -724,7 +724,7 @@ Az állapotgép négy fő állapotot tartalmaz:
 			\item A BitIndex növekszik minden bit kiküldése után.
 			\item Ha az összes bit kiküldésre került (BitIndex = 7), akkor: \begin{itemize}
 				\item Az állapot stop-ra vált.
-				\item A BitIndex alaphelyzetbe áll.
+				\item A BitIndex alaphelyzetbe kerül.
 			\end{itemize}
 		\end{itemize}
 	\end{itemize}
@@ -745,7 +745,7 @@ Az állapotgép négy fő állapotot tartalmaz:
 	\end{itemize}
 \end{enumerate}
 \subsection{A I2C entitás}
-Az I2C entitás az IC2 protokoll szerinti adatátvitelt valósítja meg. Ez az entitás képes adatokat írni és olvasni egy I2C buszon, és támogatja a protokollhoz szükséges vezérlőjelek generálását. Ez az entitás is komplex, képes írni/olvasni és a kommunikációs protokoll kerete hosszán alítani.
+Az I2C entitás az I2C protokoll szerinti adatátvitelt valósítja meg. Ez az entitás képes adatokat írni és olvasni egy I2C buszon, és támogatja a protokollhoz szükséges vezérlőjelek generálását. Ez az entitás is komplex, képes írni és olvasni, és a kommunikációs protokoll kerete hosszán állítani.
 
 Port-ok:
 \begin{itemize}
@@ -764,7 +764,7 @@ Port-ok:
 	\item atstop: Kimeneti jel, amely az I2C stop feltétel elérését jelzi.
 	\item Done: Kimeneti jel, amely az I2C művelet befejezését jelzi.
 \end{itemize}
-A célzott órajelsebesség, mint előbb említettem, 576kHz és 1MHz között van. A belső órajel 9.17MHz, így 15-tel leosztva az I2C órajel 661kHz.
+A célzott órajel sebesség, mint előbb is említettem, 576kHz és 1MHz között van. A belső órajel 9.17MHz, így 15-tel leosztva az I2C órajel 661kHz.
 
 Állapotok Leírása:
 \begin{itemize}
@@ -802,9 +802,9 @@ A célzott órajelsebesség, mint előbb említettem, 576kHz és 1MHz között v
         \item Cél: Az írási művelet után a szolga eszköz visszaigazolásának (ACK) várakozása.
         \item Műveletek:
         \begin{itemize}
-            \item A SDAen jel '1' értékre állítása az SDA vonal felszabadításához.
-            \item A SCLen váltogatása órajelek generálásához.
-            \item A golatch jel ellenőrzése a következő művelet meghatározásához.
+            \item A SDAen jel '1' értékre állítása, az SDA vonal felszabadításához.
+            \item A SCLen váltogatása, órajelek generálásához.
+            \item A golatch jel ellenőrzése, a következő művelet meghatározásához.
         \end{itemize}
         \item Átmenet:
         \begin{itemize}
@@ -866,13 +866,13 @@ A célzott órajelsebesség, mint előbb említettem, 576kHz és 1MHz között v
     \end{itemize}
 
 \end{itemize}
-\section{A fő (MAIN) entitás}
+\section{A main (fő) entitás}
 A main entitás biztosítja a programozó funkcionalitását, az összes alentitást használva. A felhasználó által küldött utasításokat értelmezi, és az USB-n keresztül küldött adatfolyamot továbbítja a I2C és SPI alentitásoknak. Azért is felelős, hogy a I2C és SPI adatfolyamok szinkronizálva maradjanak az UART adatfolyamatok. 
 \subsection{A main entitás állapotgép}
 \begin{itemize}
     \item 000 (Base State):
     \begin{itemize}
-        \item Cél: Az alapállapot, ahol a rendszer várakozik a bemeneti jelekre.
+        \item Cél: Az alapállapot, ahol a rendszer várakozik a bemeneti jelre.
         \item Műveletek:
         \begin{itemize}
             \item Az összes vezérlőjel alaphelyzetbe állítása.
@@ -941,7 +941,7 @@ A main entitás biztosítja a programozó funkcionalitását, az összes alentit
     \end{itemize} 
 \end{itemize}
 \section{C++-ban megírt utasítás küldő program}
-\subsection{A Terminal app program}
+\subsection{A "Terminal app" program}
 A program célja, hogy hexadecimális formátumban megadott adatokat küldjön a számítógéphez csatlakoztatott programozónak egy COM soros port-on keresztül, majd fogadja és megjelenítse a programozótól visszakapott adatokat.
 \subsubsection{A program működése}
 \begin{enumerate}
@@ -972,32 +972,32 @@ A program célja, hogy hexadecimális formátumban megadott adatokat küldjön a
 \end{itemize}
 \end{enumerate}
 \subsection{A "File app" program}
-Ez a program hasonló a Terminal app-hoz, de fájlokkal dolgozik. A felhasználó megadhat egy fájlnevet, amely utasításokat tartalmaz. A fájlban lévő utasításokat a program feldolgozza, és a válaszokat kiírja, meg lementi egy log.txt fájlba.
+Ez a program hasonló a Terminal app-hoz, de fájlokkal dolgozik. A felhasználó megadhat egy fájlnevet, amely utasításokat tartalmaz. A fájlban lévő utasításokat a program feldolgozza, és a válaszokat kiírja, és lementi egy log.txt fájlba.
 \subsection{A programozó beállítása a belső memória segítségével}
 A programozónak van egy 7 bájtos belső memóriája, ahol a SPI és I2C adatkeret beállításokat tárolja. Az alapértelmezett értéke x00001904000403. 
 
-Az elő 3 bajt, azaz alapból a x000019, A SPI adatkeret teljes hosszát (bájtokban) mondja meg, U3 adattipúsban. Így alapértelmezett esetben a SPI kommunikáció teljes hossza 25 bájt, mindent beleértve. 
+Az elő 3 bajt, azaz alapból a x000019, A SPI adatkeret teljes hosszát (bájtokban) határozza meg, U3 adattipúsban. Így alapértelmezett esetben a SPI kommunikáció teljes hossza 25 bájt. 
 
 A következő 2 bájt pedig a SPI olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 4 bájt a hossz. 
 
-A következő 4 bajt pedig a I2C adatkeret teljes hosszát (bájtokban) mondja meg, U2 adattipúsban. Alapértelmezett esetben 4 bájt a hossz.
+A következő 4 bájt pedig a I2C adatkeret teljes hosszát (bájtokban) határozza meg, U2 adattipúsban. Alapértelmezett esetben 4 bájt a hossz.
 
 Az utolsó 2 bájt pedig a I2C olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 3 bájt a hossz.
 
-Tegyük fel, hogy egy SPI olvasást, meg egy I2C olvasást akarunk végrehajtani. Mégpedig egy teljes page olvasást a W25Q64JV SPI Flash-ből, és egy 4 bájtos olvasást szeretnénk az AT24C256 EEPROM-ból. 
+Tegyük fel, hogy egy SPI olvasást, és egy I2C olvasást akarunk végrehajtani. Mégpedig egy teljes page olvasást a W25Q64JV SPI Flash-ből, és egy 4 bájtos olvasást szeretnénk az AT24C256 EEPROM-ból. 
 
-A page hossza összesen 256, egy utasítás bájtnak kell lennije, és 3 cím bájtnak \cite{FLASH}. Tehát a teljes adatkeret hossz 260 bájt lesz, és az olvasási fejléc hossza 4 bájt \cite{EEPROM}. Választott címen való olvasáshoz 4 fejlécbájt kell az EEPROM-nak. Így a beállítás belső memóriát x00010404000804 re kell alítani.
+A page hossza összesen 256B, egy darab utasításbájtnak kell lenni, és három címbájtnak \cite{FLASH}. Tehát a teljes adatkeret hossz 260B bájt lesz, és az olvasási fejléc hossza 4 bájt \cite{EEPROM}. Választott címen való olvasáshoz 4 fejlécbájt kell az EEPROM-nak. Így a beállítás belső memóriát x00010404000804 re kell állítani.
 
-Az utasítás, ami ezt meg teszi az ez: 4400010404000804.
+Ezzel az utasítás tudjuk ezt beállítani: 4400010404000804.
 
-Az elő bájt a programozót a megfelelő "get setting” állapotba rakja. Az utasítás többi része, az, amit be akarunk írni a belső memóriába. 
+Az első bájt a programozót a megfelelő "get setting” állapotba billenti. Az utasítás többi része az, amit be akarunk írni a belső memóriába. 
 
 Az utasítás után a programozó automatikusan visszakerül az "Idle” alapállapotba.
 
-\subsection{Utasítások és utasítás sor példa és magyarázat.}
-Mint korábban említettem a programozónak összesen 7 fő állapotija van. Az alap állapot a base state. Ebből az állapotból 6 másik állapotba lehet lépni. 
-Minden utasítás első bájtja, azaz első két hexadecimális karaktere azt határozza meg hogy melyik állapotba lépjen a programozó.
-Az állapotok és hozzájuk tartozó hexadecimálisan kifejezett bajt:
+\subsection{Utasítások és utasítássor példa és magyarázat.}
+Mint korábban említettem, a programozónak összesen 7 fő állapota van. Az alap állapot a base state. Ebből az állapotból, 6 másik állapotba lehet lépni. 
+Minden utasítás első bájtja, azaz első két hexadecimális karaktere, azt határozza meg, hogy melyik állapotba lépjen a programozó.
+Az állapotok és hozzájuk tartozó hexadecimálisan kifejezett bájt:
 \begin{table}[H]
 \centering 
 \begin{tabular}{lllll}
@@ -1015,43 +1015,43 @@ I2C write                             & 46                         & F          
 
 \chapter{Tesztelés}
 
-\section{Tesztelési és analízis elrendezés}
-A projekt során egy logikai analizátort sokat használtam. A logikai analizátor egy olyan eszköz, amely lehetővé teszi a digitális jelek időbeli viselkedésének megfigyelését és elemzését. Az analizátor képes rögzíteni és megjeleníteni a digitális jelek állapotát, lehetővé téve a tervezők számára, hogy megértsék a rendszer működését és hibáit. Rendkívül hasznos volt hibakeresésre.
+\section{Tesztelési elrendezés és analízis}
+A projekt során egy logikai analizátort használtam. A logikai analizátor egy olyan eszköz, amely lehetővé teszi a digitális jelek időbeli viselkedésének megfigyelését, és elemzését. Az analizátor képes rögzíteni, és megjeleníteni a digitális jelek állapotát, lehetővé téve a tervezők számára, hogy megértsék a rendszer működését és hibáit. Rendkívül hasznos volt a hibakeresésre.
 
-Egy Sealeae logic 24MS/s-es logikai analizátort használtam. Használtam 2 memória modult is, egy I2C EEPROM-ot meg egy SPI Flash-t is, hogy tudjam ellenőrizni programozó működését.
+Egy Sealeae logic 24MS/s-es logikai analizátort használtam. És 2 memória modult is, egy I2C EEPROM-ot, és egy SPI Flash-t, hogy ellenőrizni tudjam programozó működését.
 
 A I2C EEPROM cikkszáma: AT24C256. Egy 256Kb-es EEPROM \cite{EEPROM}
 
 A SPI Flash cikkszáma W25Q64FV. Egy 64Mb-es Flash \cite{FLASH}
 
-A teszteléshez és analízishez a mérési elrendezés kenyérpanelel történt, mert a nyákon nem lehet egyszerre csatlakoztatni a memória modulokat meg az analizátort is.
+A tesztelés és analízis és a mérési elrendezés breadboard-on történt, mert a nyákon nem lehet egyszerre csatlakoztatni a memória modulokat, és az analizátort is.
 
 Az elrendezés:
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.16]{setupblock.PNG}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.14]{setupblock.PNG}
 	\caption{Analízis elrendezés blokkvázlata}
 	\label{Analízis elrendezés blokkvázlata}
 \end{figure}
 \begin{figure}[H]  
 	\centering
-	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.125]{setupreal.PNG}
-	\caption{Analízis elrendezés kenyérpanelen}
-	\label{Analízis elrendezés kenyérpanelen}
+	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.11]{setupreal.PNG}
+	\caption{Analízis elrendezés breadboard-on}
+	\label{Analízis elrendezés breadboard-on}
 \end{figure}
 
 \section{Tesztelés}
 \subsection{SPI configure állapot tesztelése}
-Az SPI configure mindig egy egybájtos SPI írás, a programozó beállításaitól függetlenül. Ezt az állapotot azért hoztam létre, hogy egy bájtos utasításokat könnyen tudjak írni, mint például a "chip erase", vagy "write enable". 
+Az SPI configure mindig egybájtos SPI írás, a programozó beállításaitól függetlenül. Ezt az állapotot azért hoztam létre, hogy egybájtos utasításokat könnyen tudjak írni, mint például a "chip erase", vagy "write enable". \cite{FLASH}
 
 Teszteléshez is "write enable" utasítást küldök a SPI Flash memóriának.
-Használt utasítássor az utasítás fájlban: 
+A Használt utasítássor az utasítás fájlban: 
 
 4106
 
 exit
 
-\subsubsection{Teszt eredménye:}
+\subsubsection{A teszt eredménye:}
 
 
 Log fájl tartalma:
@@ -1067,11 +1067,11 @@ Received: 41
 \begin{figure}[H]  
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.25]{spiconfiguretest.PNG}
-	\caption{SPI configure állapot tesztelése rögzítés}
-	\label{SPI configure állapot tesztelése rögzítés}
+	\caption{SPI configure állapot tesztelése}
+	\label{SPI configure állapot tesztelése}
 \end{figure}
 
-A rögzítésen látható, hogy a programozó fogadja a x42 értékű bájtot, és visszaküldi. A következő bájtot már viszont SPI-on írja. Ugyanazt írja SPI-on, mint amit kapott UART-on. 
+A képen látható, hogy a programozó fogadja a x42 értékű bájtot, és visszaküldi. A következő bájtot már viszont SPI-on írja. Ugyanazt írja SPI-on, mint amit kapott UART-on. 
 
 Az SPI configure állapot megfelelően működik.
 
@@ -1079,7 +1079,7 @@ Az SPI configure állapot megfelelően működik.
 Teszteléshez az SPI Flash memóriában egy teljes page-et azaz oldalt írtam. Ez 256 bájtnyi adat, a legtöbb, amit egy kommunikációval lehet írni az SPI Flash-be \cite{FLASH}.
 
 
-Használt utasítássor az utasítás fájlban:
+A Használt utasítássor az utasítás fájlban:
 
 4400010404000504
 
@@ -1090,9 +1090,9 @@ Használt utasítássor az utasítás fájlban:
 exit
 
 
-Az első két utasítás azért kell, hogy beállítsuk a SPI kommunikáció hosszát és az Flash-nek elküldjük a "write enable" utasítást. Maga az adat, a harmadik utasításban van. És a "Bee Movie" filmnek a forgatókönyvének első 256 bájtja.
+Az első két utasítás azért kell, hogy beállítsuk a SPI kommunikáció hosszát és az Flash-nek elküldjük a "write enable" utasítást. Maga az adat, a harmadik utasításban van. És a "Bee Movie" film forgatókönyvének első 256 bájtja.
 
-\subsubsection{Teszt eredménye:}
+\subsubsection{A teszt eredménye:}
 
 Log fájl tartalma:
 
@@ -1121,11 +1121,11 @@ Received: 43
 \begin{figure}[H]  
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{spi write packege full.PNG}
-	\caption{SPI write állapot tesztelése rögzítés}
-	\label{SPI write állapot tesztelése rögzítés}
+	\caption{SPI write állapot tesztelése}
+	\label{SPI write állapot tesztelése}
 \end{figure}
 
-A rögzítésen látszik, hogy az programozó valóban az összes érkező bájtot helyesen elküldi a Flash-nek SPI-on keresztül. 
+A képen látszik, hogy az programozó valóban az összes érkező bájtot helyesen elküldi a Flash-nek SPI-on keresztül. 
 
 Az SPI write állapot megfelelően működik.
 
@@ -1133,7 +1133,7 @@ Az SPI write állapot megfelelően működik.
 
 Teszteléshez az SPI Flash memóriában egy teljes page-et, azaz oldalt olvastam ki. Ugyan azt, amit beleírtam az SPI write tesztelés közben.
 
-Használt utasítássor az utasítás fájlban:
+A Használt utasítássor az utasítás fájlban:
 
 4400010404000504
 
@@ -1141,7 +1141,7 @@ Használt utasítássor az utasítás fájlban:
 
 Itt is az első utasítás azért kell, hogy beállítsuk a SPI kommunikáció hosszát. 
 
-\subsubsection{Teszt eredménye:}
+\subsubsection{A teszt eredménye:}
 
 Log fájl tartalma:
 
@@ -1163,18 +1163,18 @@ Received: 41 63 63 6F 72 (...többi adat bájt...) 36 B0
 \begin{figure}[H]  
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.27]{full spi page package.PNG}
-	\caption{SPI read állapot tesztelése rögzítés}
-	\label{SPI read állapot tesztelése rögzítés}
+	\caption{SPI read állapot tesztelése}
+	\label{SPI read állapot tesztelése}
 \end{figure}
 
-A rögzítésen látszik, hogy az programozó valóban az összes beírt bájtot helyesen vissza olvassa és elküldi UART-on a PC-nek.
+A képen látszik, hogy az programozó valóban az összes beírt bájtot helyesen visszaolvassa és elküldi UART-on a PC-nek.
 
 Az SPI read állapot megfelelően működik.
 
 \subsection{I2C write és I2C read állapot tesztelése}
-A két állapotot együtt teszteltem, egy utasítás sorral. Az EEPROM-ba egy memória címre beleírtam az Test angol szó ASCII értékét, majd ugyan azt a címet olvastam ki.
+A két állapotot együtt teszteltem, egy utasítás sorral. Az EEPROM-ba egy memória címre beleírtam az Test angol szó ASCII értékét, majd ugyanazt a címet olvastam ki.
 
-Használt utasítássor az utasítás fájlban:
+A Használt utasítássor az utasítás fájlban:
 
 4400010404000804
 
@@ -1193,7 +1193,7 @@ exit
 	\item A negyedik utasításban a 45 hexadecimális bájt az I2C read állapotot jelöli, az 0000 címről olvasunk.
 \end{itemize}
 
-\subsubsection{Teszt eredménye:}
+\subsubsection{A teszt eredménye:}
 
 Log fájl tartalma:
 
@@ -1222,29 +1222,41 @@ Received: 45 54 65 73 74
 \begin{figure}[H]  
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{i2c small write.PNG}
-	\caption{I2C write állapot tesztelése rögzítés}
-	\label{I2C write állapot tesztelése rögzítés}
+	\caption{I2C write állapot tesztelése}
+	\label{I2C write állapot tesztelése}
 \end{figure}
 Itt látható a helyesen elküldött I2C írás.
 \begin{figure}[H]  
 	\centering
 	\includegraphics[trim=1mm 1mm 1mm 1mm,scale=0.28]{i2c small read.PNG}
-	\caption{I2C read állapot tesztelése rögzítés}
-	\label{I2C read állapot tesztelése rögzítés}
+	\caption{I2C read állapot tesztelése}
+	\label{I2C read állapot tesztelése}
 \end{figure}
-Itt látható a helyes I2C olvasás. A programozó visszaolvasta és visszaküldte az előzőleg  beírt adatokat.
+Itt pedig a helyes I2C olvasás. A programozó visszaolvasta és visszaküldte az előzőleg  beírt adatokat.
 
 Az I2C read és az I2C write állapot megfelelően működik.
 
 \subsection{Get settings állapot tesztelése}
-A Diplomamunka során sok rögzítést mutattam be, ahol látszik, hogy különböző hosszúságú adatkereteket küldött a programozó. A programozót mindig a Get settings állapottal kellett beállítanom. 
+A diplomamunkámban sok rögzítést mutattam be, ahol látszik, hogy különböző hosszúságú adatkereteket küldött a programozó. A programozót mindig a Get settings állapottal kellett beállítanom. 
 
-Például a \ref{SPI-al kiolvasott gyártó azonosító és típusszám}-as ábra a \pageref{SPI-al kiolvasott gyártó azonosító és típusszám}. oldalon és a \ref{SPI read állapot tesztelése rögzítés}-as ábra a \pageref{SPI read állapot tesztelése rögzítés}. oldalon. Itt látható két külön hosszúságú SPI adatkeret.
+Például a \ref{SPI-al kiolvasott gyártó azonosító és típusszám}-as ábra a \pageref{SPI-al kiolvasott gyártó azonosító és típusszám}. oldalon és a \ref{SPI read állapot tesztelése}-as ábra a \pageref{SPI read állapot tesztelése}. oldalon. Itt pedig két külön hosszúságú SPI adatkeret.
 
-A \ref{I2C 1 bájtos olvasás a programozóval}-as. ábra a \pageref{I2C 1 bájtos olvasás a programozóval}. oldalon és a \ref{I2C write állapot tesztelése rögzítés}-as ábra a \pageref{I2C write állapot tesztelése rögzítés}. oldalon. Itt látható két külön hosszúságú I2C adatkeret.
+A \ref{I2C 1 bájtos olvasás a programozóval}-as. ábra a \pageref{I2C 1 bájtos olvasás a programozóval}. oldalon és a \ref{I2C write állapot tesztelése}-as ábra a \pageref{I2C write állapot tesztelése}. oldalon. Itt pedig két külön hosszúságú I2C adatkeret.
 
 A Get settings állapot megfelelően működik.
 
+\section{Jövőbeli tervek}
+Bár az elkészült programozó már most is képes EEPROM és Flash memória egységek programozására SPI és I2C protokollokon keresztül, számos irányba lehetne tovább bővíteni a rendszer funkcionalitását.
+
+Elsőként szeretnék egy grafikus felületet készíteni a jelenlegi C++-ban írt parancssoros vezérlő alkalmazás helyett. Ez felhasználó barátibbá tenné a programozót, és lehetőséget biztosítana a memóriák tartalmának vizuális megjelenítésére, szerkesztésére, valamint jobb fájl alapú kezelése.
+
+Ezen kívül célom újabb protokollok hozzáadása. Ez tovább növelné a programozó eszköz kompatibilitását különféle memóriatípusokkal és más perifériákkal. 
+
+Az protokollok sebesség beállítása most a design része, nem lehet az FPGA konfigurálása után változtatni. Ezt is beállíthatóvá fogom tenni.
+
+Hardveres oldalon, egy a most használt TinyFPGA modul helyett, egy komplexebb FPGA használatával, a rendszer teljesítménye és bővíthetősége is jelentősen növelhető.
+
+Végül, de nem utolsó sorban, szeretnék a projektből egy nyílt forráskódú, dokumentált, mások által is használható eszközt létrehozni. Ez elősegítené, hogy más fejlesztők vagy diákok is tanulhassanak a rendszerből, és akár saját igényeikhez igazítva továbbfejlesszék azt. Az egész forráskód már fent van GitHub-on.
 
 \chapter{Összegzés}
 
@@ -1252,24 +1264,11 @@ A Get settings állapot megfelelően működik.
 Diplomamunkám célja az volt, hogy egy olyan hardver-szoftver rendszert hozzak létre, amely képes SPI és I2C protokollon keresztül különböző memóriák programozására. A rendszer felépítése egy PC-s vezérlő alkalmazásból, egy UART kommunikáción alapuló interfészből, valamint egy FPGA-ban implementált digitális áramkörből áll. A kommunikációs és vezérlő szoftvert C++ nyelven írtam meg, amely képes parancsokat küldeni, adatokat fogadni és azokat naplózni is.
 A VHDL-ben megírt modulokat úgy terveztem, hogy azok rugalmasan konfigurálhatók legyenek, lehetőséggel a kommunikációs keretek hosszának állítására. A tervezett FPGA-s logika tartalmaz SPI és I2C mester egységeket, UART vevő- és adómodulokat, valamint egy fő állapotgépet, amely a beérkező parancsokat feldolgozza. 
 
-A hardveres megvalósítás részeként egy kétoldalas nyákot terveztem a KiCad szoftverrel. A tervezés során igyekeztem törekedni a rugalmasságra, például jumper-ek segítségével különböző feszültségű memóriachipek támogatása is megoldhatóvá vált. 
+A hardveres megvalósítás részeként egy kétrétegű nyákot terveztem a KiCad szoftverrel. A tervezés során igyekeztem törekedni a rugalmasságra, például jumper-ek segítségével különböző feszültségű memóriachipek támogatása is megoldhatóvá vált. 
 
-A rendszer teszteléséhez valós EEPROM chipeket használtam, és logikai analizátor segítségével ellenőriztem a kommunikáció helyességét. 
+A rendszer teszteléséhez valós memória modulokat használtam, és logikai analizátor segítségével ellenőriztem a kommunikáció helyességét. 
 
-Összességében a projekt során sikerült elérnem a kitűzött célokat: egy működőképes, használható EEPROM programozót hoztam létre, amely gyakorlati példát szolgáltat az FPGA-k alkalmazására beágyazott rendszerek fejlesztésében. A munka során jelentős tapasztalatra tettem szert mind a digitális áramkörtervezés, mind az alacsony szintű kommunikációs protokollok kezelése terén.
-
-\section{Jövőbeli tervek}
-Bár az elkészült programozó már most is képes EEPROM és Flash memória egységek programozására SPI és I2C protokollokon keresztül, számos irányba lehetne tovább bővíteni a rendszer funkcionalitását.
-
-Elsőként szeretnék egy grafikus felületet készíteni a jelenlegi C++-ban írt parancssoros vezérlőalkalmazás helyett. Ez felhasználóbarátibbá tenné a programozót, és lehetőséget biztosítana a memóriák tartalmának vizuális megjelenítésére, szerkesztésére, valamint jobb fájl alapú be és kimentésre is.
-
-Ezen kívül célom lenne újabb protokollok hozzáadása. Ez tovább növelné a programozó eszköz kompatibilitását különféle memóriatípusokkal és más perifériákkal. 
-
-Az protokollok sebesség beállítása most a design része, nem lehet az FPGA konfigurálása után változtatni. Ez is beállíthatóvá szeretném tenni.
-
-Hardveres oldalon egy a most használt TinyFPGA modul helyett egy komplexebb FPGA használatával a rendszer teljesítménye és bővíthetősége is jelentősen nőne.
-
-Végül, de nem utolsósorban, szeretnék a projektből egy nyílt forráskódú, dokumentált, közösség által is használható eszközt létrehozni. Ez elősegítené, hogy más fejlesztők vagy diákok is tanulhassanak a rendszerből, és akár saját igényeikhez igazítva továbbfejlesszék azt. Az egész forráskód már fent van GitHub-on.
+Összességében a projekt során sikerült elérnem a kitűzött célokat: egy működőképes, használható EEPROM programozót hoztam létre, amely gyakorlati példát szolgáltat az FPGA-k alkalmazására, beágyazott rendszerek fejlesztésében. A munka során jelentős tapasztalatra tettem szert mind a digitális áramkörtervezés, mind az alacsony szintű kommunikációs protokollok kezelése terén.
 
 
 \section{English summary}

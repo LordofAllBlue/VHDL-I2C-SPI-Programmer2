@@ -15,46 +15,46 @@
 \select@language {magyar} \contentsline {section}{\numberline {5.1}A terv bemutatása}{26}{section.5.1}%
 \select@language {magyar} \contentsline {chapter}{\numberline {6}Megvalósítás}{27}{chapter.6}%
 \select@language {magyar} \contentsline {section}{\numberline {6.1}Kapcsolási rajz tervezése}{27}{section.6.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.1.1}NYÁK tervezése}{30}{subsection.6.1.1}%
-\select@language {magyar} \contentsline {subsubsection}{A NYÁK alsó rétege}{31}{section*.20}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.1.1}Nyák tervezése}{30}{subsection.6.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{A nyák alsó rétege}{31}{section*.20}%
 \select@language {magyar} \contentsline {subsubsection}{Az SPI csatlakozó}{32}{section*.22}%
 \select@language {magyar} \contentsline {subsubsection}{Az I2C csatlakozó}{33}{section*.24}%
 \select@language {magyar} \contentsline {subsubsection}{Bővítmények}{33}{section*.26}%
-\select@language {magyar} \contentsline {section}{\numberline {6.2}A Kész nyák}{37}{section.6.2}%
-\select@language {magyar} \contentsline {section}{\numberline {6.3}A Programozó alentitásai}{38}{section.6.3}%
+\select@language {magyar} \contentsline {section}{\numberline {6.2}Az elkészült nyák}{37}{section.6.2}%
+\select@language {magyar} \contentsline {section}{\numberline {6.3}A programozó alentitásai}{38}{section.6.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.1}Az Int\_Osc entitás}{38}{subsection.6.3.1}%
-\select@language {magyar} \contentsline {subsubsection}{Az órajel sebeségének választása}{39}{section*.36}%
+\select@language {magyar} \contentsline {subsubsection}{Az órajel sebességének ki választása}{39}{section*.36}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.2}A write8bit entitás}{41}{subsection.6.3.2}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.3}UART\_TX entitás}{42}{subsection.6.3.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.4}A UART\_RX entitás}{43}{subsection.6.3.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.5}A writePage entitás}{45}{subsection.6.3.5}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.3.6}A I2C entitás}{48}{subsection.6.3.6}%
-\select@language {magyar} \contentsline {section}{\numberline {6.4}A fő (MAIN) entitás}{52}{section.6.4}%
+\select@language {magyar} \contentsline {section}{\numberline {6.4}A main (fő) entitás}{52}{section.6.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.4.1}A main entitás állapotgép}{52}{subsection.6.4.1}%
 \select@language {magyar} \contentsline {section}{\numberline {6.5}C++-ban megírt utasítás küldő program}{54}{section.6.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.1}A Terminal app program}{54}{subsection.6.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.1}A "Terminal app" program}{54}{subsection.6.5.1}%
 \select@language {magyar} \contentsline {subsubsection}{A program működése}{54}{section*.38}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.5.2}A "File app" program}{55}{subsection.6.5.2}%
 \select@language {magyar} \contentsline {subsection}{\numberline {6.5.3}A programozó beállítása a belső memória segítségével}{55}{subsection.6.5.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {6.5.4}Utasítások és utasítás sor példa és magyarázat.}{56}{subsection.6.5.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.4}Utasítások és utasítássor példa és magyarázat.}{56}{subsection.6.5.4}%
 \select@language {magyar} \contentsline {chapter}{\numberline {7}Tesztelés}{58}{chapter.7}%
-\select@language {magyar} \contentsline {section}{\numberline {7.1}Tesztelési és analízis elrendezés}{58}{section.7.1}%
+\select@language {magyar} \contentsline {section}{\numberline {7.1}Tesztelési elrendezés és analízis}{58}{section.7.1}%
 \select@language {magyar} \contentsline {section}{\numberline {7.2}Tesztelés}{60}{section.7.2}%
 \select@language {magyar} \contentsline {subsection}{\numberline {7.2.1}SPI configure állapot tesztelése}{60}{subsection.7.2.1}%
-\select@language {magyar} \contentsline {subsubsection}{Teszt eredménye:}{61}{section*.42}%
-\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{61}{section*.43}%
+\select@language {magyar} \contentsline {subsubsection}{A teszt eredménye:}{60}{section*.42}%
+\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{60}{section*.43}%
 \select@language {magyar} \contentsline {subsection}{\numberline {7.2.2}SPI write állapot tesztelése}{61}{subsection.7.2.2}%
-\select@language {magyar} \contentsline {subsubsection}{Teszt eredménye:}{62}{section*.45}%
-\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{63}{section*.46}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.2.3}SPI read állapot tesztelése}{63}{subsection.7.2.3}%
-\select@language {magyar} \contentsline {subsubsection}{Teszt eredménye:}{64}{section*.48}%
-\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{64}{section*.49}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.2.4}I2C write és I2C read állapot tesztelése}{65}{subsection.7.2.4}%
-\select@language {magyar} \contentsline {subsubsection}{Teszt eredménye:}{65}{section*.51}%
-\select@language {magyar} \contentsline {subsubsection}{Rögzítések:}{66}{section*.52}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.2.5}Get settings állapot tesztelése}{67}{subsection.7.2.5}%
+\select@language {magyar} \contentsline {subsubsection}{A teszt eredménye:}{61}{section*.45}%
+\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{62}{section*.46}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.2.3}SPI read állapot tesztelése}{62}{subsection.7.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{A teszt eredménye:}{63}{section*.48}%
+\select@language {magyar} \contentsline {subsubsection}{Rögzítés:}{63}{section*.49}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.2.4}I2C write és I2C read állapot tesztelése}{64}{subsection.7.2.4}%
+\select@language {magyar} \contentsline {subsubsection}{A teszt eredménye:}{64}{section*.51}%
+\select@language {magyar} \contentsline {subsubsection}{Rögzítések:}{65}{section*.52}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.2.5}Get settings állapot tesztelése}{66}{subsection.7.2.5}%
+\select@language {magyar} \contentsline {section}{\numberline {7.3}Jövőbeli tervek}{67}{section.7.3}%
 \select@language {magyar} \contentsline {chapter}{\numberline {8}Összegzés}{68}{chapter.8}%
 \select@language {magyar} \contentsline {section}{\numberline {8.1}Magyar összefoglaló}{68}{section.8.1}%
-\select@language {magyar} \contentsline {section}{\numberline {8.2}Jövőbeli tervek}{69}{section.8.2}%
-\select@language {magyar} \contentsline {section}{\numberline {8.3}English summary}{69}{section.8.3}%
+\select@language {magyar} \contentsline {section}{\numberline {8.2}English summary}{69}{section.8.2}%
 \select@language {magyar} \contentsline {chapter}{\numberline {9}Melléklet}{71}{chapter.9}%
