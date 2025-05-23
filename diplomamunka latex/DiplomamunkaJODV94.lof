@@ -33,12 +33,12 @@
 \select@language {magyar} \contentsline {figure}{\numberline {6.19.}{\ignorespaces A kész nyák összeszerelve és forrasztva}}{38}{figure.caption.35}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.20.}{\ignorespaces Elérhető CLK-frekvenciák az FPGA adatlapja alapján \cite {fpgaadatlap}}}{40}{figure.caption.37}%
 \select@language {magyar} \addvspace {10\p@ }
-\select@language {magyar} \contentsline {figure}{\numberline {7.1.}{\ignorespaces Analízis elrendezés blokkvázlata}}{58}{figure.caption.40}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.2.}{\ignorespaces Analízis elrendezés kenyérpanelen}}{59}{figure.caption.41}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.3.}{\ignorespaces SPI configure állapot tesztelése rögzítés}}{60}{figure.caption.44}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.4.}{\ignorespaces SPI write állapot tesztelése rögzítés}}{62}{figure.caption.47}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.5.}{\ignorespaces SPI read állapot tesztelése rögzítés}}{63}{figure.caption.50}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.6.}{\ignorespaces I2C write állapot tesztelése rögzítés}}{65}{figure.caption.53}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.7.}{\ignorespaces I2C read állapot tesztelése rögzítés}}{65}{figure.caption.54}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.1.}{\ignorespaces Analízis elrendezés blokkvázlata}}{59}{figure.caption.40}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.2.}{\ignorespaces Analízis elrendezés kenyérpanelen}}{60}{figure.caption.41}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.3.}{\ignorespaces SPI configure állapot tesztelése rögzítés}}{61}{figure.caption.44}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.4.}{\ignorespaces SPI write állapot tesztelése rögzítés}}{63}{figure.caption.47}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.5.}{\ignorespaces SPI read állapot tesztelése rögzítés}}{64}{figure.caption.50}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.6.}{\ignorespaces I2C write állapot tesztelése rögzítés}}{66}{figure.caption.53}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.7.}{\ignorespaces I2C read állapot tesztelése rögzítés}}{66}{figure.caption.54}%
 \select@language {magyar} \addvspace {10\p@ }
 \select@language {magyar} \addvspace {10\p@ }

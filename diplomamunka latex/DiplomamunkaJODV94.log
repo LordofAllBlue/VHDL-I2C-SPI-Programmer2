@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  23 MAY 2025 15:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  23 MAY 2025 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1436,120 +1436,122 @@ Package pdftex.def Info: clkrates.PNG  used on input line 592.
 [55]
 
 [56]
+
+[57]
 7. fejezet.
-<setupblock.PNG, id=682, 1323.44438pt x 1872.24469pt>
+<setupblock.PNG, id=686, 1323.44438pt x 1872.24469pt>
 File: setupblock.PNG Graphic file (type png)
 <use setupblock.PNG>
-Package pdftex.def Info: setupblock.PNG  used on input line 1017.
+Package pdftex.def Info: setupblock.PNG  used on input line 1032.
 (pdftex.def)             Requested size: 210.84492pt x 298.65477pt.
-<setupreal.PNG, id=683, 2089.8075pt x 2786.41pt>
+<setupreal.PNG, id=687, 2089.8075pt x 2786.41pt>
 File: setupreal.PNG Graphic file (type png)
 <use setupreal.PNG>
-Package pdftex.def Info: setupreal.PNG  used on input line 1023.
+Package pdftex.def Info: setupreal.PNG  used on input line 1038.
 (pdftex.def)             Requested size: 260.51399pt x 347.5891pt.
 
 
-[57
+[58
 
 ]
 
-[58 <./setupblock.PNG>]
+[59 <./setupblock.PNG>]
 
-[59 <./setupreal.PNG>]
-<spiconfiguretest.PNG, id=698, 1599.72656pt x 851.43094pt>
+[60 <./setupreal.PNG>]
+<spiconfiguretest.PNG, id=702, 1599.72656pt x 851.43094pt>
 File: spiconfiguretest.PNG Graphic file (type png)
 <use spiconfiguretest.PNG>
-Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1054.
+Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1069.
 (pdftex.def)             Requested size: 398.50804pt x 211.43459pt.
 
 
-[60 <./spiconfiguretest.PNG>]
-Overfull \hbox (5.79065pt too wide) in paragraph at lines 1073--1074
+[61 <./spiconfiguretest.PNG>]
+Overfull \hbox (5.79065pt too wide) in paragraph at lines 1088--1089
 []\T1/lmr/m/n/12 43020000004163636F7264696E6720746F20616C6C206B6E6F776E206C617773206F6
  []
 
 
-Overfull \hbox (3.5142pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (3.5142pt too wide) in paragraph at lines 1088--1089
 \T1/lmr/m/n/12 756C642062652061626C6520746F20666C792E204974732077696E67732061726520746F6
  []
 
 
-Overfull \hbox (2.69621pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (2.69621pt too wide) in paragraph at lines 1088--1089
 \T1/lmr/m/n/12 F20736D616C6C20746F206765742069747320666174206C6974746C6520626F6479206F6
  []
 
 
-Overfull \hbox (5.30722pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (5.30722pt too wide) in paragraph at lines 1088--1089
 \T1/lmr/m/n/12 666207468652067726F756E642E20546865206265652C206F6620636F757273652C20666C
  []
 
 
-Overfull \hbox (5.63818pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (5.63818pt too wide) in paragraph at lines 1088--1089
 \T1/lmr/m/n/12 69657320616E797761792062656361757365206265657320646F6E277420636172652077686
  []
 
 
-Overfull \hbox (2.5278pt too wide) in paragraph at lines 1073--1074
+Overfull \hbox (2.5278pt too wide) in paragraph at lines 1088--1089
 \T1/lmr/m/n/12 1742068756D616E73207468696E6B20697320696D706F737369626C652E2059656C6C6F
  []
 
-<spi write packege full.PNG, id=707, 1580.90625pt x 953.81343pt>
+<spi write packege full.PNG, id=711, 1580.90625pt x 953.81343pt>
 File: spi write packege full.PNG Graphic file (type png)
 <use spi write packege full.PNG>
-Package pdftex.def Info: spi write packege full.PNG  used on input line 1108.
+Package pdftex.def Info: spi write packege full.PNG  used on input line 1123.
 (pdftex.def)             Requested size: 441.0574pt x 265.47261pt.
 
 
-[61]
+[62]
 
-[62 <./spi write packege full.PNG>]
-<full spi page package.PNG, id=719, 1590.69281pt x 983.92593pt>
+[63 <./spi write packege full.PNG>]
+<full spi page package.PNG, id=723, 1590.69281pt x 983.92593pt>
 File: full spi page package.PNG Graphic file (type png)
 <use full spi page package.PNG>
-Package pdftex.def Info: full spi page package.PNG  used on input line 1150.
+Package pdftex.def Info: full spi page package.PNG  used on input line 1165.
 (pdftex.def)             Requested size: 427.95634pt x 264.1271pt.
 
 
-[63 <./full spi page package.PNG>]
+[64 <./full spi page package.PNG>]
 
-[64]
-<i2c small write.PNG, id=733, 1431.84938pt x 747.54282pt>
+[65]
+<i2c small write.PNG, id=738, 1431.84938pt x 747.54282pt>
 File: i2c small write.PNG Graphic file (type png)
 <use i2c small write.PNG>
-Package pdftex.def Info: i2c small write.PNG  used on input line 1209.
+Package pdftex.def Info: i2c small write.PNG  used on input line 1224.
 (pdftex.def)             Requested size: 399.32178pt x 207.71724pt.
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 1216.
+Package pdftex.def Info: i2c small read.PNG  used on input line 1231.
 (pdftex.def)             Requested size: 405.22379pt x 217.41339pt.
 
 
-[65 <./i2c small write.PNG>]
-Overfull \hbox (1.33183pt too wide) in paragraph at lines 1225--1226
+[66 <./i2c small write.PNG>]
+Overfull \hbox (1.33183pt too wide) in paragraph at lines 1240--1241
 \T1/lmr/m/n/12 A Dip-lo-ma-mun-ka so-rán sok rög-zí-tést mu-tat-tam be, ahol lát-szik, hogy kü-lön-bö-z® hosszú-
  []
 
 
 
-[66]
+[67]
 8. fejezet.
 
 
-[67
+[68
 
 ]
 
-[68]
-
 [69]
+
+[70]
 9. fejezet.
 
 
-[70
+[71
 
 ]
 
-[71
+[72
 
 ] (DiplomamunkaJODV94.aux)
  ***********
@@ -1560,17 +1562,17 @@ Package rerunfilecheck Info: File `DiplomamunkaJODV94.out' has not changed.
 (rerunfilecheck)             Checksum: 86BE134B8E97E46336BF07E01A769DDA;8095.
  ) 
 Here is how much of TeX's memory you used:
- 21304 strings out of 469940
- 359753 string characters out of 5468441
+ 21305 strings out of 469940
+ 359760 string characters out of 5468441
  845594 words of memory out of 5000000
  47530 multiletter control sequences out of 15000+600000
  672121 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  524i,17n,1046p,916b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on DiplomamunkaJODV94.pdf (73 pages, 36248488 bytes).
+Output written on DiplomamunkaJODV94.pdf (74 pages, 36249010 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
- 215 named destinations out of 1000 (max. 500000)
+ 865 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
  559 words of extra memory for PDF output out of 10000 (max. 10000000)
 

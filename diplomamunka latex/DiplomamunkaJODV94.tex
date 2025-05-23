@@ -596,14 +596,18 @@ A FPGA belő órajel sebességét adott értékekből lehet választani. Az FPGA
 Az óra jelet úgy kell választani, hogy elég gyors legyen, hogy a design megoldja a feladatot amire tervezve lett. Gyorsabbra nem érdemes, mert az felesleges slack problémákhoz vezethet. 
 
 A programozóban az órajelnek legalább 4-szer gyorsabbnak kell lennie, mint a célzott I2C órajel sebessége, órajelenként 4 műveletet végez a I2C entitás. És 2 szer gyorsabbnak, mint a célzott SPI órajel, mert órajelenként 2 műveletet végez az SPI entitás.
+
+
 Az én célzott I2C órajelsebességem nagyobb, mint a célzott UART Baud ráta, de lassabb, mint 1MHz-nel. Ez azért van, mert a legtöbb modern EEPROM képes 1MHz órajelsebességre, és ki szeretném használni ezt a sebességet. Ez azért kell, hogy gyorsabb legyen az I2C, mint az UART, mert az I2C tud "várni" az UART adatra órajelnyújtással, de a UART nem tud "várni" a I2C-re. Ez azért van, mert az UART sebességét  kommunikáció közben nem lehet változtatni, mert az UART aszinkron. Az SPI célsebesség pedig 5MHz körül van, hasonló okok miatt.
 
-A programozóm UART-ot is használ, amint előbb volt tárgyalva, egy aszinkron kommunikációs protokoll. Ez azt jelenti, hogy a belső óra jelet úgy kell választani, hogy jól leosztható legyen a megcélzott Baud rátához. Tegyük fel, hogy a célzott Baud ráta 23040. Ha a belső órajel 2.46MHz akkor az órajelosztó számlálónak 11-ig kell számolnia, mivel \(230400$Baud$ / 2.46$MHz $ = 10.68\). Egy órajel számláló csak egész számokkal tud számolni. így minden egyes periódus alatt fél óra jelet késne a belső UART számlálá a tényleges 230400 Baud-hoz. Úgy kellet választanom az óra jelet, hogy minimális kerekítéssel le lehessen osztania és ez a késés minimális legyen. A célzott UART sebesség 576000 Baud.
+A programozóm UART-ot is használ, amint előbb volt tárgyalva, egy aszinkron kommunikációs protokoll. Ez azt jelenti, hogy a belső óra jelet úgy kell választani, hogy jól leosztható legyen a megcélzott Baud rátához. 
+
+Tegyük fel, hogy a célzott Baud ráta 23040. Ha a belső órajel 2.46MHz akkor az órajelosztó számlálónak 11-ig kell számolnia, mivel \(230400$Baud$ / 2.46$MHz $ = 10.68\). Egy órajel számláló csak egész számokkal tud számolni. Így minden egyes periódus alatt fél óra jelet késne a belső UART számláló a tényleges 230400 Baud-hoz képest. Úgy kellet választanom az óra jelet, hogy minimális kerekítéssel le lehessen osztania, és ez a késés minimális legyen. A célzott UART sebesség 576000 Baud.
 
 Ezek miatt választottam a 9.17MHz-t belső órajelnek. Így a UART osztó hiba 0.08 órajel per Baud periódus. A I2C maximum sebessége 2.29MHz. Az SPI Max sebessége 4.59MHz.
 
 \subsection{A write8bit entitás}
-A write8bit e8 bites adat írására szolgál az SPI vonalokon. Az entitás bemeneti és kimeneti port-jai a következők:
+A write8bit 8 bites adat írására szolgál az SPI vonalokon. Az entitás bemeneti és kimeneti port-jai a következők:
 
 Port-ok:
 \begin{itemize}
@@ -971,13 +975,24 @@ A program célja, hogy hexadecimális formátumban megadott adatokat küldjön a
 Ez a program hasonló a Terminal app-hoz, de fájlokkal dolgozik. A felhasználó megadhat egy fájlnevet, amely utasításokat tartalmaz. A fájlban lévő utasításokat a program feldolgozza, és a válaszokat kiírja, meg lementi egy log.txt fájlba.
 \subsection{A programozó beállítása a belső memória segítségével}
 A programozónak van egy 7 bájtos belső memóriája, ahol a SPI és I2C adatkeret beállításokat tárolja. Az alapértelmezett értéke x00001904000403. 
+
 Az elő 3 bajt, azaz alapból a x000019, A SPI adatkeret teljes hosszát (bájtokban) mondja meg, U3 adattipúsban. Így alapértelmezett esetben a SPI kommunikáció teljes hossza 25 bájt, mindent beleértve. 
+
 A következő 2 bájt pedig a SPI olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 4 bájt a hossz. 
+
 A következő 4 bajt pedig a I2C adatkeret teljes hosszát (bájtokban) mondja meg, U2 adattipúsban. Alapértelmezett esetben 4 bájt a hossz.
+
 Az utolsó 2 bájt pedig a I2C olvasás esetén az olvasási fejléc hossza U1 adattípusban. Alapértelmezett esetben 3 bájt a hossz.
-Tegyük fel, hogy egy SPI olvasást, meg egy I2C olvasást akarunk végrehajtani. Mégpedig egy teljes page olvasást a W25Q64JV SPI Flash-ből, és egy 4 bájtos olvasást szeretnénk az AT24C256 EEPROM-ból. A page hossza összesen 256, egy utasítás bájtnak kell lennije, és 3 cím bájtnak \cite{FLASH}. Tehát a teljes adatkeret hossz 260 bájt lesz, és az olvasási fejléc hossza 4 bájt \cite{EEPROM}. Választott címen való olvasáshoz 4 fejlécbájt kell az EEPROM-nak. Így a beállítás belső memóriát x00010404000804 re kell alítani.
+
+Tegyük fel, hogy egy SPI olvasást, meg egy I2C olvasást akarunk végrehajtani. Mégpedig egy teljes page olvasást a W25Q64JV SPI Flash-ből, és egy 4 bájtos olvasást szeretnénk az AT24C256 EEPROM-ból. 
+
+A page hossza összesen 256, egy utasítás bájtnak kell lennije, és 3 cím bájtnak \cite{FLASH}. Tehát a teljes adatkeret hossz 260 bájt lesz, és az olvasási fejléc hossza 4 bájt \cite{EEPROM}. Választott címen való olvasáshoz 4 fejlécbájt kell az EEPROM-nak. Így a beállítás belső memóriát x00010404000804 re kell alítani.
+
 Az utasítás, ami ezt meg teszi az ez: 4400010404000804.
-Az elő bájt a programozót a megfelelő "get setting” állapotba rakja. Az utasítás többi része, az, amit be akarunk írni a belső memóriába. Az utasítás után a programozó automatikusan visszakerül az "Idle” alapállapotba.
+
+Az elő bájt a programozót a megfelelő "get setting” állapotba rakja. Az utasítás többi része, az, amit be akarunk írni a belső memóriába. 
+
+Az utasítás után a programozó automatikusan visszakerül az "Idle” alapállapotba.
 
 \subsection{Utasítások és utasítás sor példa és magyarázat.}
 Mint korábban említettem a programozónak összesen 7 fő állapotija van. Az alap állapot a base state. Ebből az állapotból 6 másik állapotba lehet lépni. 
