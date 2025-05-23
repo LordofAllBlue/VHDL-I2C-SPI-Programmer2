@@ -2,43 +2,43 @@
 \select@language {magyar} \addvspace {10\p@ }
 \select@language {magyar} \addvspace {10\p@ }
 \select@language {magyar} \addvspace {10\p@ }
-\select@language {magyar} \contentsline {figure}{\numberline {4.1.}{\ignorespaces Vizalizált analizátor rögzítés példa}}{18}{figure.caption.5}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.2.}{\ignorespaces UART blokkvázlat}}{19}{figure.caption.6}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.3.}{\ignorespaces UART adatkeret}}{20}{figure.caption.7}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.4.}{\ignorespaces SPI blokkvázlat}}{21}{figure.caption.8}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.5.}{\ignorespaces SPI-al kilvasott gyártó azonosító és típusszám}}{22}{figure.caption.9}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.6.}{\ignorespaces I2C elrendezés példa blokkvázlat}}{23}{figure.caption.10}%
-\select@language {magyar} \contentsline {figure}{\numberline {4.7.}{\ignorespaces I2C 1 bájtos olvasás a programozóval}}{24}{figure.caption.11}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.1.}{\ignorespaces vizualizált analizátor rögzítés példa}}{19}{figure.caption.5}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.2.}{\ignorespaces UART blokkvázlat}}{20}{figure.caption.6}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.3.}{\ignorespaces UART adatkeret}}{21}{figure.caption.7}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.4.}{\ignorespaces SPI blokkvázlat}}{22}{figure.caption.8}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.5.}{\ignorespaces SPI-al kiolvasott gyártó azonosító és típusszám}}{23}{figure.caption.9}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.6.}{\ignorespaces I2C elrendezés példa blokkvázlat}}{24}{figure.caption.10}%
+\select@language {magyar} \contentsline {figure}{\numberline {4.7.}{\ignorespaces I2C 1 bájtos olvasás a programozóval}}{25}{figure.caption.11}%
 \select@language {magyar} \addvspace {10\p@ }
-\select@language {magyar} \contentsline {figure}{\numberline {5.1.}{\ignorespaces Projekt terv blokkvázlata}}{25}{figure.caption.12}%
+\select@language {magyar} \contentsline {figure}{\numberline {5.1.}{\ignorespaces Projekt terv blokkvázlata}}{26}{figure.caption.12}%
 \select@language {magyar} \addvspace {10\p@ }
-\select@language {magyar} \contentsline {figure}{\numberline {6.1.}{\ignorespaces A programozó kapcsolási rajza}}{26}{figure.caption.13}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.2.}{\ignorespaces Ellenállás Jumper-ek}}{27}{figure.caption.14}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.3.}{\ignorespaces Ellenállósokon lévő feszültség összefüggése}}{27}{figure.caption.15}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.4.}{\ignorespaces VCC és VBUS közösítő jumper}}{28}{figure.caption.16}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.5.}{\ignorespaces Fontos feszültségek és a GND kivezetése}}{29}{figure.caption.17}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.1.}{\ignorespaces A programozó kapcsolási rajza}}{27}{figure.caption.13}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.2.}{\ignorespaces Ellenállás Jumper-ek}}{28}{figure.caption.14}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.3.}{\ignorespaces Ellenállósokon lévő feszültség összefüggése}}{28}{figure.caption.15}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.4.}{\ignorespaces VCC és VBUS közösítő jumper}}{29}{figure.caption.16}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.5.}{\ignorespaces Fontos feszültségek és a GND kivezetése}}{30}{figure.caption.17}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.6.}{\ignorespaces A programozó NYÁK-ja}}{30}{figure.caption.18}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.7.}{\ignorespaces KiCad limit beállítások}}{31}{figure.caption.19}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.8.}{\ignorespaces A nyák alsó rétege}}{32}{figure.caption.21}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.9.}{\ignorespaces SPI kimenet}}{32}{figure.caption.23}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.10.}{\ignorespaces I2C kimenet}}{33}{figure.caption.25}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.11.}{\ignorespaces A rounded tracks plugin UI-ja}}{34}{figure.caption.27}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.12.}{\ignorespaces Egy trace a plugin használata előtt}}{34}{figure.caption.28}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.13.}{\ignorespaces Egy trace a plugin használata után}}{35}{figure.caption.29}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.11.}{\ignorespaces A rounded tracks bővítmény UI-ja}}{34}{figure.caption.27}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.12.}{\ignorespaces Egy trace a bővítmény használata előtt}}{34}{figure.caption.28}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.13.}{\ignorespaces Egy trace a bővítmény használata után}}{35}{figure.caption.29}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.14.}{\ignorespaces Példa egy csúnyán tervezett trace-re}}{35}{figure.caption.30}%
 \select@language {magyar} \contentsline {figure}{\numberline {6.15.}{\ignorespaces Teardrop vias UI}}{36}{figure.caption.31}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.16.}{\ignorespaces Teardrop plugin használata előtt}}{36}{figure.caption.32}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.17.}{\ignorespaces Teardrop plugin használata után}}{37}{figure.caption.33}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.18.}{\ignorespaces A Kész nyák}}{38}{figure.caption.34}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.19.}{\ignorespaces A kész nyák összeszerelve és forrasztva}}{39}{figure.caption.35}%
-\select@language {magyar} \contentsline {figure}{\numberline {6.20.}{\ignorespaces Elérhető CLK-frekvenciák az FPGA adatlapja alapján \cite {fpgaadatlap}}}{41}{figure.caption.37}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.16.}{\ignorespaces Teardrop bővítmény használata előtt}}{36}{figure.caption.32}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.17.}{\ignorespaces Teardrop bővítmény használata után}}{37}{figure.caption.33}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.18.}{\ignorespaces A Kész nyák}}{37}{figure.caption.34}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.19.}{\ignorespaces A kész nyák összeszerelve és forrasztva}}{38}{figure.caption.35}%
+\select@language {magyar} \contentsline {figure}{\numberline {6.20.}{\ignorespaces Elérhető CLK-frekvenciák az FPGA adatlapja alapján \cite {fpgaadatlap}}}{40}{figure.caption.37}%
 \select@language {magyar} \addvspace {10\p@ }
-\select@language {magyar} \contentsline {figure}{\numberline {7.1.}{\ignorespaces Analízis elrendezés blokkvázlata}}{59}{figure.caption.40}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.2.}{\ignorespaces Analízis elrendezés breadboardon}}{60}{figure.caption.41}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.3.}{\ignorespaces SPI configure állapot tesztelése rögzítés}}{61}{figure.caption.44}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.4.}{\ignorespaces SPI write állapot tesztelése rögzítés}}{63}{figure.caption.47}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.5.}{\ignorespaces SPI read állapot tesztelése rögzítés}}{64}{figure.caption.50}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.6.}{\ignorespaces I2C write állapot tesztelése rögzítés}}{66}{figure.caption.53}%
-\select@language {magyar} \contentsline {figure}{\numberline {7.7.}{\ignorespaces I2C read állapot tesztelése rögzítés}}{66}{figure.caption.54}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.1.}{\ignorespaces Analízis elrendezés blokkvázlata}}{58}{figure.caption.40}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.2.}{\ignorespaces Analízis elrendezés kenyérpanelen}}{59}{figure.caption.41}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.3.}{\ignorespaces SPI configure állapot tesztelése rögzítés}}{60}{figure.caption.44}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.4.}{\ignorespaces SPI write állapot tesztelése rögzítés}}{62}{figure.caption.47}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.5.}{\ignorespaces SPI read állapot tesztelése rögzítés}}{63}{figure.caption.50}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.6.}{\ignorespaces I2C write állapot tesztelése rögzítés}}{65}{figure.caption.53}%
+\select@language {magyar} \contentsline {figure}{\numberline {7.7.}{\ignorespaces I2C read állapot tesztelése rögzítés}}{65}{figure.caption.54}%
 \select@language {magyar} \addvspace {10\p@ }
 \select@language {magyar} \addvspace {10\p@ }

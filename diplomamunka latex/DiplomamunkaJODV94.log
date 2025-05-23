@@ -1,30 +1,30 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.3)  22 MAY 2025 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  23 MAY 2025 15:35
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Szabo Ferenc/Documents/repo2/VHDL-I2C-SPI-Programmer2/diplomamunka latex/DiplomamunkaJODV94.tex"
-(c:/Users/Szabo Ferenc/Documents/repo2/VHDL-I2C-SPI-Programmer2/diplomamunka latex/DiplomamunkaJODV94.tex
+**"c:/Users/Fszabo3/Documents/Uni/VHDL-I2C-SPI-Programmer2/diplomamunka latex/DiplomamunkaJODV94.tex"
+(c:/Users/Fszabo3/Documents/Uni/VHDL-I2C-SPI-Programmer2/diplomamunka latex/DiplomamunkaJODV94.tex
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+L3 programming layer <2025-04-14>
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
 File: bk12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count197
-\c@chapter=\count198
-\c@section=\count199
-\c@subsection=\count266
-\c@subsubsection=\count267
-\c@paragraph=\count268
-\c@subparagraph=\count269
-\c@figure=\count270
-\c@table=\count271
+\c@part=\count272
+\c@chapter=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen146
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
@@ -32,33 +32,33 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen147
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen148
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count272
+\inf@bad=\count281
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count273
-\leftroot@=\count274
+\uproot@=\count282
+\leftroot@=\count283
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count275
-\DOTSCASE@=\count276
+\classnum@=\count284
+\DOTSCASE@=\count285
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -71,20 +71,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count277
+\macc@depth=\count286
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count278
+\c@MaxMatrixCols=\count287
 \dotsspace@=\muskip17
-\c@parentequation=\count279
-\dspbrk@lvl=\count280
+\c@parentequation=\count288
+\dspbrk@lvl=\count289
 \tag@help=\toks19
-\row@=\count281
-\column@=\count282
-\maxfields@=\count283
+\row@=\count290
+\column@=\count291
+\maxfields@=\count292
 \andhelp@=\toks20
 \eqnshift@=\dimen150
 \alignsep@=\dimen151
@@ -98,27 +98,27 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count284
-\calc@Bcount=\count285
+\calc@Acount=\count293
+\calc@Bcount=\count294
 \calc@Adimen=\dimen156
 \calc@Bdimen=\dimen157
 \calc@Askip=\skip54
 \calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count286
+\calc@Ccount=\count295
 \calc@Cskip=\skip56
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count287
+\g_MT_multlinerow_int=\count296
 \l_MT_multwidth_dim=\dimen158
 \origjot=\skip57
 \l_MT_shortvdotswithinadjustabove_dim=\dimen159
@@ -129,12 +129,12 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen164
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen165
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -145,69 +145,71 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip59
 \thm@headsep=\skip60
 \dth@everypar=\toks29
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen166
 \Gin@req@width=\dimen167
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/04/14 v25.7 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count288
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/04/29 v25.8 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count297
 \U@D=\dimen168
 \l@unhyphenated=\language79
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count289
+\bbl@dirlevel=\count298
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\USenglish.ldf
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\USenglish.ldf
 Language: USenglish 2017/06/06 v3.3r English support from the babel system
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-usenglish.tex
+Package babel Info: Importing font and identification data for USenglish
+(babel)             from babel-en-US.ini. Reported on input line 11.
+)
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/babel-hungarian\magyar.ldf
-Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
-Package babel Info: Making ` an active character on input line 2819.
-\c@footnote@add=\count290
-\c@footnote@ch=\count291
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/hu\babel-magyar.tex
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/babel-hungarian\magyar.ldf
+Language: magyar 2025/05/02 v1.5d Hungarian support for babel
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/hu\babel-magyar.tex
 Package babel Info: Importing font and identification data for magyar
 (babel)             from babel-hu.ini. Reported on input line 11.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-usenglish.tex
-Package babel Info: Importing font and identification data for USenglish
-(babel)             from babel-en-US.ini. Reported on input line 11.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\t1enc.sty
+)
+Package babel Info: Making ` an active character on input line 2778.
+\c@footnote@add=\count299
+\c@footnote@ch=\count300
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\t1enc.sty
 Package: t1enc 1994/06/01 Standard LaTeX package
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -220,7 +222,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/anysize\anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
 
 document style option `anysize' loaded
@@ -230,7 +232,7 @@ Version 1.0, Aug 13, 1994
 \@Rightmargin=\dimen171
 \@Topmargin=\dimen172
 \@Bottommargin=\dimen173
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -264,14 +266,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mathcomp\mathcomp.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mathcomp\mathcomp.sty
 Package: mathcomp 2001/01/07 v0.1f (TBo)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 \symTC=\mathgroup7
@@ -279,20 +281,20 @@ LaTeX Font Info:    Overwriting symbol font `TC' in version `bold'
 (Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 25.
 LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
 LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count292
+\c@float@type=\count301
 \float@exts=\toks36
 \float@box=\box58
 \@float@everytoks=\toks37
 \@floatcapt=\box59
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen174
 \captionmargin=\dimen175
@@ -305,21 +307,21 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 Package caption Info: Standard document class detected.
 Package caption Info: hungarian babel package is loaded.
 )
-\c@caption@flags=\count293
-\c@continuedfloat=\count294
+\c@caption@flags=\count302
+\c@continuedfloat=\count303
 Package caption Info: hungarian babel package is loaded.
 Package caption Info: float package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count295
+\c@subfigure=\count304
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count296
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+\c@subtable=\count305
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen182
 \ar@mcellbox=\box60
@@ -328,26 +330,26 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \extratabsurround=\skip61
 \backup@length=\skip62
 \ar@cellbox=\box61
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
 Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
 \NCC@fracrulewidth=\dimen184
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip63
-\multirow@cntb=\count297
+\multirow@cntb=\count306
 \multirow@dima=\skip64
 \bigstrutjot=\dimen185
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip65
 \enit@outerparindent=\dimen186
 \enit@toks=\toks39
 \enit@inbox=\box62
-\enit@count@id=\count298
-\enitdp@description=\count299
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
-Package: footmisc 2025/03/10 v7.0a a miscellany of footnote facilities
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc-2022-02-14.sty
+\enit@count@id=\count307
+\enitdp@description=\count308
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc-2022-02-14.sty
 Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
 \FN@temptoken=\toks40
 \footnotemargin=\dimen187
@@ -358,16 +360,16 @@ Package footmisc Info: Declaring symbol style wiley on input line 716.
 Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
 Package footmisc Info: Declaring symbol style lamport* on input line 747.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 768.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
 File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
 File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
@@ -718,35 +720,35 @@ File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+10145 (decimal 65861)
    defining Unicode char U+10146 (decimal 65862)
    defining Unicode char U+10147 (decimal 65863)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 ))
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/*}. on input line 69.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count300
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count309
 \lst@gtempboxa=\box63
 \lst@token=\toks41
-\lst@length=\count301
+\lst@length=\count310
 \lst@currlwidth=\dimen189
-\lst@column=\count302
-\lst@pos=\count303
+\lst@column=\count311
+\lst@pos=\count312
 \lst@lostspace=\dimen190
 \lst@width=\dimen191
-\lst@newlines=\count304
-\lst@lineno=\count305
+\lst@newlines=\count313
+\lst@lineno=\count314
 \lst@maxwidth=\dimen192
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count306
-\lst@skipnumbers=\count307
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
 \lst@framebox=\box64
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip66
 \f@nch@offset@elh=\skip67
@@ -763,85 +765,85 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip78
 \f@nch@widthR=\skip79
 \@temptokenb=\toks42
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count308
-\c@Blindtext=\count309
-\c@blind@countparstart=\count310
-\blind@countxx=\count311
-\blindtext@numBlindtext=\count312
-\blind@countyy=\count313
-\c@blindlist=\count314
-\c@blindlistlevel=\count315
-\c@blindlist@level=\count316
-\blind@listitem=\count317
-\c@blind@listcount=\count318
-\c@blind@levelcount=\count319
-\blind@mathformula=\count320
-\blind@Mathformula=\count321
-\c@blind@randomcount=\count322
-\c@blind@randommax=\count323
-\c@blind@pangramcount=\count324
-\c@blind@pangrammax=\count325
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+\c@blindtext=\count317
+\c@Blindtext=\count318
+\c@blind@countparstart=\count319
+\blind@countxx=\count320
+\blindtext@numBlindtext=\count321
+\blind@countyy=\count322
+\c@blindlist=\count323
+\c@blindlistlevel=\count324
+\c@blindlist@level=\count325
+\blind@listitem=\count326
+\c@blind@listcount=\count327
+\c@blind@levelcount=\count328
+\blind@mathformula=\count329
+\blind@Mathformula=\count330
+\c@blind@randomcount=\count331
+\c@blind@randommax=\count332
+\c@blind@pangramcount=\count333
+\c@blind@pangrammax=\count334
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count326
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+\c@section@level=\count335
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count327
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+\etb@tempcnta=\count336
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen193
-\Hy@linkcounter=\count328
-\Hy@pagecounter=\count329
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+\Hy@linkcounter=\count337
+\Hy@pagecounter=\count338
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count330
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+\Hy@SavedSpaceFactor=\count339
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\puenc-greek.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\puenc-greek.def
 File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 )))
 Package hyperref Info: Hyper figures OFF on input line 4157.
@@ -851,19 +853,19 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count331
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\c@Hy@tempcnt=\count340
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen194
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count332
+\Fld@menulength=\count341
 \Field@Width=\dimen195
 \Fld@charsize=\dimen196
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -873,39 +875,39 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count333
-\c@Item=\count334
-\c@Hfootnote=\count335
+\Hy@abspage=\count342
+\c@Item=\count343
+\c@Hfootnote=\count344
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count336
-\c@bookmark@seq@number=\count337
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+\Fld@listcount=\count345
+\c@bookmark@seq@number=\count346
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip80
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 LaTeX Info: Redefining \color on input line 762.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -915,16 +917,16 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks43
 \minrowclearance=\skip81
-\rownum=\count338
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+\rownum=\count347
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen197
 \ESO@tempdimb=\dimen198
@@ -932,30 +934,30 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \AM@pagewidth=\dimen199
 \AM@pageheight=\dimen256
 \AM@fboxrule=\dimen257
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/03/12 v0.6f Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count339
+\pdfpages@includegraphics@status=\count348
 \AM@pagebox=\box65
 \AM@global@opts=\toks44
-\AM@pagecnt=\count340
+\AM@pagecnt=\count349
 \AM@toc@title=\toks45
 \AM@lof@heading=\toks46
-\c@AM@survey=\count341
+\c@AM@survey=\count350
 \AM@templatesizebox=\box66
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 44.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box67
 \fn@width=\dimen258
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 77.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count351
 ) (DiplomamunkaJODV94.aux)
 \openout1 = `DiplomamunkaJODV94.aux'.
 
@@ -975,7 +977,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 77.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 77.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 77.
@@ -983,23 +985,23 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count352
 \scratchdimen=\dimen259
 \scratchbox=\box68
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count346
+\MPscratchCnt=\count355
 \MPscratchDim=\dimen260
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks48
-) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package gensymb Info: Math companion symbols found on input line 77.
@@ -1013,21 +1015,21 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count349
+\c@lstlisting=\count358
 Package hyperref Info: Link coloring ON on input line 77.
  (DiplomamunkaJODV94.out) (DiplomamunkaJODV94.out)
 \@outlinefile=\write4
 \openout4 = `DiplomamunkaJODV94.out'.
 
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+)) (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 LaTeX Info: Redefining \cal on input line 583.
 LaTeX Info: Redefining \mit on input line 584.
 )
@@ -1057,7 +1059,7 @@ Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
 [1
 
 
-{C:/Users/Szabo Ferenc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./misk_egy.png>]
+{C:/Users/Fszabo3/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./misk_egy.png>]
 File: Nyilatkozat.pdf Graphic file (type pdf)
 <use Nyilatkozat.pdf, page 1>
 Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
@@ -1076,19 +1078,19 @@ Package pdftex.def Info: Nyilatkozat.pdf , page1 used on input line 118.
 
  <./Nyilatkozat.pdf>] (DiplomamunkaJODV94.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1098,15 +1100,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 5.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
- (C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+ (C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
@@ -1114,7 +1116,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...A Int\_Osc entitÃ¡s}{39}{subsection.6.3.1}
+l.25 ...z Int\_Osc entitÃ¡s}{38}{subsection.6.3.1}
                                                   % [1
 
 
@@ -1150,204 +1152,203 @@ l.153 \listoffigures
 
 ]
 1. fejezet.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 178.
-(C:\Users\Szabo Ferenc\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 158.
+(C:\Users\Fszabo3\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [6
 
-{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+{C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 [7]
+
+[8]
 2. fejezet.
 
 
-[8
+[9
 
 ]
 
-[9]
+[10]
 3. fejezet.
 
 
-[10
+[11
 
 ]
 
-[11]
+[12]
 4. fejezet.
 
 
-[12
+[13
 
 ]
-
-[13]
 
 [14]
 
 [15]
 
 [16]
-<i2c small read.PNG, id=409, 1452.92813pt x 782.17218pt>
+
+[17]
+<i2c small read.PNG, id=414, 1452.92813pt x 782.17218pt>
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 346.
+Package pdftex.def Info: i2c small read.PNG  used on input line 298.
 (pdftex.def)             Requested size: 434.17465pt x 232.9463pt.
 
 
-[17]
+[18]
 
-[18 <./i2c small read.PNG>]
-<uartblock.png, id=422, 382.42876pt x 147.55125pt>
+[19 <./i2c small read.PNG>]
+<uartblock.png, id=426, 382.42876pt x 147.55125pt>
 File: uartblock.png Graphic file (type png)
 <use uartblock.png>
-Package pdftex.def Info: uartblock.png  used on input line 366.
+Package pdftex.def Info: uartblock.png  used on input line 318.
 (pdftex.def)             Requested size: 301.391pt x 113.48874pt.
-<UARTfromAnalyzer.PNG, id=423, 1221.06187pt x 638.385pt>
+<UARTfromAnalyzer.PNG, id=427, 1221.06187pt x 638.385pt>
 File: UARTfromAnalyzer.PNG Graphic file (type png)
 <use UARTfromAnalyzer.PNG>
-Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 374.
+Package pdftex.def Info: UARTfromAnalyzer.PNG  used on input line 326.
 (pdftex.def)             Requested size: 425.38635pt x 221.4464pt.
 
 
-[19 <./uartblock.png>]
-<SPIblockk.PNG, id=430, 964.60374pt x 604.2575pt>
+[20 <./uartblock.png>]
+<SPIblockk.PNG, id=434, 964.60374pt x 604.2575pt>
 File: SPIblockk.PNG Graphic file (type png)
 <use SPIblockk.PNG>
-Package pdftex.def Info: SPIblockk.PNG  used on input line 386.
-(pdftex.def)             Requested size: 431.50699pt x 269.35266pt.
+Package pdftex.def Info: SPIblockk.PNG  used on input line 338.
+(pdftex.def)             Requested size: 383.55852pt x 239.42256pt.
 
 
-[20 <./UARTfromAnalyzer.PNG>]
+[21 <./UARTfromAnalyzer.PNG>]
 
-[21 <./SPIblockk.PNG>]
-<SPIreadID.png, id=442, 1548.53531pt x 692.5875pt>
+[22 <./SPIblockk.PNG>]
+<SPIreadID.png, id=446, 1548.53531pt x 692.5875pt>
 File: SPIreadID.png Graphic file (type png)
 <use SPIreadID.png>
-Package pdftex.def Info: SPIreadID.png  used on input line 401.
+Package pdftex.def Info: SPIreadID.png  used on input line 353.
 (pdftex.def)             Requested size: 431.9936pt x 192.32985pt.
-<i2cblokk.png, id=445, 1198.4775pt x 675.52374pt>
+<i2cblokk.png, id=449, 1198.4775pt x 675.52374pt>
 File: i2cblokk.png Graphic file (type png)
 <use i2cblokk.png>
-Package pdftex.def Info: i2cblokk.png  used on input line 416.
+Package pdftex.def Info: i2cblokk.png  used on input line 368.
 (pdftex.def)             Requested size: 399.59068pt x 224.39809pt.
 
 
-[22 <./SPIreadID.png>]
-<i2creadmini.PNG, id=454, 1075.01625pt x 362.85562pt>
+[23 <./SPIreadID.png>]
+<i2creadmini.PNG, id=459, 1075.01625pt x 362.85562pt>
 File: i2creadmini.PNG Graphic file (type png)
 <use i2creadmini.PNG>
-Package pdftex.def Info: i2creadmini.PNG  used on input line 430.
+Package pdftex.def Info: i2creadmini.PNG  used on input line 382.
 (pdftex.def)             Requested size: 438.4264pt x 146.43864pt.
 
 
-[23 <./i2cblokk.png>]
+[24 <./i2cblokk.png>]
 
-[24 <./i2creadmini.PNG>]
+[25 <./i2creadmini.PNG>]
 5. fejezet.
-<terv1.png, id=470, 1751.04187pt x 694.84593pt>
+<terv1.png, id=474, 1751.04187pt x 694.84593pt>
 File: terv1.png Graphic file (type png)
 <use terv1.png>
-Package pdftex.def Info: terv1.png  used on input line 447.
+Package pdftex.def Info: terv1.png  used on input line 399.
 (pdftex.def)             Requested size: 427.60152pt x 168.8393pt.
-
-
-[25
-
- <./terv1.png>]
-6. fejezet.
-<kapcsolasi rajz.PNG, id=476, 1415.2875pt x 832.61063pt>
-File: kapcsolasi rajz.PNG Graphic file (type png)
-<use kapcsolasi rajz.PNG>
-Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 458.
-(pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
-<jumperek.PNG, id=477, 1499.6025pt x 629.35126pt>
-File: jumperek.PNG Graphic file (type png)
-<use jumperek.PNG>
-Package pdftex.def Info: jumperek.PNG  used on input line 467.
-(pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
 
 
 [26
 
+ <./terv1.png>]
+6. fejezet.
+<kapcsolasi rajz.PNG, id=480, 1415.2875pt x 832.61063pt>
+File: kapcsolasi rajz.PNG Graphic file (type png)
+<use kapcsolasi rajz.PNG>
+Package pdftex.def Info: kapcsolasi rajz.PNG  used on input line 410.
+(pdftex.def)             Requested size: 422.88237pt x 248.07796pt.
+<jumperek.PNG, id=481, 1499.6025pt x 629.35126pt>
+File: jumperek.PNG Graphic file (type png)
+<use jumperek.PNG>
+Package pdftex.def Info: jumperek.PNG  used on input line 419.
+(pdftex.def)             Requested size: 433.22339pt x 180.85698pt.
+
+
+[27
+
  <./kapcsolasi rajz.PNG>]
-<jumpertable.PNG, id=483, 777.65532pt x 293.59688pt>
+<jumpertable.PNG, id=487, 777.65532pt x 293.59688pt>
 File: jumpertable.PNG Graphic file (type png)
 <use jumpertable.PNG>
-Package pdftex.def Info: jumpertable.PNG  used on input line 473.
+Package pdftex.def Info: jumpertable.PNG  used on input line 425.
 (pdftex.def)             Requested size: 347.38097pt x 129.55667pt.
 
 
-[27 <./jumperek.PNG> <./jumpertable.PNG>]
-<JP13.PNG, id=490, 531.48563pt x 194.22563pt>
+[28 <./jumperek.PNG> <./jumpertable.PNG>]
+<JP13.PNG, id=494, 531.48563pt x 194.22563pt>
 File: JP13.PNG Graphic file (type png)
 <use JP13.PNG>
-Package pdftex.def Info: JP13.PNG  used on input line 487.
+Package pdftex.def Info: JP13.PNG  used on input line 439.
 (pdftex.def)             Requested size: 236.60562pt x 84.84001pt.
-<gnd5v3v3.PNG, id=491, 912.40875pt x 490.08093pt>
+<gnd5v3v3.PNG, id=495, 912.40875pt x 490.08093pt>
 File: gnd5v3v3.PNG Graphic file (type png)
 <use gnd5v3v3.PNG>
-Package pdftex.def Info: gnd5v3v3.PNG  used on input line 494.
+Package pdftex.def Info: gnd5v3v3.PNG  used on input line 446.
 (pdftex.def)             Requested size: 408.01945pt x 217.97368pt.
 
 
-[28 <./JP13.PNG>]
-<nyak.PNG, id=497, 506.6428pt x 708.39656pt>
+[29 <./JP13.PNG>]
+<nyak.PNG, id=502, 506.6428pt x 708.39656pt>
 File: nyak.PNG Graphic file (type png)
 <use nyak.PNG>
-Package pdftex.def Info: nyak.PNG  used on input line 501.
-(pdftex.def)             Requested size: 225.42645pt x 316.21481pt.
+Package pdftex.def Info: nyak.PNG  used on input line 453.
+(pdftex.def)             Requested size: 200.37738pt x 281.07745pt.
 
 
-[29 <./gnd5v3v3.PNG>]
-<bosrd limits.PNG, id=504, 703.87968pt x 431.36156pt>
+[30 <./gnd5v3v3.PNG> <./nyak.PNG>]
+<bosrd limits.PNG, id=509, 703.87968pt x 431.36156pt>
 File: bosrd limits.PNG Graphic file (type png)
 <use bosrd limits.PNG>
-Package pdftex.def Info: bosrd limits.PNG  used on input line 510.
-(pdftex.def)             Requested size: 384.00525pt x 234.11981pt.
-
-
-[30 <./nyak.PNG>]
+Package pdftex.def Info: bosrd limits.PNG  used on input line 462.
+(pdftex.def)             Requested size: 349.09375pt x 212.835pt.
 <also reteg.PNG, id=510, 465.23813pt x 642.14906pt>
 File: also reteg.PNG Graphic file (type png)
 <use also reteg.PNG>
-Package pdftex.def Info: also reteg.PNG  used on input line 518.
-(pdftex.def)             Requested size: 206.79453pt x 286.4037pt.
+Package pdftex.def Info: also reteg.PNG  used on input line 470.
+(pdftex.def)             Requested size: 183.8158pt x 254.57892pt.
 
 
 [31 <./bosrd limits.PNG>]
 <spi kimenet.PNG, id=517, 1282.7925pt x 736.25063pt>
 File: spi kimenet.PNG Graphic file (type png)
 <use spi kimenet.PNG>
-Package pdftex.def Info: spi kimenet.PNG  used on input line 525.
-(pdftex.def)             Requested size: 421.44496pt x 241.08559pt.
+Package pdftex.def Info: spi kimenet.PNG  used on input line 477.
+(pdftex.def)             Requested size: 383.13356pt x 219.16972pt.
 
 
 [32 <./also reteg.PNG> <./spi kimenet.PNG>]
 <i2ckimenet.PNG, id=525, 890.5772pt x 682.80093pt>
 File: i2ckimenet.PNG Graphic file (type png)
 <use i2ckimenet.PNG>
-Package pdftex.def Info: i2ckimenet.PNG  used on input line 533.
-(pdftex.def)             Requested size: 398.19534pt x 304.69688pt.
+Package pdftex.def Info: i2ckimenet.PNG  used on input line 485.
+(pdftex.def)             Requested size: 336.26044pt x 257.30464pt.
 <rounded ui.PNG, id=526, 370.38374pt x 136.25906pt>
 File: rounded ui.PNG Graphic file (type png)
 <use rounded ui.PNG>
-Package pdftex.def Info: rounded ui.PNG  used on input line 543.
+Package pdftex.def Info: rounded ui.PNG  used on input line 495.
 (pdftex.def)             Requested size: 273.51926pt x 97.92618pt.
 
 
 [33 <./i2ckimenet.PNG>]
-<beforrounded.PNG, id=533, 575.14874pt x 751.30687pt>
+<beforrounded.PNG, id=534, 575.14874pt x 751.30687pt>
 File: beforrounded.PNG Graphic file (type png)
 <use beforrounded.PNG>
-Package pdftex.def Info: beforrounded.PNG  used on input line 553.
+Package pdftex.def Info: beforrounded.PNG  used on input line 505.
 (pdftex.def)             Requested size: 199.31337pt x 260.96964pt.
-<afterrounded.PNG, id=534, 638.385pt x 836.3747pt>
+<afterrounded.PNG, id=535, 638.385pt x 836.3747pt>
 File: afterrounded.PNG Graphic file (type png)
 <use afterrounded.PNG>
-Package pdftex.def Info: afterrounded.PNG  used on input line 559.
+Package pdftex.def Info: afterrounded.PNG  used on input line 511.
 (pdftex.def)             Requested size: 221.4464pt x 290.74384pt.
 
 
@@ -1355,12 +1356,12 @@ Package pdftex.def Info: afterrounded.PNG  used on input line 559.
 <rosszpelda.PNG, id=542, 1366.35469pt x 753.5653pt>
 File: rosszpelda.PNG Graphic file (type png)
 <use rosszpelda.PNG>
-Package pdftex.def Info: rosszpelda.PNG  used on input line 566.
+Package pdftex.def Info: rosszpelda.PNG  used on input line 518.
 (pdftex.def)             Requested size: 340.16522pt x 186.96825pt.
 <rounded vias ui.PNG, id=543, 336.50719pt x 280.79906pt>
 File: rounded vias ui.PNG Graphic file (type png)
 <use rounded vias ui.PNG>
-Package pdftex.def Info: rounded vias ui.PNG  used on input line 573.
+Package pdftex.def Info: rounded vias ui.PNG  used on input line 525.
 (pdftex.def)             Requested size: 248.11191pt x 206.33092pt.
 
 
@@ -1368,43 +1369,43 @@ Package pdftex.def Info: rounded vias ui.PNG  used on input line 573.
 <viabefore.PNG, id=551, 895.84688pt x 487.06969pt>
 File: viabefore.PNG Graphic file (type png)
 <use viabefore.PNG>
-Package pdftex.def Info: viabefore.PNG  used on input line 580.
+Package pdftex.def Info: viabefore.PNG  used on input line 532.
 (pdftex.def)             Requested size: 356.05624pt x 192.54826pt.
 <viaafter.PNG, id=552, 972.63374pt x 477.28313pt>
 File: viaafter.PNG Graphic file (type png)
 <use viaafter.PNG>
-Package pdftex.def Info: viaafter.PNG  used on input line 586.
+Package pdftex.def Info: viaafter.PNG  used on input line 538.
 (pdftex.def)             Requested size: 386.77045pt x 188.6337pt.
 
 
 [36 <./rounded vias ui.PNG> <./viabefore.PNG>]
-<PCB.png, id=559, 2276.505pt x 3035.34pt>
+<PCB.png, id=559, 1943.00906pt x 2179.39218pt>
 File: PCB.png Graphic file (type png)
 <use PCB.png>
-Package pdftex.def Info: PCB.png  used on input line 593.
-(pdftex.def)             Requested size: 283.85112pt x 378.70526pt.
+Package pdftex.def Info: PCB.png  used on input line 545.
+(pdftex.def)             Requested size: 193.74321pt x 217.3829pt.
 <PCBassembled.png, id=560, 1827.07594pt x 1871.49188pt>
 File: PCBassembled.png Graphic file (type png)
 <use PCBassembled.png>
-Package pdftex.def Info: PCBassembled.png  used on input line 599.
+Package pdftex.def Info: PCBassembled.png  used on input line 551.
 (pdftex.def)             Requested size: 227.67262pt x 233.2246pt.
 
 
-[37 <./viaafter.PNG>]
+[37 <./viaafter.PNG> <./PCB.png>]
 
-[38 <./PCB.png>]
-
-[39 <./PCBassembled.png>]
-<clkrates.PNG, id=574, 1274.51157pt x 330.48468pt>
+[38 <./PCBassembled.png>]
+<clkrates.PNG, id=571, 1274.51157pt x 330.48468pt>
 File: clkrates.PNG Graphic file (type png)
 <use clkrates.PNG>
-Package pdftex.def Info: clkrates.PNG  used on input line 640.
+Package pdftex.def Info: clkrates.PNG  used on input line 592.
 (pdftex.def)             Requested size: 436.46594pt x 111.72702pt.
 
 
-[40]
+[39]
 
-[41{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./clkrates.PNG>]
+[40{C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc} <./clkrates.PNG>]
+
+[41]
 
 [42]
 
@@ -1435,143 +1436,141 @@ Package pdftex.def Info: clkrates.PNG  used on input line 640.
 [55]
 
 [56]
-
-[57]
 7. fejezet.
-<setupblock.PNG, id=685, 1323.44438pt x 1872.24469pt>
+<setupblock.PNG, id=682, 1323.44438pt x 1872.24469pt>
 File: setupblock.PNG Graphic file (type png)
 <use setupblock.PNG>
-Package pdftex.def Info: setupblock.PNG  used on input line 1065.
+Package pdftex.def Info: setupblock.PNG  used on input line 1017.
 (pdftex.def)             Requested size: 210.84492pt x 298.65477pt.
-<setupreal.PNG, id=686, 2089.8075pt x 2786.41pt>
+<setupreal.PNG, id=683, 2089.8075pt x 2786.41pt>
 File: setupreal.PNG Graphic file (type png)
 <use setupreal.PNG>
-Package pdftex.def Info: setupreal.PNG  used on input line 1071.
+Package pdftex.def Info: setupreal.PNG  used on input line 1023.
 (pdftex.def)             Requested size: 260.51399pt x 347.5891pt.
 
 
-[58
+[57
 
 ]
 
-[59 <./setupblock.PNG>]
+[58 <./setupblock.PNG>]
 
-[60 <./setupreal.PNG>]
-<spiconfiguretest.PNG, id=701, 1599.72656pt x 851.43094pt>
+[59 <./setupreal.PNG>]
+<spiconfiguretest.PNG, id=698, 1599.72656pt x 851.43094pt>
 File: spiconfiguretest.PNG Graphic file (type png)
 <use spiconfiguretest.PNG>
-Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1102.
+Package pdftex.def Info: spiconfiguretest.PNG  used on input line 1054.
 (pdftex.def)             Requested size: 398.50804pt x 211.43459pt.
 
 
-[61 <./spiconfiguretest.PNG>]
-Overfull \hbox (5.79065pt too wide) in paragraph at lines 1121--1122
+[60 <./spiconfiguretest.PNG>]
+Overfull \hbox (5.79065pt too wide) in paragraph at lines 1073--1074
 []\T1/lmr/m/n/12 43020000004163636F7264696E6720746F20616C6C206B6E6F776E206C617773206F6
  []
 
 
-Overfull \hbox (3.5142pt too wide) in paragraph at lines 1121--1122
+Overfull \hbox (3.5142pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/12 756C642062652061626C6520746F20666C792E204974732077696E67732061726520746F6
  []
 
 
-Overfull \hbox (2.69621pt too wide) in paragraph at lines 1121--1122
+Overfull \hbox (2.69621pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/12 F20736D616C6C20746F206765742069747320666174206C6974746C6520626F6479206F6
  []
 
 
-Overfull \hbox (5.30722pt too wide) in paragraph at lines 1121--1122
+Overfull \hbox (5.30722pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/12 666207468652067726F756E642E20546865206265652C206F6620636F757273652C20666C
  []
 
 
-Overfull \hbox (5.63818pt too wide) in paragraph at lines 1121--1122
+Overfull \hbox (5.63818pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/12 69657320616E797761792062656361757365206265657320646F6E277420636172652077686
  []
 
 
-Overfull \hbox (2.5278pt too wide) in paragraph at lines 1121--1122
+Overfull \hbox (2.5278pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/12 1742068756D616E73207468696E6B20697320696D706F737369626C652E2059656C6C6F
  []
 
-<spi write packege full.PNG, id=710, 1580.90625pt x 953.81343pt>
+<spi write packege full.PNG, id=707, 1580.90625pt x 953.81343pt>
 File: spi write packege full.PNG Graphic file (type png)
 <use spi write packege full.PNG>
-Package pdftex.def Info: spi write packege full.PNG  used on input line 1156.
+Package pdftex.def Info: spi write packege full.PNG  used on input line 1108.
 (pdftex.def)             Requested size: 441.0574pt x 265.47261pt.
 
 
-[62]
+[61]
 
-[63 <./spi write packege full.PNG>]
-<full spi page package.PNG, id=722, 1590.69281pt x 983.92593pt>
+[62 <./spi write packege full.PNG>]
+<full spi page package.PNG, id=719, 1590.69281pt x 983.92593pt>
 File: full spi page package.PNG Graphic file (type png)
 <use full spi page package.PNG>
-Package pdftex.def Info: full spi page package.PNG  used on input line 1198.
+Package pdftex.def Info: full spi page package.PNG  used on input line 1150.
 (pdftex.def)             Requested size: 427.95634pt x 264.1271pt.
 
 
-[64 <./full spi page package.PNG>]
+[63 <./full spi page package.PNG>]
 
-[65]
-<i2c small write.PNG, id=737, 1431.84938pt x 747.54282pt>
+[64]
+<i2c small write.PNG, id=733, 1431.84938pt x 747.54282pt>
 File: i2c small write.PNG Graphic file (type png)
 <use i2c small write.PNG>
-Package pdftex.def Info: i2c small write.PNG  used on input line 1257.
+Package pdftex.def Info: i2c small write.PNG  used on input line 1209.
 (pdftex.def)             Requested size: 399.32178pt x 207.71724pt.
 File: i2c small read.PNG Graphic file (type png)
 <use i2c small read.PNG>
-Package pdftex.def Info: i2c small read.PNG  used on input line 1264.
+Package pdftex.def Info: i2c small read.PNG  used on input line 1216.
 (pdftex.def)             Requested size: 405.22379pt x 217.41339pt.
 
 
-[66 <./i2c small write.PNG>]
-Overfull \hbox (1.33183pt too wide) in paragraph at lines 1273--1274
+[65 <./i2c small write.PNG>]
+Overfull \hbox (1.33183pt too wide) in paragraph at lines 1225--1226
 \T1/lmr/m/n/12 A Dip-lo-ma-mun-ka so-rán sok rög-zí-tést mu-tat-tam be, ahol lát-szik, hogy kü-lön-bö-z® hosszú-
  []
 
 
 
-[67]
+[66]
 8. fejezet.
 
 
-[68
+[67
 
 ]
 
-[69]
+[68]
 
-[70]
+[69]
 9. fejezet.
 
 
-[71
+[70
 
 ]
 
-[72
+[71
 
 ] (DiplomamunkaJODV94.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
+L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `DiplomamunkaJODV94.out' has not changed.
-(rerunfilecheck)             Checksum: 86F6F92251AA579874E9AAE7EDE034EC;8074.
+(rerunfilecheck)             Checksum: 86BE134B8E97E46336BF07E01A769DDA;8095.
  ) 
 Here is how much of TeX's memory you used:
- 21298 strings out of 469958
- 361436 string characters out of 5466390
- 844577 words of memory out of 5000000
- 47505 multiletter control sequences out of 15000+600000
+ 21304 strings out of 469940
+ 359753 string characters out of 5468441
+ 845594 words of memory out of 5000000
+ 47530 multiletter control sequences out of 15000+600000
  672121 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 524i,17n,1046p,2028b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Szabo Ferenc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on DiplomamunkaJODV94.pdf (74 pages, 44411816 bytes).
+ 524i,17n,1046p,916b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
+Output written on DiplomamunkaJODV94.pdf (73 pages, 36248488 bytes).
 PDF statistics:
- 864 PDF objects out of 1000 (max. 8388607)
- 216 named destinations out of 1000 (max. 500000)
+ 861 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
  559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
