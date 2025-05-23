@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  23 MAY 2025 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.12)  23 MAY 2025 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1559,7 +1559,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `DiplomamunkaJODV94.out' has not changed.
-(rerunfilecheck)             Checksum: 86BE134B8E97E46336BF07E01A769DDA;8095.
+(rerunfilecheck)             Checksum: 37A14A8A220604C9C99309AA3DF21B7E;8095.
  ) 
 Here is how much of TeX's memory you used:
  21305 strings out of 469940
@@ -1570,7 +1570,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  524i,17n,1046p,916b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Fszabo3/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on DiplomamunkaJODV94.pdf (74 pages, 36249010 bytes).
+Output written on DiplomamunkaJODV94.pdf (74 pages, 36248972 bytes).
 PDF statistics:
  865 PDF objects out of 1000 (max. 8388607)
  216 named destinations out of 1000 (max. 500000)

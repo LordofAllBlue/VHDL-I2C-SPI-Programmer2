@@ -1090,7 +1090,7 @@ Használt utasítássor az utasítás fájlban:
 exit
 
 
-Az első két utasítás azért kell, hogy beállítsuk a SPI kommunikáció hosszát és az Flash-nek elküldjük a "write enable" utasítást. Maga az adat a harmadik utasításba a "Bee Movie" filmnek a forgatókönyvének első 256 bájtja.
+Az első két utasítás azért kell, hogy beállítsuk a SPI kommunikáció hosszát és az Flash-nek elküldjük a "write enable" utasítást. Maga az adat, a harmadik utasításban van. És a "Bee Movie" filmnek a forgatókönyvének első 256 bájtja.
 
 \subsubsection{Teszt eredménye:}
 
@@ -1131,7 +1131,7 @@ Az SPI write állapot megfelelően működik.
 
 \subsection{SPI read állapot tesztelése}
 
-Teszteléshez az SPI Flash memóriában egy teljes page-et azaz oldalt olvastam ki. Ugyan azt, amit beleírtam az SPI write tesztelés közben.
+Teszteléshez az SPI Flash memóriában egy teljes page-et, azaz oldalt olvastam ki. Ugyan azt, amit beleírtam az SPI write tesztelés közben.
 
 Használt utasítássor az utasítás fájlban:
 
@@ -1172,7 +1172,7 @@ A rögzítésen látszik, hogy az programozó valóban az összes beírt bájtot
 Az SPI read állapot megfelelően működik.
 
 \subsection{I2C write és I2C read állapot tesztelése}
-A két állapotot együtt teszteltem. Egy utasítás sorral, az EEPROM-ba egy memória címre beleírtam az Test angol szó ASCII értékét, majd ugyan azt a címet olvastam ki.
+A két állapotot együtt teszteltem, egy utasítás sorral. Az EEPROM-ba egy memória címre beleírtam az Test angol szó ASCII értékét, majd ugyan azt a címet olvastam ki.
 
 Használt utasítássor az utasítás fájlban:
 
@@ -1188,9 +1188,9 @@ exit
 
 \begin{itemize}
 	\item Az első utasítás azért kell, hogy beállítsuk a I2C kommunikáció hosszát.
-	\item A második utasításban a 46 hexadecimális bájt az I2C write állapotot jelöli, az A00000 címre írunk.
+	\item A második utasításban a 46 hexadecimális bájt az I2C write állapotot jelöli, az 0000 címre írunk.
 	\item A harmadik utasítás egy váró utasítás, ez az EEPROM karakterisztikája miatt szükséges \cite{EEPROM}.
-	\item A negyedik utasításban a 45 hexadecimális bájt az I2C read állapotot jelöli, az A00000 címről olvasunk.
+	\item A negyedik utasításban a 45 hexadecimális bájt az I2C read állapotot jelöli, az 0000 címről olvasunk.
 \end{itemize}
 
 \subsubsection{Teszt eredménye:}
@@ -1237,7 +1237,7 @@ Itt látható a helyes I2C olvasás. A programozó visszaolvasta és visszaküld
 Az I2C read és az I2C write állapot megfelelően működik.
 
 \subsection{Get settings állapot tesztelése}
-A Diplomamunka során sok rögzítést mutattam be, ahol látszik, hogy különböző hosszúságú adatkereteket küldött a programozó, a programozót mindig a Get settings állapottal kellett beállítanom. 
+A Diplomamunka során sok rögzítést mutattam be, ahol látszik, hogy különböző hosszúságú adatkereteket küldött a programozó. A programozót mindig a Get settings állapottal kellett beállítanom. 
 
 Például a \ref{SPI-al kiolvasott gyártó azonosító és típusszám}-as ábra a \pageref{SPI-al kiolvasott gyártó azonosító és típusszám}. oldalon és a \ref{SPI read állapot tesztelése rögzítés}-as ábra a \pageref{SPI read állapot tesztelése rögzítés}. oldalon. Itt látható két külön hosszúságú SPI adatkeret.
 
@@ -1247,18 +1247,6 @@ A Get settings állapot megfelelően működik.
 
 
 \chapter{Összegzés}
-\section{Jövőbeli tervek}
-Bár az elkészült programozó már most is képes EEPROM és Flash memória egységek programozására SPI és I2C protokollokon keresztül, számos irányba lehetne tovább bővíteni a rendszer funkcionalitását.
-
-Elsőként szeretnék egy grafikus felületet készíteni a jelenlegi C++-ban írt parancssoros vezérlőalkalmazás helyett. Ez felhasználóbarátibbá tenné a programozót, és lehetőséget biztosítana a memóriák tartalmának vizuális megjelenítésére, szerkesztésére, valamint jobb fájl alapú be- és kimentésre is.
-
-Ezen kívül célom lenne újabb protokollok hozzáadása. Ez tovább növelné a programozó eszköz kompatibilitását különféle memóriatípusokkal és más perifériákkal. 
-
-Az protokollok sebesség beállítása most a design része, nem lehet az FPGA konfigurálása után változtatni. Ez is beállíthatóvá szeretném tenni.
-
-Hardveres oldalon egy a most használt TinyFPGA modul helyett egy komplexebb FPGA használatával a rendszer teljesítménye és bővíthetősége is jelentősen nőne.
-
-Végül, de nem utolsósorban, szeretnék a projektből egy nyílt forráskódú, dokumentált, közösség által is használható eszközt létrehozni. A hardvertervek, a VHDL forráskód és a szoftver nyilvánossá tétele elősegítené, hogy más fejlesztők vagy diákok is tanulhassanak a rendszerből, és akár saját igényeikhez igazítva továbbfejlesszék azt. Az egész forráskód már fent van GitHub-on.
 
 \section{Magyar összefoglaló}
 Diplomamunkám célja az volt, hogy egy olyan hardver-szoftver rendszert hozzak létre, amely képes SPI és I2C protokollon keresztül különböző memóriák programozására. A rendszer felépítése egy PC-s vezérlő alkalmazásból, egy UART kommunikáción alapuló interfészből, valamint egy FPGA-ban implementált digitális áramkörből áll. A kommunikációs és vezérlő szoftvert C++ nyelven írtam meg, amely képes parancsokat küldeni, adatokat fogadni és azokat naplózni is.
@@ -1269,6 +1257,19 @@ A hardveres megvalósítás részeként egy kétoldalas nyákot terveztem a KiCa
 A rendszer teszteléséhez valós EEPROM chipeket használtam, és logikai analizátor segítségével ellenőriztem a kommunikáció helyességét. 
 
 Összességében a projekt során sikerült elérnem a kitűzött célokat: egy működőképes, használható EEPROM programozót hoztam létre, amely gyakorlati példát szolgáltat az FPGA-k alkalmazására beágyazott rendszerek fejlesztésében. A munka során jelentős tapasztalatra tettem szert mind a digitális áramkörtervezés, mind az alacsony szintű kommunikációs protokollok kezelése terén.
+
+\section{Jövőbeli tervek}
+Bár az elkészült programozó már most is képes EEPROM és Flash memória egységek programozására SPI és I2C protokollokon keresztül, számos irányba lehetne tovább bővíteni a rendszer funkcionalitását.
+
+Elsőként szeretnék egy grafikus felületet készíteni a jelenlegi C++-ban írt parancssoros vezérlőalkalmazás helyett. Ez felhasználóbarátibbá tenné a programozót, és lehetőséget biztosítana a memóriák tartalmának vizuális megjelenítésére, szerkesztésére, valamint jobb fájl alapú be és kimentésre is.
+
+Ezen kívül célom lenne újabb protokollok hozzáadása. Ez tovább növelné a programozó eszköz kompatibilitását különféle memóriatípusokkal és más perifériákkal. 
+
+Az protokollok sebesség beállítása most a design része, nem lehet az FPGA konfigurálása után változtatni. Ez is beállíthatóvá szeretném tenni.
+
+Hardveres oldalon egy a most használt TinyFPGA modul helyett egy komplexebb FPGA használatával a rendszer teljesítménye és bővíthetősége is jelentősen nőne.
+
+Végül, de nem utolsósorban, szeretnék a projektből egy nyílt forráskódú, dokumentált, közösség által is használható eszközt létrehozni. Ez elősegítené, hogy más fejlesztők vagy diákok is tanulhassanak a rendszerből, és akár saját igényeikhez igazítva továbbfejlesszék azt. Az egész forráskód már fent van GitHub-on.
 
 
 \section{English summary}
